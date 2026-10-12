@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>냉장고 털이 · 와이어프레임</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top-bar">
+    <b data-go="home" style="cursor:pointer">냉장고 털이</b>
+    <button class="ic" data-go="search" aria-label="검색">🔍</button>
+    <button class="ic" data-go="login">로그인</button>
+  </header>
 
+  <!-- 1 홈 -->
+  <section class="screen" id="home">
+    <h2>집에 있는 재료로<br>지금 만들 수 있는 요리</h2>
+    <p class="mu">재료만 입력하면 바로 알려드려요</p>
+    <div class="box"><span class="mu">보유 재료 (2개 이상)</span>
+      <input class="in" placeholder="재료 검색 (예: 계란)">
+      <div class="row" id="mine"><span class="chip on">계란 ✕</span><span class="chip on">양파 ✕</span><span class="chip on">김치 ✕</span></div>
+      <div class="row"><span class="chip">+ 참치캔</span><span class="chip">+ 두부</span><span class="chip">+ 대파</span></div>
+      <button class="btn dk" id="find" data-go="list">만들 수 있는 요리 찾기</button>
+    </div>
+    <p class="mu" style="margin-top:16px">다른 사용자들이 만든 요리</p>
+    <div class="grid2" data-go="feed" style="grid-template-columns:repeat(3,1fr)"><div class="img">IMG</div><div class="img">IMG</div><div class="img">IMG</div></div>
+  </section>
+
+  <!-- 2 목록 -->
+  <section class="screen" id="list">
+    <div class="row" style="margin:0"><span class="chip on">계란</span><span class="chip on">양파</span><span class="chip on">김치</span><b style="margin-left:auto">6건</b></div>
+    <div class="tabs"><button class="on" data-tab="all">전체</button><button data-tab="ok">바로 가능</button><button data-tab="sub">대체</button><button data-tab="one">1개 더</button></div>
+    <div class="row"><span class="chip">난이도 ▾</span><span class="chip">조리시간 ▾</span><span class="chip">정렬 ▾</span></div>
+    <div class="pane on" data-pane="all">
+      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>☆</span></div>
+      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치찌개</b><p class="mu">25분 · 보통</p><span class="bg">대체하면 가능</span> <span class="mu">돼지고기 → 참치</span></div><span>☆</span></div>
+      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치전</b><p class="mu">20분 · 쉬움</p><span class="bg">1개만 더</span> <span class="mu">부족: 부침가루</span></div><span>★</span></div>
+    </div>
+    <div class="pane" data-pane="ok"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>☆</span></div></div>
+    <div class="pane" data-pane="sub"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치찌개</b><p class="mu">25분 · 보통</p><span class="bg">대체하면 가능</span></div><span>☆</span></div></div>
+    <div class="pane" data-pane="one"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치전</b><p class="mu">20분 · 쉬움</p><span class="bg">1개만 더</span></div><span>★</span></div></div>
+  </section>
+
+  <!-- 3 상세 -->
+  <section class="screen" id="detail">
+    <div class="img" style="height:150px">IMG</div>
+    <h2 style="margin-top:10px">김치볶음밥 <span class="bg a">바로 가능</span></h2>
+    <p class="mu">15분 · 쉬움 · 만든 사람 평균 ★ 4.6</p>
+    <div class="box"><b>재료</b><div class="row"><span class="chip on">계란 보유</span><span class="chip on">김치 보유</span><span class="chip">참치 (대체)</span><span class="chip gr">참기름 (선택)</span></div></div>
+    <div class="box"><b>조리 순서</b><p>1. 김치와 양파를 썬다<br>2. 볶다가 밥을 넣는다<br>3. 계란프라이를 올린다</p></div>
+    <div class="box"><b>부족 재료만 모아보기</b><p class="mu">부족 재료 없음 → 섹션 숨김</p></div>
+    <div class="row"><button class="btn" style="flex:1">☆ 즐겨찾기</button><button class="btn dk" style="flex:2" data-go="login">요리했어요 · 공유하기</button></div>
+  </section>
+
+  <!-- 4 검색 -->
+  <section class="screen" id="search">
+    <input class="in" style="margin:0" placeholder="요리 이름이나 닉네임으로 찾아요">
+    <p class="mu" style="margin-top:12px">최근 검색어</p>
+    <div class="row"><span class="chip">김치볶음밥 ✕</span><span class="chip">계란말이 ✕</span></div>
+    <div class="tabs"><button class="on" data-tab="r">레시피</button><button data-tab="p">게시물</button></div>
+    <div class="pane on" data-pane="r">
+      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div></div>
+      <div class="card" style="opacity:.55"><div class="img">IMG</div><div><b>부대찌개</b><p class="mu">30분 · 보통</p><span class="chip gr">부족 재료 2개 이상</span></div></div>
+    </div>
+    <div class="pane" data-pane="p"><div class="card" data-go="post"><div class="img">IMG</div><div><b>@민지 · 김치볶음밥</b><p class="mu">참치 넣어도 맛있어요</p></div></div></div>
+  </section>
+
+  <!-- 5 피드 -->
+  <section class="screen" id="feed">
+    <h2>피드</h2>
+    <div class="row"><span class="chip on">☑ 내 냉장고로 만들 수 있는 것만</span><span class="chip" style="margin-left:auto">별점순 ▾</span></div>
+    <div class="grid2">
+      <div data-go="post" style="cursor:pointer"><div class="img" style="height:90px">IMG</div><b>김치볶음밥</b><p class="mu">@민지 ★5</p><span class="bg a">바로 가능</span></div>
+      <div data-go="post" style="cursor:pointer"><div class="img" style="height:90px">IMG</div><b>계란말이</b><p class="mu">@준호 ★4</p><span class="bg">대체하면 가능</span></div>
+    </div>
+  </section>
+
+  <!-- 6 게시물 상세 -->
+  <section class="screen" id="post">
+    <div class="img" style="height:170px">IMG</div>
+    <h2 style="margin-top:10px">김치볶음밥 <span class="mu">@민지</span></h2>
+    <p class="mu">★★★★★ · "참치 넣어도 맛있어요"</p>
+    <div class="box"><b>사용 · 대체 재료</b><div class="row"><span class="chip on">계란</span><span class="chip on">김치</span><span class="chip">참치 (대체)</span><span class="bg a">바로 가능</span></div></div>
+    <div class="row"><span class="chip">♡ 좋아요 12</span><span class="chip" data-go="login">신고</span><span class="chip gr">삭제 (내 글일 때)</span></div>
+    <button class="btn dk" data-go="detail">따라 만들기</button>
+  </section>
+
+  <!-- 7 게시물 작성 -->
+  <section class="screen" id="write">
+    <h2>요리 공유하기</h2>
+    <div class="box"><span class="mu">연결 레시피 (자동)</span><div class="in">김치볶음밥</div></div>
+    <div class="box"><span class="mu">사진 (필수 1장)</span><div class="img" style="height:90px;margin-top:6px">+ 사진 추가</div></div>
+    <div class="box"><span class="mu">내가 만든 결과 별점 (필수)</span><div><b>★ ★ ★ ★ ☆</b></div></div>
+    <div class="box"><span class="mu">한 줄 후기 (0/100)</span><input class="in" maxlength="100" placeholder="후기를 입력하세요"></div>
+    <div class="box"><span class="mu">사용 · 대체 재료 확인</span><div class="row"><span class="chip on">계란</span><span class="chip on">김치</span><span class="chip">참치 (대체)</span></div></div>
+    <div class="row"><button class="btn" style="flex:1" data-go="detail">취소</button><button class="btn dk" style="flex:2" disabled>게시하기 (사진 없으면 비활성)</button></div>
+  </section>
+
+  <!-- 8 마이 -->
+  <section class="screen" id="my">
+    <h2>닉네임 님</h2><p class="mu">비로그인: "로그인하고 내 요리를 공유해 보세요"</p>
+    <div class="tabs"><button data-tab="fav">즐겨찾기</button><button class="on" data-tab="fr">내 냉장고</button><button data-tab="mine">내 게시물</button></div>
+    <div class="pane" data-pane="fav"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>★</span></div></div>
+    <div class="pane on" data-pane="fr">
+      <div class="box"><span class="mu">냉장실</span>
+        <p style="margin:6px 0 0"><b>계란</b> <span class="mu">70%</span></p><div class="gau"><i style="width:70%"></i></div>
+        <p style="margin:0"><b>양파</b> <span class="mu">40%</span></p><div class="gau"><i style="width:40%"></i></div>
+        <p style="margin:0"><s class="mu">대파</s> <span class="mu">다 떨어짐</span></p></div>
+      <button class="btn">+ 재료 추가 (이름 · 보관 위치 · 남은 양)</button>
+      <button class="btn dk" data-go="list">이 재료로 검색</button>
+    </div>
+    <div class="pane" data-pane="mine"><div class="card" data-go="post"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">★5 · 후기 한 줄</p></div><span class="mu">삭제</span></div></div>
+  </section>
+
+  <!-- 9 로그인 · 닉네임 설정 -->
+  <section class="screen" id="login">
+    <div class="box"><span class="mu">1단계</span><h2>로그인</h2>
+      <input class="in" placeholder="아이디 (영문·숫자 4~16자)"><input class="in" type="password" placeholder="비밀번호 (8자 이상)">
+      <button class="btn dk" data-go="write">로그인</button><p class="mu" style="margin-top:8px">계정이 없나요? 회원가입</p></div>
+    <div class="box"><span class="mu">2단계 (처음 1회)</span><h2>닉네임 설정</h2>
+      <input class="in" placeholder="닉네임"><button class="btn">중복 확인</button>
+      <button class="btn dk" disabled>완료하고 작성하던 글로 돌아가기</button></div>
+    <button class="btn" data-go="home">← 돌아가기</button>
+  </section>
+</div>
+
+<button class="totop" aria-label="맨 위로">↑<br>TOP</button>
+<nav class="tabbar">
+  <button data-go="home"><i>⌂</i>홈</button>
+  <button data-go="feed"><i>▦</i>피드</button>
+  <button data-go="my"><i>☺</i>마이</button>
+</nav>
+<script src="js/app.js"></script>
+</body>
+</html>
