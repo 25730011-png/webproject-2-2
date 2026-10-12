@@ -1,13 +1,12 @@
 // 화면 전환 · 탭 · TOP 버튼 (와이어프레임용 최소 동작)
-const TAB_OF = {home:'home',list:'home',detail:'home',search:'search',feed:'feed',post:'feed',write:'feed',my:'my',login:''};
-const NAV_OF = {feed:'feed',post:'feed',write:'feed',search:'search',my:'my',login:'login'};
+const TAB_OF = {home:'home',list:'home',detail:'home',search:'home',feed:'feed',post:'feed',write:'feed',my:'my',login:''};
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 function go(id) {
   $$('.screen').forEach(s => s.classList.toggle('on', s.id === id));
   $$('.tabbar button').forEach(b => b.classList.toggle('on', b.dataset.go === TAB_OF[id]));
-  $$('.top-bar .nv').forEach(b => b.classList.toggle('on', b.dataset.nav === NAV_OF[id]));
+  $('.tabbar').style.display = id === 'login' ? 'none' : 'flex';
   window.scrollTo(0, 0);
   history.replaceState(null, '', '#' + id);
 }
