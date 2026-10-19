@@ -1,5 +1,0 @@
-[
-  {"id":1,"name":"김치볶음밥","time":15,"level":"쉬움","image":"asset/kimchi-bokkeumbap.jpg","steps":["김치와 양파를 썬다","볶다가 밥을 넣는다","계란프라이를 올린다"]},
-  {"id":2,"name":"김치찌개","time":25,"level":"보통","image":"asset/kimchi-jjigae.jpg","steps":[]},
-  {"id":3,"name":"김치전","time":20,"level":"쉬움","image":"asset/kimchi-jeon.jpg","steps":[]}
-]
