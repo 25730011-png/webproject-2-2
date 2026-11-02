@@ -10,20 +10,15 @@ function go(id) {
   document.documentElement.classList.toggle('snap', id === 'feed'); // 피드에서만 게시물 단위로 스크롤
   window.scrollTo(0, 0);
   if (location.hash.slice(1) !== id) history.replaceState(null, '', '#' + id);
-  if (id === 'list') renderList(); // 목록은 열 때마다 현재 보유 재료 기준으로 다시 그림
-  if (id === 'search') { renderSearch(); setTimeout(() => $('#rq').focus(), 0); } // 와이어프레임: 진입 시 검색창 자동 포커스
-  if (id === 'list' || id === 'search') backTo = id; // 상세에서 뒤로 가면 들어온 화면(목록·검색)으로, 검색어·탭 유지
+  if (id === 'list') { listShowAll = false; renderList(); } // 목록은 열 때마다 현재 보유 재료 기준으로 다시 그림
+  if (id === 'search') searchRecipes();
 }
 
 document.addEventListener('click', e => {
   const g = e.target.closest('[data-go]');
   if (g) {
     if (g.disabled) return;
-    if (g.dataset.go === 'detail') {
-      // 카드에 id가 있으면 그 레시피, HTML 예시 카드는 data-name으로 찾음 → 없으면 "레시피를 찾을 수 없어요"
-      if (g.dataset.id) openDetail(Number(g.dataset.id));
-      else if (g.dataset.name) openDetail(recipes.find(r => r.name === g.dataset.name)?.id ?? -1);
-    }
+    if (g.dataset.id) openDetail(Number(g.dataset.id)); // 카드에 id가 있으면 그 레시피 상세
     return go(g.dataset.go);
   }
   const t = e.target.closest('[data-tab]'); // 탭(마이 · 목록 배지)
@@ -54,6 +49,23 @@ $('#suggest').addEventListener('click', e => {
   c.remove();
   syncFind();
   renderHomeReco();
+});
+// 홈: 재료를 직접 입력하고 Enter → 칩 추가 (중복·빈값은 무시). 없는 재료를 넣으면 목록에서 '결과 없음' 화면이 나옴
+function addIngredient(name) {
+  name = name.trim();
+  if (!name || myIngredients().includes(name)) return;
+  const chip = document.createElement('span');
+  chip.className = 'chip ing';
+  chip.textContent = name + ' ✕';
+  $('#mine').append(chip);
+  syncFind();
+  renderHomeReco();
+}
+$('#ing-q').addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  e.preventDefault();
+  addIngredient(e.target.value);
+  e.target.value = '';
 });
 
 // 로그인: 아이디(영문·숫자 4~16자) + 닉네임(2~12자)이 모두 맞아야 시작하기 활성
@@ -95,24 +107,15 @@ topBtn.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }))
 
 // =====================================================================
 // 7주차: JSON 데이터 불러오기 (강의 1.1 ① JSON → ② fetch → ③ 데이터 점검 → ④ 렌더링 → ⑤ 화면)
-// 8주차 고도화: 출처 플래그 J/A 표시 · 식약처 API 연동 · 레시피 검색 · null 예외 공통 처리
 // =====================================================================
 
-// ① JSON 경로 — data/ 바로 아래 또는 data/json/ 아래 어느 쪽에 있어도 읽음 (GitHub Pages 배포 주소에서 확인, file:// 에서는 fetch가 막힘)
-const DATA_URLS = ['./data/recipes.json', './data/json/recipes.json'];
-let dataUrl = DATA_URLS[0];
-
-// 식약처 레시피 API (식품안전나라 COOKRCP01) — https://www.foodsafetykorea.go.kr/api/openApiInfo.do?svc_no=COOKRCP01
-// 주의: 레포가 Public이라 이 키는 누구나 볼 수 있음. 문제가 생기면 식품안전나라에서 재발급 후 여기만 바꾸면 됨
-const API_KEY = '952021f2646447be9c0b';
-const API_BASE = `${location.protocol === 'http:' ? 'http' : 'https'}://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json`;
-const API_PAGE = 1000; // 한 번에 받을 수 있는 최대 건수
-let apiState = '연결 중'; // 연결 중 · 연결됨 · 실패
+// ① JSON 경로 — 6주차에 만든 data/ 폴더. GitHub Pages 배포 주소에서 확인 (file:// 에서는 fetch가 막힘)
+const DATA_URL = './data/recipes.json';
 
 // ③ 원본 배열: JSON에서 읽은 데이터를 그대로 보관. 필터·정렬은 여기서 새 배열을 만들어 화면에 전달 (강의 1.3.1)
 let recipes = [];
-let excluded = [];      // 점검에서 필수 필드가 비어 화면에서 뺀 항목
-let backTo = 'list';    // 상세 → 뒤로 갈 화면
+let loadFailed = false; // 불러오기 실패(경로·문법 오류)와 결과 없음(0건)을 화면에서 구분하기 위해 (강의 1.2)
+let listShowAll = false; // 목록 '결과 없음'에서 '전체 레시피 보기'를 눌렀을 때
 
 // 데이터 명세서 기준 점검 상수 (data/COOKRCP01_100.xlsx 6_meta 플래그 정의 시트와 같음)
 const REQUIRED = ['id', 'name', 'method', 'category', 'ingredientsText', 'meta'];
@@ -120,12 +123,10 @@ const ALLOWED = {
   method:   ['끓이기', '기타', '볶기', '굽기', '찌기'],
   category: ['국&찌개', '반찬', '밥', '일품'],
   level:    ['쉬움', '보통', '어려움'],
-  flag:     ['J', 'A'],
 };
 const TYPES = { id: 'number', name: 'string', method: 'string', category: 'string',
                 time: 'number', level: 'string', calories: 'number', sodium: 'number',
-                image: 'string', ingredientsText: 'string', tip: 'string', flag: 'string' };
-const isNone = v => v === null || v === undefined || v === '' || (Array.isArray(v) && !v.length);
+                image: 'string', ingredientsText: 'string', tip: 'string' };
 
 // 배열 여부·건수·필드·id·빈 값·자료형·허용값·필수 필드·출처 플래그를 Console에 출력하고, 필수 필드가 빠진 항목은 제외해 돌려줌 (강의 1.3.2)
 function checkData(data, source) {
@@ -135,37 +136,37 @@ function checkData(data, source) {
   console.log('데이터 건수:', data.length);
   console.log('첫 번째 객체의 필드:', Object.keys(data[0] || {}));
   console.log('첫 번째 id와 자료형:', data[0]?.id, typeof data[0]?.id);
-  const warn = [], ids = new Set(), nulls = {}, src = {}, who = {}, flags = {}, tests = [];
+  const warn = [], ids = new Set(), nulls = {}, src = {}, who = {};
   data.forEach(p => {
     if (ids.has(p.id)) warn.push(`id 중복: ${p.id}`);
     ids.add(p.id);
     Object.entries(TYPES).forEach(([k, type]) => {
       const v = p[k];
-      if (isNone(v)) { nulls[k] = (nulls[k] || 0) + 1; return; }
+      if (v === null || v === undefined || v === '') { nulls[k] = (nulls[k] || 0) + 1; return; }
       if (typeof v !== type) warn.push(`자료형: id ${p.id} ${k} = ${JSON.stringify(v)} (${type} 이어야 함)`);
       else if (ALLOWED[k] && !ALLOWED[k].includes(v)) warn.push(`허용값 밖: id ${p.id} ${k} = "${v}"`);
     });
-    if (!p.steps?.length) nulls.steps = (nulls.steps || 0) + 1;
-    // 출처 플래그(meta) 점검 — 강의 1.4.4: source 누락·허용값 밖, flag(J/A)와 source가 맞는지, 작성 주체 집계
+    // 출처 플래그(meta) 점검 — 강의 1.4.4: source 누락·허용값 밖, 작성 주체 집계
     const s = p.meta?.source;
     if (!s) warn.push(`출처 플래그 누락: id ${p.id} meta.source`);
     else if (!['json', 'api'].includes(s)) warn.push(`출처 플래그 허용값 밖: id ${p.id} meta.source = "${s}"`);
-    else if (p.flag && p.flag !== FLAG_OF[s]) warn.push(`flag 불일치: id ${p.id} flag "${p.flag}" ↔ meta.source "${s}"`);
     src[s || '누락'] = (src[s || '누락'] || 0) + 1;
-    flags[p.flag || '누락'] = (flags[p.flag || '누락'] || 0) + 1;
+    // API 플래그 점검 — source "api"면 api 필드가 있어야 하고, 그 필드는 JSON에 값을 두지 않음 (강의 1.4.4 meta.api)
+    const apiFields = p.meta?.api || [];
+    if (s === 'api' && !apiFields.length) warn.push(`API 플래그: id ${p.id} source "api"인데 meta.api가 비어 있음`);
+    if (s !== 'api' && apiFields.length) warn.push(`API 플래그: id ${p.id} source "${s}"인데 meta.api에 필드가 있음`);
+    apiFields.filter(k => p[k] !== null && p[k] !== undefined && p[k] !== '')
+      .forEach(k => warn.push(`API 플래그: id ${p.id} ${k}은 API 필드인데 JSON에 값이 있음 (API 필드는 JSON에 값을 두지 않음)`));
     const w = p.hashtag === '팀작성' ? '팀작성' : '식약처';
     who[w] = (who[w] || 0) + 1;
-    if (p.meta?.nullTest?.length) tests.push(`${p.id} ${p.name ?? '(이름 없음)'}: ${p.meta.nullTest.join('·')}`);
   });
-  excluded = [];
   const valid = data.filter(p => {
-    const miss = REQUIRED.filter(k => isNone(p[k]));
-    if (miss.length) { warn.push(`필수 필드 누락: id ${p.id} ${miss.join('·')} → 화면에서 제외`); excluded.push({ p, miss }); }
+    const miss = REQUIRED.filter(k => p[k] === null || p[k] === undefined || p[k] === '');
+    if (miss.length) warn.push(`필수 필드 누락: id ${p.id} ${miss.join('·')} → 화면에서 제외`);
     return !miss.length;
   });
   console.log('빈 값(null) 수:', nulls);
-  console.log('항목 출처:', src, '| 플래그:', flags, '| 작성 주체:', who);
-  if (tests.length) console.log(`예외 테스트용으로 일부러 비운 항목 ${tests.length}건 (${(tests.length / data.length * 100).toFixed(0)}%):`, tests);
+  console.log('항목 출처:', src, '| 작성 주체:', who);
   if (warn.length) warn.forEach(w => console.warn(w)); else console.log('경고: 없음');
   console.log('화면에 표시할 건수:', valid.length);
   console.groupEnd();
@@ -173,383 +174,281 @@ function checkData(data, source) {
 }
 
 // ② fetch: 파일을 요청하고 응답을 JavaScript 배열로 변환. 실패하면 catch에서 오류 화면 (강의 1.2 "불러오기 실패")
-// 저장 JSON으로 먼저 화면을 그리고 → 식약처 API로 최신 값을 받아 덮어씀. API가 실패해도 저장 JSON 화면은 그대로 유지
-function fetchJson(urls) {
-  const [url, ...rest] = urls;
-  return fetch(url)
+function loadData() {
+  fetch(DATA_URL)
     .then(response => {
-      if (!response.ok) throw new Error(`HTTP ${response.status} (${url})`);
-      dataUrl = url;
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
-    .catch(error => rest.length ? fetchJson(rest) : Promise.reject(error));
-}
-
-function loadData() {
-  $('#count').textContent = '불러오는 중…';
-  $('#list-state').innerHTML = '';
-  fetchJson(DATA_URLS)
     .then(data => {
-      recipes = checkData(data, dataUrl);
-      renderAll();
-      return loadApi();
+      recipes = checkData(data, DATA_URL);
+      renderHomeReco();
+      if ($('#list').classList.contains('on')) renderList();
     })
     .catch(error => {
+      loadFailed = true;
       console.error('[불러오기 실패]', error);
       showLoadError(error);
     });
 }
 
-function renderAll() {
-  renderSrcNote();
-  renderHomeReco();
-  syncSampleLinks();
-  if ($('#list').classList.contains('on')) renderList();
-  if ($('#search').classList.contains('on')) renderSearch();
-}
-
-// 식약처 API 요청: 응답 한 페이지 → { total, rows }
-function fetchApiPage(start) {
-  return fetch(`${API_BASE}/${start}/${start + API_PAGE - 1}`)
-    .then(response => {
-      if (!response.ok) throw new Error(`API HTTP ${response.status}`);
-      return response.json();
-    })
-    .then(data => {
-      const body = data.COOKRCP01 || data;
-      const res = body.RESULT || {};
-      if (res.CODE !== 'INFO-000') throw new Error(`API ${res.CODE} ${res.MSG}`); // 인증키 오류 등
-      return { total: Number(body.total_count), rows: body.row || [] };
-    });
-}
-
-// API 전체를 받아 식약처 레시피(팀 작성 제외)에 최신 값을 덮어씀
-function loadApi() {
-  console.group('[API 연결]', API_BASE.replace(API_KEY, '인증키'));
-  return fetchApiPage(1)
-    .then(first => {
-      const rest = [];
-      for (let s = 1 + API_PAGE; s <= first.total; s += API_PAGE) rest.push(fetchApiPage(s));
-      return Promise.all(rest).then(pages => [first, ...pages].flatMap(p => p.rows));
-    })
-    .then(rows => {
-      const byId = new Map(rows.map(r => [Number(r.RCP_SEQ), r]));
-      let n = 0;
-      recipes.forEach(p => {
-        if (isTeam(p)) return;
-        const a = byId.get(p.id);
-        if (a) { applyApi(p, a); n++; }
-      });
-      apiState = '연결됨';
-      console.log(`API 전체 ${rows.length}건 수신 → 우리 레시피 ${n}건 갱신 (flag J → A)`);
-    })
-    .catch(error => {
-      apiState = '실패';
-      console.warn('API 연결 실패 → 저장 JSON(J)으로 표시', error.message);
-    })
-    .finally(() => { console.groupEnd(); renderAll(); refreshDetail(); });
-}
-
-// API 한 건(a) → 화면용 필드. 조리시간·난이도는 API에 없어서 저장 JSON의 더미 값 유지
-// meta.nullTest에 적힌 필드는 예외 화면 확인용으로 일부러 비운 값이라 API 값으로 채우지 않음
-const API_FIELD = { RCP_NM: 'name', RCP_WAY2: 'method', RCP_PAT2: 'category', INFO_WGT: 'weight',
-  INFO_ENG: 'calories', INFO_CAR: 'carb', INFO_PRO: 'protein', INFO_FAT: 'fat', INFO_NA: 'sodium',
-  HASH_TAG: 'hashtag', ATT_FILE_NO_MAIN: 'image', ATT_FILE_NO_MK: 'imageStep', RCP_PARTS_DTLS: 'ingredientsText', RCP_NA_TIP: 'tip' };
-const API_NUM = ['weight', 'calories', 'carb', 'protein', 'fat', 'sodium'];
-function applyApi(p, a) {
-  const keep = p.meta?.nullTest || [];
-  const v = k => String(a[k] ?? '').trim();
-  Object.entries(API_FIELD).forEach(([col, key]) => {
-    if (keep.includes(key)) return;
-    p[key] = API_NUM.includes(key) ? (v(col) ? Number(v(col)) : null) : (v(col) || null);
-  });
-  if (!keep.includes('steps')) {
-    const steps = [];
-    for (let i = 1; i <= 20; i++) {
-      const n = String(i).padStart(2, '0');
-      if (v(`MANUAL${n}`)) steps.push({ text: v(`MANUAL${n}`).replace(/\n/g, ' '), image: v(`MANUAL_IMG${n}`) || null });
-    }
-    p.steps = steps;
-  }
-  p.flag = 'A';
-  p.meta = { ...p.meta, source: 'api', real: [], dummy: ['time', 'level'],
-             api: [...Object.values(API_FIELD), 'steps'].filter(k => !keep.includes(k)),
-             note: `식약처 API 실시간 (${new Date().toLocaleDateString('ko-KR')})` };
-}
-
-// 와이어프레임 예외: 레시피 데이터 로드 실패 → 오류 상태와 다시 시도, 입력 중인 재료는 유지
+// 불러오기 실패 화면: 데이터 자체가 없는 상태 (결과 없음과 다름 — 조건이 아니라 경로·문법을 확인해야 함)
+const loadErrorHtml = msg => `<div class="err"><b>데이터를 불러오지 못했어요</b><br>
+    ${location.protocol === 'file:' ? 'HTML을 직접 열면(file://) 브라우저가 JSON 읽기를 막습니다. 로컬 서버(Live Server) 또는 GitHub Pages 배포 주소에서 확인하세요.' : '파일 경로(data/recipes.json)와 JSON 문법을 확인하세요.'}
+    ${msg ? `<br><span class="mu">${esc(msg)}</span>` : ''}</div>`;
 function showLoadError(error) {
   $('#count').textContent = '불러오기 실패';
-  $('#count-src').textContent = '';
   $('#cards').innerHTML = '';
-  $('#list-state').innerHTML = `<div class="err"><b>데이터를 불러오지 못했어요</b><br>
-    ${location.protocol === 'file:' ? 'HTML을 직접 열면(file://) 브라우저가 JSON 읽기를 막습니다. GitHub Pages 배포 주소에서 확인하세요.' : '파일 경로(data/recipes.json)와 JSON 문법을 확인하세요.'}
-    <br><span class="mu">${esc(error.message)}</span>
-    <button class="btn dk" type="button" id="retry">다시 시도</button></div>`;
-  $('#retry').addEventListener('click', loadData);
+  $('#list-state').innerHTML = loadErrorHtml(error.message);
+  $('#rec-count').textContent = '불러오기 실패';
+  $('#rec-cards').innerHTML = '';
+  $('#rec-state').innerHTML = loadErrorHtml(error.message);
 }
 
-// ---------- 출처 표식 (강의 1.4.5): 데이터의 flag·meta만 보고 결정 ----------
-// 항목 플래그: 저장 JSON = J, 식약처 API = A  (JSON의 flag 필드, 없으면 meta.source로 판단)
-const FLAG_OF = { json: 'J', api: 'A' };
-const FLAG_LABEL = { J: '저장 JSON', A: '식약처 API' };
-const flagOf = p => p.flag || FLAG_OF[p.meta?.source] || 'J';
-const flagBadge = p => { const f = flagOf(p); return `<span class="flag flag-${f.toLowerCase()}" title="${FLAG_LABEL[f]}">${f}</span>`; };
-
-// 필드 유형: J(저장 JSON의 실제 값) · A(API 값) · D(더미) · 값이 없으면 null
+// ---------- 출처 표식 (강의 1.4.5): 데이터의 meta만 보고 결정 ----------
+// 필드 유형 판단: meta 목록에서 찾아 api → real → dummy 순으로 확인
 function fieldType(p, key) {
   const m = p.meta || {};
-  if (isNone(p[key])) return 'none';
   if ((m.api || []).includes(key)) return 'api';
   if ((m.real || []).includes(key)) return 'real';
   if ((m.dummy || []).includes(key)) return 'dummy';
   return '';
 }
-const FIELD_TYPE_LABEL = { real: 'J', api: 'A', dummy: 'D', none: 'null' };
-const FIELD_TYPE_TITLE = { real: '저장 JSON 실제 값', api: '식약처 API 값', dummy: '더미 값', none: '빈 값(null)' };
-const typeTag = type => type ? `<span class="type-tag type-${type}" title="${FIELD_TYPE_TITLE[type]}">${FIELD_TYPE_LABEL[type]}</span>` : '';
+const FIELD_TYPE_LABEL = { real: '실제', dummy: '더미', api: 'API', fallback: '대체' };
+const typeTag = type => type ? `<span class="type-tag type-${type}">${FIELD_TYPE_LABEL[type]}</span>` : '';
 const tagOf = (p, key) => typeTag(fieldType(p, key));
-const LEGEND = `<p class="legend"><span class="flag flag-j">J</span> 저장 JSON <span class="flag flag-a">A</span> 식약처 API
-  <span class="type-tag type-dummy">D</span> 더미 <span class="type-tag type-none">null</span> 빈 값</p>`;
-
 // 항목 출처 칩: 식약처 원본 / 팀 작성 (강의 1.4.2 "행마다 출처가 다르면 ID별 출처도 기록")
 const isTeam = p => p.hashtag === '팀작성';
 const originChip = p => isTeam(p)
   ? '<span class="src-chip team">팀 작성</span>'
   : '<span class="src-chip">식약처</span>';
+const sourceChip = p => (p.meta?.source === 'api')
+  ? '<span class="type-tag type-api">API</span>'
+  : '<span class="type-tag type-real">JSON</span>';
 const metaSummary = p => {
   const m = p.meta || {};
-  return `J ${(m.real || []).length}개 · A ${(m.api || []).length}개 · D ${(m.dummy || []).length}개 필드`;
+  return `실제 ${(m.real || []).length}개 · 더미 ${(m.dummy || []).length}개 · API ${(m.api || []).length}개 필드`;
 };
 
-// J/A 항목 수 (flag 기준)
-function sourceSummary() {
-  const a = recipes.filter(p => flagOf(p) === 'A').length;
-  const state = apiState === '연결 중' ? ' · API 연결 중…' : apiState === '실패' ? ' · API 연결 실패' : '';
-  return `A ${a} · J ${recipes.length - a}${state}`;
-}
-// 홈 하단 데이터 출처 안내를 실제 데이터 기준으로 갱신
-function renderSrcNote() {
-  const el = $('#home-src');
-  if (!el || !recipes.length) return;
-  const team = recipes.filter(isTeam).length;
-  el.textContent = `레시피 데이터: 식품의약품안전처 「조리식품의 레시피 DB」 ${recipes.length - team}건 + 팀 작성 ${team}건 (${sourceSummary()}).`
-    + (excluded.length ? ` 필수 값이 비어 ${excluded.length}건은 화면에서 뺐어요.` : '')
-    + ' 조리시간·난이도는 실습용 더미(D)이며, 게시물·좋아요·별점은 와이어프레임용 예시입니다. 자세한 구분은 README 참고.';
-}
-
-// ---------- null 공통 표시 규칙 ----------
-// 글자·숫자: "정보 없음"(회색) + null 태그 / 사진: 회색 자리표시 + "사진 없음" / 목록: 빈 배열이면 안내 문장
-const NONE = '<span class="none">정보 없음</span>';
+// ---------- 유틸 ----------
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const info = v => isNone(v) ? NONE : esc(v);
-const num = (v, unit) => isNone(v) ? NONE : `${v}${unit}`;
-const timeText = p => isNone(p.time) ? '<span class="none">시간 정보 없음</span>' : `${p.time}분`;
-const levelText = p => isNone(p.level) ? '<span class="none">난이도 정보 없음</span>' : esc(p.level);
-const metaLine = (p, keys) => keys.map(k => ({
-  time: `${timeText(p)}${tagOf(p, 'time')}`, level: `${levelText(p)}${tagOf(p, 'level')}`,
-  method: `${info(p.method)}${tagOf(p, 'method')}`, category: `${info(p.category)}${tagOf(p, 'category')}`,
-}[k])).join(' · ');
-
 // 식약처 이미지는 http:// 링크 → https 배포 주소에서 혼합 콘텐츠로 막히므로 표시할 때만 https로 바꿈 (JSON 원본값은 그대로 유지)
 const imgUrl = u => u ? u.replace(/^http:\/\//, 'https://') : '';
-// 사진: 로딩 중에는 회색 자리표시가 먼저 보이고(와이어프레임 '느린 네트워크' 예외), 값이 없거나 깨지면 같은 자리표시에 "사진 없음"
-const noImg = label => `<span class="no-img"><i aria-hidden="true">🍽</i>${label}</span>`;
-function imgBox(p, cls) {
-  if (isNone(p.image)) return `<div class="img ${cls} is-empty">${noImg('사진 없음')}</div>`;
-  return `<div class="img ${cls} has-img"><img src="${esc(imgUrl(p.image))}" alt="${esc(p.name)} 사진" loading="lazy" onerror="imgFail(this)"></div>`;
+function imgBox(p, cls, label) {
+  if (!p.image) return `<div class="img ${cls}">${label}</div>`;
+  return `<div class="img ${cls} has-img"><img src="${esc(imgUrl(p.image))}" alt="${esc(p.name)} 사진" loading="lazy"
+    onerror="this.parentNode.classList.remove('has-img');this.replaceWith('${label} (이미지 없음)')"></div>`;
 }
-// 주소는 있는데 사진이 깨진 경우도 같은 자리표시로
-function imgFail(img) {
-  const box = img.parentNode;
-  box.classList.remove('has-img');
-  box.classList.add('is-empty');
-  box.innerHTML = noImg(box.offsetWidth < 120 ? '사진 없음' : '사진을 불러오지 못했어요'); // 작은 썸네일은 짧게
-}
+const info = v => (v === null || v === undefined || v === '') ? '정보 없음' : esc(v);
+const num = (v, unit) => (v === null || v === undefined) ? '정보 없음' : `${v}${unit}`;
 
 // 홈의 보유 재료 칩 텍스트 → ['계란','양파','김치']
 const myIngredients = () => $$('#mine .chip').map(c => c.textContent.replace('✕', '').trim()).filter(Boolean);
-// 재료·검색어 비교용: 공백 제거, 별칭 통일 (data/ingredients.json의 aliases와 같은 규칙: 달걀 → 계란)
-const normText = s => String(s ?? '').replace(/\s/g, '').replace(/달걀/g, '계란').toLowerCase();
 // 레시피 재료 텍스트에 보유 재료 이름이 몇 개 들어 있는지 (재료 매칭 로직 고도화는 이후 주차)
+// 같은 재료의 다른 표기를 맞춤 (ingredients.json의 aliases와 같은 쌍 — 사전 연동은 이후 주차)
+const alias = t => String(t ?? '').replace(/달걀/g, '계란').replace(/참치캔/g, '참치').replace(/묵은지/g, '김치');
 function matchCount(p, mine) {
-  const t = normText(p.ingredientsText);
-  return mine.filter(m => t.includes(normText(m))).length;
+  const t = alias(p.ingredientsText);
+  return mine.map(alias).filter(m => t.includes(m)).length;
 }
-const matchBadge = (hit, total) => hit && hit === total ? '<span class="bg a">보유 재료 모두 포함</span>'
-  : hit ? `<span class="bg">보유 재료 ${hit}개 포함</span>` : '<span class="chip gr">보유 재료 없음</span>';
 
 // ④ 렌더링: 원본 배열 → 카드 HTML → ⑤ #cards. 원본을 바꾸지 않고 결과 배열을 새로 만듦
-// 목록 = 보유 재료가 1개 이상 들어간 레시피만 (만들 수 있는 요리 찾기 결과)
+// 보유 재료가 1개 이상 들어간 레시피만 보여주고, 0건이면 '결과 없음' 화면 (강의 1.2: 조건을 넓히는 안내)
 function renderList() {
   const mine = myIngredients();
   $('#list-mine').innerHTML = mine.map(m => `<span class="chip on">${esc(m)}</span>`).join('');
-  if (!recipes.length) return;
-  const results = recipes
-    .map(p => ({ p, hit: matchCount(p, mine) }))
-    .filter(r => r.hit > 0)
+  if (!recipes.length) { if (!loadFailed) $('#count').textContent = '불러오는 중…'; return; }
+  const scored = recipes.map(p => ({ p, hit: matchCount(p, mine) }));
+  const results = (listShowAll ? scored : scored.filter(r => r.hit > 0))
     .sort((a, b) => b.hit - a.hit || a.p.name.localeCompare(b.p.name, 'ko'));
+  const team = recipes.filter(isTeam).length;
   $('#count').textContent = `${results.length}건`;
-  $('#count-src').textContent = `(전체 ${recipes.length} · ${sourceSummary()}${excluded.length ? ` · 점검 제외 ${excluded.length}` : ''})`;
-  $('#list-legend').innerHTML = LEGEND;
+  $('#count-src').textContent = listShowAll
+    ? `(전체 · 식약처 ${recipes.length - team} · 팀 작성 ${team})`
+    : `(전체 ${recipes.length}건 중 보유 재료가 들어간 레시피)`;
   $('#cards').innerHTML = results.map(({ p, hit }) => card(p, hit, mine.length)).join('');
-  $('#list-state').innerHTML = results.length ? '' : listEmpty();
+  $('#list-state').innerHTML = results.length ? '' : emptyList(mine);
 }
 
-function card(p, hit, total, dim) {
-  return `<div class="card${dim ? ' dim' : ''}" data-go="detail" data-id="${p.id}">
-    ${imgBox(p, '')}
+function card(p, hit, total) {
+  const badge = hit && hit === total ? '<span class="bg a">보유 재료 모두 포함</span>'
+              : hit ? `<span class="bg">보유 재료 ${hit}개 포함</span>` : '';
+  return `<div class="card" data-go="detail" data-id="${p.id}">
+    ${imgBox(p, '', '요리 사진')}
     <div>
-      <b>${esc(p.name)}</b> ${flagBadge(p)} ${originChip(p)}
-      <p class="mu">${metaLine(p, ['time', 'level', 'category'])}</p>
-      ${matchBadge(hit, total)}
+      <b>${esc(p.name)}</b> ${originChip(p)}
+      <p class="mu">${p.time}분${tagOf(p, 'time')} · ${esc(p.level)}${tagOf(p, 'level')} · ${esc(p.category)}${tagOf(p, 'category')}</p>
+      ${badge}
     </div>
     <span>☆</span>
   </div>`;
 }
 
-// 와이어프레임 예외: 결과 0건 → 입력 재료 요약 유지, "이 재료를 추가하면…"과 추천 재료
-function listEmpty() {
-  const sug = $$('#suggest .chip').map(c => c.textContent.replace('+', '').trim());
-  return `<div class="box empty"><b>보유 재료로 만들 수 있는 요리가 없어요</b>
-    <p class="mu">이 재료를 추가하면 만들 수 있는 요리가 늘어나요</p>
-    <div class="row" style="justify-content:center">${sug.map(s => `<span class="chip add">+ ${esc(s)}</span>`).join('') || '<span class="mu">추천 재료 없음</span>'}</div>
-    <button class="btn" data-go="home">재료 다시 고르기</button></div>`;
+// 결과 없음 화면 (목록): 데이터는 있는데 조건에 맞는 항목이 0건 → 조건을 넓히는 안내 + 바로 할 수 있는 행동
+function emptyList(mine) {
+  return `<div class="box empty" style="text-align:center"><b>${mine.length ? `${mine.map(esc).join(' · ')}(으)로 만들 수 있는 레시피가 없어요` : '보유 재료를 먼저 골라 주세요'}</b>
+    <p class="mu" style="margin-top:6px">재료 이름을 레시피에 적힌 대로(예: 달걀 → 계란, 참치캔 → 참치) 바꾸거나 다른 재료를 추가해 보세요.</p>
+    <button class="btn" data-go="home">홈에서 재료 바꾸기</button>
+    <button class="btn dk" id="show-all">전체 레시피 ${recipes.length}건 보기</button></div>`;
 }
+document.addEventListener('click', e => {
+  if (e.target.closest('#show-all')) { listShowAll = true; renderList(); }
+});
+
+// 검색 화면 (레시피 탭): 이름·재료 텍스트로 검색. 결과 없음과 불러오기 실패를 다른 화면으로 (강의 1.2)
+function searchRecipes() {
+  const raw = $('#rec-q').value.trim();
+  const q = norm(alias(raw));
+  if (loadFailed) return; // showLoadError()가 이미 그림
+  if (!recipes.length) { $('#rec-count').textContent = '불러오는 중…'; return; }
+  if (!q) {
+    $('#rec-count').textContent = `검색어를 입력하면 레시피 ${recipes.length}건에서 찾아요`;
+    $('#rec-cards').innerHTML = ''; $('#rec-state').innerHTML = '';
+    return;
+  }
+  const mine = myIngredients();
+  const hits = recipes.filter(p => norm(p.name).includes(q) || norm(alias(p.ingredientsText)).includes(q))
+    .map(p => ({ p, hit: matchCount(p, mine) }))
+    .sort((a, b) => (norm(b.p.name).includes(q) - norm(a.p.name).includes(q)) || b.hit - a.hit || a.p.name.localeCompare(b.p.name, 'ko'));
+  $('#rec-count').innerHTML = `<b>"${esc(raw)}"</b> 레시피 ${hits.length}건`;
+  $('#rec-cards').innerHTML = hits.map(({ p, hit }) => `<div class="card" data-go="detail" data-id="${p.id}">
+    ${imgBox(p, '', 'IMG')}
+    <div><b>${esc(p.name)}</b> ${originChip(p)}<p class="mu">${p.time}분${tagOf(p, 'time')} · ${esc(p.level)}${tagOf(p, 'level')}</p>
+      ${hit ? `<span class="bg${hit === mine.length ? ' a' : ''}">보유 재료 ${hit}개 포함</span>` : ''}</div></div>`).join('');
+  $('#rec-state').innerHTML = hits.length ? '' : `<div class="box empty" style="text-align:center"><b>"${esc(raw)}"에 맞는 레시피가 없어요</b>
+    <p class="mu" style="margin-top:6px">요리 이름의 일부(예: 볶음밥)나 재료 이름(예: 두부)으로 다시 찾아보세요. 띄어쓰기는 무시돼요.</p>
+    <button class="btn" data-go="home">재료로 찾기</button></div>`;
+}
+$('#rec-q').addEventListener('input', searchRecipes);
+$('#rec-recent').addEventListener('click', e => {
+  const c = e.target.closest('.chip');
+  if (!c) return;
+  $('#rec-q').value = c.textContent;
+  searchRecipes();
+});
 
 // 홈 "지금 재료로 바로 만들 수 있어요": 보유 재료 매칭 상위 2건
 function renderHomeReco() {
   const box = $('#home-reco');
   if (!box || !recipes.length) return;
   const mine = myIngredients();
-  const top = recipes.map(p => ({ p, hit: matchCount(p, mine) })).filter(r => r.hit > 0)
-    .sort((a, b) => b.hit - a.hit || a.p.name.localeCompare(b.p.name, 'ko')).slice(0, 2);
-  box.innerHTML = top.length ? top.map(({ p, hit }) => `<article class="big-card" data-go="detail" data-id="${p.id}">
-    ${imgBox(p, 'big-img')}
-    <div class="big-body">${matchBadge(hit, mine.length)}
-      <b>${esc(p.name)} ${flagBadge(p)}</b> ${originChip(p)}<p class="mu">${metaLine(p, ['time', 'level'])}</p></div>
-  </article>`).join('')
-    : `<div class="box empty"><b>지금 재료로 만들 수 있는 요리가 없어요</b>
-        <p class="mu">${mine.length < 2 ? '재료를 2개 이상 넣어 주세요' : '아래 추천 재료를 추가해 보세요'}</p></div>`;
+  const top = recipes.map(p => ({ p, hit: matchCount(p, mine) })).sort((a, b) => b.hit - a.hit).slice(0, 2);
+  box.innerHTML = top.map(({ p, hit }) => `<article class="big-card" data-go="detail" data-id="${p.id}">
+    ${imgBox(p, 'big-img', '레시피 사진')}
+    <div class="big-body"><span class="bg${hit === mine.length && hit ? ' a' : ''}">${hit ? `보유 재료 ${hit}개 포함` : '재료 확인 필요'}</span>
+      <b>${esc(p.name)}</b> ${originChip(p)}<p class="mu">${p.time}분${tagOf(p, 'time')} · ${esc(p.level)}${tagOf(p, 'level')}</p></div>
+  </article>`).join('');
 }
 
-// ---------- 레시피 검색 (와이어프레임: 검색 탭) ----------
-// 검색어 입력 전: 최근 검색어만 표시(X 삭제) / 입력 후: 레시피 N·게시물 N 탭, 내 냉장고 기준 배지, 보유 재료 없으면 회색
-// 결과 0건: "이름 대신 재료로 찾아볼까요?"와 홈 이동
-const RECENT_KEY = 'fridge.recentSearch';
-let recentMemory = null; // 로컬 저장소를 못 쓸 때 이번 실행에만 보관
-function getRecent() {
-  if (recentMemory) return recentMemory;
-  try { return JSON.parse(localStorage.getItem(RECENT_KEY)) || ['김치볶음밥', '계란말이']; }
-  catch { recentMemory = ['김치볶음밥', '계란말이']; return recentMemory; }
-}
-function setRecent(list) {
-  try { localStorage.setItem(RECENT_KEY, JSON.stringify(list)); recentMemory = null; }
-  catch { recentMemory = list; }
-}
-function addRecent(q) {
-  q = q.trim();
-  if (q) setRecent([q, ...getRecent().filter(x => x !== q)].slice(0, 8));
-}
+// =====================================================================
+// 심화: 식약처 Open API 연동 (강의 1.4.1 "외부 API 연동" · 1.4.4 meta.api · 1.4.5 '대체' 표식)
+// 대상: meta.source === "api" 항목(팀 작성 24건)만. 요리명으로 레시피 DB를 검색해 meta.api에 적힌 필드만 채움.
+// 식약처 76건은 저장 JSON과 같은 데이터셋이므로 호출하지 않음. API 값은 실행 중에만 쓰고 JSON·CSV에는 저장하지 않음.
+// =====================================================================
+const API_BASE = 'https://openapi.foodsafetykorea.go.kr/api';          // http는 GitHub Pages(https)에서 혼합 콘텐츠로 차단
+const API_SERVICE = 'COOKRCP01';                                        // 조리식품의 레시피 DB
+const API_TIMEOUT = 5000;
+// 응답 필드 → recipes.json 필드 (meta.api에 적힌 7개)
+const API_FIELD_MAP = { calories: 'INFO_ENG', carb: 'INFO_CAR', protein: 'INFO_PRO', fat: 'INFO_FAT', sodium: 'INFO_NA',
+                        image: 'ATT_FILE_NO_MAIN', tip: 'RCP_NA_TIP' };
+const apiCache = new Map(); // id → 결과. 같은 항목을 다시 열면 재요청하지 않음 (새로고침하면 사라짐)
 
-function searchRecipes(q) {
-  const nq = normText(q);
-  const mine = myIngredients();
-  return recipes
-    .map(p => ({ p, inName: normText(p.name).includes(nq), inIng: normText(p.ingredientsText).includes(nq), hit: matchCount(p, mine) }))
-    .filter(r => r.inName || r.inIng)
-    .sort((a, b) => b.inName - a.inName || b.hit - a.hit || a.p.name.localeCompare(b.p.name, 'ko'));
-}
-
-function renderSearch() {
-  const q = $('#rq').value.trim();
-  const recent = getRecent();
-  $('#recent').innerHTML = recent.length
-    ? recent.map(r => `<span class="chip recent"><button type="button" data-q="${esc(r)}">${esc(r)}</button><button type="button" class="x" data-del="${esc(r)}" aria-label="${esc(r)} 삭제">✕</button></span>`).join('')
-    : '<span class="mu">최근 검색어가 없어요</span>';
-  $('#recent-note').hidden = !recentMemory;
-  $('#search-body').hidden = !q;   // 입력 전에는 최근 검색어만
-  $('#recent-wrap').hidden = !!q;
-  if (!q) return;
-  if (!recipes.length) { $('#r-results').innerHTML = '<p class="mu">레시피를 불러오는 중이에요…</p>'; return; }
-
-  const mine = myIngredients();
-  const found = searchRecipes(q);
-  $('#rq-n').textContent = found.length;
-  $('#r-results').innerHTML = found.length
-    ? `<p class="mu" style="margin-top:8px">"${esc(q)}" 레시피 ${found.length}건 · ${sourceSummary()}</p>${LEGEND}`
-      + found.map(({ p, hit }) => card(p, hit, mine.length, hit === 0)).join('')
-    : `<div class="box empty"><b>"${esc(q)}"에 맞는 레시피가 없어요</b>
-        <p class="mu">이름 대신 재료로 찾아볼까요?</p>
-        <button class="btn dk" data-go="home">재료로 찾기 (홈)</button></div>`;
-
-  // 게시물 탭: HTML 예시 게시물을 같은 검색어로 거름
-  const nq = normText(q);
-  let pn = 0;
-  $$('#p-results .card').forEach(c => { const hit = normText(c.dataset.q).includes(nq); c.hidden = !hit; if (hit) pn++; });
-  $('#pq-n').textContent = pn;
-  $('#p-empty').hidden = pn > 0;
-  $('#p-empty b').textContent = `"${q}"에 맞는 게시물이 없어요`;
-}
-
-$('#rq').addEventListener('input', renderSearch);
-$('#rq').addEventListener('keydown', e => { if (e.key === 'Enter') { addRecent($('#rq').value); e.target.blur(); } });
-$('#rq').addEventListener('change', () => addRecent($('#rq').value));
-$('#recent').addEventListener('click', e => {
-  const del = e.target.closest('[data-del]');
-  if (del) { setRecent(getRecent().filter(x => x !== del.dataset.del)); return renderSearch(); }
-  const pick = e.target.closest('[data-q]');
-  if (pick) { $('#rq').value = pick.dataset.q; addRecent(pick.dataset.q); renderSearch(); }
-});
-// 상세로 들어가기 전에 검색어를 최근 검색어에 남김
-$('#search').addEventListener('click', e => { if (e.target.closest('[data-go="detail"]')) addRecent($('#rq').value); }, true);
-
-// ---------- 상세 ----------
-// id로 원본 배열에서 찾음 (강의 1.3.1 — id 중복이면 다른 레시피가 열리므로 checkData가 중복을 잡음)
-// 와이어프레임 예외: 존재하지 않는 레시피 id → "레시피를 찾을 수 없어요"와 목록·홈 이동
-let detailId = null;
-function openDetail(id) {
-  detailId = id;
-  const p = recipes.find(r => r.id === id);
-  $('#d-back').textContent = backTo === 'search' ? '← 검색으로' : '← 목록으로';
-  $('#d-back').dataset.go = backTo;
-  $('#d-found').hidden = !p;
-  $('#d-missing').hidden = !!p;
-  if (!p) {
-    $('#d-missing-msg').textContent = recipes.length ? '목록에서 다른 레시피를 골라 주세요.' : '레시피를 아직 불러오지 못했어요.';
-    return;
+// 요리명으로 검색해 { ok, vals, seq, count, at } 또는 { ok:false, reason, at } 반환. 실패해도 throw하지 않음
+async function fetchApi(p) {
+  if (apiCache.has(p.id)) return apiCache.get(p.id);
+  let result;
+  if (typeof API_KEY === 'undefined' || !API_KEY || API_KEY.startsWith('YOUR_')) {
+    result = { ok: false, reason: '인증키 없음 (js/config.js)' };
+  } else {
+    const url = `${API_BASE}/${API_KEY}/${API_SERVICE}/json/1/5/RCP_NM=${encodeURIComponent(p.name)}`;
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), API_TIMEOUT);
+    try {
+      const res = await fetch(url, { signal: ctrl.signal });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const body = (await res.json())[API_SERVICE] || {};
+      const code = body.RESULT?.CODE || '';
+      if (code.startsWith('ERROR')) throw new Error(`${code} ${body.RESULT?.MSG || ''}`.trim());
+      const rows = body.row || [];
+      const row = rows.find(r => (r.RCP_NM || '').trim() === p.name) || null; // 부분 일치 결과 중 이름이 정확히 같은 건만
+      if (!row) {
+        result = { ok: false, reason: rows.length ? `"${p.name}"과 이름이 정확히 같은 레시피 없음 (유사 ${rows.length}건)` : `결과 없음 (${code || 'row 없음'})` };
+      } else {
+        const vals = {};
+        Object.entries(API_FIELD_MAP).forEach(([k, src]) => {
+          const v = String(row[src] ?? '').trim();
+          if (v === '') { vals[k] = null; return; }
+          vals[k] = (k === 'image' || k === 'tip') ? v : (Number.isNaN(Number(v)) ? null : Number(v));
+        });
+        result = { ok: true, vals, seq: row.RCP_SEQ, count: rows.length };
+      }
+    } catch (e) {
+      result = { ok: false, reason: e.name === 'AbortError' ? `${API_TIMEOUT / 1000}초 타임아웃`
+               : e instanceof TypeError ? '네트워크 오류 또는 CORS 차단 (브라우저 직접 호출 불가)' : e.message };
+    } finally { clearTimeout(timer); }
   }
-  $('#d-img').outerHTML = imgBox(p, 'sq-img').replace('class="img', 'id="d-img" class="img');
-  $('#d-title').innerHTML = `${esc(p.name)} ${flagBadge(p)} ${originChip(p)}`;
-  $('#d-sub').innerHTML = metaLine(p, ['time', 'level', 'method', 'category']);
-  $('#d-src').innerHTML = `출처 ${flagBadge(p)} ${FLAG_LABEL[flagOf(p)]} · ${isTeam(p) ? '팀이 직접 작성한 시연용 레시피' : '식품의약품안전처 조리식품 레시피 DB'} · ${metaSummary(p)}`
-    + (p.meta?.nullTest?.length ? `<br><span class="none">예외 테스트용으로 비운 값: ${p.meta.nullTest.join(', ')}</span>` : '');
-  $('#d-legend').innerHTML = LEGEND;
-  $('#d-ing').innerHTML = `${info(p.ingredientsText)}${tagOf(p, 'ingredientsText')}`;
-  $('#d-steps').innerHTML = p.steps?.length
-    ? p.steps.map(s => `<li>${esc(s.text)}${s.image ? `<div class="img has-img"><img src="${esc(imgUrl(s.image))}" alt="" loading="lazy" onerror="this.parentNode.remove()"></div>` : ''}</li>`).join('') + `<li class="mu">조리 순서${tagOf(p, 'steps')}</li>`
-    : `<li>${NONE.replace('정보 없음', '조리 순서 정보가 없어요')}${typeTag('none')}</li>`;
-  const nutKeys = ['calories', 'carb', 'protein', 'fat', 'sodium'];
-  $('#d-nut').innerHTML = nutKeys.every(k => isNone(p[k]))
-    ? `<span>영양 정보</span><span>${NONE}${typeTag('none')}</span>`
-    : [['열량', num(p.calories, ' kcal'), 'calories'], ['탄수화물', num(p.carb, ' g'), 'carb'],
-       ['단백질', num(p.protein, ' g'), 'protein'], ['지방', num(p.fat, ' g'), 'fat'], ['나트륨', num(p.sodium, ' mg'), 'sodium'], ['중량', num(p.weight, ' g'), 'weight']]
-      .map(([k, v, f]) => `<span>${k}</span><span>${v}${tagOf(p, f)}</span>`).join('');
-  $('#d-tip').innerHTML = `${info(p.tip)}${tagOf(p, 'tip')}`;
-  $('#d-api').textContent = flagOf(p) === 'A' ? `식약처 API에서 받은 값 · ${p.meta.note}`
-    : isTeam(p) ? '팀 작성 레시피 (API 대상 아님, J)'
-    : apiState === '실패' ? 'API 연결 실패 → 저장 JSON(J) 값 표시' : 'API 연결 중… (저장 JSON(J) 값 표시)';
+  result.at = new Date();
+  apiCache.set(p.id, result);
+  if (!result.ok) console.warn('[API 대체]', p.id, p.name, '—', result.reason);
+  else console.log('[API]', p.id, p.name, '→ RCP_SEQ', result.seq, result.vals);
+  return result;
 }
-// API 응답이 늦게 와도 지금 보고 있는 상세를 새 값으로 다시 그림
-function refreshDetail() { if ($('#detail').classList.contains('on') && detailId !== null) openDetail(detailId); }
 
-// HTML 예시 카드(인기 게시물·이번 주 요리·피드) → 원본 레시피가 없으면 "따라 만들기" 비활성 (와이어프레임 예외)
-function syncSampleLinks() {
-  $$('button[data-go="detail"][data-name]').forEach(b => {
-    const ok = recipes.some(r => r.name === b.dataset.name);
-    b.disabled = !ok;
-    if (!ok && b.classList.contains('btn')) b.textContent = '원본 레시피 없음';
-  });
+// ---------- 상세 화면 ----------
+let detailId = null; // 응답이 늦게 와도 다른 레시피 화면에 덮어쓰지 않도록
+
+// 상세: id로 원본 배열에서 찾음 (강의 1.3.1 — id 중복이면 다른 레시피가 열리므로 checkData가 중복을 잡음)
+function openDetail(id) {
+  const p = recipes.find(r => r.id === id);
+  if (!p) return;
+  detailId = id;
+  $('#d-title').innerHTML = `${esc(p.name)} ${originChip(p)}`;
+  $('#d-sub').innerHTML = `${p.time}분${tagOf(p, 'time')} · ${esc(p.level)}${tagOf(p, 'level')} · ${esc(p.method)}${tagOf(p, 'method')} · ${esc(p.category)}${tagOf(p, 'category')}`;
+  $('#d-src').innerHTML = `출처 ${sourceChip(p)} ${isTeam(p) ? '팀이 직접 작성한 시연용 레시피' : '식품의약품안전처 조리식품 레시피 DB'} · ${metaSummary(p)}`;
+  $('#d-ing').innerHTML = `${info(p.ingredientsText)}${tagOf(p, 'ingredientsText')}`;
+  $('#d-steps').innerHTML = p.steps.length
+    ? p.steps.map(s => `<li>${esc(s.text)}${s.image ? `<div class="img has-img"><img src="${esc(imgUrl(s.image))}" alt="" loading="lazy"></div>` : ''}</li>`).join('') + `<li class="mu">조리 순서${tagOf(p, 'steps')}</li>`
+    : '<li class="mu">조리 순서 정보 없음</li>';
+  // 저장 JSON 값으로 먼저 다 그린 뒤, API 항목이면 응답이 오면 해당 필드만 갈아끼움 (화면이 비는 구간 없음)
+  renderDetailApiFields(p, null);
+  if (p.meta?.source === 'api') {
+    $('#d-api').innerHTML = `식약처 레시피 DB에 "${esc(p.name)}" 검색 중…`;
+    fetchApi(p).then(r => { if (detailId === id) renderDetailApiFields(p, r); });
+  } else {
+    $('#d-api').textContent = 'API 미연동 (저장 JSON 항목)';
+  }
+}
+
+// 영양정보·사진·팁 영역 렌더링. r = null(아직 응답 전 또는 JSON 항목) / fetchApi 결과
+// 태그 규칙(강의 1.4.5): JSON 항목은 meta대로 실제/더미, API 항목은 응답값 'API', 실패·값 없음 '대체'
+function renderDetailApiFields(p, r) {
+  const isApi = p.meta?.source === 'api';
+  const got = r && r.ok;
+  const val = f => got ? r.vals[f] : p[f];
+  const tag = f => !isApi ? tagOf(p, f) : (!r ? typeTag('api') : (got && r.vals[f] !== null ? typeTag('api') : typeTag('fallback')));
+  const show = (f, unit) => isApi && !r ? '요청 중…' : num(val(f), unit);
+  // 영양정보: API 항목은 응답 전·실패여도 박스를 숨기지 않고 '정보 없음 [대체]'로 표시
+  const hasNut = isApi || ['calories', 'carb', 'protein', 'fat', 'sodium'].some(f => p[f] !== null);
+  $('#d-nut-box').hidden = !hasNut;
+  if (hasNut) $('#d-nut').innerHTML = [['열량', 'calories', ' kcal'], ['탄수화물', 'carb', ' g'], ['단백질', 'protein', ' g'],
+    ['지방', 'fat', ' g'], ['나트륨', 'sodium', ' mg']]
+    .map(([k, f, u]) => `<span>${k}</span><span>${show(f, u)}${tag(f)}</span>`).join('')
+    + `<span>중량</span><span>${num(p.weight, ' g')}${tagOf(p, 'weight')}</span>`;
+  // 사진
+  const image = val('image');
+  $('#d-img').outerHTML = imgBox({ image, name: p.name }, 'sq-img', isApi && !r ? '사진 요청 중…' : '요리 사진 (1:1)')
+    .replace('class="img', 'id="d-img" class="img');
+  // 팁
+  const tip = val('tip');
+  $('#d-tip-box').hidden = !isApi && !tip;
+  $('#d-tip').innerHTML = tip ? `${esc(tip)}${tag('tip')}` : `${isApi && !r ? '요청 중…' : '정보 없음'}${tag('tip')}`;
+  // API 상태 영역: 요청 시각 + 결과 (강의 1.4.5 "응답 기준 시각 표시")
+  if (isApi && r) {
+    const at = r.at.toLocaleTimeString('ko-KR');
+    $('#d-api').innerHTML = got
+      ? `식약처 레시피 DB · 요청 ${at} · "${esc(p.name)}" 검색 ${r.count}건 중 이름이 같은 1건 사용 (RCP_SEQ ${esc(r.seq)}) ${typeTag('api')}`
+      : `식약처 레시피 DB · 요청 ${at} · ${esc(r.reason)} → 저장 JSON 값으로 대체 ${typeTag('fallback')}`;
+  }
 }
 
 const fromHash = () => { const h = location.hash.slice(1); return h in TAB_OF ? h : 'home'; };

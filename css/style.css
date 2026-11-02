@@ -111,31 +111,7 @@ h3{font-size:16px;margin:0}
 .err{margin-top:12px;padding:12px;border:1px solid #c0392b;background:#fff;font-size:12px}
 .err b{color:#c0392b}
 #list .card .mu .type-tag{margin-left:2px}
-/* 8주차: 출처 플래그 J(저장 JSON) · A(식약처 API) — 색만으로 구분하지 않고 글자를 함께 표시 */
-.flag{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;font-size:11px;font-weight:700;line-height:1;vertical-align:middle;border:1.5px solid var(--ln);font-style:normal}
-.flag-j{background:var(--pn);color:var(--ln)}
-.flag-a{background:var(--dk);color:#fff;border-color:var(--dk)}
-.type-tag.type-real{font-weight:700}
-.type-tag.type-api{font-weight:700}
-.type-tag.type-none{border-style:dotted;color:var(--mu);border-color:var(--mu)}
-.legend{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin:8px 0 0;font-size:11px;color:var(--mu)}
-.legend .type-tag{margin-left:0}
-/* null 공통 표시: 글자는 회색 "정보 없음", 사진은 회색 자리표시 + "사진 없음" */
-.none{color:var(--mu);font-style:normal}
-.img.is-empty{flex-direction:column}
-.no-img{display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--mu);font-size:11px;text-align:center}
-.no-img i{font-style:normal;font-size:20px;opacity:.5}
-.card .no-img{font-size:9px}.card .no-img i{font-size:16px}
-#list .card .no-img{font-size:12px}#list .card .no-img i{font-size:28px}
-.sq-img .no-img,.big-img .no-img{font-size:13px}.sq-img .no-img i,.big-img .no-img i{font-size:36px}
-/* 빈 결과 · 오류 안내 */
-.box.empty{text-align:center}.box.empty .mu{margin-top:4px}
-.err .btn{margin-top:10px}
-/* 검색: 보유 재료가 없는 결과는 회색 (와이어프레임) */
-.card.dim{opacity:.55}
-.card b{word-break:keep-all}
-#search .card .mu{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.chip.recent{display:inline-flex;align-items:center;gap:2px;padding:0}
-.chip.recent button{border:0;background:none;font:inherit;color:inherit;cursor:pointer;padding:3px 4px 3px 10px;min-height:32px}
-.chip.recent .x{padding:3px 10px 3px 4px;color:var(--mu)}
-button[data-go="detail"][disabled]{opacity:.45;cursor:not-allowed}
+/* 결과 없음 화면: 불러오기 실패(.err, 빨간 테두리)와 구분되는 점선 상자 */
+.box.empty{border-style:dashed;border-color:var(--mu)}
+.box.empty .btn{margin-top:8px}
+#search .card .img{font-size:10px}

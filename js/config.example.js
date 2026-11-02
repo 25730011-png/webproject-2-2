@@ -1,0 +1,2 @@
+// js/config.js 의 양식. 키를 바꾸려면 config.js의 API_KEY만 수정
+const API_KEY = 'YOUR_FOODSAFETYKOREA_KEY';
