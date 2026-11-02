@@ -1,5 +1,50 @@
 [
-  {"recipe_id":1,"ingredient_id":3,"required":true,"amount":"1컵"},
-  {"recipe_id":1,"ingredient_id":1,"required":true,"amount":"1개"},
-  {"recipe_id":2,"ingredient_id":5,"required":true,"amount":"150g"}
+ {
+  "flag": "J",
+  "recipe_id": 90003,
+  "ingredient_id": 3,
+  "required": true,
+  "amount": "1컵",
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "required",
+    "amount"
+   ],
+   "api": []
+  }
+ },
+ {
+  "flag": "J",
+  "recipe_id": 90003,
+  "ingredient_id": 1,
+  "required": true,
+  "amount": "1개",
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "required",
+    "amount"
+   ],
+   "api": []
+  }
+ },
+ {
+  "flag": "J",
+  "recipe_id": 90023,
+  "ingredient_id": 5,
+  "required": true,
+  "amount": "150g",
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "required",
+    "amount"
+   ],
+   "api": []
+  }
+ }
 ]

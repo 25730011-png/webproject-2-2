@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>냉장고 털이 · 와이어프레임</title>
+  <title>냉장고 털이</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,7 +39,7 @@
 
     <!-- 내 재료로 바로 만들 수 있는 추천 -->
     <div class="sec-head"><h3>지금 재료로 바로 만들 수 있어요</h3><button class="more-link" data-go="list">더 보기 ›</button></div>
-    <div class="big-list">
+    <div class="big-list" id="home-reco">
       <article class="big-card" data-go="detail"><div class="img big-img">레시피 사진</div>
         <div class="big-body"><span class="bg a">바로 가능</span><b>김치볶음밥</b><p class="mu">15분 · 쉬움 · 만든 사람 평균 ★4.6</p></div></article>
       <article class="big-card" data-go="detail"><div class="img big-img">레시피 사진</div>
@@ -49,50 +49,70 @@
     <!-- 이번 주 많이 만든 요리 -->
     <div class="sec-head"><h3>이번 주 많이 만든 요리</h3></div>
     <div class="grid2 week">
-      <div data-go="detail"><div class="img">사진</div><b>계란말이</b><p class="mu">이번 주 42명</p></div>
-      <div data-go="detail"><div class="img">사진</div><b>김치전</b><p class="mu">이번 주 35명</p></div>
-      <div data-go="detail"><div class="img">사진</div><b>두부조림</b><p class="mu">이번 주 28명</p></div>
-      <div data-go="detail"><div class="img">사진</div><b>참치마요덮밥</b><p class="mu">이번 주 21명</p></div>
+      <div data-go="detail" data-name="계란말이"><div class="img">사진</div><b>계란말이</b><p class="mu">이번 주 42명</p></div>
+      <div data-go="detail" data-name="김치전"><div class="img">사진</div><b>김치전</b><p class="mu">이번 주 35명</p></div>
+      <div data-go="detail" data-name="두부조림"><div class="img">사진</div><b>두부조림</b><p class="mu">이번 주 28명</p></div>
+      <div data-go="detail" data-name="참치마요덮밥"><div class="img">사진</div><b>참치마요덮밥</b><p class="mu">이번 주 21명</p></div>
     </div>
+
+    <!-- 7주차: 데이터 출처 안내 (강의 1.4.3 "데이터가 사용되는 화면에 적용 범위 표시") -->
+    <p class="src-note" id="home-src">레시피 데이터: 식품의약품안전처 「조리식품의 레시피 DB」 76건 + 팀 작성 24건 (불러오는 중…).
+      조리시간·난이도는 실습용 더미이며, 게시물·좋아요·별점은 와이어프레임용 예시입니다. 자세한 구분은 README의 데이터 출처·구분표 참고.</p>
   </section>
 
-  <!-- 2 목록 -->
+  <!-- 2 목록 (JSON에서 렌더링: ① data/recipes.json → ② loadData() → ③ checkData() → ④ renderList() → ⑤ #cards) -->
   <section class="screen" id="list">
-    <div class="row" style="margin:0"><span class="chip on">계란</span><span class="chip on">양파</span><span class="chip on">김치</span><b style="margin-left:auto">6건</b></div>
-    <div class="tabs"><button class="on" data-tab="all">전체</button><button data-tab="ok">바로 가능</button><button data-tab="sub">대체</button><button data-tab="one">1개 더</button></div>
-    <div class="row"><span class="chip">난이도 ▾</span><span class="chip">조리시간 ▾</span><span class="chip">정렬 ▾</span></div>
-    <div class="pane on" data-pane="all">
-      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>☆</span></div>
-      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치찌개</b><p class="mu">25분 · 보통</p><span class="bg">대체하면 가능</span> <span class="mu">돼지고기 → 참치</span></div><span>☆</span></div>
-      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치전</b><p class="mu">20분 · 쉬움</p><span class="bg">1개만 더</span> <span class="mu">부족: 부침가루</span></div><span>★</span></div>
-    </div>
-    <div class="pane" data-pane="ok"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>☆</span></div></div>
-    <div class="pane" data-pane="sub"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치찌개</b><p class="mu">25분 · 보통</p><span class="bg">대체하면 가능</span></div><span>☆</span></div></div>
-    <div class="pane" data-pane="one"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치전</b><p class="mu">20분 · 쉬움</p><span class="bg">1개만 더</span></div><span>★</span></div></div>
+    <div class="row" style="margin:0" id="list-mine"></div>
+    <p class="mu" style="margin-top:8px"><b id="count">불러오는 중…</b> <span id="count-src"></span></p>
+    <div class="row"><span class="chip gr">난이도 ▾</span><span class="chip gr">조리시간 ▾</span><span class="chip gr">정렬 ▾</span><span class="mu" style="font-size:11px">필터·정렬은 이후 주차</span></div>
+    <div id="list-legend"></div>
+    <div id="cards"></div>
+    <div id="list-state"></div>
   </section>
 
-  <!-- 3 상세 -->
+  <!-- 3 상세 (JSON 항목 1건을 id로 찾아 렌더링, 값마다 실제·더미 태그 표시) -->
   <section class="screen" id="detail">
-    <div class="img sq-img">요리 사진 (1:1)</div>
-    <h2 style="margin-top:10px">김치볶음밥 <span class="bg a">바로 가능</span></h2>
-    <p class="mu">15분 · 쉬움 · 만든 사람 평균 ★ 4.6</p>
-    <div class="box"><b>재료</b><div class="row"><span class="chip on">계란 보유</span><span class="chip on">김치 보유</span><span class="chip">참치 (대체)</span><span class="chip gr">참기름 (선택)</span></div></div>
-    <div class="box"><b>조리 순서</b><p>1. 김치와 양파를 썬다<br>2. 볶다가 밥을 넣는다<br>3. 계란프라이를 올린다</p></div>
-    <div class="box"><b>부족 재료만 모아보기</b><p class="mu">부족 재료 없음 → 섹션 숨김</p></div>
+    <!-- 와이어프레임 예외: 존재하지 않는 레시피 id -->
+    <div id="d-missing" hidden>
+      <div class="box empty"><b>레시피를 찾을 수 없어요</b><p class="mu" id="d-missing-msg">목록에서 다른 레시피를 골라 주세요.</p>
+        <div class="row"><button class="btn" style="flex:1" data-go="list">목록으로</button><button class="btn dk" style="flex:1" data-go="home">홈으로</button></div></div>
+    </div>
+    <div id="d-found">
+    <div class="img sq-img" id="d-img">요리 사진 (1:1)</div>
+    <h2 style="margin-top:10px" id="d-title">레시피</h2>
+    <p class="mu" id="d-sub"></p>
+    <p class="mu" id="d-src" style="margin-top:4px"></p>
+    <div id="d-legend"></div>
+    <div class="box"><b>재료</b><p id="d-ing" style="margin:6px 0 0;white-space:pre-line"></p></div>
+    <div class="box"><b>조리 순서</b><ol class="steps" id="d-steps"></ol></div>
+    <div class="box" id="d-nut-box"><b>영양 정보 <span class="mu">(1인분 기준, 참고용)</span></b><div class="nut" id="d-nut"></div></div>
+    <div class="box" id="d-tip-box"><b>팁</b><p class="mu" id="d-tip" style="margin-top:4px"></p></div>
+    <div class="box"><b>실시간 정보</b><p class="mu" id="d-api" style="margin-top:4px">API 미연동 (저장 JSON 항목)</p></div>
     <div class="row"><button class="btn" style="flex:1">☆ 즐겨찾기</button><button class="btn dk" style="flex:2" data-go="login">요리했어요 · 공유하기</button></div>
+    </div>
+    <button class="btn" id="d-back" data-go="list">← 목록으로</button>
   </section>
 
-  <!-- 4 검색 -->
+  <!-- 4 검색 (JSON 레시피 검색: 입력 전 최근 검색어만 → 입력 후 레시피 N·게시물 N 탭 → 0건이면 재료로 찾기 안내) -->
   <section class="screen" id="search">
-    <input class="in" style="margin:0" placeholder="요리 이름이나 닉네임으로 찾아요">
-    <p class="mu" style="margin-top:12px">최근 검색어</p>
-    <div class="row"><span class="chip">김치볶음밥 ✕</span><span class="chip">계란말이 ✕</span></div>
-    <div class="tabs"><button class="on" data-tab="r">레시피</button><button data-tab="p">게시물</button></div>
-    <div class="pane on" data-pane="r">
-      <div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div></div>
-      <div class="card" style="opacity:.55"><div class="img">IMG</div><div><b>부대찌개</b><p class="mu">30분 · 보통</p><span class="chip gr">부족 재료 2개 이상</span></div></div>
+    <input class="in" id="rq" type="search" style="margin:0" placeholder="요리 이름이나 재료로 찾아요 (예: 김치, 두부)" autocomplete="off" enterkeyhint="search">
+    <div id="recent-wrap">
+      <p class="mu" style="margin-top:12px">최근 검색어</p>
+      <div class="row" id="recent"></div>
+      <p class="mu" id="recent-note" hidden style="margin-top:6px">기기 저장소를 쓸 수 없어 최근 검색어는 이번 실행에만 유지돼요</p>
     </div>
-    <div class="pane" data-pane="p"><div class="card" data-go="post"><div class="img">IMG</div><div><b>@민지 · 김치볶음밥</b><p class="mu">참치 넣어도 맛있어요</p></div></div></div>
+    <div id="search-body" hidden>
+      <div class="tabs"><button class="on" data-tab="r">레시피 <span id="rq-n">0</span></button><button data-tab="p">게시물 <span id="pq-n">0</span></button></div>
+      <div class="pane on" data-pane="r"><div id="r-results"></div></div>
+      <div class="pane" data-pane="p">
+        <div id="p-results">
+          <div class="card" data-go="post" data-q="김치볶음밥 민지 계란 김치 참치"><div class="img">IMG</div><div><b>@민지 · 김치볶음밥</b><p class="mu">참치 넣어도 맛있어요</p></div></div>
+          <div class="card" data-go="post" data-q="계란말이 준호 계란 양파"><div class="img">IMG</div><div><b>@준호 · 계란말이</b><p class="mu">대파 대신 양파 넣었어요</p></div></div>
+          <div class="card" data-go="post" data-q="김치전 지수 김치 부침가루"><div class="img">IMG</div><div><b>@지수 · 김치전</b><p class="mu">부침가루 사 와서 바로 만들었어요</p></div></div>
+        </div>
+        <div class="box empty" id="p-empty" hidden><b>게시물이 없어요</b><p class="mu">레시피 탭에서 찾아보세요.</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- 5 피드 (인스타그램처럼 한 화면에 게시물 하나) -->
@@ -106,39 +126,39 @@
     <article class="post">
       <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@민지</b><p class="mu">2시간 전</p></div><button class="more" aria-label="더보기">⋯</button></header>
       <div class="img post-img" data-go="post">요리 사진 (1:1)</div>
-      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
+      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" data-name="김치볶음밥" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
       <div class="post-body">
         <b>좋아요 12개</b>
         <p><b>김치볶음밥</b> <span class="stars">★★★★★</span> 5점</p>
         <p><b>@민지</b> 참치 넣어도 맛있어요</p>
         <div class="row"><span class="bg a">내 냉장고로 바로 가능</span><span class="chip gr">계란 · 김치 · 참치(대체)</span></div>
-        <button class="btn dk" data-go="detail">따라 만들기</button>
+        <button class="btn dk" data-go="detail" data-name="김치볶음밥">따라 만들기</button>
       </div>
     </article>
 
     <article class="post">
       <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@준호</b><p class="mu">어제</p></div><button class="more" aria-label="더보기">⋯</button></header>
       <div class="img post-img" data-go="post">요리 사진 (1:1)</div>
-      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
+      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" data-name="계란말이" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
       <div class="post-body">
         <b>좋아요 8개</b>
         <p><b>계란말이</b> <span class="stars">★★★★☆</span> 4점</p>
         <p><b>@준호</b> 대파 대신 양파 넣었어요</p>
         <div class="row"><span class="bg">대체하면 가능</span><span class="chip gr">계란 · 양파(대체)</span></div>
-        <button class="btn dk" data-go="detail">따라 만들기</button>
+        <button class="btn dk" data-go="detail" data-name="계란말이">따라 만들기</button>
       </div>
     </article>
 
     <article class="post">
       <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@지수</b><p class="mu">3일 전</p></div><button class="more" aria-label="더보기">⋯</button></header>
       <div class="img post-img" data-go="post">요리 사진 (1:1)</div>
-      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
+      <div class="post-act"><button class="like" aria-label="좋아요">♡</button><button data-go="detail" data-name="김치전" aria-label="따라 만들기">↗</button><button class="save" aria-label="저장" style="margin-left:auto">☆</button></div>
       <div class="post-body">
         <b>좋아요 5개</b>
         <p><b>김치전</b> <span class="stars">★★★☆☆</span> 3점</p>
         <p><b>@지수</b> 부침가루 사 와서 바로 만들었어요</p>
         <div class="row"><span class="bg">1개만 더 · 부침가루</span><span class="chip gr">김치 · 부침가루</span></div>
-        <button class="btn dk" data-go="detail">따라 만들기</button>
+        <button class="btn dk" data-go="detail" data-name="김치전">따라 만들기</button>
       </div>
     </article>
 
@@ -176,7 +196,7 @@
     <p class="mu">★★★★★ · "참치 넣어도 맛있어요"</p>
     <div class="box"><b>사용 · 대체 재료</b><div class="row"><span class="chip on">계란</span><span class="chip on">김치</span><span class="chip">참치 (대체)</span><span class="bg a">바로 가능</span></div></div>
     <div class="row"><span class="chip">♡ 좋아요 12</span><span class="chip" data-go="login">신고</span><span class="chip gr">삭제 (내 글일 때)</span></div>
-    <button class="btn dk" data-go="detail">따라 만들기</button>
+    <button class="btn dk" data-go="detail" data-name="김치볶음밥">따라 만들기</button>
   </section>
 
   <!-- 7 게시물 작성 -->
@@ -194,7 +214,7 @@
   <section class="screen" id="my">
     <h2>닉네임 님</h2><p class="mu">비로그인: "로그인하고 내 요리를 공유해 보세요"</p>
     <div class="tabs"><button data-tab="fav">즐겨찾기</button><button class="on" data-tab="fr">내 냉장고</button><button data-tab="mine">내 게시물</button></div>
-    <div class="pane" data-pane="fav"><div class="card" data-go="detail"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>★</span></div></div>
+    <div class="pane" data-pane="fav"><div class="card" data-go="detail" data-name="김치볶음밥"><div class="img">IMG</div><div><b>김치볶음밥</b><p class="mu">15분 · 쉬움</p><span class="bg a">바로 가능</span></div><span>★</span></div></div>
     <div class="pane on" data-pane="fr">
       <div class="box"><span class="mu">냉장실</span>
         <p style="margin:6px 0 0"><b>계란</b> <span class="mu">70%</span></p><div class="gau"><i style="width:70%"></i></div>

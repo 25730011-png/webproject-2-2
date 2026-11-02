@@ -1,7 +1,83 @@
 [
-  {"id":1,"name":"계란","aliases":["달걀"]},
-  {"id":2,"name":"양파","aliases":[]},
-  {"id":3,"name":"김치","aliases":["묵은지"]},
-  {"id":4,"name":"참치캔","aliases":["참치"]},
-  {"id":5,"name":"돼지고기","aliases":[]}
+ {
+  "id": 1,
+  "flag": "J",
+  "name": "계란",
+  "aliases": [
+   "달걀"
+  ],
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "name",
+    "aliases"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 2,
+  "flag": "J",
+  "name": "양파",
+  "aliases": [],
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "name",
+    "aliases"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3,
+  "flag": "J",
+  "name": "김치",
+  "aliases": [
+   "묵은지"
+  ],
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "name",
+    "aliases"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 4,
+  "flag": "J",
+  "name": "참치캔",
+  "aliases": [
+   "참치"
+  ],
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "name",
+    "aliases"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 5,
+  "flag": "J",
+  "name": "돼지고기",
+  "aliases": [],
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "name",
+    "aliases"
+   ],
+   "api": []
+  }
+ }
 ]
