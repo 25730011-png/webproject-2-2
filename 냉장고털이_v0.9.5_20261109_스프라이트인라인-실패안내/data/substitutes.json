@@ -1,0 +1,15 @@
+[
+ {
+  "flag": "J",
+  "ingredient_id": 5,
+  "substitute_id": 4,
+  "meta": {
+   "source": "json",
+   "real": [],
+   "dummy": [
+    "substitute_id"
+   ],
+   "api": []
+  }
+ }
+]

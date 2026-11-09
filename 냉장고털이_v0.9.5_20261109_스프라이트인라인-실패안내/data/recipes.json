@@ -1,0 +1,6982 @@
+[
+ {
+  "id": 90006,
+  "flag": "A",
+  "name": "간장계란밥",
+  "method": "기타",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "쉬움",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 달걀 1개, 김 1장, 간장 1큰술, 참기름 1작은술, 식용유 1작은술",
+  "steps": [
+   {
+    "text": "1. 팬에 식용유를 두르고 달걀프라이를 반숙으로 만든다.",
+    "image": null
+   },
+   {
+    "text": "2. 따뜻한 밥 위에 달걀프라이를 올린다.",
+    "image": null
+   },
+   {
+    "text": "3. 간장과 참기름을 두르고 김을 부숴 올려 비벼 먹는다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90004,
+  "flag": "A",
+  "name": "계란볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 달걀 2개, 대파 1/2대, 식용유 1큰술, 간장 1작은술, 소금 약간, 후추 약간",
+  "steps": [
+   {
+    "text": "1. 대파는 송송 썰고 달걀은 풀어 둔다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 식용유를 두르고 대파를 볶아 파기름을 낸다.",
+    "image": null
+   },
+   {
+    "text": "3. 달걀을 붓고 반쯤 익으면 밥을 넣어 빠르게 볶는다.",
+    "image": null
+   },
+   {
+    "text": "4. 간장을 팬 가장자리에 둘러 향을 내고 소금, 후추로 간한다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90003,
+  "flag": "A",
+  "name": "김치볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 김치 1/2컵, 달걀 1개, 대파 1/4대, 식용유 1큰술, 고추장 1/2큰술, 설탕 1/2작은술, 참기름 1작은술",
+  "steps": [
+   {
+    "text": "1. 김치는 잘게 썰고 대파는 송송 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 식용유를 두르고 대파를 볶아 향을 낸 뒤 김치와 설탕을 넣어 2분 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 밥과 고추장을 넣고 고루 섞어 볶은 뒤 참기름을 두른다.",
+    "image": null
+   },
+   {
+    "text": "4. 달걀프라이를 만들어 볶음밥 위에 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90011,
+  "flag": "A",
+  "name": "김치참치덮밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 김치 1/2컵, 참치 1/2캔, 양파 1/4개, 고추장 1/2큰술, 설탕 1/2작은술, 참기름 1작은술",
+  "steps": [
+   {
+    "text": "1. 김치와 양파를 잘게 썰고 참치는 기름을 뺀다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 참치 기름을 조금 두르고 김치, 양파, 설탕을 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 참치와 고추장을 넣고 1분 더 볶는다.",
+    "image": null
+   },
+   {
+    "text": "4. 밥 위에 올리고 참기름을 두른다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90014,
+  "flag": "A",
+  "name": "소고기덮밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 소고기 120g, 양파 1/2개, 대파 1/4대, 간장 2큰술, 설탕 1큰술, 맛술 1큰술, 물 100ml",
+  "steps": [
+   {
+    "text": "1. 양파는 채 썰고 대파는 어슷 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 물, 간장, 설탕, 맛술을 넣고 끓인다.",
+    "image": null
+   },
+   {
+    "text": "3. 양파를 넣어 숨이 죽으면 소고기를 펼쳐 넣고 익힌다.",
+    "image": null
+   },
+   {
+    "text": "4. 대파를 넣고 30초 끓인 뒤 국물과 함께 밥 위에 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90010,
+  "flag": "A",
+  "name": "오므라이스",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 달걀 2개, 양파 1/4개, 햄 50g, 당근 약간, 케첩 2큰술, 식용유 1큰술, 소금 약간",
+  "steps": [
+   {
+    "text": "1. 양파, 햄, 당근을 잘게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 식용유를 두르고 채소와 햄을 볶다가 밥과 케첩 1큰술을 넣어 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 달걀을 풀어 소금으로 간하고 팬에 얇게 부친다.",
+    "image": null
+   },
+   {
+    "text": "4. 달걀 위에 볶음밥을 올려 감싸고 남은 케첩을 뿌린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90008,
+  "flag": "A",
+  "name": "제육덮밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 돼지고기 150g, 양파 1/2개, 대파 1/2대, 고추장 1.5큰술, 고춧가루 1/2큰술, 간장 1큰술, 설탕 1큰술, 마늘 1작은술, 식용유 1큰술",
+  "steps": [
+   {
+    "text": "1. 돼지고기는 한입 크기로 썰고 양파와 대파도 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 고추장, 고춧가루, 간장, 설탕, 다진 마늘을 섞어 양념을 만들고 고기에 버무린다.",
+    "image": null
+   },
+   {
+    "text": "3. 팬에 식용유를 두르고 고기를 볶다가 반쯤 익으면 양파를 넣는다.",
+    "image": null
+   },
+   {
+    "text": "4. 고기가 다 익으면 대파를 넣고 1분 더 볶아 밥 위에 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90005,
+  "flag": "A",
+  "name": "참치마요덮밥",
+  "method": "기타",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 참치 1캔, 김 1장, 양파 1/4개, 마요네즈 2큰술, 간장 1작은술, 설탕 1/2작은술",
+  "steps": [
+   {
+    "text": "1. 참치는 기름을 빼고 양파는 잘게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 참치에 마요네즈를 넣어 섞는다.",
+    "image": null
+   },
+   {
+    "text": "3. 팬에 양파, 간장, 설탕을 넣고 살짝 졸여 소스를 만든다.",
+    "image": null
+   },
+   {
+    "text": "4. 밥 위에 소스, 참치마요, 잘게 부순 김을 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90015,
+  "flag": "A",
+  "name": "참치죽",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1/2공기, 참치 1/2캔, 양파 1/6개, 당근 약간, 참기름 1작은술, 소금 약간, 물 400ml",
+  "steps": [
+   {
+    "text": "1. 양파와 당근을 잘게 썰고 참치는 기름을 뺀다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 참기름을 두르고 채소를 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 밥과 물을 넣고 저어 가며 10분 정도 끓인다.",
+    "image": null
+   },
+   {
+    "text": "4. 참치를 넣고 소금으로 간한 뒤 2분 더 끓인다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90009,
+  "flag": "A",
+  "name": "카레라이스",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 감자 1개, 양파 1/2개, 당근 1/4개, 돼지고기 80g, 카레가루 3큰술, 식용유 1큰술, 물 300ml",
+  "steps": [
+   {
+    "text": "1. 감자, 양파, 당근, 고기를 한입 크기로 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 식용유를 두르고 고기와 채소를 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 물을 붓고 감자가 익을 때까지 10분 끓인다.",
+    "image": null
+   },
+   {
+    "text": "4. 불을 줄이고 카레가루를 풀어 걸쭉해질 때까지 저으며 끓인 뒤 밥에 곁들인다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90013,
+  "flag": "A",
+  "name": "콩나물밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "쌀 1컵, 콩나물 150g, 대파 1/4대, 간장 2큰술, 고춧가루 1작은술, 참기름 1작은술, 깨 약간, 물 1컵",
+  "steps": [
+   {
+    "text": "1. 쌀은 씻어 30분 불리고 콩나물은 씻어 둔다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 쌀과 물을 넣고 그 위에 콩나물을 올려 뚜껑을 덮고 밥을 짓는다.",
+    "image": null
+   },
+   {
+    "text": "3. 간장, 다진 대파, 고춧가루, 참기름, 깨를 섞어 양념장을 만든다.",
+    "image": null
+   },
+   {
+    "text": "4. 밥이 다 되면 콩나물과 고루 섞어 양념장을 곁들인다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90007,
+  "flag": "A",
+  "name": "햄마요덮밥",
+  "method": "굽기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 햄 100g, 달걀 1개, 김 1장, 마요네즈 1큰술, 간장 1큰술, 설탕 1작은술, 식용유 1큰술",
+  "steps": [
+   {
+    "text": "1. 햄은 작게 깍둑썰기하고 달걀은 스크램블로 익혀 둔다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 식용유를 두르고 햄을 노릇하게 굽는다.",
+    "image": null
+   },
+   {
+    "text": "3. 간장과 설탕을 넣어 햄에 양념이 배게 볶는다.",
+    "image": null
+   },
+   {
+    "text": "4. 밥 위에 스크램블, 햄, 마요네즈, 김을 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90012,
+  "flag": "A",
+  "name": "햄채소볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "밥 1공기, 햄 70g, 양파 1/4개, 당근 1/6개, 달걀 1개, 식용유 1큰술, 간장 1작은술, 소금 약간",
+  "steps": [
+   {
+    "text": "1. 햄, 양파, 당근을 잘게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 식용유를 두르고 당근, 양파, 햄 순서로 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 달걀을 한쪽에 풀어 스크램블한 뒤 밥을 넣고 섞어 볶는다.",
+    "image": null
+   },
+   {
+    "text": "4. 간장과 소금으로 간을 맞춘다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 1006,
+  "flag": "J",
+  "name": "감자 주먹밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 240.0,
+  "carb": 41.9,
+  "protein": 8.9,
+  "fat": 5.6,
+  "sodium": 67.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053743_1416213463031.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053743_1416213463031.jpg",
+  "ingredientsText": "감자 80g, 밥 80g, 당근다진것 20g, 시금치 20g, 잔멸치 5g, 삶은 달걀 노른자 5g, 검은깨 1g, 흰깨 2g[밥양념] 참기름 2g, 소금적당량, 흰 후춧가루 적당량",
+  "steps": [
+   {
+    "text": "1. 감자를 깨끗하게 씻어 찜통에 찐 뒤 껍질을 벗기고 체에 내린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-1.jpg"
+   },
+   {
+    "text": "2. 기름 두른 팬에 다진 당근을 볶으면서 소금 간을 하고 시금치는 손질하여 데친 뒤 냉수에 헹궈 물기를 짜고 잘게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-2.jpg"
+   },
+   {
+    "text": "3. 잔멸치는 팬에 살짝 볶아서 굵직하게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-3.jpg"
+   },
+   {
+    "text": "4. 볼에 1, 2, 3, 4를 넣고 소금과 흰 후춧가루, 참기름을 넣고 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-4.jpg"
+   },
+   {
+    "text": "5. 삶은 달걀노른자를 체에 내린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-5.jpg"
+   },
+   {
+    "text": "6. 4를 원형 또는 삼각형으로 만들어 달걀 노른자와 검은깨, 흰깨에 골고루 굴려 묻힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1006-6.jpg"
+   }
+  ],
+  "tip": "모양 틀을 구매하여 사용하면 더 많은 모양을 이용할 수 있다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 748,
+  "flag": "J",
+  "name": "김치밥그라탕",
+  "method": "굽기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 515.1,
+  "carb": 69.3,
+  "protein": 14.5,
+  "fat": 18.9,
+  "sodium": 679.8,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102011_1416273611901.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102011_1416273611901.jpg",
+  "ingredientsText": "밥 180, 배추김치(줄기부분) 30, 양파 20, 생 표고버섯 40, 방울토마토 200, 올리브유 12, 간장 4, 피자치즈(모짜렐라) 30, 다진 실파 5",
+  "steps": [
+   {
+    "text": "1. 김치, 양파, 버섯은 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-1.jpg"
+   },
+   {
+    "text": "2. 방울토마토는 4등분한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-2.jpg"
+   },
+   {
+    "text": "3. 팬에 올리브유를 두르고 김치, 양파, 버섯, 토마토를 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-3.jpg"
+   },
+   {
+    "text": "4. 밥을 넣어 볶은 뒤 간장으로 간한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-4.jpg"
+   },
+   {
+    "text": "5. 3, 4를 그릇에 담고 피자치즈를 올려 전자렌지에 치즈가 녹을 정도로 익힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-5.jpg"
+   },
+   {
+    "text": "6. 실파를 뿌려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/748-6.jpg"
+   }
+  ],
+  "tip": "김치는 흰 줄기부분만 사용하면 씹히는 맛이 있어 볶음밥에 더 잘 어울린다. 실파 대신 다진 파슬리나 바질 등의 허브를 뿌려내도 잘 어울린다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1064,
+  "flag": "J",
+  "name": "대추닭살리조또",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 498.3,
+  "carb": 70.3,
+  "protein": 21.2,
+  "fat": 14.7,
+  "sodium": 8.4,
+  "hashtag": "가슴살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01064_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01064_1.png",
+  "ingredientsText": "닭고기(가슴살, 30g), 쌀(50g), 양파(10g),\n표고버섯(10g), 대추(2알), 당근(5g),\n피망(5g), 치즈(10g), 우유(50g), 마늘(3g),\n소금(0.5g), 후춧가루(0.1g)",
+  "steps": [
+   {
+    "text": "1. 쌀을 씻어 밥을 짓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_1.JPG"
+   },
+   {
+    "text": "2. 양파, 표고버섯, 당근, 피망은 입자있게 다지고 대추는 씨를 제거한 뒤 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_2.JPG"
+   },
+   {
+    "text": "3. 닭가슴살은 먹기 좋은 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_3.jpg"
+   },
+   {
+    "text": "4. 팬에 기름을 두르고 다진 마늘을 볶은 뒤 닭가슴살을 볶는다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_4.JPG"
+   },
+   {
+    "text": "5. 닭가슴살이 다 익으면 손질한 채소를 넣고 볶다가 밥, 우유, 치즈, 대추를 넣고 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_5.JPG"
+   },
+   {
+    "text": "6. 우유가 반으로 졸아들면 불을 줄이고 소금, 후추로 간한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01064_6.JPG"
+   }
+  ],
+  "tip": "첨가당 대신 대추로 단맛을 낼 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 586,
+  "flag": "J",
+  "name": "대하마늘볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": 210.0,
+  "calories": 286.6,
+  "carb": 32.5,
+  "protein": 14.0,
+  "fat": 11.2,
+  "sodium": 191.4,
+  "hashtag": "대하",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309012647_1678336007930.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309012700_1678336020850.jpg",
+  "ingredientsText": "•필수 재료 : 대하(3마리), 쌀(90g), 당근(20g), 깻잎(2장), 양파(30g), 숙주(50g), 대추(2알), 청고추(1개), 파(10g), 마늘(10g), 생강(5g), 식용유(5g)\n•양념 : 저염간장(5g)",
+  "steps": [
+   {
+    "text": "1. 새우는 내장을 제거하고 껍질을 벗겨 깨끗이 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309015216_1678337536871.jpg"
+   },
+   {
+    "text": "2. 찜기에 새우와 생강을 넣어 약 5분 정도 찐다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309021346_1678338826806.jpg"
+   },
+   {
+    "text": "3. 마늘은 납작 썰고, 당근과 양파, 파, 깻잎, 청고추, 대추는 굵게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309021409_1678338849298.jpg"
+   },
+   {
+    "text": "4. 숙주는 꼬리를 떼어 다듬고, 끓는 물에 살짝 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309021426_1678338866582.jpg"
+   },
+   {
+    "text": "5. 팬에 식용유를 두른 뒤 손질한 채소를 넣어 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309021447_1678338887494.jpg"
+   },
+   {
+    "text": "6. 밥과 새우를 넣어 볶고, 저염간장을 넣어 볶아 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309021505_1678338905796.jpg"
+   }
+  ],
+  "tip": "•새우는 생강과 함께 쪄서 비린내를 잡고, 새우 본연의 감칠맛으로 저염간장 사용량을 줄였어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 651,
+  "flag": "J",
+  "name": "돼지고기 숙주덮밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": 200.0,
+  "calories": 182.1,
+  "carb": 17.2,
+  "protein": 16.5,
+  "fat": 5.3,
+  "sodium": 206.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031030_1678342230794.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031035_1678342235213.jpg",
+  "ingredientsText": "•필수 재료 : 가다랑어포(10g), 돼지고기(100g), 양파(30g), 표고버섯(1개), 팽이버섯(20g), 쪽파(10g), 달걀(1개), 쌀(90g), 숙주(50g)\n•밑간 : 소금(1g), 후춧가루(1g)\n•육수 :다시마(10g), 저염간장(5g), 물(150g)",
+  "steps": [
+   {
+    "text": "1. 다시마 우린 물에 가다랑어포를 넣고 10분간 담갔다가 체에 거르고, 쌀로 밥을 짓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031102_1678342262765.jpg"
+   },
+   {
+    "text": "2. 돼지고기는 소금과 후춧가루로 밑간을 한 뒤 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031118_1678342278695.jpg"
+   },
+   {
+    "text": "3. 양파, 표고버섯, 팽이버섯은 채 썰고, 쪽파는 버섯 길이로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031132_1678342292452.jpg"
+   },
+   {
+    "text": "4. 육수에 저염간장을 넣어 한소끔 끓이다가 양파와 버섯을 넣고 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031145_1678342305935.jpg"
+   },
+   {
+    "text": "5. 다시 한 번 끓어오르면 쪽파와 달걀을 고루 풀어 넣고 젓지 말고 그대로 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031158_1678342318590.jpg"
+   },
+   {
+    "text": "6. 그릇에 밥을 담고, 돼지고기와 숙주를 올린 뒤 뜨거운 육수를 부어 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309031215_1678342335942.jpg"
+   }
+  ],
+  "tip": "•다시마와 가다랑어포로 만든 육수를 사용하여 소금 사용량은 줄이고 맛을 살렸어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 231,
+  "flag": "J",
+  "name": "두부달걀덮밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 669.4,
+  "carb": 19.35,
+  "protein": 3.91,
+  "fat": 6.2,
+  "sodium": 311.6,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00231_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00231_1.png",
+  "ingredientsText": "재료 두부(50g), 가지(20g), 표고버섯(30g), 양파(10g), 달걀(15g)\n밥(200g), 가다랑어포(1g)\n육수 재료 물(200g), 다시마(1g), 가다랑어포(1g)\n양념 후춧가루(0.1g), 녹말가루(1g), 청주(1g), 설탕(1g), 간장(2g), 녹말물(18g)",
+  "steps": [
+   {
+    "text": "1. 찬물에 다시마를 넣고 끓여 건져 내고 불을 끈 후 가다랑어포를 넣어 우려 육수를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_1.png"
+   },
+   {
+    "text": "2. 두부, 가지는 깍둑 썰고, 표고버섯, 양파는 채 썰고, 달걀은 곱게 푼다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_2.png"
+   },
+   {
+    "text": "3. 두부, 가지는 물기를 제거한 뒤 후춧가루로 밑간하고 녹말가루를 얇게 입혀 식용유를 두른 팬에서 구워 건진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_3.png"
+   },
+   {
+    "text": "4. 육수(1컵)에 청주, 설탕, 간장을 넣고 표고버섯, 양파를 넣고 조려 덮밥 소스를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_4.png"
+   },
+   {
+    "text": "5. 달걀물을 붓고 익을 때까지 저은 후 녹말물을 넣어 되직하게 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_5.png"
+   },
+   {
+    "text": "6. 밥을 그릇에 담고 덮밥소스를 곁들인 후 두부, 가지, 가다랑어포를 얹어 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00231_6.png"
+   }
+  ],
+  "tip": "담백한 두부를 주재료로, 나트륨 배출을 돕는 칼륨이 많이 함유된 가지와 버섯을 사용하고,\n가다랑어포로 육수를 내 감칠맛을 더해 소금간을 줄여 나트륨 섭취를 줄였다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1065,
+  "flag": "J",
+  "name": "먹골배 카레주먹밥",
+  "method": "기타",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 379.2,
+  "carb": 445.4,
+  "protein": 10.8,
+  "fat": 11.5,
+  "sodium": 1.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01065_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01065_1.png",
+  "ingredientsText": "쌀(150g), 카레가루(70g), 묵은지(15g),\n양파(15g), 애호박(5g), 가지(5g),\n참치(50g), 마요네즈(20g)",
+  "steps": [
+   {
+    "text": "1. 카레가루를 미지근한 물에 개어 쌀을 넣고 밥을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_1.JPG"
+   },
+   {
+    "text": "2. 묵은지는 헹궈서 다지고 양파도 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_2.JPG"
+   },
+   {
+    "text": "3. 참치의 기름을 빼고 묵은지, 양파를 넣고 마요네즈에 버무린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_3.JPG"
+   },
+   {
+    "text": "4. 3번을 넣고 카레밥으로 주먹밥을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_4.jpg"
+   },
+   {
+    "text": "5. 주먹밥을 배 모양으로 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_5.JPG"
+   },
+   {
+    "text": "6. 애호박과 가지 껍질로 배 꼭지와 잎을 만들어 장식한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01065_6.JPG"
+   }
+  ],
+  "tip": "카레가루로 밥을 하여 따로 간을 하지 않아도 맛있는 주먹밥을 만들 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 340,
+  "flag": "J",
+  "name": "불고기덮밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": null,
+  "calories": 332.5,
+  "carb": 58.3,
+  "protein": 12.6,
+  "fat": 5.4,
+  "sodium": 192.5,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00340_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00340_1.png",
+  "ingredientsText": "쌀밥 200g, 소불고기 150g, 양파 60g, 청고추 15g, 홍고추 18g\n팽이버섯 20g, 계란 60g, 쪽파 15g, 마늘기름 30g, 통깨 5g\n양념장 : 맛간장 15g, 생강청 15g, 다진마늘 10g, 다진대파 10g, 흰후추 1g, 참기름 5g",
+  "steps": [
+   {
+    "text": "1. 소 불고기는 양념장을 버무려 팬에 볶아준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_01.png"
+   },
+   {
+    "text": "2. 청고추, 홍고추는 가늘게 채 썰어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_02.png"
+   },
+   {
+    "text": "3. 양파는 채 썰고 쪽파도 한입 크기로 잘라준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_03.png"
+   },
+   {
+    "text": "4. 팽이도 먹기 좋은 크기로 잘라준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_04.png"
+   },
+   {
+    "text": "5. 계란물을 풀어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_05.png"
+   },
+   {
+    "text": "6. 채소를 각각 볶아주다가 볶은 불고기에 섞어 주고 계란물을 풀어서 밥에 올려서 통깨를 뿌려 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00340_06.png"
+   }
+  ],
+  "tip": "일반 간장 대신 맛간장도 넣고 특유의 맛을 높이기 위해서 생강청과 다진마늘을 넣어 감칠맛을 높였다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 695,
+  "flag": "J",
+  "name": "애호박장떡말이밥",
+  "method": "굽기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 400.0,
+  "carb": 82.8,
+  "protein": 9.3,
+  "fat": 4.5,
+  "sodium": 447.6,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102121_1416273681545.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102121_1416273681545.jpg",
+  "ingredientsText": "밥 100g, 애호박 25g, 양파 10g, 풋고추 5g, 고추장 15g, 우리밀가루 50g, 물 50g, 현미유 1.5g,흑임자 1g, 참기름 1g, 소금 0.2g",
+  "steps": [
+   {
+    "text": "1. 양파는 갈고 애호박과 풋고추는 잘게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-1.jpg"
+   },
+   {
+    "text": "2. 물 1/2컵에 고추장을 풀고 우리밀가루를 넣어 골고루 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-2.jpg"
+   },
+   {
+    "text": "3. 1의 재료를 2에 넣어 반죽한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-3.jpg"
+   },
+   {
+    "text": "4. 팬에 현미유를 두르고 3의 재료를 얇게 부친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-4.jpg"
+   },
+   {
+    "text": "5. 밥에 참기름과 흑임자, 소금을 넣고 양념을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-5.jpg"
+   },
+   {
+    "text": "6. 애호박장떡에 양념한 밥을 얇게 펴놓고 돌돌 말아 2~3cm 가량의 길이로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/695-6.jpg"
+   }
+  ],
+  "tip": "애호박장떡을 얇게 부쳐야 잘 말린다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 459,
+  "flag": "J",
+  "name": "양송이크림볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": null,
+  "calories": 346.1,
+  "carb": 57.5,
+  "protein": 13.3,
+  "fat": 7.0,
+  "sodium": 197.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00459_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00459_1.png",
+  "ingredientsText": "닭고기살(50g), 양송이(60g), 떡볶이떡(20g), 양파(20g)\n당근(30g), 소금(0.2g), 버터(10g), 밥(100g), 육수(50g)\n우유(50g), 생크림(10g), 치즈(10g)",
+  "steps": [
+   {
+    "text": "1. 닭살은 삶아 입자있게 썰고, 양송이도 껍질을 벗겨 입자있게 썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_1.png"
+   },
+   {
+    "text": "2. 떡볶이떡과 양파도 입자있게 썰어 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_2.png"
+   },
+   {
+    "text": "3. 당근은 소금을 넣고 삶아 꼬마 당근을 만들어 장식을 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_3.png"
+   },
+   {
+    "text": "4. 냄비에 버터를 두르고 양파를 먼저 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_4.png"
+   },
+   {
+    "text": "5. 볶아지는 냄비에 닭살과 떡볶이떡, 양파를 넣어 다시 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_5.png"
+   },
+   {
+    "text": "6. ⑤번에 밥을 넣고 육수와 우유, 생크림을 넣어 볶으면서 치즈를 넣고 한 번 더 고실 하게 볶아 완성하고 삶은 당근은 꼬마 당근을 만들어 장식으로 올려 준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00459_6.png"
+   }
+  ],
+  "tip": "우유와 생크림치즈를 사용하여 소금간을 대체하였어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 229,
+  "flag": "J",
+  "name": "오징어불고기김밥",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 452.2,
+  "carb": 14.5,
+  "protein": 13.9,
+  "fat": 3.42,
+  "sodium": 244.4,
+  "hashtag": "우둔살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00229_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00229_1.png",
+  "ingredientsText": "재료 오징어 몸통(130g), 파프리카(30g), 당근(20g), 피망(30g), 밥(200g)\n채 썬 쇠고기(우둔살, 60g), 달걀(50g), 김(2g), 깻잎(20g), 새송이버섯(30g)\n양념 참기름(15g), 고추장(3g), 매실청(15g)",
+  "steps": [
+   {
+    "text": "1. 오징어 몸통 안쪽에 칼집을 내고 끓는 물에 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_1.png"
+   },
+   {
+    "text": "2. 파프리카와 당근, 피망은 작게 다져 볶은 뒤 밥에 넣어 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_2.png"
+   },
+   {
+    "text": "3. 쇠고기는 참기름에 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_3.png"
+   },
+   {
+    "text": "4. 달걀을 풀어 약한 불로 달군 팬에 부은 뒤 김가루를 뿌려 지단을 부치고, 바닥이 익으면 깻잎과 밥을 올린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_4.png"
+   },
+   {
+    "text": "5. 데친 오징어, 볶은 쇠고기 순으로 올려 만 뒤 랩으로 싼다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_5.png"
+   },
+   {
+    "text": "6. 고추장과 매실청을 섞은 뒤 팬에 넣고 약한 불에서 끓여 소스를 만들고 한입 크기로 썬 김밥에 구운 버섯을 함께 곁들여 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00229_6.png"
+   }
+  ],
+  "tip": "저염고추장과 매실청을 사용한 소스로 달콤한 맛을 내 나트륨 함량을 줄였다",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 673,
+  "flag": "J",
+  "name": "찬밥이용닭죽",
+  "method": "끓이기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 234.5,
+  "carb": 29.8,
+  "protein": 20.2,
+  "fat": 3.3,
+  "sodium": 327.6,
+  "hashtag": "닭다리",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102057_1416273657171.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102057_1416273657171.jpg",
+  "ingredientsText": "찬밥 60g, 닭다리살 80g, 감자 30g, 통마늘 15g, 양파 10g, 당근 8g, 부추 5g, 물 700g, 소금 0.75g, 후춧가루 0.3g",
+  "steps": [
+   {
+    "text": "1. 닭다리는 기름기를 제거하고 냄비에 물 3컵 반을 부어 통마늘과 삶아 육수를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-1.jpg"
+   },
+   {
+    "text": "2. 삶은 마늘을 체에 걸러 으깬 뒤 다시 육수에 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-2.jpg"
+   },
+   {
+    "text": "3. 닭 육수 2컵 반에 찬밥을 넣고 밥알이 무르도록 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-3.jpg"
+   },
+   {
+    "text": "4. 삶은 닭다리 살을 발라 잘게 찢어 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-4.jpg"
+   },
+   {
+    "text": "5. 감자, 양파, 당근, 부추는 잘게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-5.jpg"
+   },
+   {
+    "text": "6. 4에 5를 넣고 끓인 뒤 소금, 후춧가루로 간 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/673-6.jpg"
+   }
+  ],
+  "tip": "닭은 찬물에 넣어 끓여야 고기의 맛있는 성분이 잘 우러 나온다. - 닭 육수를 만들 때 황기, 대추, 수삼을 넣으면 여름철 보양식으로 좋다. - 녹두를 섞어 끓이면 고소하고 담백한 맛이 있다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3291,
+  "flag": "J",
+  "name": "참치두부 주먹밥",
+  "method": "기타",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 262.1,
+  "calories": 299.7,
+  "carb": 20.9,
+  "protein": 24.7,
+  "fat": 13.1,
+  "sodium": 248.3,
+  "hashtag": null,
+  "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Ba2",
+  "imageStep": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Bb3",
+  "ingredientsText": "[ 2인분 ] 두부(1모=300g), 파프리카(빨강, 노랑 각 ¼개), 깻잎(4장), 잡곡밥(70g), 통조림 참치(50g), 스테비아(0.5Ts), 간장(0.5Ts), 참기름(1Ts)",
+  "steps": [
+   {
+    "text": "1. 큰 볼에 두부를 담은 뒤 물이 담긴 무거운 그릇을 3분간 올려 수분을 제거한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9RXM"
+   },
+   {
+    "text": "2. 두부 속을 사각형 모양으로 파내고, 파낸 두부 속은 물기를 꼭 짜 으깬다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Ra2"
+   },
+   {
+    "text": "3. 파프리카와 깻잎은 잘게 썬다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9RbK"
+   },
+   {
+    "text": "4. 통조림 참치는 체에 밭친 뒤, 뜨거운 물을 부어 기름과 염분을 제거한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Rdz"
+   },
+   {
+    "text": "5. 볼에 으깬 두부, 손질한 채소, 잡곡밥, 참치를 넣은 뒤 양념해 고루 섞는다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9RgP"
+   },
+   {
+    "text": "6. 주먹밥을 동그랗게 만들고, 속을 판 두부 속에 넣어 마무리한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Rk-"
+   }
+  ],
+  "tip": "•통조림 참치 등 가공식품 사용 시에는 물에 데치거나 뜨거운 물을 부으면 나트륨 섭취를 줄일 수 있어요.\n•스테비아를 이용하여 첨가당 사용을 줄였어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 127,
+  "flag": "J",
+  "name": "컵밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 218.2,
+  "carb": 21.8,
+  "protein": 7.1,
+  "fat": 11.4,
+  "sodium": 117.8,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00127_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00127_1.png",
+  "ingredientsText": "쌀밥 420g(2컵), 김 4g(1장), 배추김치 30g, 달걀 200g(4개),\n베이컨 30g(3장), 소시지 30g(1개), 시금치 70g, 고춧가루 20g(1큰술), 참기름 6g(1작은술), 마늘 6g(1작은술)",
+  "steps": [
+   {
+    "text": "1. 베이컨과, 소시지를 다진 후 끓는 물에 데쳐 팬에 볶고 다진 김치는 물에 행군 후 고추가루를 넣어 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00127_1.png"
+   },
+   {
+    "text": "2. 시금치는 데친 후 다져 참기름과 다진 마늘을 넣어 무치고 달걀은 부쳐서 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00127_4.png"
+   },
+   {
+    "text": "3. 김은 참기름을 발라 구워 길게 자르고 밥과 준비된 재료를 층층히 쌓아 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00127_6.png"
+   }
+  ],
+  "tip": "베이컨과 소시지는 데치고, 김치는 물에 헹구어 염분을 제거하고 칼륨이 많은 시금치를 사용하여 나트륨 배출을 돕는다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3286,
+  "flag": "J",
+  "name": "타이거새우 현미볶음밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 321.0,
+  "calories": 536.9,
+  "carb": 44.8,
+  "protein": 31.9,
+  "fat": 25.6,
+  "sodium": 318.3,
+  "hashtag": null,
+  "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr98sn",
+  "imageStep": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr98ty",
+  "ingredientsText": "[ 2인분 ] 브로콜리(¼개), 양파(¼개), 파프리카(빨강, 노랑 각 ¼개), 쪽파(2대), 블랙타이거새우(8마리), 현미밥(2공기), 청양고추(2개), 레몬(½개), 다진 마늘(3Ts), 버터(3Ts)",
+  "steps": [
+   {
+    "text": "1. 브로콜리는 윗동만 분리해 다지고, 양파, 파프리카, 청양고추는 잘게 다지고, 쪽파는 송송 썰고, 레몬은 2등분한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GLe"
+   },
+   {
+    "text": "2. 블랙타이거새우는 깨끗하게 씻은 뒤 머리를 제거한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GOC"
+   },
+   {
+    "text": "3. 약한 불로 달군 팬에 식용유를 두르고, 다진 마늘을 넣어 튀기듯 볶은 뒤 양파를 넣어 볶는다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GRO"
+   },
+   {
+    "text": "4. 손질한 블랙타이거새우와 버터를 넣은 뒤 새우의 색이 변할 때까지 볶고, 다진 파프리카, 청양고추, 브로콜리를 넣어 2분간 볶는다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GTo"
+   },
+   {
+    "text": "5. 그릇에 현미밥을 담고, 볶은 블랙타이거 새우와 국물을 골고루 뿌린다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GVZ"
+   },
+   {
+    "text": "6. 송송 썬 쪽파와 레몬을 올려 마무리한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9GWG"
+   }
+  ],
+  "tip": "•저염버터를 사용하면 나트륨 섭취량을 줄일 수 있어요.\n•백미보다 칼륨이 풍부한 현미밥을 사용했어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 492,
+  "flag": "J",
+  "name": "토마토덮밥",
+  "method": "볶기",
+  "category": "밥",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 379.3,
+  "carb": 71.1,
+  "protein": 15.6,
+  "fat": 3.6,
+  "sodium": 181.2,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00492_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00492_1.png",
+  "ingredientsText": "쌀(100g), 가지(50g), 새우(20g)\n- 소스 : 양파(20g), 마늘(10g), 올리브오일(10g)\n토마토소스(20g), 케첩(20g), 토마토(80g), 설탕(5g)\n- 곁들임채소 : 어린잎(5g)",
+  "steps": [
+   {
+    "text": "1. 쌀은 물에 불려 밥을 짓고, 가지는 길게 썰어 팬에 구워 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_1.png"
+   },
+   {
+    "text": "2. 양파와 마늘은 잘게 다져 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_2.png"
+   },
+   {
+    "text": "3. 토마토는 입자있게 다져 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_3.png"
+   },
+   {
+    "text": "4. 새우는 정종을 넣어 데쳐 껍질을 벗겨 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_4.png"
+   },
+   {
+    "text": "5. 팬에 올리브 오일을 넣고 양파와 마늘을 먼저 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_5.png"
+   },
+   {
+    "text": "6. 볶아지는 양파와 마늘에 토마토소스와 케첩을 넣어 볶다가 토마토와 설탕을 넣어 볶다가 졸이고, 밥을 그릇에 담고, 구운 가지와 새우를 올린 후 졸여 놓은 토마토소스를 위에 올린 후 어린잎을 살짝 올려 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00492_6.png"
+   }
+  ],
+  "tip": "토마토의 칼륨 성분이 나트륨 배출에 도움이 되요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 90021,
+  "flag": "A",
+  "name": "계란토스트",
+  "method": "굽기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "식빵 2장, 달걀 1개, 양배추 1줌, 햄 1장, 치즈 1장, 케첩 1큰술, 설탕 1작은술, 버터 1작은술",
+  "steps": [
+   {
+    "text": "1. 양배추를 채 썰어 달걀과 섞고 식빵 크기로 부친다.",
+    "image": null
+   },
+   {
+    "text": "2. 팬에 버터를 녹여 식빵을 노릇하게 굽는다.",
+    "image": null
+   },
+   {
+    "text": "3. 햄을 살짝 구워 둔다.",
+    "image": null
+   },
+   {
+    "text": "4. 식빵에 달걀부침, 햄, 치즈를 올리고 설탕과 케첩을 뿌려 덮는다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90018,
+  "flag": "A",
+  "name": "김치계란라면",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "쉬움",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "라면 1개, 김치 1/4컵, 달걀 1개, 대파 1/4대, 물 550ml",
+  "steps": [
+   {
+    "text": "1. 대파는 송송 썰고 김치는 먹기 좋게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 물이 끓으면 라면 스프와 김치를 넣는다.",
+    "image": null
+   },
+   {
+    "text": "3. 면을 넣고 2분 끓인 뒤 달걀을 넣는다.",
+    "image": null
+   },
+   {
+    "text": "4. 대파를 넣고 1분 더 끓인다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90022,
+  "flag": "A",
+  "name": "김치볶음우동",
+  "method": "볶기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "우동 1개, 김치 1/2컵, 양파 1/4개, 햄 50g, 고추장 1/2큰술, 설탕 1작은술, 식용유 1큰술, 참기름 1작은술",
+  "steps": [
+   {
+    "text": "1. 우동면은 끓는 물에 1분 데쳐 풀어 둔다.",
+    "image": null
+   },
+   {
+    "text": "2. 김치, 양파, 햄을 먹기 좋게 썬다.",
+    "image": null
+   },
+   {
+    "text": "3. 팬에 식용유를 두르고 김치, 양파, 햄, 설탕을 볶는다.",
+    "image": null
+   },
+   {
+    "text": "4. 우동면과 고추장을 넣고 섞어 볶은 뒤 참기름을 두른다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90020,
+  "flag": "A",
+  "name": "김치전",
+  "method": "굽기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 20,
+  "level": "쉬움",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "김치 1컵, 부침가루 1컵, 양파 1/4개, 청양고추 1개, 물 150ml, 식용유 2큰술",
+  "steps": [
+   {
+    "text": "1. 김치와 양파, 청양고추를 잘게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 부침가루와 물을 섞어 반죽을 만들고 썬 재료를 넣어 섞는다.",
+    "image": null
+   },
+   {
+    "text": "3. 팬에 식용유를 넉넉히 두르고 반죽을 얇게 펼친다.",
+    "image": null
+   },
+   {
+    "text": "4. 중불에서 앞뒤로 노릇하게 3분씩 부친다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90019,
+  "flag": "A",
+  "name": "떡국",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "떡 200g, 달걀 1개, 대파 1/4대, 김 약간, 간장 1큰술, 마늘 1/2작은술, 소금 약간, 육수 500ml",
+  "steps": [
+   {
+    "text": "1. 떡은 물에 10분 불리고 대파는 어슷 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 육수에 간장과 다진 마늘을 넣고 끓인다.",
+    "image": null
+   },
+   {
+    "text": "3. 떡을 넣고 떠오를 때까지 끓인 뒤 푼 달걀을 둘러 넣는다.",
+    "image": null
+   },
+   {
+    "text": "4. 대파를 넣고 소금으로 간한 뒤 김을 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90001,
+  "flag": "A",
+  "name": "떡볶이",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "떡 200g, 어묵 2장, 대파 1/2대, 달걀 1개, 고추장 2큰술, 고춧가루 1큰술, 설탕 1큰술, 간장 1큰술, 물 300ml",
+  "steps": [
+   {
+    "text": "1. 떡은 찬물에 10분 정도 담가 두고, 어묵은 한입 크기, 대파는 어슷하게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 물, 고추장, 고춧가루, 설탕, 간장을 넣고 잘 풀어 끓인다.",
+    "image": null
+   },
+   {
+    "text": "3. 양념이 끓으면 떡과 어묵을 넣고 중불에서 저어 가며 5~6분 끓인다.",
+    "image": null
+   },
+   {
+    "text": "4. 국물이 걸쭉해지면 대파를 넣고 1분 더 끓인다. 삶은 달걀을 곁들이면 좋다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90002,
+  "flag": "A",
+  "name": "라볶이",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "라면 1개, 떡 100g, 어묵 1장, 대파 1/2대, 고추장 2큰술, 고춧가루 1/2큰술, 설탕 1큰술, 물 400ml",
+  "steps": [
+   {
+    "text": "1. 떡은 물에 불리고 어묵과 대파는 먹기 좋게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 물, 고추장, 고춧가루, 설탕을 풀어 끓인다.",
+    "image": null
+   },
+   {
+    "text": "3. 떡과 어묵을 넣고 3분 끓인 뒤 라면 사리를 넣는다.",
+    "image": null
+   },
+   {
+    "text": "4. 면이 익으면 대파를 넣고 국물을 졸이듯 1분 더 끓인다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90017,
+  "flag": "A",
+  "name": "비빔국수",
+  "method": "기타",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "국수 100g, 오이 1/3개, 김치 1/4컵, 달걀 1개, 고추장 2큰술, 식초 1큰술, 설탕 1큰술, 참기름 1작은술, 깨 약간",
+  "steps": [
+   {
+    "text": "1. 고추장, 식초, 설탕, 참기름, 깨를 섞어 비빔장을 만든다.",
+    "image": null
+   },
+   {
+    "text": "2. 오이는 채 썰고 김치는 잘게 썬다. 달걀은 삶아 반으로 자른다.",
+    "image": null
+   },
+   {
+    "text": "3. 국수를 삶아 찬물에 여러 번 헹궈 물기를 뺀다.",
+    "image": null
+   },
+   {
+    "text": "4. 국수에 비빔장과 김치를 넣고 비벼 오이와 달걀을 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90016,
+  "flag": "A",
+  "name": "잔치국수",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "국수 100g, 애호박 1/4개, 달걀 1개, 김 약간, 간장 1큰술, 소금 약간, 육수 500ml",
+  "steps": [
+   {
+    "text": "1. 육수(멸치·다시마 또는 시판 육수)에 간장과 소금으로 간을 해 끓인다.",
+    "image": null
+   },
+   {
+    "text": "2. 애호박은 채 썰어 볶고 달걀은 지단을 부쳐 채 썬다.",
+    "image": null
+   },
+   {
+    "text": "3. 국수를 끓는 물에 삶아 찬물에 헹군다.",
+    "image": null
+   },
+   {
+    "text": "4. 그릇에 국수를 담고 뜨거운 육수를 부은 뒤 고명을 올린다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 510,
+  "flag": "J",
+  "name": "냉토마토파스타",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 202.3,
+  "carb": 34.1,
+  "protein": 8.1,
+  "fat": 3.7,
+  "sodium": 213.5,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00510_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00510_1.png",
+  "ingredientsText": "토마토(50g), 브로컬리(20g), 펜네(100g), 올리브오일(10g)\n후춧가루(0.1g)\n- 소스 : 마늘(10g), 양파(20g), 당근(20g), 방울토마토(50g)\n올리브오일(10g), 육수(400g), 설탕(10g)\n소금(0.3g), 레몬즙(10g), 월계수잎(1장)",
+  "steps": [
+   {
+    "text": "1. 마늘은 곱게 다지고 양파, 당근, 방울토마토는 입자있게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_1.png"
+   },
+   {
+    "text": "2. 토마토는 씨와 껍질을 제거하고 채를 썰어놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_2.png"
+   },
+   {
+    "text": "3. 브로컬리를 끓는 물에 데쳐 찬물에 헹구어 작게 썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_3.png"
+   },
+   {
+    "text": "4. 펜네는 끓는 물에 약 10분 정도 삶아 건진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_4.png"
+   },
+   {
+    "text": "5. 건져진 펜네는 올리브오일을 넣어 무친 후 그릇에 담아놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_5.png"
+   },
+   {
+    "text": "6. 냄비에 오일을 넣고 마늘과 양파를 볶다가 당근과 방울토마토를 넣어 볶으면서 육수를 붓고 설탕과 소금, 레몬즙, 월계수잎을 넣고 끓인 뒤 월계수잎을 건져내고, 차갑게 식힌 후 그릇에 담겨 있는 펜네에 토마토채(②)와 브로컬리(③)를 함께 넣어 담아 완성 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00510_6.png"
+   }
+  ],
+  "tip": "깔끔한 맛의 토마토소스를 차갑게 만들어, 나트륨 함량이 적어도 싱겁지 않아요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 482,
+  "flag": "J",
+  "name": "냉파스타",
+  "method": "볶기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": null,
+  "calories": 289.1,
+  "carb": 57.8,
+  "protein": 9.0,
+  "fat": 2.4,
+  "sodium": 81.9,
+  "hashtag": "스파게티면",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00482_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00482_1.png",
+  "ingredientsText": "스파게티(100g), 올리브오일(10g), 소고기(50g)\n저염간장(10g), 설탕(10g), 마늘(10g), 깻잎(10g)\n양파(20g), 파프리카(20g), 육수(400g), 설탕(10g)\n식초(10g), 저염간장(10g)",
+  "steps": [
+   {
+    "text": "1. 스파게티는 약 10분 정도 삶아 건져 찬물에 헹궈 물기를 빼고 올리브오일을 발라 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_1.png"
+   },
+   {
+    "text": "2. 소고기는 넓게 편으로 펴서 간장, 설탕, 마늘을 넣어 양념을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_2.png"
+   },
+   {
+    "text": "3. 양념된 소고기를 팬에 구워 냅킨위에 올려 기름을 빼놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_3.png"
+   },
+   {
+    "text": "4. 깻잎과 양파, 파프리카는 길게 채를 썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_4.png"
+   },
+   {
+    "text": "5. 팬에 기름을 넣고 팬이 뜨거울 때 양파를 넣어 재빠르게 볶아낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_5.png"
+   },
+   {
+    "text": "6. 준비한 육수에 설탕과 식초, 저염간장을 넣어 차갑게 냉장보관하고, 그릇에 스파게티를 담고, 그 위에 볶은 양파와 깻잎, 파프리카와 구운 고기를 올린 후 차가운 육수를 부어 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00482_6.png"
+   }
+  ],
+  "tip": "새콤달콤한 육수에 양념된 소고기구이가 어우러져 나트륨 함량을 낮출 수 있어요",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 114,
+  "flag": "J",
+  "name": "닭가슴살 브로콜리 만두",
+  "method": "찌기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 30,
+  "level": "보통",
+  "weight": null,
+  "calories": 123.2,
+  "carb": 19.0,
+  "protein": 8.4,
+  "fat": 1.5,
+  "sodium": 167.9,
+  "hashtag": "닭가슴살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00114_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00114_1.png",
+  "ingredientsText": "주재료\n만두피 4g(2장), 브로콜리 100g(1/4개), 숙주 100g, 표고버섯 20g(2개), 닭 가슴살 100g, 참기름 2g(1/2작은술), 저염간장 4g(1작은술), 소금 0.5g, 후춧가루 0.1g",
+  "steps": [
+   {
+    "text": "1. 브로콜리, 숙주, 표고버섯, 닭 가슴살은 다지고 다진 닭 가슴살은 소금과 후추로 밑간 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00114_1.png"
+   },
+   {
+    "text": "2. 다진 채소와 닭가슴살, 참기름, 저염간장을 섞어 만두소를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00114_3.png"
+   },
+   {
+    "text": "3. 준비한 만두피에 만두소를 넣은 후 만두 모양으로 빚고 만두를 찜통에 넣어 찌고 그릇에 담는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00114_4.png"
+   }
+  ],
+  "tip": "칼륨 함량이 높은 브로콜리를 사용하여 나트륨 배출을 돕는다. 만두소는 저염간장으로 양념하고 별도로 초간장을 곁들이지 않아 나트륨섭취를 줄인다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 618,
+  "flag": "J",
+  "name": "닭가슴살 스테이크",
+  "method": "굽기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 242.4,
+  "carb": 4.4,
+  "protein": 22.0,
+  "fat": 15.2,
+  "sodium": 549.7,
+  "hashtag": "닭가슴살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00618_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00618_1.png",
+  "ingredientsText": "닭고기(가슴살, 150g), 토마토(100g), 가지(1개), 치즈(1장),\n오레가노(2g), 마늘(20g), 소금(0.2g), 후춧가루(0.01g),\n올리브오일(20g)",
+  "steps": [
+   {
+    "text": "1. 닭가슴살을 소금과 후추로 밑간한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_1.png"
+   },
+   {
+    "text": "2. 토마토와 마늘은 입자있게 다진다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_2.png"
+   },
+   {
+    "text": "3. 다진 토마토와 마늘을 냄비에 담아 볶다가 물과 오레가노를 넣고 끓여 소스를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_3.png"
+   },
+   {
+    "text": "4. 팬에 올리브오일을 두르고 밑간 한 닭가슴살을 노릇노릇하게 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_4.png"
+   },
+   {
+    "text": "5. 가지는 길게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_5.png"
+   },
+   {
+    "text": "6. 가지에 치즈를 감싸 익히고, 구운 닭 스테이크를 옆에 담고 소스를 옮긴다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00618_6.png"
+   }
+  ],
+  "tip": "치즈를 사용하여 별도의 소금 사용 없이 삼삼한 맛을 낼 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 624,
+  "flag": "J",
+  "name": "두유 라이크 파스타",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 530.0,
+  "carb": 82.6,
+  "protein": 20.3,
+  "fat": 13.1,
+  "sodium": 127.3,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00624_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00624_1.png",
+  "ingredientsText": "스파게티(100g), 양파(30g), 베이컨(20g), 새송이버섯(1개),\n브로콜리(50g), 홍고추(1개), 두유(200g), 견과류(20g),\n치즈(1장), 올리브오일(10g)",
+  "steps": [
+   {
+    "text": "1. 스파게티면은 10분 삶아 건진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_1.png"
+   },
+   {
+    "text": "2. 팬에 올리브오일을 넣고 삶은 스파게티를 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_2.png"
+   },
+   {
+    "text": "3. 베이컨은 끓는 물에 살짝 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_3.png"
+   },
+   {
+    "text": "4. 양파, 브로컬리, 홍보추, 베이컨은 썰고, 견과류는 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_4.png"
+   },
+   {
+    "text": "5. 팬에 올리브오일을 넣고 ④를 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_5.png"
+   },
+   {
+    "text": "6. 야채가 볶아지면 두유를 넣고 끓이다가 스파게티, 치즈를 넣고 끓인 뒤 그릇에 담고 견과류를 올린다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00624_6.png"
+   }
+  ],
+  "tip": "베이컨을 데쳐 사용하면 베이컨의 나트륨과 첨가제를 제거할 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 441,
+  "flag": "J",
+  "name": "삼색샌드위치",
+  "method": "기타",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 356.4,
+  "carb": 47.9,
+  "protein": 14.1,
+  "fat": 12.4,
+  "sodium": 497.3,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00441_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00441_1.png",
+  "ingredientsText": "식빵(100g), 토마토(20g), 어린이치즈(20g), 양상추(30g)\n감자(30g), 올리고당(20g), 달걀(60g), 당근(20g), 오이(20g)\n양파(20g), 소금(0.3g)",
+  "steps": [
+   {
+    "text": "1. 식빵은 가장 자리를 잘라 밀대를 이용 하여 얇게 밀어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_1.png"
+   },
+   {
+    "text": "2. 감자는 삶은 뒤 곱게 으깨어 올리고당을 넣고 골고루 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_2.png"
+   },
+   {
+    "text": "3. 달걀은 약 13분 정도 삶아 껍질을 벗기고, 반으로 갈라 썰어놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_3.png"
+   },
+   {
+    "text": "4. 당근과 양파 오이도 얇게 썰어놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_4.png"
+   },
+   {
+    "text": "5. 토마토는 포를 떠서 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_5.png"
+   },
+   {
+    "text": "6. 으깬 감자(②)에 준비한 달걀(③)과 채소(④)를 넣고 소금을 약간 넣은 뒤 골고루 섞어, 밀어 놓은 식빵에 토마토, 치즈, 양상추와 함께 넣어 돌돌 말아 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00441_6.png"
+   }
+  ],
+  "tip": "여러 가지 채소와 감자를 곁들여 나트륨을 적게 사용해도 좋은 맛을 충분히 느낄 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1067,
+  "flag": "J",
+  "name": "양배추롤&참치두부쌈장",
+  "method": "찌기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 30,
+  "level": "어려움",
+  "weight": null,
+  "calories": 295.0,
+  "carb": 52.5,
+  "protein": 12.9,
+  "fat": 3.7,
+  "sodium": 4.5,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01067_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01067_1.png",
+  "ingredientsText": "밥(150g), 양배추(60g), 참치(캔, 30g),\n두부(30g), 양파(8g), 파(5g), 마늘(5g),\n된장(5g), 고추장(2g), 매실청(3g),\n참기름(1.5g), 깨(1g), 물(8g)",
+  "steps": [
+   {
+    "text": "1. 양배추는 손질하여 찜통에 10분간 찐 후 식힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_1.JPG"
+   },
+   {
+    "text": "2. 참치는 체에 받쳐 기름을 빼고, 두부는 물기를 제거한 뒤 으깬다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_2.JPG"
+   },
+   {
+    "text": "3. 양파와 파, 마늘은 잘게 다진다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_3.JPG"
+   },
+   {
+    "text": "4. 팬에 된장, 고추장, 매실청, 다진  양파, 파, 마늘, 물을 넣고 섞어 끓이다가 참치, 두부를 넣고 볶은 뒤 참기름, 깨를 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_4.JPG"
+   },
+   {
+    "text": "5. 찐 양배추에 밥을 얹어 돌돌 만다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_5.JPG"
+   },
+   {
+    "text": "6. 양배추롤을 적당한 크기로 썰고 참치두부쌈장을 올린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01067_6.JPG"
+   }
+  ],
+  "tip": "참치와 두부의 고소한 맛과 양파의 단맛으로 설탕을 넣지 않아도 맛있는 쌈장을 만들 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3225,
+  "flag": "J",
+  "name": "어묵 잡채",
+  "method": "기타",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 184.5,
+  "calories": 221.9,
+  "carb": 16.2,
+  "protein": 21.2,
+  "fat": 8.0,
+  "sodium": 689.5,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100338_1615338218715.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100359_1615338239834.JPG",
+  "ingredientsText": "돼지고기(70g), 어묵(100g), 아삭이고추(30g), 빨강 파프리카(25g), 노랑 파프리카(25g), 콩나물(150g), 소금(0.3g), 후춧가루(0.3g), 굴소스(5g), 참기름(1g)",
+  "steps": [
+   {
+    "text": "1. 돼지고기, 어묵, 아삭이고추, 파프리카는 채 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100406_1615338246235.jpg"
+   },
+   {
+    "text": "2. 콩나물은 찬물에 헹궈 체에 밭친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100419_1615338259474.jpg"
+   },
+   {
+    "text": "3. 채 썬 돼지고기에 밑간을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100431_1615338271552.jpg"
+   },
+   {
+    "text": "4. 중간 불로 달군 팬에 밑간한 돼지고기를 넣어 3분간 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100444_1615338284090.jpg"
+   },
+   {
+    "text": "5. 채 썬 재료와 어묵을 넣어 5분간 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100457_1615338297653.jpg"
+   },
+   {
+    "text": "6. 굴소스를 넣어 1~2분간 볶고 참기름을 두른 뒤 고루 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210310/20210310100510_1615338310739.jpg"
+   }
+  ],
+  "tip": "소금 대신 굴소스를 활용해 간을 맞췄어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 465,
+  "flag": "J",
+  "name": "치킨완자스프",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 236.7,
+  "carb": 10.5,
+  "protein": 17.6,
+  "fat": 13.8,
+  "sodium": 199.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00465_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00465_1.png",
+  "ingredientsText": "버터(20g), 밀가루(20g), 육수(100g), 생크림(20g)\n브로컬리(30g), 우유(100g), 닭고기살(100g), 대추(20g)\n표고버섯(20g), 당근(20g), 마늘(10g), 양파(20g)\n소금(0.3g), 후춧가루(0.05g), 참기름(5g)",
+  "steps": [
+   {
+    "text": "1. 닭고기살은 곱게 다져 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_1.png"
+   },
+   {
+    "text": "2. 대추는 씨를 빼고 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_2.png"
+   },
+   {
+    "text": "3. 당근과 양파, 표고버섯, 마늘은 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_3.png"
+   },
+   {
+    "text": "4. 삶은 브로컬리는 우유와 함께 갈아 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_4.png"
+   },
+   {
+    "text": "5. 닭고기살에 대추(②)와 채소(③), 소금, 후춧가루, 참기름을 넣어 골고루 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_5.png"
+   },
+   {
+    "text": "6. 섞여진 닭고기살(⑤)을 동글동글 하게 완자를 지어 살짝 데쳐내고, 냄비에 버터와 밀가루를 넣어 볶다가, 육수를 넣고 끓인 뒤 우유와 브로컬리 갈은 것 (④)과 생크림을 넣어 한 소큼 끓여 완성 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00465_6.png"
+   }
+  ],
+  "tip": "다진 채소를 넣은 완자와 크림소스가 더해져 고소하고 맛있는 스프를 만들었어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1030,
+  "flag": "J",
+  "name": "클럽 샌드위치",
+  "method": "기타",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 1.0,
+  "carb": 1.0,
+  "protein": 1.0,
+  "fat": 1.0,
+  "sodium": 1.0,
+  "hashtag": "가슴살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053808_1416213488663.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053808_1416213488663.jpg",
+  "ingredientsText": "식빵 40g, 마요네즈 2g, 삶은달걀 15g, 양상추 8g, 닭가슴살 13g, 토마토 20g, 치즈슬라이스 4g, 슬라이스햄 4g, 베이컨 4g, 소금적당량, 후추적당량",
+  "steps": [
+   {
+    "text": "1. 식빵은 앞뒤로 바삭하게 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-1.jpg"
+   },
+   {
+    "text": "2. 양상추는 뜯어서 찬물에 담가 두고 토마토는 얇게 슬라이스 하고 달걀도 삶아 egg slicer로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-2.jpg"
+   },
+   {
+    "text": "3. 닭가슴살에 소금, 후추로 간을 한 뒤 팬에서 익히고 햄과 베이컨도 살짝 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-3.jpg"
+   },
+   {
+    "text": "4. 식빵 한 면에 마요네즈를 바른 뒤 양상추, 베이컨, 토마토를 얹고 다시 식빵 양면에 마요네즈를 바르고 토마토 위에 얹는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-4.jpg"
+   },
+   {
+    "text": "5. 그 위에 양상추, 치즈, 햄, 달걀, 닭고기를 올린 다음 나머지 빵 한 면에 마요네즈를 바른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-5.jpg"
+   },
+   {
+    "text": "6. 빵 칼로 샌드위치의 사방의 테두리를 잘라내고 대각선으로 먹기 좋게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1030-6.jpg"
+   }
+  ],
+  "tip": "닭가슴살 대신 참치 통조림을 이용할 수 있다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 311,
+  "flag": "J",
+  "name": "토마토라면",
+  "method": "끓이기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 190.4,
+  "carb": 4.9,
+  "protein": 1.1,
+  "fat": 1.0,
+  "sodium": 423.2,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00311_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00311_1.png",
+  "ingredientsText": "재료 애호박(30g), 양파(20g), 청양고추(5g), 대파(5g), 토마토(300g)\n라면스프(3g), 라면(100g)\n육수 다시마(2.5g), 멸치(2.5g), 무(10g), 물(250g)",
+  "steps": [
+   {
+    "text": "1. 냄비에 육수 재료를 넣고 10분간 끓여 건더기를 건진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_1.png"
+   },
+   {
+    "text": "2. 애호박은 돌려 깎아 채 썰고, 양파도 채 썰고, 청양고추와 대파는 어슷 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_2.png"
+   },
+   {
+    "text": "3. 토마토는 200g은 잘게 다지고, 100g은 두툼하게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_3.png"
+   },
+   {
+    "text": "4. 육수에 라면스프와 라면을 넣고 살짝 익힌 뒤 양파, 애호박, 다진 토마토를 넣고 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_4.png"
+   },
+   {
+    "text": "5. 면이 다 익으면 두툼하게 썬 토마토를 넣고 10초간 더 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_5.png"
+   },
+   {
+    "text": "6. 대파와 청양고추를 올려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00311_6.png"
+   }
+  ],
+  "tip": "라면스프의 양을 ¼로 줄여 나트륨 섭취량을 낮추고,\n대신 토마토와 청양고추를 넣어 상큼함과 칼칼함을 더했다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 493,
+  "flag": "J",
+  "name": "표고크림파스타",
+  "method": "볶기",
+  "category": "일품",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 332.5,
+  "carb": 54.6,
+  "protein": 10.8,
+  "fat": 7.8,
+  "sodium": 107.0,
+  "hashtag": "스파게티면",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00493_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00493_1.png",
+  "ingredientsText": "양송이(20g), 표고버섯(80g), 소금(0.5g), 후춧가루(0.02g)\n스파게티(100g), 올리브오일(10g)\n- 크림소스 : 밀가루(10g), 버터(10g), 우유(200g)\n생크림(20g)",
+  "steps": [
+   {
+    "text": "1. 양송이는 껍질을 벗겨 형태 그대로 썰고, 표고버섯은 기둥을 제거하고 편으로 썰어놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_1.png"
+   },
+   {
+    "text": "2. 팬에 버터를 살짝 넣고 썰어놓은 버섯을 소금을 살짝 뿌려 볶아 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_2.png"
+   },
+   {
+    "text": "3. 냄비에 버터와 밀가루를 넣고, 은근히 볶아 화이트루를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_3.png"
+   },
+   {
+    "text": "4. 화이트 루에 우유를 조금씩 넣고 뭉치지 않게 풀어 끓이다가 다시 생크림을 넣고 한 소큼 끓여 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_4.png"
+   },
+   {
+    "text": "5. 스파게티는 끓는 물에 약 10분 정도 삶아 건져 올리브 오일에 볶아 접시에 담는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_5.png"
+   },
+   {
+    "text": "6. 끓여 놓은 크림소스에 볶아진 버섯과 후춧가루를 넣고 한 소큼 더 끓여 스파게티를 담은 접시에 넣고 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00493_6.png"
+   }
+  ],
+  "tip": "우유를 넣고 소스를 만들면, 영양도 좋고, 나트륨을 적게 넣어도 풍부한 맛을 느낄 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 90024,
+  "flag": "A",
+  "name": "계란국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "쉬움",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "달걀 2개, 대파 1/4대, 간장 1작은술, 소금 약간, 육수 500ml",
+  "steps": [
+   {
+    "text": "1. 대파를 송송 썰고 달걀은 풀어 둔다.",
+    "image": null
+   },
+   {
+    "text": "2. 육수에 간장을 넣고 끓인다.",
+    "image": null
+   },
+   {
+    "text": "3. 국물이 끓으면 달걀물을 천천히 둘러 넣고 젓지 않고 30초 둔다.",
+    "image": null
+   },
+   {
+    "text": "4. 대파를 넣고 소금으로 간한다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 90023,
+  "flag": "A",
+  "name": "김치찌개",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "냉장고 털이 팀",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": null,
+  "carb": null,
+  "protein": null,
+  "fat": null,
+  "sodium": null,
+  "hashtag": "팀작성",
+  "image": null,
+  "imageStep": null,
+  "ingredientsText": "김치 1컵, 돼지고기 100g, 두부 1/3모, 대파 1/4대, 고춧가루 1작은술, 식용유 1작은술, 물 400ml",
+  "steps": [
+   {
+    "text": "1. 김치, 돼지고기, 두부, 대파를 먹기 좋게 썬다.",
+    "image": null
+   },
+   {
+    "text": "2. 냄비에 식용유를 두르고 돼지고기와 김치를 3분 볶는다.",
+    "image": null
+   },
+   {
+    "text": "3. 물과 고춧가루를 넣고 10분 끓인다.",
+    "image": null
+   },
+   {
+    "text": "4. 두부와 대파를 넣고 3분 더 끓인다. 싱거우면 김치 국물로 간한다.",
+    "image": null
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "api",
+   "real": [],
+   "dummy": [
+    "name",
+    "method",
+    "category",
+    "ingredientsText",
+    "steps",
+    "time",
+    "level",
+    "author"
+   ],
+   "api": [
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "image",
+    "tip"
+   ],
+   "note": "팀 작성 레시피 — 영양정보·사진·팁은 식약처 API(COOKRCP01)를 요리명으로 검색해 실행 중 표시"
+  }
+ },
+ {
+  "id": 674,
+  "flag": "J",
+  "name": "감자느타리버섯국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 53.3,
+  "carb": 6.8,
+  "protein": 5.2,
+  "fat": 0.8,
+  "sodium": 404.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102104_1416273664244.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102104_1416273664244.jpg",
+  "ingredientsText": "감자 30g, 느타리버섯 15g, 두부 8g, 파 5g, 물 300g, 국멸치 5g, 홍고추 3g, 건다시마 3g, 다진 마늘 3g, 소금 0.5g",
+  "steps": [
+   {
+    "text": "1. 물 1컵 반에 국멸치와 건다시마를 넣어 멸치다시마국물을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-1.jpg"
+   },
+   {
+    "text": "2. 국물을 우린 다시마는 채썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-2.jpg"
+   },
+   {
+    "text": "3. 느타리버섯은 끓는 물에 데친 후 찢는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-3.jpg"
+   },
+   {
+    "text": "4. 감자와 두부는 3~4cm 가량으로 채를 썰고 홍고추와 대파는 어슷썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-4.jpg"
+   },
+   {
+    "text": "5. 멸치다시마국물 1컵에 감자를 넣고 끓인 뒤 느타리버섯을 넣어 한소끔 끓이고 두부, 파, 다진 마늘, 홍고추를 넣고 소금으로 간 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-5.jpg"
+   },
+   {
+    "text": "6. 채 썬 다시마를 고명으로 얹는다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/674-6.jpg"
+   }
+  ],
+  "tip": "멸치는 찬물에 넣고 끓여 국물을 내고 끓는 중간에 생기는 거품을 걷어낸다. - 느타리버섯은 갓 쪽에서 기둥 쪽을 향해 찢으면 잘 찢어진다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3065,
+  "flag": "J",
+  "name": "감자미역국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "쉬움",
+  "weight": 300.0,
+  "calories": 35.4,
+  "carb": 2.5,
+  "protein": 1.1,
+  "fat": 2.3,
+  "sodium": 174.6,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015125_1583729485543.JPG",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015125_1583729485801.JPG",
+  "ingredientsText": "건미역 1.5g, 감자 40g, 다진마늘 1g, 참기름 1g, 국간장 2g, 물 300ml",
+  "steps": [
+   {
+    "text": "1. 미역을 물에 불리고 건져내 물기를 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015232_1583729552858.JPG"
+   },
+   {
+    "text": "2. 감자는 껍질을 제거하고 한입 크기로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015248_1583729568748.JPG"
+   },
+   {
+    "text": "3. 냄비에 참기름을 두르고 미역을 볶다가 물을 부어 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015303_1583729583755.JPG"
+   },
+   {
+    "text": "4. 국물이 우러나면 감자를 넣고 익을 때까지 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015316_1583729596761.JPG"
+   },
+   {
+    "text": "5. 국간장을 넣어 간을 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015329_1583729609745.JPG"
+   },
+   {
+    "text": "6. 다진마늘을 넣고 한소끔 더 끓여서 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309015349_1583729629362.JPG"
+   }
+  ],
+  "tip": "감자에서 나오는 전분이 깊은 맛을 내줘서 염분 사용을 줄일 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 137,
+  "flag": "J",
+  "name": "된장 두부찌개",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 77.3,
+  "carb": 2.4,
+  "protein": 7.5,
+  "fat": 4.2,
+  "sodium": 124.6,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00137_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00137_1.png",
+  "ingredientsText": "두부 320g(1모), 쌀뜨물 300g(1½컵), 돼지고기 100g, 김치 140g, 된장 20g(1½큰술), 청양고추 10g(1/2개), 홍고추 5g(1/4개),\n대파 10g(2cm), 고춧가루 5g(1작은술)",
+  "steps": [
+   {
+    "text": "1. 두부에 쌀뜨물을 넣고 갈아준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00137_1.png"
+   },
+   {
+    "text": "2. 돼지고기는 썰고 김치는 물에 씻어 양념을 제거하고 3×3cm로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00137_2.png"
+   },
+   {
+    "text": "3. 냄비에 돼지고기와 김치를 함께 볶은 후, 망에 거른 된장과 1의 두부, 고춧가루, 청양고추, 홍고추를 넣어 끓이다가 대파를 넣어 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00137_3.png"
+   }
+  ],
+  "tip": "김치는 물에 헹구어 염분을 제거하고 고추를 넣어 매운 맛과 향을 더한다. 두부는 콩 단백질이 풍부한 식품으로 두뇌발달에 좋다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3067,
+  "flag": "J",
+  "name": "배추된장국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": 300.0,
+  "calories": 44.9,
+  "carb": 4.0,
+  "protein": 4.2,
+  "fat": 1.3,
+  "sodium": 52.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022612_1583731572075.JPG",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022119_1583731279135.JPG",
+  "ingredientsText": "배추 20g, 두부 30g, 양파 20g, 대파 10g, 다시멸치 5g, 청양고추 1g, 다진마늘 0.5g, 생강즙 0.5g, 된장 2g, 쌀뜨물 60ml, 물 300ml",
+  "steps": [
+   {
+    "text": "1. 배추, 양파, 두부는 한입 크기로 썰고 대파와 청양고추는 어슷썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022132_1583731292189.JPG"
+   },
+   {
+    "text": "2. 전처리 후 남은 양파껍질, 대파뿌리와 다시멸치를 넣고 육수를 우린 후 거른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022147_1583731307341.JPG"
+   },
+   {
+    "text": "3. 두부는 끓는 물에 10분정도 넣어서 염분기를 빼준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022201_1583731321063.JPG"
+   },
+   {
+    "text": "4. 냄비에 참기름과 배추를 넣어 볶다가 쌀뜨물과 육수를 넣어 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022215_1583731335496.JPG"
+   },
+   {
+    "text": "5. 두부와 양파, 대파, 고추를 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022233_1583731353838.JPG"
+   },
+   {
+    "text": "6. 된장, 간마늘, 생강즙을 넣어 간을 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309022246_1583731366341.JPG"
+   }
+  ],
+  "tip": "두부는 미리 한번 데쳐 내면 염분을 줄일 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 937,
+  "flag": "J",
+  "name": "새우 완자탕",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": null,
+  "calories": 87.0,
+  "carb": 9.3,
+  "protein": 9.9,
+  "fat": 1.1,
+  "sodium": 205.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053623_1416213383797.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053623_1416213383797.jpg",
+  "ingredientsText": "새우 살 40g, 달걀흰자 5g, 전분 4g, 당면불린것 10g, 팽이버섯 10g, 부추 5g, 홍고추 3g, 다시마육수 70g, 국간장 1g, 마늘다진것 2g, 소금적당량, 흰 후춧가루 적당량",
+  "steps": [
+   {
+    "text": "1. 곱게 다진 새우살에 소금, 흰 후춧가루로 밑간한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-1.jpg"
+   },
+   {
+    "text": "2. 1에 달걀흰자, 전분을 넣어 치댄후 지름 2cm 정도의 완자를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-2.jpg"
+   },
+   {
+    "text": "3. 불린 당면, 팽이버섯, 부추는 5cm 길이로 자르고 홍고추는 2cm 길이로 채썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-3.jpg"
+   },
+   {
+    "text": "4. 냄비에 다시마 육수를 넣어 끓으면 2의 완자를 넣고 불을 줄인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-4.jpg"
+   },
+   {
+    "text": "5. 완자가 떠오르면 불린 당면, 팽이버섯, 부추, 홍고추 순으로 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-5.jpg"
+   },
+   {
+    "text": "6. 다진마늘, 국간장, 소금으로 간한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/937-6.jpg"
+   }
+  ],
+  "tip": "새우 대신 흰살생선으로 만들어도 가능하다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3069,
+  "flag": "J",
+  "name": "새우살토마토스튜",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "어려움",
+  "weight": 300.0,
+  "calories": 67.1,
+  "carb": 6.1,
+  "protein": 5.5,
+  "fat": 2.3,
+  "sodium": 280.4,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309025909_1583733549459.JPG",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309025909_1583733549675.JPG",
+  "ingredientsText": "새우살 30g, 토마토 20g, 양파 15g, 당근 10g, 애호박 15g, 건다시마 3g, 버터 3g, 케찹 5g,10g, 후추 0.1g, 소금 0.2g, 물 300ml",
+  "steps": [
+   {
+    "text": "1. 다시마로 육수를 낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309025937_1583733577515.JPG"
+   },
+   {
+    "text": "2. 새우살은 데치고 토마토는 칼집을 내어 데친 후 껍질을 벗긴다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309025949_1583733589893.JPG"
+   },
+   {
+    "text": "3. 토마토, 양파, 당근, 호박은 먹기 좋은 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309030002_1583733602099.JPG"
+   },
+   {
+    "text": "4. 새우살과 당근, 호박을 버터에 볶아 준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309030017_1583733617556.JPG"
+   },
+   {
+    "text": "5. 기름을 두른 팬에 토마토와 양파를 넣고 조린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309030030_1583733630522.JPG"
+   },
+   {
+    "text": "6. ⑤에 ④와 육수, 케첩을 넣고 끓인 후 후추를 넣고 소금으로 간을 하여 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20200309/20200309030044_1583733644603.JPG"
+   }
+  ],
+  "tip": "새우살을 데쳐 사용해 염분을 줄였어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 2967,
+  "flag": "J",
+  "name": "소고기 무국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": 287.0,
+  "calories": 46.5,
+  "carb": 3.42,
+  "protein": 6.49,
+  "fat": 0.77,
+  "sodium": 226.87,
+  "hashtag": "소고기",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110212_1554688932975.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110214_1554688934793.jpg",
+  "ingredientsText": "소고기 14g, 무 15g, 파 3g, 느타리버섯 5g, 숙주 5g, 저염간장 10g, 물 150g",
+  "steps": [
+   {
+    "text": "1. 소고기를 먹기 좋은 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110245_1554688965153.jpg"
+   },
+   {
+    "text": "2. 무를 한입 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110256_1554688976342.jpg"
+   },
+   {
+    "text": "3. 냄비에 참기름을 두르고 고기의 핏기가 없어질 때 까지 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110314_1554688994479.jpg"
+   },
+   {
+    "text": "4. 고기가 익으면 무를 넣고 투명해질 때 까지 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110333_1554689013380.jpg"
+   },
+   {
+    "text": "5. 중불에서 물을 붓고 끓으면 느타리버섯을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110349_1554689029367.jpg"
+   },
+   {
+    "text": "6. 숙주나물과 파를 넣고 한소끔 끓이고 저염간장과 고춧가루를 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190408/20190408110416_1554689056305.jpg"
+   }
+  ],
+  "tip": "물과 간장을 1:1 비율로 섞고 야채를 넣어 끓인 뒤 식혀 만든 저염간장으로 나트륨을 줄여요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 922,
+  "flag": "J",
+  "name": "송이 미역국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 136.0,
+  "carb": 25.7,
+  "protein": 4.3,
+  "fat": 2.4,
+  "sodium": 309.0,
+  "hashtag": "송이버섯",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053603_1416213363580.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053603_1416213363580.jpg",
+  "ingredientsText": "불린 쌀 30g, 양송이버섯 10g, 당근 10g, 양파 3g, 마른미역 5g, 참기름 2g, 물 90g",
+  "steps": [
+   {
+    "text": "1. 쌀은 깨끗하게 씻어 불린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-1.jpg"
+   },
+   {
+    "text": "2. 1을 분쇄기로 살짝 간다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-2.jpg"
+   },
+   {
+    "text": "3. 양송이버섯과 채소를 잘게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-3.jpg"
+   },
+   {
+    "text": "4. 마른 미역은 30분 정도 불렸다가 잘게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-4.jpg"
+   },
+   {
+    "text": "5. 냄비에 참기름을 두르고 2를 볶다가 3, 4를 넣고 한번 더 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-5.jpg"
+   },
+   {
+    "text": "6. 5에 물을 넣은 뒤 쌀알이 퍼지도록 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/922-6.jpg"
+   }
+  ],
+  "tip": "죽은 항상 소금 간을 마지막에 해야 묽어지지 않는다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 267,
+  "flag": "J",
+  "name": "양지해장국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 103.8,
+  "carb": 2.47,
+  "protein": 2.89,
+  "fat": 1.32,
+  "sodium": 79.7,
+  "hashtag": "양지",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00267_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00267_1.png",
+  "ingredientsText": "재료 쇠고기육수(30g)\n느타리버섯(10g), 애호박(20g), 청양고추(1g)\n대파(10g), 방울토마토(80g), 콩나물(50g)\n양념 다진 마늘(8g), 저염국간장(2.5g), 소금(0.5g)",
+  "steps": [
+   {
+    "text": "1. 육수를 끓인 양지는 건져 얇게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_1.png"
+   },
+   {
+    "text": "2. 버섯은 잘게 찢고, 애호박은 반달모양으로 납작 썰고, 고추와 대파는 어슷하게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_2.png"
+   },
+   {
+    "text": "3. 방울토마토에 열십자로 칼집을 넣고 끓는 물에 데쳐 껍질을 벗긴다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_3.png"
+   },
+   {
+    "text": "4. 냄비에 식용유(10g)를 두른 뒤 다진 마늘을 넣고 볶아 향을 낸 뒤 방울토마토를 넣고 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_4.png"
+   },
+   {
+    "text": "5. 육수(300g), 콩나물, 쇠고기, 느타리버섯, 애호박을 넣고 국간장과 소금으로 간해 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_5.png"
+   },
+   {
+    "text": "6. 어슷 썬 청양고추와 대파를 넣어 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00267_6.png"
+   }
+  ],
+  "tip": "저염간장으로 간을 해 염분을 줄이고 콩나물로 시원한 맛을 내고, 쇠고기육수로 깊은 맛을 더했다.\n칼륨을 많이 함유한 토마토는 체내 나트륨 배출을 돕는다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3292,
+  "flag": "J",
+  "name": "양파토마토스튜",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": 288.0,
+  "calories": 36.2,
+  "carb": 4.9,
+  "protein": 1.6,
+  "fat": 1.2,
+  "sodium": 155.8,
+  "hashtag": null,
+  "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9bVw",
+  "imageStep": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9bX4",
+  "ingredientsText": "[ 2인분 ] 마늘(4쪽), 토마토(2개), 양파(1개), 월계수잎(2장), 육수용 멸치(½컵), 다시마(5×5cm, 2장)",
+  "steps": [
+   {
+    "text": "1. 물(8컵)에 육수 재료와 마늘(2쪽)을 넣어 끓으면 다시마를 건진 뒤 약한 불 로 30분간 더 끓여 육수를 만든다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9nqc"
+   },
+   {
+    "text": "2. 토마토는 꼭지를 제거하고, 열십자로 칼집을 낸 뒤 끓는 물에 30초간 데쳐 찬물에 담근다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9ntS"
+   },
+   {
+    "text": "3. 데친 토마토는 껍질을 벗긴 뒤 씨를 제거하고, 1×1cm 크기로 썬다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9nx7"
+   },
+   {
+    "text": "4. 양파는 3mm 두께로 채 썰고, 마늘(2쪽)은 1mm 두께로 채 썬다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9n-B"
+   },
+   {
+    "text": "5. 중간 불로 달군 마른 냄비에 채 썬 양파와 물(1Ts)을 넣어 진한 갈색이 될 때까지 볶는다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9o13"
+   },
+   {
+    "text": "6. 토마토를 넣어 으깨가며 5분간 볶고, 육수(6컵), 월계수잎, 채 썬 마늘을 넣어 10분간 끓이고 마무리한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9o2J"
+   }
+  ],
+  "tip": "•칼륨 함량이 높은 토마토는 나트륨 배출에 도움을 줘요.\n•멸치 육수로 간을 맞추어 나트륨 사용은 줄이고 감칠맛을 냈어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 272,
+  "flag": "J",
+  "name": "완자김치찌개",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 161.1,
+  "carb": 1.34,
+  "protein": 6.78,
+  "fat": 2.61,
+  "sodium": 355.0,
+  "hashtag": "등심",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00272_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00272_1.png",
+  "ingredientsText": "재료 콩나물(30g), 김치(50g)\n두부(40g), 붉은 고추(15g)\n다진 돼지고기(등심, 60g), 새우젓(5g)\n육수 대파(10g), 마늘(5g), 쇠고기(50g)",
+  "steps": [
+   {
+    "text": "1. 대파, 마늘, 쇠고기를 물(300g)과 함께 끓인 뒤 면포에 걸러 육수를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_1.png"
+   },
+   {
+    "text": "2. 콩나물, 김치를 물에 씻어 손질한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_2.png"
+   },
+   {
+    "text": "3. 두부는 물기를 빼고, 붉은 고추는 다진 뒤 돼지고기와 섞어 반죽해 동그랗게 빚어 완자를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_3.png"
+   },
+   {
+    "text": "4. 김 오른 찜기에 완자를 넣어 찐다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_4.png"
+   },
+   {
+    "text": "5. 육수를 끓이고 끓어오르면 김치, 콩나물, 새우젓을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_5.png"
+   },
+   {
+    "text": "6. 한소끔 더 끓이다가 완자를 넣고 조금 더 끓여 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00272_6.png"
+   }
+  ],
+  "tip": "김치는 물에 한 번 씻어 염분을 최대한 제거하고,\n쇠고기육수로 깊은 맛을 내고 붉은 고추로 매콤한 맛을 더해\n소금간을 하지 않아 나트륨 섭취를 줄였다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3007,
+  "flag": "J",
+  "name": "토마토 미소 된장국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": 196.0,
+  "calories": 46.85,
+  "carb": 5.29,
+  "protein": 3.43,
+  "fat": 1.33,
+  "sodium": 630.14,
+  "hashtag": "토마토",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055823_1554800303065.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055824_1554800304712.jpg",
+  "ingredientsText": "토마토 50g, 두부 30g, 양파 15g, 표고버섯 15g, 멸치 5g, 고추 8g, 대파 3g, 다시마 2g, 미소된장 30g",
+  "steps": [
+   {
+    "text": "1. 멸치, 다시마를 끓여 육수를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055859_1554800339984.jpg"
+   },
+   {
+    "text": "2. 두부, 양파, 표고버섯, 고추, 대파를 먹기 좋은 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055912_1554800352822.jpg"
+   },
+   {
+    "text": "3. 냄비에 물을 끓여 토마토를 5분 정도 익힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055926_1554800366946.jpg"
+   },
+   {
+    "text": "4. 토마토 껍질을 제거하고 적당한 크기로 썰어 씨를 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055941_1554800381617.jpg"
+   },
+   {
+    "text": "5. 육수에 미소 된장을 풀고 양파, 표고버섯을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409055954_1554800394793.jpg"
+   },
+   {
+    "text": "6. 토마토와 대파를 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409060009_1554800409126.jpg"
+   }
+  ],
+  "tip": "토마토, 다시마, 양파의 칼륨은 나트륨 배출을 도와줘요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 349,
+  "flag": "J",
+  "name": "토마토맑은장국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "쉬움",
+  "weight": 170.0,
+  "calories": 25.4,
+  "carb": 3.0,
+  "protein": 1.8,
+  "fat": 0.7,
+  "sodium": 174.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230313/20230313031720_1678688240492.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230313/20230313031735_1678688255621.jpg",
+  "ingredientsText": "•필수 재료 : 방울토마토(100g), 시금치(30g), 알배추(25g), 팽이버섯(5g)\n•육수 : 닭육수(250g)\n•양념 : 일식된장(25g)",
+  "steps": [
+   {
+    "text": "1. 방울토마토를 뜨거운 물에 넣어 껍질을 벗겨주면 더욱 부드럽게 섭취할 수 있다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024342_1678340622515.jpg"
+   },
+   {
+    "text": "2. 시금치와 알배추는 한입 크기로 잘라준 뒤 뜨거운 물에 살짝 익혀준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024356_1678340636568.jpg"
+   },
+   {
+    "text": "3. 닭육수에 미소된장을 풀어 체에 걸러준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024413_1678340653407.jpg"
+   },
+   {
+    "text": "4. 체에 거른 된장국에 팽이버섯을 넣고 살짝 끓여준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024450_1678340690548.jpg"
+   },
+   {
+    "text": "5. 그릇에 토마토, 시금치, 알배추를 담는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024507_1678340707224.jpg"
+   },
+   {
+    "text": "6. 끓인 된장국을 붓고 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230309/20230309024524_1678340724748.jpg"
+   }
+  ],
+  "tip": "•닭으로 육수를 우려내고 소량의 된장을 풀어 된장의 구수한 맛과 닭육수의 감칠맛으로 짠맛을 대체했어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 38,
+  "flag": "J",
+  "name": "표고버섯 청경채국",
+  "method": "끓이기",
+  "category": "국&찌개",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 45.0,
+  "carb": 7.0,
+  "protein": 2.0,
+  "fat": 1.0,
+  "sodium": 2441.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00038_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00038_1.png",
+  "ingredientsText": "●멸치육수 : 국물용 멸치 5g(3마리), 다시마 1장(5×1cm), 양파 10g(2×1cm), 표고버섯 기둥, 국간장 5g(1작은술), 물 300ml(1½컵)\n●채소준비 : 청경채 20g(1개), 표고버섯 20g(2장), 다진 마늘 2g(1/3작은술)",
+  "steps": [
+   {
+    "text": "1. 찬물에 표고버섯,머리와 내장을 제거한 멸치, 다시마, 양파를 넣어 중간 불에서 10분 정도 끓여 멸치육수를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00038_1.png"
+   },
+   {
+    "text": "2. 육수의 표고버섯 기둥, 멸치, 다시마, 양파를 건진 후 표고버섯은 편으로 썰고 청경채는 4cm 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00038_2.png"
+   },
+   {
+    "text": "3. 끓는 육수에 준비한 표고버섯과 청경채를 넣고 국간장으로 간을 한 후 마늘을 넣어 한소끔 끓인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00038_4.png"
+   }
+  ],
+  "tip": "표고버섯 밑둥을 육수에 넣어 감칠맛을 더하고, 멸치와 다시마는 다량의 소금 없이도 국물 맛을 깊게 만들어 주는 역할을 해요. 건표고버섯은 햇볕에 말리는 과정에서 만들어진 비타민 D가 풍부해 칼슘 흡수를 도와 골다공증 예방에 좋은 식품이예요. 생표고버섯에는 비타민 D가 거의 들어있지 않아요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 403,
+  "flag": "J",
+  "name": "가지겉절이",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": null,
+  "calories": 109.1,
+  "carb": 16.2,
+  "protein": 3.8,
+  "fat": 3.2,
+  "sodium": 344.3,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00403_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00403_1.png",
+  "ingredientsText": "가지 250g, 양파 60g, 대파 25g, 청고추 15g, 홍고추 15g, 간편 어간장 15g\n양념장 : 고추장 15g, 생강청 15g, 다진마늘 5g, 통깨 7g, 매실청 10g, 고춧가루 10g, 식초 10g",
+  "steps": [
+   {
+    "text": "1. 가지는 먹기 좋은 크기로 잘라서 간편 어간장에 절여준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00403_01.png"
+   },
+   {
+    "text": "2. 다진 대파, 청홍고추, 양파는 송송 잘라준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00403_02.png"
+   },
+   {
+    "text": "3. 절여진 가지를 꼭 짜서 수분을 제거해준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00403_03.png"
+   },
+   {
+    "text": "4. 양념장에 가지와 준비된 채소를 버무려 준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00403_04.png"
+   },
+   {
+    "text": "5. 완성된 가지김치는 2시간 정도 후에 숙성시켜 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00403_05.png"
+   }
+  ],
+  "tip": "양념장에 고추장, 생강청, 매실청을 넣어 감칠맛을 높여주었고 통깨 사용으로 고소함이 더해지면서 고추장 사용을 줄일 수 있었고, 고춧가루 첨가로 색감을 살렸다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 480,
+  "flag": "J",
+  "name": "가지토마토구이",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 164.8,
+  "carb": 7.1,
+  "protein": 5.4,
+  "fat": 12.7,
+  "sodium": 171.2,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00480_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00480_1.png",
+  "ingredientsText": "가지(80g), 올리브오일(10g), 소금(0.5g), 토마토(40g)\n모짜렐라치즈(30g)\n- 소스 : 토마토소스(20g), 토마토(40g)\n- 곁들임 : 팽이버섯(20g), 후춧가루(0.02g)",
+  "steps": [
+   {
+    "text": "1. 가지는 약 10cm 길이로 길고, 납작하게 썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_1.png"
+   },
+   {
+    "text": "2. 팬에 올리브 오일을 살짝 둘러 썰어놓은 가지를 소금을 넣고 살짝 익힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_2.png"
+   },
+   {
+    "text": "3. 토마토는 반은 토마토 형태로 납작하게 썰어 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_3.png"
+   },
+   {
+    "text": "4. 토마토반은 입자있게 다져 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_4.png"
+   },
+   {
+    "text": "5. 다진 토마토를 준비한 토마토소스에 섞어 살짝 어우러지게 끓여 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_5.png"
+   },
+   {
+    "text": "6. 구운 가지위에 토마토와 모짜렐라치즈를 올려 팬에 굽고, 별도로 팽이버섯에 후춧가루를 뿌려 살짝 구워 접시에 담고, 끓여 놓은 토마토소스를 올려 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00480_6.png"
+   }
+  ],
+  "tip": "모짜렐라치즈를 사용하여 만든 음식은 맛이 담백하고, 나트륨 사용을 적게 할 수 있어 좋아요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 827,
+  "flag": "J",
+  "name": "고추 장떡",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 250.4,
+  "carb": 41.3,
+  "protein": 6.9,
+  "fat": 5.8,
+  "sodium": 111.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053428_1416213268811.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053428_1416213268811.jpg",
+  "ingredientsText": "청고추 10g, 깻잎 10g, 애호박 20g, 홍고추 5g, 밀가루 50g, 고추자 3g, 식용유 5g",
+  "steps": [
+   {
+    "text": "1. 애호박은 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-1.jpg"
+   },
+   {
+    "text": "2. 깻잎은 송송 썰어 굵게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-2.jpg"
+   },
+   {
+    "text": "3. 풋고추와 홍고추는 반을 갈라 얇게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-3.jpg"
+   },
+   {
+    "text": "4. 밀가루에 물을 넣어 되게 반죽한 후 고추장을 풀어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-4.jpg"
+   },
+   {
+    "text": "5. 반죽에 채소를 넣어 섞은 후 기름 두른 팬에 장떡을 두껍지 않게 부친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-5.jpg"
+   },
+   {
+    "text": "6. 썰어놓은 청고추와 홍고추로 장떡을 장식한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/827-6.jpg"
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 877,
+  "flag": "J",
+  "name": "김자반",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 45.2,
+  "carb": 10.4,
+  "protein": 4.8,
+  "fat": 0.9,
+  "sodium": 232.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053514_1416213314112.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053514_1416213314112.jpg",
+  "ingredientsText": "김 10g, 마늘 8g, 생강 5g, 통깨 1.3g [소스소개]양념간장:물 30g, 간장 2g, 설탕 2g, 물엿 1g, 식초 1g, 홍고추 1g",
+  "steps": [
+   {
+    "text": "1. 김은 티를 골라낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-1.jpg"
+   },
+   {
+    "text": "2. 홍고추, 마늘, 생강은 곱게 채썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-2.jpg"
+   },
+   {
+    "text": "3. 간장소스의 양념들은 모두 합하여 20분 가량 낮은 불에서 끓여서 식힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-3.jpg"
+   },
+   {
+    "text": "4. 김은 먹기 좋은 크기로 12~18등분으로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-4.jpg"
+   },
+   {
+    "text": "5. 양념간장에 마늘, 생강, 홍고추채를 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-5.jpg"
+   },
+   {
+    "text": "6. 김을 차곡차곡 쌓은 뒤 양념간장을 위에 부어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/877-6.jpg"
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3364,
+  "flag": "J",
+  "name": "느타리버섯볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 60.0,
+  "calories": 51.5,
+  "carb": 3.8,
+  "protein": 2.4,
+  "fat": 3.0,
+  "sodium": 158.2,
+  "hashtag": "버섯",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051519_1678090519731.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051530_1678090530556.jpg",
+  "ingredientsText": "•필수재료 : 느타리버섯(25g), 파프리카(빨간색, 노란색 각 10g), 청피망(10g), 크래미(10g), 식용유(3g)\n•양념 : 소금(1g), 후추(3g), 간장(1g)",
+  "steps": [
+   {
+    "text": "1. 느타리버섯은 밑동을 자르고 가닥가닥 찢어 데쳐서 찬물에 헹궈 물기를 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051626_1678090586108.jpg"
+   },
+   {
+    "text": "2. 파프리카와 청피망은 채 썰고, 크래미는 잘게 찢는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051645_1678090605363.jpg"
+   },
+   {
+    "text": "3. 팬에 기름을 두르고 손질한 파프리카와 피망을 넣어 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051703_1678090623293.jpg"
+   },
+   {
+    "text": "4. 느타리버섯을 넣어 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051719_1678090639349.jpg"
+   },
+   {
+    "text": "5. 게살을 넣어 볶다가 간장으로 색을 낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051735_1678090655396.jpg"
+   },
+   {
+    "text": "6. 소금과 후추로 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306051752_1678090672160.jpg"
+   }
+  ],
+  "tip": "•크래미의 간을 이용해 소금의 사용을 줄였어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 512,
+  "flag": "J",
+  "name": "닭고기스테이크",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 222.4,
+  "carb": 8.0,
+  "protein": 26.3,
+  "fat": 9.5,
+  "sodium": 226.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00512_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00512_1.png",
+  "ingredientsText": "닭고기살(120g), 소금(0.5g), 후춧가루(0.1g), 생강(5g)\n정종(5g), 우유(50g), 오이(20g), 토마토(20g)\n두부(80g), 흑임자(20g), 우유(50g)",
+  "steps": [
+   {
+    "text": "1. 닭고기살은 소금과 후춧가루, 생강즙과 정종을 뿌린 후 우유를 살짝 발라 숙성을 시킨다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_1.png"
+   },
+   {
+    "text": "2. 오이는 길게 껍질째 썰어 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_2.png"
+   },
+   {
+    "text": "3. 토마토는 반으로 잘라 편으로 썰어 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_3.png"
+   },
+   {
+    "text": "4. 두부는 소창으로 물기를 꼭 짜 놓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_4.png"
+   },
+   {
+    "text": "5. 물기를 제거 시킨 두부에 흑임자를 넣고 골고루 섞은 뒤 냄비에 넣고 우유와 함께 은근히 끓여 속을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_5.png"
+   },
+   {
+    "text": "6. 팬에 토마토를 먼저 구워 접시에 담고, 숙성된 닭고기를 구워 올린 뒤, 그 위에 오이로 원형기둥을 만들고 구운 닭고기를 다시 올려 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00512_6.png"
+   }
+  ],
+  "tip": "두부의 단백하고 고소한 맛을 이용하여 영양가 있고 맛있는 스테이크를 만들 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1012,
+  "flag": "J",
+  "name": "돼지갈비 볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 151.0,
+  "carb": 6.7,
+  "protein": 12.1,
+  "fat": 8.3,
+  "sodium": 293.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053749_1416213469472.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053749_1416213469472.jpg",
+  "ingredientsText": "돼지갈비 60g, 굵은소금적당량, 마늘다진것 3g, 생강다진것 2g, 대파 10g, 토마토 25g[양념장] 간장 5g, 물 10g, 식초 2g, 설탕 3g, 통깨 적당량, 참기름 적당량",
+  "steps": [
+   {
+    "text": "1. 돼지갈비는 4cm 길이로 준비하여 기름기를 제거하고 찬물에 담가 핏물을 뺀다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-1.jpg"
+   },
+   {
+    "text": "2. 1에 굵은 소금을 넣고 주물러 갈비를 연하게 한 뒤 소금을 씻어낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-2.jpg"
+   },
+   {
+    "text": "3. 돼지갈비에 칼집을 넣은 뒤 대파, 마늘, 생강을 넣고 끓인 물에 데쳐서 헹군다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-3.jpg"
+   },
+   {
+    "text": "4. 냄비에 기름을 두르고 데쳐낸 갈비를 볶다가 양념장을 붓고 뚜껑을 덮어 서서히 익히면서 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-4.jpg"
+   },
+   {
+    "text": "5. 갈비에 간이 베이면 센불에서 저어주면서 윤기 나게 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-5.jpg"
+   },
+   {
+    "text": "6. 접시에 얇게 썬 토마토를 깔고 볶아낸 돼지갈비를 담은 뒤 통깨를 뿌린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1012-6.jpg"
+   }
+  ],
+  "tip": "양념장을 넣어 익힐 때 다양한 야채를 첨가해도 좋다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 914,
+  "flag": "J",
+  "name": "돼지고기 토마토 두부볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 157.0,
+  "carb": 8.0,
+  "protein": 10.1,
+  "fat": 9.8,
+  "sodium": 294.0,
+  "hashtag": "목살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053552_1416213352435.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053552_1416213352435.jpg",
+  "ingredientsText": "돼지고기목살 30g, 두부 30g, 토마토 50g, 생강다진것 5g, 파다진것 5g, 땅콩기름 5g, 간장 5g, 닭육수 10g, 물전분 10g, 소금적당량",
+  "steps": [
+   {
+    "text": "1. 돼지고기는 깨끗이 손질한 뒤 잘게다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-1.jpg"
+   },
+   {
+    "text": "2. 두부는 1cm 정사각형 모양으로 썬다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-2.jpg"
+   },
+   {
+    "text": "3. 토마토는 껍질과 씨를 제거한 뒤 두부와 같은 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-3.jpg"
+   },
+   {
+    "text": "4. 기름을 두른 팬에 파와 생강을 넣고 볶아 향이 나면 1을 넣고 볶은 뒤 따로 담아둔다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-4.jpg"
+   },
+   {
+    "text": "5. 기름을 두른 팬에 토마토, 두부, 고기를 넣고 볶다가 육수를 자작하게 부은 뒤 간장, 소금으로 간을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-5.jpg"
+   },
+   {
+    "text": "6. 소스가 졸아들면 두부를 넣고 물 전분을 넣어 소스 농도를 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/914-6.jpg"
+   }
+  ],
+  "tip": "전분을 육수에 넣어 풀어주면 음식의 향이 더 좋아진다. 고기, 두부나 토마토의 모양이 으깨지지 않도록 유의하며, 전체적으로 부드러운 질감을 갖고 있어야 한다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 834,
+  "flag": "J",
+  "name": "두부 달걀전",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 179.7,
+  "carb": 4.5,
+  "protein": 13.0,
+  "fat": 12.5,
+  "sodium": 164.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053435_1416213275631.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053435_1416213275631.jpg",
+  "ingredientsText": "두부 60g, 카레가루 0.4g, 후춧가루 0.1g, 밀가루 1.6g, 식용유 4g, 청고추 0.5g, 홍고추 0.5g [소스소개]저나트륨초간장소스:간장 1g, 식초 1.5g, 설탕 0.3g, 통깨 0.1g",
+  "steps": [
+   {
+    "text": "1. 두부를 네모지게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-1.jpg"
+   },
+   {
+    "text": "2. 썬 두부를 소창으로 물기를 제거한 뒤 소금과 후춧가루로 밑간 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-2.jpg"
+   },
+   {
+    "text": "3. 달걀에 카레가루를 넣은 뒤 잘 풀어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-3.jpg"
+   },
+   {
+    "text": "4. 두부의 물기를 제거하고 밀가루를 묻힌 뒤 3의 달걀을 입힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-4.jpg"
+   },
+   {
+    "text": "5. 식용유를 넣은 팬에 청, 홍고추 송송 썬것을 얹어 노릇하게 지진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-5.jpg"
+   },
+   {
+    "text": "6. 저나트륨 초간장소스를 곁들여 낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/834-6.jpg"
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 2999,
+  "flag": "J",
+  "name": "마늘칩 감자샐러드",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 55.0,
+  "calories": 80.12,
+  "carb": 10.18,
+  "protein": 1.19,
+  "fat": 3.85,
+  "sodium": 51.78,
+  "hashtag": "감자",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409050910_1554797350561.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409050912_1554797352393.jpg",
+  "ingredientsText": "감자 50g, 마늘 5g, 양파 5g, 마요네즈 10g, 플레인요거트 5g, 머스터드 1g, 설탕 2g, 파슬리 1g",
+  "steps": [
+   {
+    "text": "1. 감자는 깨끗이 씻어 껍질째 한입 크기로 깍둑썰기 한 뒤 삶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409050945_1554797385380.jpg"
+   },
+   {
+    "text": "2. 마늘은 얇게 편으로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409050956_1554797396990.jpg"
+   },
+   {
+    "text": "3. 양파는 굵게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409051009_1554797409611.jpg"
+   },
+   {
+    "text": "4. 팬에 식용유를 두르고 다진양파를 볶은 뒤 마늘은 바삭하게 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409051023_1554797423839.jpg"
+   },
+   {
+    "text": "5. 마요네즈, 머스터드, 플레인요거트, 설탕을 섞어 드레싱을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409051039_1554797439434.jpg"
+   },
+   {
+    "text": "6. 감자와 볶은 양파, 드레싱을 골고루 버무리고 마늘칩과 파슬리를 뿌린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20190409/20190409051055_1554797455737.jpg"
+   }
+  ],
+  "tip": "머스터드, 마요네즈, 플레인요거트를 이용한 드레싱으로 나트륨을 줄일 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 988,
+  "flag": "J",
+  "name": "모듬옥수수",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "보통",
+  "weight": null,
+  "calories": 127.0,
+  "carb": 15.0,
+  "protein": 9.9,
+  "fat": 3.6,
+  "sodium": 109.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053723_1416213443714.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053723_1416213443714.jpg",
+  "ingredientsText": "옥수수 35g, 잣 3g, 청피망 25g, 당근 25g, 닭고기 35g, 식용유 1g, 물전분 6g, 소금 적당량",
+  "steps": [
+   {
+    "text": "1. 청피망, 당근, 닭고기를 옥수수알 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-1.jpg"
+   },
+   {
+    "text": "2. 팬에 닭고기를 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-2.jpg"
+   },
+   {
+    "text": "3. 2에 당근을 넣고 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-3.jpg"
+   },
+   {
+    "text": "4. 3에 잣, 청피망, 옥수수를 넣고 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-4.jpg"
+   },
+   {
+    "text": "5. 4에 간을 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-5.jpg"
+   },
+   {
+    "text": "6. 물전분으로 농도를 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/988-6.jpg"
+   }
+  ],
+  "tip": "철판에 넣어 뜨겁게 제공해도 좋다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 720,
+  "flag": "J",
+  "name": "무대하무침",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 71.2,
+  "carb": 4.6,
+  "protein": 6.9,
+  "fat": 2.9,
+  "sodium": 153.1,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102046_1416273646384.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141118/20141118102046_1416273646384.jpg",
+  "ingredientsText": "무 40g, 새우(대하) 30g, 파 3g, 다진 마늘 3g, 고춧가루 2g, 간장 2g, 설탕 1g, 참기름 2g, 통깨 0.2g",
+  "steps": [
+   {
+    "text": "1. 무는 씻어 1cm× 4cm × 0.3cm 크기로 나박썰기 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-1.jpg"
+   },
+   {
+    "text": "2. 새우는 등 쪽의 내장을 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-2.jpg"
+   },
+   {
+    "text": "3. 내장을 제거한 새우는 소금물에 살살 흔들어 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-3.jpg"
+   },
+   {
+    "text": "4. 김이 오른 찜통에 무와 새우를 넣고 함께 찐다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-4.jpg"
+   },
+   {
+    "text": "5. 찐 새우는 껍질을 벗기고 반으로 가른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-5.jpg"
+   },
+   {
+    "text": "6. 무에 파, 다진 마늘, 고춧가루, 간장, 설탕, 참기름, 통깨를 넣고 무친 뒤 5의 새우를 넣고 버무린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/720-6.jpg"
+   }
+  ],
+  "tip": "새우 머리는 한손으로 잡고 살짝 비틀어서 떼고 이때 내장이 같이 나오기도 하는데 그렇지 않은 경우는 등 쪽으로 이쑤시개를 찔러 넣어 실 같은 검은 내장을 제거 한다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1073,
+  "flag": "J",
+  "name": "바나나를 감싼 일본식 달걀말이",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "쉬움",
+  "weight": null,
+  "calories": 362.3,
+  "carb": 34.6,
+  "protein": 17.0,
+  "fat": 17.3,
+  "sodium": 25.2,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01073_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_01073_1.png",
+  "ingredientsText": "달걀(3개), 바나나(1개), 전분(5g),\n소금(0.2g)",
+  "steps": [
+   {
+    "text": "1. 달걀을 흰자와 노른자로 분리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_1.JPG"
+   },
+   {
+    "text": "2. 흰자와 노른자를 각각 풀어 전분과 소금을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_2.JPG"
+   },
+   {
+    "text": "3. 팬에 식용유를 두르고 노른자를 부어 반정도 익힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_3.JPG"
+   },
+   {
+    "text": "4. 바나나를 넣고 말아준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_4.JPG"
+   },
+   {
+    "text": "5. 흰자를 부어 4번을 감싸  말아준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_5.JPG"
+   },
+   {
+    "text": "6. 먹기 좋은 크기로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_01073_6.JPG"
+   }
+  ],
+  "tip": "바나나를 넣으면 부드러우면서 달콤한 맛을 낼 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 31,
+  "flag": "J",
+  "name": "방울토마토 소박이",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "어려움",
+  "weight": null,
+  "calories": 45.0,
+  "carb": 9.0,
+  "protein": 2.0,
+  "fat": 1.0,
+  "sodium": 277.0,
+  "hashtag": "방울토마토",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00031_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00031_1.png",
+  "ingredientsText": "●방울토마토 소박이 : \n방울토마토 150g(5개), 양파 10g(3×1cm), 부추 10g(5줄기)\n●양념장 : \n고춧가루 4g(1작은술), 멸치액젓 3g(2/3작은술), 다진 마늘 2.5g(1/2쪽), 매실액 2g(1/3작은술), 설탕 2g(1/3작은술), 물 2ml(1/3작은술), 통깨 약간",
+  "steps": [
+   {
+    "text": "1. 물기를 빼고 2cm 정도의 크기로 썰은 부추와 양파를 양념장에 섞어 양념속을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00031_1.png"
+   },
+   {
+    "text": "2. 깨끗이 씻은 방울토마토는 꼭지를 떼고 윗부분에 칼로 십자모양으로 칼집을 낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00031_4.png"
+   },
+   {
+    "text": "3. 칼집을 낸 방울토마토에 양념속을 사이사이에 넣어 버무린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00031_5.png"
+   }
+  ],
+  "tip": "소금에 절이는 오이 대신 방울토마토를 사용하여 나트륨 섭취를 줄였어요. 토마토에는 과일에 대체로 없는 글루탐산이 풍부하여 감칠맛을 내주며, 겉절이 양념과 잘 어우러져 상큼함과 감칠맛을 내주어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1039,
+  "flag": "J",
+  "name": "브로콜리 쇠고기 볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 124.0,
+  "carb": 13.9,
+  "protein": 1.2,
+  "fat": 4.1,
+  "sodium": 300.0,
+  "hashtag": "안심",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053818_1416213498790.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053818_1416213498790.jpg",
+  "ingredientsText": "브로콜리 70g, 쇠고기안심 30g, 물전분 6g, 당근 10g, 마늘다진것 3g, 간장 3g, 생강 3g, 설탕 3g, 식물성기름 2g, 소금적당량",
+  "steps": [
+   {
+    "text": "1. 브로콜리는 소금물에 담궜다가 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-1.jpg"
+   },
+   {
+    "text": "2. 브로콜리를 작은 송이로 자른 뒤 기름, 소금을 넣은 물에 데쳐 찬물에 헹군다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-2.jpg"
+   },
+   {
+    "text": "3. 생강과 당근, 마늘, 소고기를 얇게 슬라이스 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-3.jpg"
+   },
+   {
+    "text": "4. 소고기를 밑간 한 뒤 10분 정도 재웠다가 기름을 두르고 살짝 익힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-4.jpg"
+   },
+   {
+    "text": "5. 마늘, 생강, 당근, 익혀둔 소고기를 팬에 넣고 브로콜리를 넣어 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-5.jpg"
+   },
+   {
+    "text": "6. 물 전분을 이용해 소스의 농도를 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1039-6.jpg"
+   }
+  ],
+  "tip": "기름에 데치는 방법은 차가운 기름부터 넣어 온도를 올리는 것으로 조직감이 부드러워 진다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 394,
+  "flag": "J",
+  "name": "삼겹살꼬치구이",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "어려움",
+  "weight": null,
+  "calories": 289.5,
+  "carb": 805.0,
+  "protein": 11.2,
+  "fat": 23.4,
+  "sodium": 59.8,
+  "hashtag": "삼겹살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00394_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00394_1.png",
+  "ingredientsText": "삼겹살 200g, 방울토마토 100g, 마늘기름 15g, 후추 1g, 로즈마리 1g, 통후추 2g\n대파 20g, 마늘 10g, 꽈리고추 25g\n대파채 : 대파 25g, 고춧가루 1g, 레몬즙 2g",
+  "steps": [
+   {
+    "text": "1. 삼겹살은 길이로 잘라서 마늘기름, 통후추, 로즈마리에 마리네이드 해준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00394_01.png"
+   },
+   {
+    "text": "2. 대파는 흰 부분만 잘라 구워주고, 꽈리고추도 함께 구워준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00394_02.png"
+   },
+   {
+    "text": "3. 대파는 가늘게 채 썰어 물에 담가준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00394_03.png"
+   },
+   {
+    "text": "4. 물에 담가진 대파를 물기를 빼고 양념해준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00394_04.png"
+   },
+   {
+    "text": "5. 삼겹살을 꼬치에 끼워 굽고 구워진 채소, 대파채와 함께 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00394_05.png"
+   }
+  ],
+  "tip": "소금 대신 후추, 로즈마리 등의 향신료와 마늘기름, 대파를 사용하여 나트륨을 줄였으며, 이 재료들 특유의 맛과 향이 삼겹살의 누린내를 잡아주고 음식을 조화롭게 해준다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 628,
+  "flag": "J",
+  "name": "삼색샐러드와두부구이",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "어려움",
+  "weight": null,
+  "calories": 243.7,
+  "carb": 10.7,
+  "protein": 16.9,
+  "fat": 14.8,
+  "sodium": 353.3,
+  "hashtag": "저염간장",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00628_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00628_1.png",
+  "ingredientsText": "두부(150g), 홍피망(30g), 황파프리카(30g), 적채(30g),\n양파(30g), 깻잎(2장), 흑임자(5g), 밀가루(10g), 매실액(20g),\n저염간장(20g), 설탕(20g), 소금(0.1g)",
+  "steps": [
+   {
+    "text": "1. 두부는 3X4cm 크기로 썰어 소금을 살짝 뿌려둔다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_1.png"
+   },
+   {
+    "text": "2. 소금을 뿌려 놓은 두부는 물기를 제거하고 밀가루를 골고루 묻힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_2.png"
+   },
+   {
+    "text": "3. 팬에 기름을 두르고 두부를 앞뒤로 노릇노릇하게 구워 접시에 담는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_3.png"
+   },
+   {
+    "text": "4. 매실액에 간장과 설탕을 넣고 골고루 섞어 소스를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_4.png"
+   },
+   {
+    "text": "5. 홍피망, 파프리카, 적채, 양파, 깻잎은 곱게 채썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_5.png"
+   },
+   {
+    "text": "6. 썰어 놓은 야채를 각각 물에 담궜다 건져 두부 옆에 담고 소스를 뿌리고 흑임자를 올린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00628_6.png"
+   }
+  ],
+  "tip": "두부에 밀가루를 묻혀 사용하면 나트륨도 줄일 수 있고, 바삭한 두부부침을 할 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 629,
+  "flag": "J",
+  "name": "새송이등갈비",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 382.3,
+  "carb": 33.6,
+  "protein": 29.0,
+  "fat": 14.6,
+  "sodium": 1554.7,
+  "hashtag": "저염간장",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00629_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00629_1.png",
+  "ingredientsText": "돼지고기(등갈비, 200g), 새송이버섯(1개), 당근(30g),\n대파(20g), 양파(30g), 저염간장(30g), 후춧가루(0.01g),\n올리고당(20g), 마늘(20g)",
+  "steps": [
+   {
+    "text": "1. 등갈비는 찬물에 담궈 핏물을 빼고 끓는 물에 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_1.png"
+   },
+   {
+    "text": "2. 새송이버섯은 길쭉하게 슬라이스로 썰어둔다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_2.png"
+   },
+   {
+    "text": "3. 당근, 양파, 대파는 큼직하게 썰어, 뜨거운 물에 담군다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_3.png"
+   },
+   {
+    "text": "4. 담궈 놓은 야채를 걸러 야채물을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_4.png"
+   },
+   {
+    "text": "5. 냄비에 야채물을 넣고 저염간장과 올리고당, 다진마늘, 후춧가루를 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_5.png"
+   },
+   {
+    "text": "6. 야채간장에 등갈비를 넣고 은근히 졸이다가, 썰어놓은 야채와 새송이버섯을 넣고 윤기나게 졸인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00629_6.png"
+   }
+  ],
+  "tip": "야채육수를 사용하면 맛이 담백하고 깔끔하며, 자연의 맛을 느낄 수 있어 소금을 적게 사용할 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3575,
+  "flag": "J",
+  "name": "소고기 김말이",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "어려움",
+  "weight": 100.0,
+  "calories": 255.8,
+  "carb": 11.8,
+  "protein": 16.4,
+  "fat": 15.9,
+  "sodium": 135.2,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120012450_1732076690467.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120012506_1732076706155.jpg",
+  "ingredientsText": "1인분 기준<br>\n[주재료] 소고기(치맛살)(100g), 김(6g(3장)), 튀김가루(20g)\n<br>[양념] 식용유(45g), 다진 쪽파(10g), 다진 마늘(12g), 저염간장(4g), 고춧가루(12g), 깨(20g), 후추(3g), 물(반죽용)(15ml), 물(양념장용)(4ml)",
+  "steps": [
+   {
+    "text": "1. 소고기는 키친타월로 핏물을 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111518_1732068918225.jpg"
+   },
+   {
+    "text": "2. 다진 쪽파, 다진 마늘, 저염간장, 고춧가루, 깨(18g), 물(4ml)을 섞어 양념장을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111528_1732068928972.jpg"
+   },
+   {
+    "text": "3. 튀김가루와 물(15ml)을 섞어 반죽을 만든다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111539_1732068939279.jpg"
+   },
+   {
+    "text": "4. 손질한 소고기는 후추로 밑간하여 한입 크기로 다지고 김 위에 올려 돌돌 말아 김말이를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111551_1732068951152.jpg"
+   },
+   {
+    "text": "5. 김말이에 반죽을 묻히고 달군 팬에 식용유를 두르고 김말이를 앞뒤로 굽는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111602_1732068962904.jpg"
+   },
+   {
+    "text": "6. 접시에 담고 양념장, 깨를 올려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20241120/20241120111615_1732068975834.jpg"
+   }
+  ],
+  "tip": "•향신 재료인 고춧가루, 깨, 쪽파, 마늘 등을 활용하여 풍미를 높여 나트륨과 당류 사용량을 줄였어요.\n<br>•고소함과 깊은 맛이 있는 김을 활용하여 심심한 맛을 보완했어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 555,
+  "flag": "J",
+  "name": "속채운대저토마토백김치",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 76.0,
+  "carb": 15.1,
+  "protein": 3.5,
+  "fat": 0.2,
+  "sodium": 278.5,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00555_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00555_1.png",
+  "ingredientsText": "토마토(100g), 배춧잎(2장), 오이(50g), 무(50g), 양파(30g),\n마늘(10g), 생강(5g), 소금(2g)",
+  "steps": [
+   {
+    "text": "1. 토마토는 윗부분을 자르고 속을 파낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_1.png"
+   },
+   {
+    "text": "2. 오이는 소금에 깨끗이 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_2.png"
+   },
+   {
+    "text": "3. 소금을 팬에 볶은 후 배추를 절인다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_3.png"
+   },
+   {
+    "text": "4. 절인 배추에 오이와 무를 넣고 돌돌만다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_4.png"
+   },
+   {
+    "text": "5. ?를 속을 파낸 토마토 안에 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_5.png"
+   },
+   {
+    "text": "6. ?번을 통에 담아 소금 국물을 붓고 양파와 마늘 생강을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00555_6.png"
+   }
+  ],
+  "tip": "소금을 볶아서 김치 국물로 사용하면, 나트륨 함량은 줄이고 단 맛을 느낄 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3280,
+  "flag": "J",
+  "name": "수제새우소시지",
+  "method": "굽기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 20,
+  "level": "어려움",
+  "weight": 151.5,
+  "calories": 266.5,
+  "carb": 41.7,
+  "protein": 10.1,
+  "fat": 6.6,
+  "sodium": 317.0,
+  "hashtag": null,
+  "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr97YW",
+  "imageStep": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr97Zu",
+  "ingredientsText": "[ 2인분 ] 양파(½개), 칵테일새우(14마리), 라이스페이퍼(8장), 깻잎(3장), 감자전분(2Ts), 후춧가루(약간), 레몬즙(1ts), 다진 마늘(2Ts), 올리브유(2ts), 다진 마늘(1Ts), 올리고당(1Ts), 파슬리가루(1ts)",
+  "steps": [
+   {
+    "text": "1. 양파와 깻잎은 곱게 다지고, 칵테일새우는 깨끗하게 씻은 뒤 곱게 다진다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9BlB"
+   },
+   {
+    "text": "2. 다진 양파, 깻잎, 새우에 양념을 넣어 고루 섞은 뒤 치대 새우반죽을 만든다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9BnG"
+   },
+   {
+    "text": "3. 뜨거운 물(4컵)에 라이스페이퍼를 살짝 담갔다 꺼내 식용유를 바른 도마 위에 올린다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Bp0"
+   },
+   {
+    "text": "4. 지퍼백에 새우반죽을 넣은 뒤 가위로 끝부분을 잘라 라이스페이퍼 위에 반죽을 짜 올리고, 돌돌 말아 새우소시지를 만든다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Brx"
+   },
+   {
+    "text": "5. 중간 불로 달군 팬에 식용유를 둘러 새우소시지를 올린 뒤 겉면이 하얗게 변할 때까지 노릇하게 굽는다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9Bu2"
+   },
+   {
+    "text": "6. 그릇에 담고 마늘소스를 윗면에 발라 마무리한다.",
+    "image": "https://www.foodsafetykorea.go.kr/common/ecmFileView.do?ecm_file_no=1NxSkgr9CC4"
+   }
+  ],
+  "tip": "•밀가루 대신 염분이 낮고 칼륨이 풍부한 감자 전분을 사용했어요\n•소금 대신 향신료와 레몬즙을 넣어 풍미를 살렸어요.\n•설탕이나 꿀 대신 소량의 올리고당을 넣어 단맛은 내면서 칼로리를 낮췄어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 993,
+  "flag": "J",
+  "name": "시금치 돼지고기 볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 105.0,
+  "carb": 7.4,
+  "protein": 9.2,
+  "fat": 4.5,
+  "sodium": 284.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053729_1416213449527.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053729_1416213449527.jpg",
+  "ingredientsText": "돼지고기살코기 40g, 물전분 10g, 소금 적당량, 시금치 25g, 부추 10g, 간장 5g, 파 5g, 생강 3g, 식용유 2g",
+  "steps": [
+   {
+    "text": "1. 돼지고기는 채 썬 뒤 소금, 물전분을 넣고 양념한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-1.jpg"
+   },
+   {
+    "text": "2. 양념한 고기를 기름 두른 팬에 볶으면서 달라붙지 않도록 저어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-2.jpg"
+   },
+   {
+    "text": "3. 시금치와 부추를 4~5cm 가량으로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-3.jpg"
+   },
+   {
+    "text": "4. 가열된 팬에 기름을 두르고 파, 생강, 팔각을 넣어 향을 낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-4.jpg"
+   },
+   {
+    "text": "5. 4에 2와 간장을 넣고 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-5.jpg"
+   },
+   {
+    "text": "6. 물 전분을 넣어 농도를 맞춘 뒤 마직막으로 부추, 시금치를 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/993-6.jpg"
+   }
+  ],
+  "tip": "취향에 따라 팔각을 넣기도 한다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 821,
+  "flag": "J",
+  "name": "양배추 깻잎 피클",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 14.1,
+  "carb": 3.7,
+  "protein": 0.3,
+  "fat": 0.0,
+  "sodium": 337.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053421_1416213261401.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053421_1416213261401.jpg",
+  "ingredientsText": "양배추 16g, 깻잎 6g, 설탕 2g, 청고추 1g, 홍고추 1g [소스소개]피클소스:물 35g, 식초 2g. 소금 1g, 통후추 0.5g",
+  "steps": [
+   {
+    "text": "1. 물, 식초, 설탕, 소금, 통후추를 살짝 끓인 후 식혀 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-1.jpg"
+   },
+   {
+    "text": "2. 양배추와 깻잎을 한장씩 켜켜이 쌓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-2.jpg"
+   },
+   {
+    "text": "3. 깻잎 크기에 맞추어 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-3.jpg"
+   },
+   {
+    "text": "4. 청, 홍고추는 어슷썰어 씨를 털어낸다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-4.jpg"
+   },
+   {
+    "text": "5. 그릇에 양배추, 깻잎, 청·홍고추를 무거운 것으로 눌러놓아 뜨지 않게 한 다음 준비한 피클국물을 붓는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-5.jpg"
+   },
+   {
+    "text": "6. 뚜껑을 닫아 밀봉하여 냉장고에 보관한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/821-6.jpg"
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3174,
+  "flag": "J",
+  "name": "오이파프리카새콤무침",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "쉬움",
+  "weight": 24.0,
+  "calories": 11.45,
+  "carb": 2.59,
+  "protein": 0.18,
+  "fat": 0.04,
+  "sodium": 1.05,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054738_1611823658692.JPG",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054739_1611823659009.JPG",
+  "ingredientsText": "오이 10g, 파프리카(빨강/노랑) 각 5g, 식초 2g, 설탕 2g",
+  "steps": [
+   {
+    "text": "1. 오이는 굵은 소금으로 문질러 깨끗이 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054807_1611823687977.JPG"
+   },
+   {
+    "text": "2. 오이를 적당한 두께로 썰고 4등분 한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054820_1611823700226.JPG"
+   },
+   {
+    "text": "3. 파프리카는 깨끗이 씻은 후 씨를 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054835_1611823715831.JPG"
+   },
+   {
+    "text": "4. 파프리카를 적당한 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054847_1611823727434.JPG"
+   },
+   {
+    "text": "5. 식초, 설탕, 물을 섞어 단촛물을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054900_1611823740996.JPG"
+   },
+   {
+    "text": "6. 단촛물에 오이, 파프리카를 버무린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20210128/20210128054913_1611823753087.JPG"
+   }
+  ],
+  "tip": "절이는 과정이 없는 생채류로 염분 섭취를 줄일 수 있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 889,
+  "flag": "J",
+  "name": "오징어말이 케첩조림",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 152.2,
+  "carb": 8.8,
+  "protein": 20.0,
+  "fat": 4.3,
+  "sodium": 190.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053525_1416213325208.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053525_1416213325208.jpg",
+  "ingredientsText": "오징어 80g, 당근 17g, 시금치 17g, 달걀 19g, 표고버섯마른것 7g, 식용유 1.4g, 밀가루 1.1g [소스소개] 토마토케첩소스:마늘다진것 1.1g, 양파다진것 1.1g, 토마토케첩 2g, 물 60g, 후춧가루0.1g",
+  "steps": [
+   {
+    "text": "1. 오징어는 껍질을 벗긴 후 안쪽에 대각선으로 칼집을 넣어 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-1.jpg"
+   },
+   {
+    "text": "2. 당근, 시금치, 불린 표고버섯은 0.5cm 두께로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-2.jpg"
+   },
+   {
+    "text": "3. 시금치는 끓는 물에 데쳐 찬물에 헹군 뒤 물기를 제거한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-3.jpg"
+   },
+   {
+    "text": "4. 달걀은 잘 풀어 도톰하게 달걀말이를 만 후 당근처럼 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-4.jpg"
+   },
+   {
+    "text": "5. 오징어의 물기를 제거하고 밀가루를 살짝 뿌린후 2, 3의 재료를 모두 넣어 김밥 말듯이 돌돌말아 꼬치로 두군데를 고정시킨다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-5.jpg"
+   },
+   {
+    "text": "6. 토마토케첩소스의 재료를 섞어 팬에서 졸이다가 4의 오징어를 넣고 소스를 끼얹어가며 졸여 1.5cm의 두께로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/889-6.jpg"
+   }
+  ],
+  "tip": "고추장이나 간장에 조리는 것보다 케첩은 염도가 낮으므로 케첩을 넣어 상큼하게 조리면 저나트륨 조리시 보완이 된다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 890,
+  "flag": "J",
+  "name": "오징어보쌈과 저나트륨 된장소스",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 46.2,
+  "carb": 1.8,
+  "protein": 8.1,
+  "fat": 0.7,
+  "sodium": 192.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053526_1416213326629.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053526_1416213326629.jpg",
+  "ingredientsText": "갑오징어 50g, 당근 9g, 오이 9g, 상추 7g [소스소개] 저나트륨된장소스:된장 1.6g, 양파 1.3g, 물 6.6g, 식초 0.4g, 설탕 0.2g, 청고추 0.2g, 홍고추 0.2g",
+  "steps": [
+   {
+    "text": "1. 오징어는 반으로 갈라 껍질을 제거하고 몸통 안쪽에 대각선으로 칼집을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-1.jpg"
+   },
+   {
+    "text": "2. 칼집 낸 오징어를 끓는 물에 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-2.jpg"
+   },
+   {
+    "text": "3. 데친 오징어는 한 입 크기로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-3.jpg"
+   },
+   {
+    "text": "4. 오이는 돌려 깎아 3cm 길이로 채썰고 당근도 4cm 길이로 얇게 채썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-4.jpg"
+   },
+   {
+    "text": "5. 드레싱에 들어갈 양파, 청·홍고추는 잘게 다져 분량의 재료와 섞어 저나트륨 된장소스를 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-5.jpg"
+   },
+   {
+    "text": "6. 상추에 준비된 오징어와 오이, 당근, 저나트륨 된장소스를 기호에 맞게 곁들여 먹는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/890-6.jpg"
+   }
+  ],
+  "tip": "된장은 보통 양의 1/5로 줄이고, 분량을 늘리기 위해 양파, 풋고추, 홍고추를 잘게 다져서 넣는다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 384,
+  "flag": "J",
+  "name": "웰빙카레죽",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 210.4,
+  "carb": 33.7,
+  "protein": 5.1,
+  "fat": 6.1,
+  "sodium": 351.0,
+  "hashtag": "닭가슴살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00384_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00384_1.png",
+  "ingredientsText": "카레가루 45g, 귀리밥 200g, 닭가슴살 150g, 애호박 25g\n감자 60g, 양파 60g, 방울토마토 100g\n마늘 100g, 버터 15g, 칵테일새우 30g",
+  "steps": [
+   {
+    "text": "1. 카레가루를 물에 풀어서 30분 정도 숙성 시켜준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_01.png"
+   },
+   {
+    "text": "2. 닭가슴살은 사방 1cm 크기로 잘라주고, 칵테일새우도 세척해 준비한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_02.png"
+   },
+   {
+    "text": "3. 알 마 늘 , 감자는 사 방 1 c m 길이로 잘라 물 400g에 먼저 익혀준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_03.png"
+   },
+   {
+    "text": "4. 방울토마토, 애호박은 사방 1cm 크기로 썰어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_04.png"
+   },
+   {
+    "text": "5. 끓고 있는 냄비에 풀어 놓은 카레가루를 섞어 다시 끓여준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_05.png"
+   },
+   {
+    "text": "6. 양파는 사방 1cm 길이로 잘라주고 끓고 있는 카레에 양파, 방울토마토, 애호박을 넣고 끓여 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00384_06.png"
+   }
+  ],
+  "tip": "카레의 특유 향과 갖가지 채소가 짠맛을 대체하면서 식욕을 자극한다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3006,
+  "flag": "J",
+  "name": "저염 겉절이",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 70.0,
+  "calories": 55.6,
+  "carb": 9.2,
+  "protein": 2.1,
+  "fat": 1.1,
+  "sodium": 557.3,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035647_1678085807473.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035652_1678085812321.jpg",
+  "ingredientsText": "•필수재료 : 배추(50g), 무(20g), 쪽파(10g), 양파(5g), 다진마늘(5g), 다진생강(5g), 참깨(1g)\n•양념 : 저염소금(5g), 고춧가루(10g), 설탕(5g), 젓갈(3g)",
+  "steps": [
+   {
+    "text": "1. 배추에 세로로 칼집을 낸 뒤 저염소금을 뿌리고, 10분 뒤 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035841_1678085921861.jpg"
+   },
+   {
+    "text": "2. 무는 깨끗이 손질하여 씻은 뒤 얇게 채 썰고, 쪽파는 4cm 길이로 썰고, 양파는 채 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035903_1678085943027.jpg"
+   },
+   {
+    "text": "3. 볼에 참깨를 제외한 무, 쪽파, 양파, 다진 마늘, 다진 생강과 저염소금을 제외한 양념재료를 넣고 버무려 양념을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035921_1678085961708.jpg"
+   },
+   {
+    "text": "4. 저염소금에 절여 씻은 배추를 김치 양념에 골고루 버무린다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306035943_1678085983952.jpg"
+   },
+   {
+    "text": "5. 참깨를 뿌려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230306/20230306040006_1678086006310.jpg"
+   }
+  ],
+  "tip": "•배추를 소금에 절이는 시간이 적은 겉절이는 일반 김치에 비해 나트륨 함량이 적습니다.\n•저염소금을 사용하여 나트륨 함량을 낮췄어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 945,
+  "flag": "J",
+  "name": "찰 어묵찜",
+  "method": "찌기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 30,
+  "level": "보통",
+  "weight": null,
+  "calories": 103.0,
+  "carb": 11.0,
+  "protein": 9.4,
+  "fat": 2.2,
+  "sodium": 397.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053634_1416213394771.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053634_1416213394771.jpg",
+  "ingredientsText": "찰어묵 50g, 새우살 20g, 전분 5g 양념 마늘다진것 2g, 참기름 1g, 깨소금 1g, 청주 1g, 소금적당량, 후추 적당량",
+  "steps": [
+   {
+    "text": "1. 찰어묵을 2cm 두께로 썬 후 가운데 칼집을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-1.jpg"
+   },
+   {
+    "text": "2. 새우살을 입자있게 다진다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-2.jpg"
+   },
+   {
+    "text": "3. 2에 양념재료를 넣고 잘 버무린다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-3.jpg"
+   },
+   {
+    "text": "4. 찰어묵의 칼집 사이에 전분을 묻힌다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-4.jpg"
+   },
+   {
+    "text": "5. 칼집 사이에 3를 끼워 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-5.jpg"
+   },
+   {
+    "text": "6. 김이 오른 찜통에 10분간 찐다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/945-6.jpg"
+   }
+  ],
+  "tip": "여러종류의 어묵이 있으므로 이를 활용하여 다양한 메뉴를 만들어 보자",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 3015,
+  "flag": "J",
+  "name": "코울슬로샐러드",
+  "method": "기타",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": 50.0,
+  "calories": 44.1,
+  "carb": 4.2,
+  "protein": 0.6,
+  "fat": 2.8,
+  "sodium": 26.8,
+  "hashtag": "양배추",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308020951_1678252191936.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021004_1678252204020.jpg",
+  "ingredientsText": "•필수 재료 : 양배추(30g), 양파(10g), 적파프리카(3g), 청피망(3g)\n•마요네즈드레싱 : 마요네즈(5g), 설탕(1g), 식초(0.5g)",
+  "steps": [
+   {
+    "text": "1. 양배추와 양파, 적파프리카, 청피망을 깨끗이 씻는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021041_1678252241713.jpg"
+   },
+   {
+    "text": "2. 양배추와 양파를 잘게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021059_1678252259020.jpg"
+   },
+   {
+    "text": "3. 적파프리카와 청피망은 씨를 제거하고 잘게 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021116_1678252276743.jpg"
+   },
+   {
+    "text": "4. 마요네즈드레싱 재료를 고루 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021131_1678252291785.jpg"
+   },
+   {
+    "text": "5. 볼에 썰어둔 채소를 담는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021149_1678252309018.jpg"
+   },
+   {
+    "text": "6. 마요네즈드레싱을 넣고 버무려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/20230308/20230308021206_1678252326603.jpg"
+   }
+  ],
+  "tip": "•마요네즈와 식초로 새콤하게 무쳐내 싱거운 맛을 보완했어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 579,
+  "flag": "J",
+  "name": "콩나물부추볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 133.8,
+  "carb": 15.0,
+  "protein": 3.9,
+  "fat": 6.4,
+  "sodium": 139.4,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00579_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00579_1.png",
+  "ingredientsText": "콩나물(150g), 부추(50g), 양파(30g), 당근(20g), 파(10g),\n감자(50g), 소금(0.3g), 식용유(20g)",
+  "steps": [
+   {
+    "text": "1. 감자는 채를 썰어 물에 담궈 전분을 제거하고, 양파와 당근 파는 채를 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_1.png"
+   },
+   {
+    "text": "2. 콩나물은 머리와 꼬리를 손질한다",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_2.png"
+   },
+   {
+    "text": "3. 물이 끓으면 손질한 콩나물을 넣는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_3.png"
+   },
+   {
+    "text": "4. 콩나물이 익으면 체에 건져 찬물에 헹군다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_4.png"
+   },
+   {
+    "text": "5. 부추는 약 6cm 길이로 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_5.png"
+   },
+   {
+    "text": "6. 팬에 기름을 두르고 콩나물을 넣고 살짝 볶다가 썰어 놓은 야채를 넣고 볶으면서 소금 간을 하고 마지막에 부추를 넣고",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00579_6.png"
+   }
+  ],
+  "tip": "부추의 향 때문에 소금 간을 많이 하지 않아도 맛있어요.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 391,
+  "flag": "J",
+  "name": "토마토소고기장조림",
+  "method": "끓이기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 25,
+  "level": "보통",
+  "weight": null,
+  "calories": 282.6,
+  "carb": 20.4,
+  "protein": 31.2,
+  "fat": 8.5,
+  "sodium": 941.7,
+  "hashtag": "우둔살",
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00391_2.png",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00391_1.png",
+  "ingredientsText": "소고기 우둔살 200g, 메추리알 100g, 방울토마토 100g, 마늘 30g, 꽈리고추 50g, 양파 45g\n양념장 : 맛간장 30g, 흰후추 1g, 어간장 15g, 설탕 15g",
+  "steps": [
+   {
+    "text": "1. 소고기는 사방 2cm 정도의 크기로 잘라서 물에서 80% 정도까지 익혀준 후 냉수에 깨끗하게 세척해 준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00391_01.png"
+   },
+   {
+    "text": "2. 양파는 먹기 좋게 자르고 물 400g과 함께 간장 물을 만들어준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00391_02.png"
+   },
+   {
+    "text": "3. 간장 물에 데쳐 놓은 소고기부터 졸여주기 시작한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00391_03.png"
+   },
+   {
+    "text": "4. 메추리알을 넣고 함께 졸여준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00391_04.png"
+   },
+   {
+    "text": "5. 방울토마토, 양파, 마늘, 꽈리고추까지 넣고 마지막으로 졸여준다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/20_00391_05.png"
+   }
+  ],
+  "tip": "우둔살을 한 번 데쳐내 간장이 고기 내부까지 흡수되는 것을 방지하였다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 982,
+  "flag": "J",
+  "name": "토마토소스 달걀볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "보통",
+  "weight": null,
+  "calories": 111.0,
+  "carb": 10.2,
+  "protein": 4.4,
+  "fat": 5.9,
+  "sodium": 107.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053716_1416213436761.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053716_1416213436761.jpg",
+  "ingredientsText": "달걀 35g, 파 4g, 토마토소스 10g, 설탕 8g, 소금 적당량, 식물성기름 2g, 참기름 1g",
+  "steps": [
+   {
+    "text": "1. 볼에 달걀을 푼다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-1.jpg"
+   },
+   {
+    "text": "2. 달군 팬에 1을 볶아 스크램블을 만든다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-2.jpg"
+   },
+   {
+    "text": "3. 파를 송송 썬다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-3.jpg"
+   },
+   {
+    "text": "4. 기름을 두른 팬에 3을 먼저 볶아 향을 낸 뒤 토마토소스를 넣고 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-4.jpg"
+   },
+   {
+    "text": "5. 4에 설탕, 소금, 2를 넣고 섞는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-5.jpg"
+   },
+   {
+    "text": "6. 참기름을 뿌려 마무리한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/982-6.jpg"
+   }
+  ],
+  "tip": "토마토소스는 일반적으로 케첩을 이용하고 팬에 넣을 때 화력이나 기름의 온도가 너무 높으면 색이 변하므로 유의한다.",
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ },
+ {
+  "id": 1047,
+  "flag": "J",
+  "name": "팽이버섯 야채볶음",
+  "method": "볶기",
+  "category": "반찬",
+  "author": "식품의약품안전처",
+  "time": 15,
+  "level": "쉬움",
+  "weight": null,
+  "calories": 83.0,
+  "carb": 10.9,
+  "protein": 2.6,
+  "fat": 4.4,
+  "sodium": 14.0,
+  "hashtag": null,
+  "image": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053827_1416213507603.jpg",
+  "imageStep": "http://www.foodsafetykorea.go.kr/uploadimg/20141117/20141117053827_1416213507603.jpg",
+  "ingredientsText": "팽이버섯 70g, 청경채 50g, 참기름 2g, 식용유 2g, 물전분 6g, 소금 적당량",
+  "steps": [
+   {
+    "text": "1. 팽이버섯은 밑동을 제거하고 4cm 길이로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-1.jpg"
+   },
+   {
+    "text": "2. 청경채는 겉잎을 떼어낸 뒤 반으로 가른 뒤 팽이버섯과 같은 길이로 자른다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-2.jpg"
+   },
+   {
+    "text": "3. 썰어 놓은 팽이버섯과 청경채를 끓는 물에 데친다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-3.jpg"
+   },
+   {
+    "text": "4. 기름을 두른 팬에 팽이버섯과 청경채를 볶는다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-4.jpg"
+   },
+   {
+    "text": "5. 물 전분을 넣어 농도를 맞춘다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-5.jpg"
+   },
+   {
+    "text": "6. 참기름을 뿌려 완성한다.",
+    "image": "http://www.foodsafetykorea.go.kr/uploadimg/cook/1047-6.jpg"
+   }
+  ],
+  "tip": null,
+  "meta": {
+   "source": "json",
+   "real": [
+    "name",
+    "method",
+    "category",
+    "weight",
+    "calories",
+    "carb",
+    "protein",
+    "fat",
+    "sodium",
+    "hashtag",
+    "image",
+    "imageStep",
+    "ingredientsText",
+    "steps",
+    "tip",
+    "author"
+   ],
+   "dummy": [
+    "time",
+    "level"
+   ],
+   "api": []
+  }
+ }
+]

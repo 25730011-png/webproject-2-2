@@ -1,0 +1,248 @@
+:root{--bg:#ecece7;--pn:#fff;--ln:#222;--mu:#777;--ph:#d9d9d2;--dk:#161616;--tab:58px;--top:49px;--fb:45px;--fh:40px;
+  --ing-bg:#e3efe7;--ing-ln:#2f6b4f;--ing-tx:#1f5a3d}
+*{box-sizing:border-box}
+html.snap{scroll-snap-type:y proximity}
+body{margin:0;background:#cfcfc9;color:var(--ln);font:14px/1.5 -apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+.app{max-width:430px;margin:0 auto;min-height:100vh;background:var(--bg);padding-bottom:calc(var(--tab) + 20px);position:relative}
+.top-bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--pn);border-bottom:1px solid var(--ln)}
+.top-bar b{margin-right:auto}
+.ic,.btn,.chip{font:inherit;color:inherit;cursor:pointer}
+.ic{border:1px solid var(--ln);background:var(--pn);padding:4px 10px}
+.screen{display:none;padding:16px 14px}.screen.on{display:block}
+h2{font-size:18px;margin:0 0 4px}.mu{color:var(--mu);font-size:12px;margin:0}
+.box{background:var(--pn);border:1px solid var(--ln);padding:12px;margin-top:12px}
+.in{display:block;width:100%;border:1px solid var(--mu);background:var(--ph);padding:9px 10px;font:inherit;margin-top:6px}
+.lb{display:block;margin-top:12px;font-weight:700;font-size:13px}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.chip{border:1px solid var(--ln);background:var(--pn);padding:3px 10px;font-size:12px}
+.chip.on{background:var(--dk);color:#fff}.chip.gr{color:var(--mu);border-color:var(--mu);background:var(--ph)}
+/* 홈: 넣은 재료 칩은 초록, 검색 버튼은 검정으로 구분 */
+.chip.ing{background:var(--ing-bg);border-color:var(--ing-ln);color:var(--ing-tx);font-weight:700}
+.chip.add{border-style:dashed;color:var(--ing-tx);border-color:var(--ing-ln)}
+.btn{display:block;width:100%;border:1px solid var(--ln);background:var(--ph);padding:10px;margin-top:10px;text-align:center}
+.btn.dk{background:var(--dk);color:#fff}.btn[disabled]{opacity:.45;cursor:not-allowed}
+.img{background:var(--ph);border:1px solid var(--mu);min-height:60px;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:10px}
+.card{display:flex;gap:10px;padding:10px 0;border-bottom:1px dashed var(--mu);cursor:pointer}
+.card .img{width:64px;height:64px;flex:none}.card div:nth-child(2){flex:1}
+.bg{display:inline-block;border:1px solid var(--ln);padding:0 7px;font-size:11px;font-weight:700}.bg.a{background:var(--dk);color:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.gau{height:7px;background:var(--ph);margin:3px 0 8px}.gau i{display:block;height:100%;background:var(--dk)}
+.tabs{display:flex;border-bottom:2px solid var(--ln);margin-top:12px}
+.tabs button{flex:1;border:0;background:none;padding:8px 0;font:inherit;cursor:pointer;color:var(--mu)}
+.tabs button.on{color:var(--ln);font-weight:700;border-bottom:3px solid var(--ln);margin-bottom:-2px}
+.pane{display:none}.pane.on{display:block}
+/* 피드: 인스타그램처럼 한 화면에 게시물 하나 */
+#feed{padding:0}
+.feed-bar{position:sticky;top:calc(var(--top) + var(--fh));z-index:4;height:var(--fb);display:flex;gap:6px;align-items:center;padding:10px 14px;background:var(--pn);border-bottom:1px solid var(--ph)}
+.post{background:var(--pn);border-bottom:8px solid var(--bg);min-height:calc(100svh - var(--top) - var(--fh) - var(--fb) - var(--tab));display:flex;flex-direction:column;scroll-snap-align:start;scroll-margin-top:calc(var(--top) + var(--fh) + var(--fb))}
+.post-head{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.post-head div{flex:1}.post-head .mu{font-size:11px}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--ph);border:1px solid var(--mu);flex:none}
+.more{border:0;background:none;font-size:20px;cursor:pointer;padding:4px 8px;color:var(--ln)}
+.post-img{width:100%;aspect-ratio:1/1;border-left:0;border-right:0;font-size:12px;cursor:pointer}
+.post-act{display:flex;gap:4px;padding:6px 8px}
+.post-act button{border:0;background:none;font-size:22px;line-height:1;cursor:pointer;padding:6px;min-width:40px;min-height:40px;color:var(--ln)}
+.post-act .like.on{color:#c0392b}
+.post-body{padding:0 14px 14px}.post-body p{margin:4px 0 0}
+.stars{letter-spacing:1px}
+.tabbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:var(--tab);display:flex;background:var(--pn);border-top:2px solid var(--ln);z-index:6}
+.tabbar button{flex:1;border:0;background:none;font:inherit;font-size:11px;color:var(--mu);cursor:pointer}
+.tabbar button i{display:block;font-style:normal;font-size:18px}.tabbar button.on{color:var(--ln);font-weight:700;background:var(--ph)}
+.totop{position:fixed;bottom:calc(var(--tab) + 14px);right:max(14px,calc(50vw - 201px));width:44px;height:44px;border-radius:50%;border:0;background:var(--dk);color:#fff;font-size:10px;line-height:1.1;display:none;z-index:7;cursor:pointer}
+.totop.show{display:block}
+.note{border-left:3px solid var(--ln);background:var(--pn);padding:6px 10px;margin-top:12px;font-size:12px;color:var(--mu)}
+#feed .note{margin:12px 14px}
+/* 피드 상단 탭 (피드 | 게시물 검색) */
+.feed-head{position:sticky;top:var(--top);z-index:5;height:var(--fh);margin:0;background:var(--pn)}
+.feed-head button{padding:0}
+/* 게시물 검색: 인스타그램 둘러보기처럼 3열 썸네일 */
+.fs-wrap{padding:14px}
+.tile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.tile{display:block;cursor:pointer;background:var(--pn)}
+.tile .img{aspect-ratio:1/1;border:0;min-height:0}
+.tile span{display:block;font-size:10px;line-height:1.3;padding:3px 4px 5px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile[hidden]{display:none}
+/* 홈: 섹션 제목 */
+h3{font-size:16px;margin:0}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 10px}
+.more-link{border:0;background:none;font:inherit;font-size:12px;color:var(--mu);cursor:pointer;padding:8px 0}
+/* 홈: 인기 게시물 가로 스크롤 (큰 정사각형 사진) */
+.hscroll{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:14px;margin:0 -14px;padding:0 14px 6px;scrollbar-width:none}
+.hscroll::-webkit-scrollbar{display:none}
+.pop{flex:0 0 72%;scroll-snap-align:start;background:var(--pn);border:1px solid var(--ln);cursor:pointer}
+.pop-img{aspect-ratio:1/1;border:0;font-size:12px;position:relative}
+.rank{position:absolute;top:8px;left:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--dk);color:#fff;font-size:13px;font-weight:700}
+.pop-body{padding:10px 12px 12px}.pop-body p{margin:2px 0 0}
+.likes{font-weight:700;font-size:13px}
+/* 홈: 바로 만들 수 있는 요리 큰 카드 */
+.big-list{display:flex;flex-direction:column;gap:12px}
+.big-card{background:var(--pn);border:1px solid var(--ln);cursor:pointer}
+.big-img{aspect-ratio:16/10;border:0;font-size:12px}
+.big-body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;align-items:flex-start}
+.big-body b{font-size:16px}
+.week>div{cursor:pointer}.week .img{aspect-ratio:1/1;font-size:11px;margin-bottom:6px}.week p{margin:0}
+/* 목록(만들 수 있는 요리 찾기 결과): 사진을 크게 */
+#list .card{position:relative;flex-direction:column;gap:0;padding:0;margin-top:12px;border:1px solid var(--ln);background:var(--pn)}
+#list .card .img{width:100%;height:auto;aspect-ratio:16/10;border:0;font-size:12px}
+#list .card>div:nth-child(2){padding:10px 12px 12px}
+#list .card>div:nth-child(2) b{font-size:16px}
+#list .card>span:last-child{position:absolute;top:8px;right:8px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--pn);border:1px solid var(--ln);border-radius:50%;font-size:18px}
+/* 레시피 상세 · 게시물 상세 사진도 피드와 같은 1:1, 화면 너비 꽉 차게 */
+.sq-img{width:calc(100% + 28px);margin:-16px -14px 0;aspect-ratio:1/1;border-left:0;border-right:0;border-top:0;font-size:12px}
+/* 7주차: 데이터 출처 표식 (강의 1.4.5) — 색만으로 구분하지 않고 글자를 함께 표시 */
+.type-tag{display:inline-block;margin-left:4px;padding:0 5px;font-size:10px;line-height:16px;vertical-align:middle;border:1px solid var(--ln);background:var(--pn);color:var(--ln);font-weight:400;white-space:nowrap}
+.type-real{border-style:solid}
+.type-dummy{border-style:dashed;color:var(--mu);border-color:var(--mu)}
+.type-api{background:var(--dk);color:#fff;border-color:var(--dk)}
+.type-fallback{border-style:dotted;color:var(--mu)}
+.src-chip{display:inline-block;padding:0 6px;font-size:10px;line-height:16px;border:1px solid var(--ln);background:var(--pn);vertical-align:middle}
+.src-chip.team{border-style:dashed;color:var(--mu);border-color:var(--mu)}
+.src-note{font-size:11px;color:var(--mu);line-height:1.5;margin-top:16px;padding:8px 10px;border:1px dashed var(--mu)}
+.src-note a{color:inherit}
+/* 사진: JSON의 image URL을 실제 <img>로 표시, 없으면 회색 placeholder 유지 */
+.img img{width:100%;height:100%;object-fit:cover;display:block}
+.img.has-img{padding:0;border-color:var(--ph)}
+.steps{margin:6px 0 0;padding-left:0;list-style:none}
+.steps li{padding:6px 0;border-bottom:1px dashed var(--ph)}
+.steps li:last-child{border-bottom:0}
+.steps .img{margin-top:6px;aspect-ratio:16/10;font-size:11px}
+.nut{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;margin-top:6px;font-size:12px}
+.nut span:nth-child(odd){color:var(--mu)}
+.err{margin-top:12px;padding:12px;border:1px solid #c0392b;background:#fff;font-size:12px}
+.err b{color:#c0392b}
+#list .card .mu .type-tag{margin-left:2px}
+/* 결과 없음 화면: 불러오기 실패(.err, 빨간 테두리)와 구분되는 점선 상자 */
+.box.empty{border-style:dashed;border-color:var(--mu)}
+.box.empty .btn{margin-top:8px}
+#search .card .img{font-size:10px}
+/* 데이터 출처 플래그 (팀 규칙): J 저장 JSON / A 저장 JSON + Open API / U 사용자 등록 — 글자가 곧 의미라 색만으로 구분하지 않음 */
+.flag{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;font-size:11px;font-weight:700;line-height:1;border:1.5px solid var(--ln);background:var(--pn);color:var(--ln);vertical-align:middle;margin-left:4px;flex:none}
+.flag-J{border-style:solid}
+.flag-A{background:var(--dk);color:#fff;border-color:var(--dk)}
+.flag-U{border-style:dashed;background:var(--ing-bg);color:var(--ing-tx);border-color:var(--ing-ln)}
+/* 표준 예외 화면: 결과 없음·즐겨찾기 없음·내 레시피 없음 — 빈 냉장고 그림 + 이유 한 줄 + 다음 행동 버튼 */
+.box.empty{border-style:dashed;border-color:var(--mu);text-align:center;padding:18px 12px}
+.empty-img{display:block;width:96px;height:120px;margin:0 auto 10px;opacity:.9}
+.box.empty b{display:block;font-size:14px}
+.box.empty .mu{margin-top:6px}
+.box.empty .btn{margin-top:8px}
+/* 값이 없을 때(null): 회색 '정보 없음' + 점 테두리 — 숫자처럼 보이지 않게 */
+.na{color:var(--mu);font-style:normal}
+.na::before{content:"—";margin-right:4px;color:var(--mu)}
+/* 썸네일 없음: 접시 그림 placeholder (사진이 깨진 경우도 동일) */
+.img.no-img{background:var(--ph);color:transparent;border-color:var(--ph);padding:0}
+.img.no-img svg{width:100%;height:100%;display:block}
+/* 작성자 · 좋아요 */
+.author{font-size:11px;color:var(--mu)}
+.author b{font-weight:700;color:var(--ln)}
+.chip.on-like{background:#fff;border-color:#c0392b;color:#c0392b}
+.chip.on-fav{background:var(--dk);color:#fff}
+/* 레시피 등록 폼 */
+.req{color:#c0392b}
+select.in{appearance:auto}
+textarea.in{resize:vertical;font:inherit}
+.err-msg{margin:10px 0 0;padding:8px 10px;border:1px solid #c0392b;background:#fff;color:#c0392b;font-size:12px}
+.grid2 .lb{margin-top:10px}
+.type-user{border-style:dashed;border-color:var(--ing-ln);color:var(--ing-tx);background:var(--ing-bg)}
+/* 게시물 작성: 별점 입력 · 피드 토글 칩 */
+.stars-in{display:flex;gap:4px;margin-top:6px}
+.stars-in button{border:0;background:none;font-size:26px;line-height:1;cursor:pointer;padding:2px 4px;color:var(--ln)}
+.feed-bar .chip.on{background:var(--dk);color:#fff}
+.hscroll .box.empty{margin:0}
+#feed .post .no-img{aspect-ratio:1/1}
+/* ===== 히어로 (한 장: 글 + 그림, 우측 하단 작은 버튼) ===== */
+.hero{position:relative;margin:-16px -14px 0;background:var(--dk);color:#fff;overflow:hidden;display:grid;grid-template-columns:1fr 170px;gap:8px;padding:44px 14px 60px 18px;min-height:380px}
+.hero-text h2{font-size:24px;line-height:1.3;margin:8px 0 12px;color:#fff;word-break:keep-all}
+.hero-text .mu{color:#cfcfc9;font-size:13px}
+.hero-text{align-self:center}
+.hero-text .mu b{color:#fff}
+.hero-kicker{margin:0;font-size:11px;letter-spacing:.08em;color:#f2b6a0;font-weight:700}
+.hero-img{width:170px;height:134px;align-self:center;display:block}
+.hero-cta{position:absolute;right:14px;bottom:12px;padding:7px 12px;border:1px solid #fff;background:#fff;color:var(--dk);font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.hero-cta:hover{background:var(--dk);color:#fff}
+/* ===== 캐러셀 (인기 요리 3장, 좌우 스와이프) ===== */
+.carousel{position:relative;overflow:hidden;touch-action:pan-y;margin:0 -14px;padding:0 14px}
+.carousel-track{display:flex;transition:transform .3s ease}
+.carousel-track>*{flex:0 0 100%;box-sizing:border-box}
+.carousel-dots{display:flex;justify-content:center;gap:6px;padding:8px 0 0}
+.carousel-dots i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ph);border:1px solid var(--mu)}
+.carousel-dots i.on{background:var(--dk);border-color:var(--dk);width:16px;border-radius:3px}
+.carousel .pop{flex:0 0 100%;cursor:pointer}
+/* 공감 하트: 누르면 살짝 커졌다 돌아옴 */
+.like-btn.on-like,.post-act .like.on{color:#c0392b;border-color:#c0392b}
+@keyframes pop-heart{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
+.heart-pop{animation:pop-heart .35s ease}
+.lvl{display:inline-block;border:1px solid var(--mu);color:var(--mu);padding:0 6px;font-size:10px;line-height:16px;vertical-align:middle;margin-left:4px}
+/* ===== 검색 패널: 검색창 + 한 줄 요약 바(토글) + 아코디언 조건 그룹 ===== */
+.search-panel{padding:10px 12px}
+.fbar{display:flex;align-items:center;gap:8px;width:100%;margin-top:8px;padding:9px 10px;border:1px solid var(--ln);background:var(--pn);font:inherit;cursor:pointer;text-align:left}
+.fbar.set{background:var(--dk);color:#fff;border-color:var(--dk)}
+.fbar-title{font-weight:700;font-size:13px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fbar-sub{font-size:11px;color:var(--mu);flex:none}
+.fbar.set .fbar-sub{color:#cfcfc9}
+.fbar-arrow{flex:none;font-size:12px}
+.filters{margin-top:6px;border:1px solid var(--ph)}
+.fgroup{border-top:1px solid var(--ph)}
+.fgroup:first-child{border-top:0}
+.fgroup-h{display:flex;align-items:center;gap:8px;width:100%;padding:9px 10px;border:0;background:var(--pn);font:inherit;cursor:pointer;text-align:left}
+.fgroup-h .flabel{width:56px;flex:none;font-size:12px;color:var(--mu)}
+.fgroup-h .fcur{flex:1;font-size:13px}
+.fgroup.set .fcur{font-weight:700}
+.fgroup-h .farrow{flex:none;font-size:11px;color:var(--mu)}
+.fgroup.open .fgroup-h{background:var(--ph)}
+.fgroup .fchips{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px 10px 74px;background:var(--pn)}
+.fgroup .chip{line-height:18px}
+.fgroup .chip.on{background:var(--dk);color:#fff}
+.fgroup .chip[disabled]{opacity:.4;cursor:default}
+.fsum{display:flex;align-items:center;gap:6px;padding:8px 10px;border-top:1px solid var(--ph);font-size:11px;color:var(--mu);background:var(--pn)}
+.fsum .chip{font-size:11px;padding:1px 8px}
+.fsum .chip.reset{border-style:dashed}
+/* ===== 상세: 사진 위 이전/다음 화살표 + 위치, 제목 줄 오른쪽 ☆ ===== */
+.d-photo{position:relative}
+.d-arrow{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--ln);background:rgba(255,255,255,.92);font:inherit;font-size:22px;line-height:1;cursor:pointer;color:var(--ln)}
+.d-arrow.prev{left:-6px}.d-arrow.next{right:-6px}
+.d-arrow[disabled]{opacity:.3;cursor:default}
+.d-pos{position:absolute;right:0;bottom:8px;font-size:10px;color:var(--mu);background:rgba(255,255,255,.9);padding:1px 6px;border:1px solid var(--ph)}
+.d-title{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-top:12px}
+.fav-star{flex:none;width:40px;height:40px;border:1px solid var(--ln);border-radius:50%;background:var(--pn);font-size:20px;line-height:1;cursor:pointer;color:var(--ln)}
+.fav-star.on{background:var(--dk);color:#fff}
+#detail{touch-action:pan-y}
+.swiping{transition:transform .2s ease}
+/* ===== 썸네일 일러스트(사진 아님) 표식 ===== */
+.img.illu{padding:0;border-color:var(--ph);position:relative;color:transparent;overflow:hidden}
+.img.illu>svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.img.illu::after{content:"그림";position:absolute;right:6px;bottom:6px;font-size:10px;line-height:14px;padding:0 5px;background:rgba(255,255,255,.9);color:var(--mu);border:1px dashed var(--mu)}
+/* 플래그 D (AI 생성 가상 데이터) */
+.flag-D{border-style:dotted;background:#fff4d6;color:#8a5a00;border-color:#c98a00}
+.type-dummy{border-style:dashed;color:var(--mu);border-color:var(--mu)}
+/* ===== 데이터 명세 페이지 ===== */
+.spec-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+.spec-table th,.spec-table td{border:1px solid var(--ph);padding:5px 6px;text-align:left;vertical-align:top}
+.spec-table th{background:var(--ph);font-weight:700}
+.spec-code{display:block;white-space:pre-wrap;word-break:break-all;background:#f6f6f3;border:1px solid var(--ph);padding:8px;font:11px/1.5 ui-monospace,Menlo,Consolas,monospace;margin-top:6px}
+.spec-count{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}
+.spec-count div{border:1px solid var(--ln);padding:8px 6px;text-align:center;background:var(--pn)}
+.spec-count b{display:block;font-size:18px}
+.spec-count span{font-size:11px;color:var(--mu)}
+.more-btn{display:block;width:100%;border:1px dashed var(--mu);background:var(--pn);padding:10px;margin-top:12px;font:inherit;color:var(--mu);cursor:pointer}
+.spec-table td,.spec-table th{word-break:keep-all}
+/* 히어로 CTA: 어느 슬라이드에서든 레시피로 바로 */
+/* 랭킹 */
+.rank-head{background:var(--pn);border:1px solid var(--ln);padding:12px;margin-bottom:4px}
+.rank-head h2{margin:2px 0 4px}
+.rank-rule{font-size:11px;margin-top:8px;line-height:1.5}
+.rank-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--mu);cursor:pointer}
+.rank-row .medal{width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;border:1px solid var(--ln);font-weight:700;font-size:13px;background:var(--pn)}
+.rank-row.r1 .medal{background:var(--dk);color:#fff}
+.rank-row.r2 .medal{background:#555;color:#fff}
+.rank-row.r3 .medal{background:#999;color:#fff}
+.rank-row .img{width:52px;height:52px;flex:none}
+.rank-row .body{flex:1;min-width:0}
+.rank-row .body b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-row .score{text-align:right;flex:none}
+.rank-row .score b{display:block;font-size:16px}
+.rank-row .score span{font-size:11px;color:var(--mu)}
+.rank-row.me{background:var(--ing-bg)}
+.tabbar button{font-size:10px}
+/* 스와이프 영역 안의 이미지는 브라우저 기본 드래그를 끔 (드래그가 시작되면 스와이프가 취소됨) */
+.carousel img,.hero-img,#detail .img img{-webkit-user-drag:none;user-drag:none;user-select:none;pointer-events:none}
