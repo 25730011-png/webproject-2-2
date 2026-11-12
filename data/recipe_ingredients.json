@@ -1,5 +1,6 @@
 [
  {
+  "flag": "J",
   "recipe_id": 90003,
   "ingredient_id": 3,
   "required": true,
@@ -15,6 +16,7 @@
   }
  },
  {
+  "flag": "J",
   "recipe_id": 90003,
   "ingredient_id": 1,
   "required": true,
@@ -30,6 +32,7 @@
   }
  },
  {
+  "flag": "J",
   "recipe_id": 90023,
   "ingredient_id": 5,
   "required": true,

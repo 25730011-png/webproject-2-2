@@ -1,9 +1,11 @@
 [
  {
   "id": 90006,
+  "flag": "A",
   "name": "간장계란밥",
   "method": "기타",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "쉬움",
   "weight": null,
@@ -41,7 +43,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -57,9 +60,11 @@
  },
  {
   "id": 90004,
+  "flag": "A",
   "name": "계란볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -101,7 +106,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -117,9 +123,11 @@
  },
  {
   "id": 90003,
+  "flag": "A",
   "name": "김치볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -161,7 +169,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -177,9 +186,11 @@
  },
  {
   "id": 90011,
+  "flag": "A",
   "name": "김치참치덮밥",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -221,7 +232,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -237,9 +249,11 @@
  },
  {
   "id": 90014,
+  "flag": "A",
   "name": "소고기덮밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -281,7 +295,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -297,9 +312,11 @@
  },
  {
   "id": 90010,
+  "flag": "A",
   "name": "오므라이스",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -341,7 +358,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -357,9 +375,11 @@
  },
  {
   "id": 90008,
+  "flag": "A",
   "name": "제육덮밥",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -401,7 +421,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -417,9 +438,11 @@
  },
  {
   "id": 90005,
+  "flag": "A",
   "name": "참치마요덮밥",
   "method": "기타",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -461,7 +484,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -477,9 +501,11 @@
  },
  {
   "id": 90015,
+  "flag": "A",
   "name": "참치죽",
   "method": "끓이기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -521,7 +547,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -537,9 +564,11 @@
  },
  {
   "id": 90009,
+  "flag": "A",
   "name": "카레라이스",
   "method": "끓이기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -581,7 +610,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -597,9 +627,11 @@
  },
  {
   "id": 90013,
+  "flag": "A",
   "name": "콩나물밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -641,7 +673,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -657,9 +690,11 @@
  },
  {
   "id": 90007,
+  "flag": "A",
   "name": "햄마요덮밥",
   "method": "굽기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -701,7 +736,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -717,9 +753,11 @@
  },
  {
   "id": 90012,
+  "flag": "A",
   "name": "햄채소볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -761,7 +799,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -777,9 +816,11 @@
  },
  {
   "id": 1006,
+  "flag": "J",
   "name": "감자 주먹밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -836,7 +877,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -847,9 +889,11 @@
  },
  {
   "id": 748,
+  "flag": "J",
   "name": "김치밥그라탕",
   "method": "굽기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -906,7 +950,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -917,9 +962,11 @@
  },
  {
   "id": 1064,
+  "flag": "J",
   "name": "대추닭살리조또",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -976,7 +1023,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -987,9 +1035,11 @@
  },
  {
   "id": 586,
+  "flag": "J",
   "name": "대하마늘볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": 210.0,
@@ -1046,7 +1096,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1057,9 +1108,11 @@
  },
  {
   "id": 651,
+  "flag": "J",
   "name": "돼지고기 숙주덮밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": 200.0,
@@ -1116,7 +1169,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1127,9 +1181,11 @@
  },
  {
   "id": 231,
+  "flag": "J",
   "name": "두부달걀덮밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -1186,7 +1242,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1197,9 +1254,11 @@
  },
  {
   "id": 1065,
+  "flag": "J",
   "name": "먹골배 카레주먹밥",
   "method": "기타",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -1256,7 +1315,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1267,9 +1327,11 @@
  },
  {
   "id": 340,
+  "flag": "J",
   "name": "불고기덮밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": null,
@@ -1326,7 +1388,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1337,9 +1400,11 @@
  },
  {
   "id": 695,
+  "flag": "J",
   "name": "애호박장떡말이밥",
   "method": "굽기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -1396,7 +1461,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1407,9 +1473,11 @@
  },
  {
   "id": 459,
+  "flag": "J",
   "name": "양송이크림볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": null,
@@ -1466,7 +1534,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1477,9 +1546,11 @@
  },
  {
   "id": 229,
+  "flag": "J",
   "name": "오징어불고기김밥",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -1536,7 +1607,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1547,9 +1619,11 @@
  },
  {
   "id": 673,
+  "flag": "J",
   "name": "찬밥이용닭죽",
   "method": "끓이기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -1606,7 +1680,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1617,9 +1692,11 @@
  },
  {
   "id": 3291,
+  "flag": "J",
   "name": "참치두부 주먹밥",
   "method": "기타",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 262.1,
@@ -1676,7 +1753,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1687,9 +1765,11 @@
  },
  {
   "id": 127,
+  "flag": "J",
   "name": "컵밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -1734,7 +1814,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1745,9 +1826,11 @@
  },
  {
   "id": 3286,
+  "flag": "J",
   "name": "타이거새우 현미볶음밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 321.0,
@@ -1804,7 +1887,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1815,9 +1899,11 @@
  },
  {
   "id": 492,
+  "flag": "J",
   "name": "토마토덮밥",
   "method": "볶기",
   "category": "밥",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -1874,7 +1960,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -1885,9 +1972,11 @@
  },
  {
   "id": 90021,
+  "flag": "A",
   "name": "계란토스트",
   "method": "굽기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -1929,7 +2018,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -1945,9 +2035,11 @@
  },
  {
   "id": 90018,
+  "flag": "A",
   "name": "김치계란라면",
   "method": "끓이기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "쉬움",
   "weight": null,
@@ -1989,7 +2081,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2005,9 +2098,11 @@
  },
  {
   "id": 90022,
+  "flag": "A",
   "name": "김치볶음우동",
   "method": "볶기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -2049,7 +2144,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2065,9 +2161,11 @@
  },
  {
   "id": 90020,
+  "flag": "A",
   "name": "김치전",
   "method": "굽기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 20,
   "level": "쉬움",
   "weight": null,
@@ -2109,7 +2207,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2125,9 +2224,11 @@
  },
  {
   "id": 90019,
+  "flag": "A",
   "name": "떡국",
   "method": "끓이기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -2169,7 +2270,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2185,9 +2287,11 @@
  },
  {
   "id": 90001,
+  "flag": "A",
   "name": "떡볶이",
   "method": "끓이기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -2229,7 +2333,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2245,9 +2350,11 @@
  },
  {
   "id": 90002,
+  "flag": "A",
   "name": "라볶이",
   "method": "끓이기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -2289,7 +2396,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2305,9 +2413,11 @@
  },
  {
   "id": 90017,
+  "flag": "A",
   "name": "비빔국수",
   "method": "기타",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -2349,7 +2459,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2365,9 +2476,11 @@
  },
  {
   "id": 90016,
+  "flag": "A",
   "name": "잔치국수",
   "method": "끓이기",
   "category": "일품",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -2409,7 +2522,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -2425,9 +2539,11 @@
  },
  {
   "id": 510,
+  "flag": "J",
   "name": "냉토마토파스타",
   "method": "끓이기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -2484,7 +2600,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2495,9 +2612,11 @@
  },
  {
   "id": 482,
+  "flag": "J",
   "name": "냉파스타",
   "method": "볶기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": null,
@@ -2554,7 +2673,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2565,9 +2685,11 @@
  },
  {
   "id": 114,
+  "flag": "J",
   "name": "닭가슴살 브로콜리 만두",
   "method": "찌기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 30,
   "level": "보통",
   "weight": null,
@@ -2612,7 +2734,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2623,9 +2746,11 @@
  },
  {
   "id": 618,
+  "flag": "J",
   "name": "닭가슴살 스테이크",
   "method": "굽기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -2682,7 +2807,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2693,9 +2819,11 @@
  },
  {
   "id": 624,
+  "flag": "J",
   "name": "두유 라이크 파스타",
   "method": "끓이기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -2752,7 +2880,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2763,9 +2892,11 @@
  },
  {
   "id": 441,
+  "flag": "J",
   "name": "삼색샌드위치",
   "method": "기타",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -2822,7 +2953,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2833,9 +2965,11 @@
  },
  {
   "id": 1067,
+  "flag": "J",
   "name": "양배추롤&참치두부쌈장",
   "method": "찌기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 30,
   "level": "어려움",
   "weight": null,
@@ -2892,7 +3026,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2903,9 +3038,11 @@
  },
  {
   "id": 3225,
+  "flag": "J",
   "name": "어묵 잡채",
   "method": "기타",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 184.5,
@@ -2962,7 +3099,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -2973,9 +3111,11 @@
  },
  {
   "id": 465,
+  "flag": "J",
   "name": "치킨완자스프",
   "method": "끓이기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -3032,7 +3172,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3043,9 +3184,11 @@
  },
  {
   "id": 1030,
+  "flag": "J",
   "name": "클럽 샌드위치",
   "method": "기타",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -3102,7 +3245,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3113,9 +3257,11 @@
  },
  {
   "id": 311,
+  "flag": "J",
   "name": "토마토라면",
   "method": "끓이기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3172,7 +3318,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3183,9 +3330,11 @@
  },
  {
   "id": 493,
+  "flag": "J",
   "name": "표고크림파스타",
   "method": "볶기",
   "category": "일품",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -3242,7 +3391,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3253,9 +3403,11 @@
  },
  {
   "id": 90024,
+  "flag": "A",
   "name": "계란국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "쉬움",
   "weight": null,
@@ -3297,7 +3449,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -3313,9 +3466,11 @@
  },
  {
   "id": 90023,
+  "flag": "A",
   "name": "김치찌개",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "냉장고 털이 팀",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3357,7 +3512,8 @@
     "ingredientsText",
     "steps",
     "time",
-    "level"
+    "level",
+    "author"
    ],
    "api": [
     "calories",
@@ -3373,9 +3529,11 @@
  },
  {
   "id": 674,
+  "flag": "J",
   "name": "감자느타리버섯국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3432,7 +3590,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3443,9 +3602,11 @@
  },
  {
   "id": 3065,
+  "flag": "J",
   "name": "감자미역국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "쉬움",
   "weight": 300.0,
@@ -3502,7 +3663,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3513,9 +3675,11 @@
  },
  {
   "id": 137,
+  "flag": "J",
   "name": "된장 두부찌개",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3560,7 +3724,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3571,9 +3736,11 @@
  },
  {
   "id": 3067,
+  "flag": "J",
   "name": "배추된장국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": 300.0,
@@ -3630,7 +3797,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3641,9 +3809,11 @@
  },
  {
   "id": 937,
+  "flag": "J",
   "name": "새우 완자탕",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": null,
@@ -3700,7 +3870,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3711,9 +3882,11 @@
  },
  {
   "id": 3069,
+  "flag": "J",
   "name": "새우살토마토스튜",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "어려움",
   "weight": 300.0,
@@ -3770,7 +3943,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3781,9 +3955,11 @@
  },
  {
   "id": 2967,
+  "flag": "J",
   "name": "소고기 무국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": 287.0,
@@ -3840,7 +4016,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3851,9 +4028,11 @@
  },
  {
   "id": 922,
+  "flag": "J",
   "name": "송이 미역국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3910,7 +4089,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3921,9 +4101,11 @@
  },
  {
   "id": 267,
+  "flag": "J",
   "name": "양지해장국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -3980,7 +4162,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -3991,9 +4174,11 @@
  },
  {
   "id": 3292,
+  "flag": "J",
   "name": "양파토마토스튜",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": 288.0,
@@ -4050,7 +4235,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4061,9 +4247,11 @@
  },
  {
   "id": 272,
+  "flag": "J",
   "name": "완자김치찌개",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -4120,7 +4308,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4131,9 +4320,11 @@
  },
  {
   "id": 3007,
+  "flag": "J",
   "name": "토마토 미소 된장국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": 196.0,
@@ -4190,7 +4381,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4201,9 +4393,11 @@
  },
  {
   "id": 349,
+  "flag": "J",
   "name": "토마토맑은장국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "쉬움",
   "weight": 170.0,
@@ -4260,7 +4454,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4271,9 +4466,11 @@
  },
  {
   "id": 38,
+  "flag": "J",
   "name": "표고버섯 청경채국",
   "method": "끓이기",
   "category": "국&찌개",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -4318,7 +4515,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4329,9 +4527,11 @@
  },
  {
   "id": 403,
+  "flag": "J",
   "name": "가지겉절이",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": null,
@@ -4384,7 +4584,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4395,9 +4596,11 @@
  },
  {
   "id": 480,
+  "flag": "J",
   "name": "가지토마토구이",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -4454,7 +4657,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4465,9 +4669,11 @@
  },
  {
   "id": 827,
+  "flag": "J",
   "name": "고추 장떡",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -4524,7 +4730,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4535,9 +4742,11 @@
  },
  {
   "id": 877,
+  "flag": "J",
   "name": "김자반",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -4594,7 +4803,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4605,9 +4815,11 @@
  },
  {
   "id": 3364,
+  "flag": "J",
   "name": "느타리버섯볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 60.0,
@@ -4664,7 +4876,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4675,9 +4888,11 @@
  },
  {
   "id": 512,
+  "flag": "J",
   "name": "닭고기스테이크",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -4734,7 +4949,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4745,9 +4961,11 @@
  },
  {
   "id": 1012,
+  "flag": "J",
   "name": "돼지갈비 볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -4804,7 +5022,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4815,9 +5034,11 @@
  },
  {
   "id": 914,
+  "flag": "J",
   "name": "돼지고기 토마토 두부볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -4874,7 +5095,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4885,9 +5107,11 @@
  },
  {
   "id": 834,
+  "flag": "J",
   "name": "두부 달걀전",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -4944,7 +5168,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -4955,9 +5180,11 @@
  },
  {
   "id": 2999,
+  "flag": "J",
   "name": "마늘칩 감자샐러드",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 55.0,
@@ -5014,7 +5241,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5025,9 +5253,11 @@
  },
  {
   "id": 988,
+  "flag": "J",
   "name": "모듬옥수수",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "보통",
   "weight": null,
@@ -5084,7 +5314,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5095,9 +5326,11 @@
  },
  {
   "id": 720,
+  "flag": "J",
   "name": "무대하무침",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -5154,7 +5387,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5165,9 +5399,11 @@
  },
  {
   "id": 1073,
+  "flag": "J",
   "name": "바나나를 감싼 일본식 달걀말이",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "쉬움",
   "weight": null,
@@ -5224,7 +5460,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5235,9 +5472,11 @@
  },
  {
   "id": 31,
+  "flag": "J",
   "name": "방울토마토 소박이",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "어려움",
   "weight": null,
@@ -5282,7 +5521,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5293,9 +5533,11 @@
  },
  {
   "id": 1039,
+  "flag": "J",
   "name": "브로콜리 쇠고기 볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -5352,7 +5594,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5363,9 +5606,11 @@
  },
  {
   "id": 394,
+  "flag": "J",
   "name": "삼겹살꼬치구이",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "어려움",
   "weight": null,
@@ -5418,7 +5663,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5429,9 +5675,11 @@
  },
  {
   "id": 628,
+  "flag": "J",
   "name": "삼색샐러드와두부구이",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "어려움",
   "weight": null,
@@ -5488,7 +5736,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5499,9 +5748,11 @@
  },
  {
   "id": 629,
+  "flag": "J",
   "name": "새송이등갈비",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -5558,7 +5809,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5569,9 +5821,11 @@
  },
  {
   "id": 3575,
+  "flag": "J",
   "name": "소고기 김말이",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "어려움",
   "weight": 100.0,
@@ -5628,7 +5882,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5639,9 +5894,11 @@
  },
  {
   "id": 555,
+  "flag": "J",
   "name": "속채운대저토마토백김치",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -5698,7 +5955,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5709,9 +5967,11 @@
  },
  {
   "id": 3280,
+  "flag": "J",
   "name": "수제새우소시지",
   "method": "굽기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 20,
   "level": "어려움",
   "weight": 151.5,
@@ -5768,7 +6028,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5779,9 +6040,11 @@
  },
  {
   "id": 993,
+  "flag": "J",
   "name": "시금치 돼지고기 볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -5838,7 +6101,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5849,9 +6113,11 @@
  },
  {
   "id": 821,
+  "flag": "J",
   "name": "양배추 깻잎 피클",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -5908,7 +6174,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5919,9 +6186,11 @@
  },
  {
   "id": 3174,
+  "flag": "J",
   "name": "오이파프리카새콤무침",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "쉬움",
   "weight": 24.0,
@@ -5978,7 +6247,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -5989,9 +6259,11 @@
  },
  {
   "id": 889,
+  "flag": "J",
   "name": "오징어말이 케첩조림",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -6048,7 +6320,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6059,9 +6332,11 @@
  },
  {
   "id": 890,
+  "flag": "J",
   "name": "오징어보쌈과 저나트륨 된장소스",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -6118,7 +6393,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6129,9 +6405,11 @@
  },
  {
   "id": 384,
+  "flag": "J",
   "name": "웰빙카레죽",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -6188,7 +6466,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6199,9 +6478,11 @@
  },
  {
   "id": 3006,
+  "flag": "J",
   "name": "저염 겉절이",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 70.0,
@@ -6254,7 +6535,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6265,9 +6547,11 @@
  },
  {
   "id": 945,
+  "flag": "J",
   "name": "찰 어묵찜",
   "method": "찌기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 30,
   "level": "보통",
   "weight": null,
@@ -6324,7 +6608,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6335,9 +6620,11 @@
  },
  {
   "id": 3015,
+  "flag": "J",
   "name": "코울슬로샐러드",
   "method": "기타",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": 50.0,
@@ -6394,7 +6681,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6405,9 +6693,11 @@
  },
  {
   "id": 579,
+  "flag": "J",
   "name": "콩나물부추볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -6464,7 +6754,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6475,9 +6766,11 @@
  },
  {
   "id": 391,
+  "flag": "J",
   "name": "토마토소고기장조림",
   "method": "끓이기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 25,
   "level": "보통",
   "weight": null,
@@ -6530,7 +6823,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6541,9 +6835,11 @@
  },
  {
   "id": 982,
+  "flag": "J",
   "name": "토마토소스 달걀볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "보통",
   "weight": null,
@@ -6600,7 +6896,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
@@ -6611,9 +6908,11 @@
  },
  {
   "id": 1047,
+  "flag": "J",
   "name": "팽이버섯 야채볶음",
   "method": "볶기",
   "category": "반찬",
+  "author": "식품의약품안전처",
   "time": 15,
   "level": "쉬움",
   "weight": null,
@@ -6670,7 +6969,8 @@
     "imageStep",
     "ingredientsText",
     "steps",
-    "tip"
+    "tip",
+    "author"
    ],
    "dummy": [
     "time",
