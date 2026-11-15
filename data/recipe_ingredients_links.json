@@ -1,0 +1,8236 @@
+[
+  {
+    "flag": "C",
+    "recipe_id": 1006,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자 80g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1006,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "밥 80g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1006,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근다진것 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1006,
+    "ingredient_id": 17,
+    "ingredient": "시금치",
+    "text": "시금치 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1006,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "삶은 달걀 노른자 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "밥 180",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 3,
+    "ingredient": "김치",
+    "text": "배추김치(줄기부분) 30",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 20",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "생 표고버섯 40",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "방울토마토 200",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 748,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "피자치즈(모짜렐라) 30",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기(가슴살",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "피망(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "치즈(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 36,
+    "ingredient": "우유",
+    "text": "우유(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1064,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(3g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎(2장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 26,
+    "ingredient": "숙주",
+    "text": "숙주(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 586,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "팽이버섯(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "쪽파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 651,
+    "ingredient_id": 26,
+    "ingredient": "숙주",
+    "text": "숙주(50g)\n•밑간 : 소금(1g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 231,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "재료 두부(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 231,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 231,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 231,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 231,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀(15g)\n밥(200g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1065,
+    "ingredient_id": 3,
+    "ingredient": "김치",
+    "text": "묵은지(15g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1065,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(15g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1065,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1065,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1065,
+    "ingredient_id": 4,
+    "ingredient": "참치캔",
+    "text": "참치(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "쌀밥 200g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "홍고추 18g\n팽이버섯 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "계란 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "쪽파 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘기름 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 340,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강청 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 695,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "밥 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 695,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박 25g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 695,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 695,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "풋고추 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 695,
+    "ingredient_id": 45,
+    "ingredient": "고추장",
+    "text": "고추장 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기살(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 40,
+    "ingredient": "떡",
+    "text": "떡볶이떡(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(20g)\n당근(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "밥(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 36,
+    "ingredient": "우유",
+    "text": "육수(50g)\n우유(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 459,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "치즈(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "밥(200g)\n채 썬 쇠고기(우둔살",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 14,
+    "ingredient": "새송이버섯",
+    "text": "새송이버섯(30g)\n양념 참기름(15g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 229,
+    "ingredient_id": 45,
+    "ingredient": "고추장",
+    "text": "고추장(3g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "찬밥 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭다리살 80g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "통마늘 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 8g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 673,
+    "ingredient_id": 18,
+    "ingredient": "부추",
+    "text": "부추 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3291,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "[ 2인분 ] 두부(1모=300g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3291,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(빨강",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3291,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎(4장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3291,
+    "ingredient_id": 4,
+    "ingredient": "참치캔",
+    "text": "통조림 참치(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "쌀밥 420g(2컵)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 3,
+    "ingredient": "김치",
+    "text": "배추김치 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀 200g(4개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 33,
+    "ingredient": "베이컨",
+    "text": "베이컨 30g(3장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 17,
+    "ingredient": "시금치",
+    "text": "시금치 70g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 127,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘 6g(1작은술)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 27,
+    "ingredient": "브로콜리",
+    "text": "[ 2인분 ] 브로콜리(¼개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(¼개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(빨강",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "쪽파(2대)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "블랙타이거새우(8마리)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청양고추(2개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘(3Ts)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3286,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터(3Ts)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 492,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 492,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "새우(20g)\n- 소스 : 양파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 492,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 492,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "올리브오일(10g)\n토마토소스(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 510,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 510,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "올리브오일(10g)\n후춧가루(0.1g)\n- 소스 : 마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 510,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 510,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 482,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "소고기(50g)\n저염간장(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 482,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 482,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "깻잎(10g)\n양파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 482,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 114,
+    "ingredient_id": 27,
+    "ingredient": "브로콜리",
+    "text": "브로콜리 100g(1/4개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 114,
+    "ingredient_id": 26,
+    "ingredient": "숙주",
+    "text": "숙주 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 114,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯 20g(2개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 618,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기(가슴살",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 618,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 618,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 618,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "치즈(1장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 618,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 33,
+    "ingredient": "베이컨",
+    "text": "베이컨(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 14,
+    "ingredient": "새송이버섯",
+    "text": "새송이버섯(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 27,
+    "ingredient": "브로콜리",
+    "text": "브로콜리(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 624,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "치즈(1장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 42,
+    "ingredient": "식빵",
+    "text": "식빵(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "어린이치즈(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "양상추(30g)\n감자(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀(60g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 441,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "오이(20g)\n양파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 39,
+    "ingredient": "밥",
+    "text": "밥(150g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 24,
+    "ingredient": "양배추",
+    "text": "양배추(60g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 4,
+    "ingredient": "참치캔",
+    "text": "참치(캔",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(8g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 46,
+    "ingredient": "된장",
+    "text": "된장(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1067,
+    "ingredient_id": 45,
+    "ingredient": "고추장",
+    "text": "고추장(2g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3225,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기(70g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3225,
+    "ingredient_id": 34,
+    "ingredient": "어묵",
+    "text": "어묵(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3225,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "빨강 파프리카(25g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3225,
+    "ingredient_id": 25,
+    "ingredient": "콩나물",
+    "text": "콩나물(150g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 36,
+    "ingredient": "우유",
+    "text": "우유(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기살(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "대추(20g)\n표고버섯(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 465,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(20g)\n소금(0.3g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 42,
+    "ingredient": "식빵",
+    "text": "식빵 40g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "삶은달걀 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭가슴살 13g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "치즈슬라이스 4g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1030,
+    "ingredient_id": 33,
+    "ingredient": "베이컨",
+    "text": "베이컨 4g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "재료 애호박(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청양고추(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(300g)\n라면스프(3g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 311,
+    "ingredient_id": 41,
+    "ingredient": "라면",
+    "text": "라면(100g)\n육수 다시마(2.5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 493,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯(80g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 493,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 493,
+    "ingredient_id": 36,
+    "ingredient": "우유",
+    "text": "우유(200g)\n생크림(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 674,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 674,
+    "ingredient_id": 15,
+    "ingredient": "느타리버섯",
+    "text": "느타리버섯 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 674,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 8g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 674,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 674,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3065,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자 40g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3065,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진마늘 1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 320g(1모)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 3,
+    "ingredient": "김치",
+    "text": "김치 140g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 46,
+    "ingredient": "된장",
+    "text": "된장 20g(1½큰술)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청양고추 10g(1/2개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 5g(1/4개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 137,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파 10g(2cm)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청양고추 1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진마늘 0.5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강즙 0.5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3067,
+    "ingredient_id": 46,
+    "ingredient": "된장",
+    "text": "된장 2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "새우 살 40g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀흰자 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "팽이버섯 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 18,
+    "ingredient": "부추",
+    "text": "부추 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 937,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘다진것 2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "새우살 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3069,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2967,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "소고기 14g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2967,
+    "ingredient_id": 15,
+    "ingredient": "느타리버섯",
+    "text": "느타리버섯 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2967,
+    "ingredient_id": 26,
+    "ingredient": "숙주",
+    "text": "숙주 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 922,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 922,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 267,
+    "ingredient_id": 15,
+    "ingredient": "느타리버섯",
+    "text": "재료 쇠고기육수(30g)\n느타리버섯(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 267,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 267,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청양고추(1g)\n대파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 267,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "방울토마토(80g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 267,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "콩나물(50g)\n양념 다진 마늘(8g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3292,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "[ 2인분 ] 마늘(4쪽)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3292,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(2개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3292,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 25,
+    "ingredient": "콩나물",
+    "text": "재료 콩나물(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 3,
+    "ingredient": "김치",
+    "text": "김치(50g)\n두부(40g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "붉은 고추(15g)\n다진 돼지고기(등심",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "새우젓(5g)\n육수 대파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 272,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "쇠고기(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토 50g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3007,
+    "ingredient_id": 46,
+    "ingredient": "된장",
+    "text": "미소된장 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 349,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "•필수 재료 : 방울토마토(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 349,
+    "ingredient_id": 17,
+    "ingredient": "시금치",
+    "text": "시금치(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 349,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "팽이버섯(5g)\n•육수 : 닭육수(250g)\n•양념 : 일식된장(25g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 38,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 10g(2×1cm)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 38,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯 기둥",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 38,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘 2g(1/3작은술)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지 250g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파 25g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 45,
+    "ingredient": "고추장",
+    "text": "간편 어간장 15g\n양념장 : 고추장 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강청 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 403,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진마늘 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 480,
+    "ingredient_id": 20,
+    "ingredient": "가지",
+    "text": "가지(80g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 480,
+    "ingredient_id": 37,
+    "ingredient": "치즈",
+    "text": "토마토(40g)\n모짜렐라치즈(30g)\n- 소스 : 토마토소스(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 480,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "토마토(40g)\n- 곁들임 : 팽이버섯(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 827,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 827,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 827,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 827,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 877,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘 8g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 877,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 877,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3364,
+    "ingredient_id": 15,
+    "ingredient": "느타리버섯",
+    "text": "•필수재료 : 느타리버섯(25g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3364,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(빨간색",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 512,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기살(120g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 512,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강(5g)\n정종(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 512,
+    "ingredient_id": 36,
+    "ingredient": "우유",
+    "text": "우유(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 512,
+    "ingredient_id": 19,
+    "ingredient": "오이",
+    "text": "오이(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 512,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(20g)\n두부(80g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1012,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘다진것 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1012,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강다진것 2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1012,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1012,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토 25g[양념장] 간장 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 914,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기목살 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 914,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 914,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토 50g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 914,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강다진것 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 834,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 834,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 0.5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 834,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 0.5g [소스소개]저나트륨초간장소스:간장 1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2999,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자 50g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2999,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 2999,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 988,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "청피망 25g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 988,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 25g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 988,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭고기 35g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 720,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "새우(대하) 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 720,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1073,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀(3개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 31,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "●방울토마토 소박이 : \n방울토마토 150g(5개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 31,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 10g(3×1cm)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 31,
+    "ingredient_id": 18,
+    "ingredient": "부추",
+    "text": "부추 10g(5줄기)\n●양념장 : \n고춧가루 4g(1작은술)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 31,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘 2.5g(1/2쪽)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1039,
+    "ingredient_id": 27,
+    "ingredient": "브로콜리",
+    "text": "브로콜리 70g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1039,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "쇠고기안심 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1039,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1039,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘다진것 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1039,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 394,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "삼겹살 200g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 394,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "방울토마토 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 394,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘기름 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 394,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "통후추 2g\n대파 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 628,
+    "ingredient_id": 7,
+    "ingredient": "두부",
+    "text": "두부(150g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 628,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "홍피망(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 628,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 628,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎(2장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기(등갈비",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 14,
+    "ingredient": "새송이버섯",
+    "text": "새송이버섯(1개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "대파(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 629,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3575,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "1인분 기준<br>\n[주재료] 소고기(치맛살)(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3575,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "다진 쪽파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3575,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘(12g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 555,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토(100g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 555,
+    "ingredient_id": 19,
+    "ingredient": "오이",
+    "text": "오이(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 555,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 555,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 555,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3280,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "[ 2인분 ] 양파(½개)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3280,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "칵테일새우(14마리)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3280,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎(3장)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3280,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자전분(2Ts)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3280,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진 마늘(2Ts)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 993,
+    "ingredient_id": 5,
+    "ingredient": "돼지고기",
+    "text": "돼지고기살코기 40g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 993,
+    "ingredient_id": 17,
+    "ingredient": "시금치",
+    "text": "시금치 25g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 993,
+    "ingredient_id": 18,
+    "ingredient": "부추",
+    "text": "부추 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 993,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "생강 3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 821,
+    "ingredient_id": 24,
+    "ingredient": "양배추",
+    "text": "양배추 16g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 821,
+    "ingredient_id": 16,
+    "ingredient": "깻잎",
+    "text": "깻잎 6g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 821,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 821,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 1g [소스소개]피클소스:물 35g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3174,
+    "ingredient_id": 19,
+    "ingredient": "오이",
+    "text": "오이 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3174,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "파프리카(빨강/노랑) 각 5g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 17g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 17,
+    "ingredient": "시금치",
+    "text": "시금치 17g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀 19g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 12,
+    "ingredient": "표고버섯",
+    "text": "표고버섯마른것 7g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "밀가루 1.1g [소스소개] 토마토케첩소스:마늘다진것 1.1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파다진것 1.1g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 889,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토케첩 2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근 9g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 19,
+    "ingredient": "오이",
+    "text": "오이 9g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 46,
+    "ingredient": "된장",
+    "text": "상추 7g [소스소개] 저나트륨된장소스:된장 1.6g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 1.3g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 22,
+    "ingredient": "청양고추",
+    "text": "청고추 0.2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 890,
+    "ingredient_id": 23,
+    "ingredient": "홍고추",
+    "text": "홍고추 0.2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 31,
+    "ingredient": "닭고기",
+    "text": "닭가슴살 150g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 10,
+    "ingredient": "애호박",
+    "text": "애호박 25g\n감자 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 60g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "방울토마토 100g\n마늘 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 38,
+    "ingredient": "버터",
+    "text": "버터 15g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 384,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "칵테일새우 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3006,
+    "ingredient_id": 6,
+    "ingredient": "대파",
+    "text": "쪽파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3006,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3006,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "다진마늘(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3006,
+    "ingredient_id": 29,
+    "ingredient": "생강",
+    "text": "다진생강(5g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 945,
+    "ingredient_id": 34,
+    "ingredient": "어묵",
+    "text": "찰어묵 50g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 945,
+    "ingredient_id": 35,
+    "ingredient": "새우",
+    "text": "새우살 20g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 945,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "전분 5g 양념 마늘다진것 2g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3015,
+    "ingredient_id": 24,
+    "ingredient": "양배추",
+    "text": "•필수 재료 : 양배추(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3015,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(10g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 3015,
+    "ingredient_id": 21,
+    "ingredient": "파프리카",
+    "text": "적파프리카(3g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 579,
+    "ingredient_id": 25,
+    "ingredient": "콩나물",
+    "text": "콩나물(150g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 579,
+    "ingredient_id": 18,
+    "ingredient": "부추",
+    "text": "부추(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 579,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파(30g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 579,
+    "ingredient_id": 8,
+    "ingredient": "당근",
+    "text": "당근(20g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 579,
+    "ingredient_id": 9,
+    "ingredient": "감자",
+    "text": "감자(50g)",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 391,
+    "ingredient_id": 30,
+    "ingredient": "소고기",
+    "text": "소고기 우둔살 200g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 391,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "방울토마토 100g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 391,
+    "ingredient_id": 28,
+    "ingredient": "마늘",
+    "text": "마늘 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 391,
+    "ingredient_id": 2,
+    "ingredient": "양파",
+    "text": "양파 45g\n양념장 : 맛간장 30g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 982,
+    "ingredient_id": 1,
+    "ingredient": "계란",
+    "text": "달걀 35g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 982,
+    "ingredient_id": 11,
+    "ingredient": "토마토",
+    "text": "토마토소스 10g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  },
+  {
+    "flag": "C",
+    "recipe_id": 1047,
+    "ingredient_id": 13,
+    "ingredient": "팽이버섯",
+    "text": "팽이버섯 70g",
+    "meta": {
+      "source": "calc",
+      "real": [
+        "text"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "flag",
+        "recipe_id",
+        "ingredient_id",
+        "ingredient"
+      ],
+      "empty": [],
+      "note": "식약처 원문 재료를 팀 사전과 연결한 계산 결과. text는 저장 원문."
+    }
+  }
+]

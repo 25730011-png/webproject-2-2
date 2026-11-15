@@ -1,0 +1,3042 @@
+[
+  {
+    "recipeId": 1006,
+    "queryName": "감자 주먹밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 748,
+    "queryName": "김치밥그라탕",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1064,
+    "queryName": "대추닭살리조또",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 586,
+    "queryName": "대하마늘볶음밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 651,
+    "queryName": "돼지고기 숙주덮밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 231,
+    "queryName": "두부달걀덮밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1065,
+    "queryName": "먹골배 카레주먹밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 340,
+    "queryName": "불고기덮밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 695,
+    "queryName": "애호박장떡말이밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 459,
+    "queryName": "양송이크림볶음밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 229,
+    "queryName": "오징어불고기김밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 673,
+    "queryName": "찬밥이용닭죽",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3291,
+    "queryName": "참치두부 주먹밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 127,
+    "queryName": "컵밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3286,
+    "queryName": "타이거새우 현미볶음밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 492,
+    "queryName": "토마토덮밥",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 510,
+    "queryName": "냉토마토파스타",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 482,
+    "queryName": "냉파스타",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 114,
+    "queryName": "닭가슴살 브로콜리 만두",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 618,
+    "queryName": "닭가슴살 스테이크",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 624,
+    "queryName": "두유 라이크 파스타",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 441,
+    "queryName": "삼색샌드위치",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1067,
+    "queryName": "양배추롤&참치두부쌈장",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3225,
+    "queryName": "어묵 잡채",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 465,
+    "queryName": "치킨완자스프",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1030,
+    "queryName": "클럽 샌드위치",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 311,
+    "queryName": "토마토라면",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 493,
+    "queryName": "표고크림파스타",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 674,
+    "queryName": "감자느타리버섯국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3065,
+    "queryName": "감자미역국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 137,
+    "queryName": "된장 두부찌개",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3067,
+    "queryName": "배추된장국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 937,
+    "queryName": "새우 완자탕",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3069,
+    "queryName": "새우살토마토스튜",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 2967,
+    "queryName": "소고기 무국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 922,
+    "queryName": "송이 미역국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 267,
+    "queryName": "양지해장국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3292,
+    "queryName": "양파토마토스튜",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 272,
+    "queryName": "완자김치찌개",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3007,
+    "queryName": "토마토 미소 된장국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 349,
+    "queryName": "토마토맑은장국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 38,
+    "queryName": "표고버섯 청경채국",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 403,
+    "queryName": "가지겉절이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 480,
+    "queryName": "가지토마토구이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 827,
+    "queryName": "고추 장떡",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 877,
+    "queryName": "김자반",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3364,
+    "queryName": "느타리버섯볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 512,
+    "queryName": "닭고기스테이크",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1012,
+    "queryName": "돼지갈비 볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 914,
+    "queryName": "돼지고기 토마토 두부볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 834,
+    "queryName": "두부 달걀전",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 2999,
+    "queryName": "마늘칩 감자샐러드",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 988,
+    "queryName": "모듬옥수수",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 720,
+    "queryName": "무대하무침",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1073,
+    "queryName": "바나나를 감싼 일본식 달걀말이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 31,
+    "queryName": "방울토마토 소박이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1039,
+    "queryName": "브로콜리 쇠고기 볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 394,
+    "queryName": "삼겹살꼬치구이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 628,
+    "queryName": "삼색샐러드와두부구이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 629,
+    "queryName": "새송이등갈비",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3575,
+    "queryName": "소고기 김말이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 555,
+    "queryName": "속채운대저토마토백김치",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3280,
+    "queryName": "수제새우소시지",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 993,
+    "queryName": "시금치 돼지고기 볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 821,
+    "queryName": "양배추 깻잎 피클",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3174,
+    "queryName": "오이파프리카새콤무침",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 889,
+    "queryName": "오징어말이 케첩조림",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 890,
+    "queryName": "오징어보쌈과 저나트륨 된장소스",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 384,
+    "queryName": "웰빙카레죽",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3006,
+    "queryName": "저염 겉절이",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 945,
+    "queryName": "찰 어묵찜",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 3015,
+    "queryName": "코울슬로샐러드",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 579,
+    "queryName": "콩나물부추볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 391,
+    "queryName": "토마토소고기장조림",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 982,
+    "queryName": "토마토소스 달걀볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  },
+  {
+    "recipeId": 1047,
+    "queryName": "팽이버섯 야채볶음",
+    "service": "COOKRCP01",
+    "requestedFields": [
+      "calories",
+      "carb",
+      "protein",
+      "fat",
+      "sodium",
+      "image",
+      "tip"
+    ],
+    "status": "not_requested",
+    "meta": {
+      "source": "api",
+      "real": [
+        "recipeId",
+        "queryName"
+      ],
+      "user": [],
+      "api": [],
+      "calc": [
+        "service",
+        "requestedFields",
+        "requestedFields[0]",
+        "requestedFields[1]",
+        "requestedFields[2]",
+        "requestedFields[3]",
+        "requestedFields[4]",
+        "requestedFields[5]",
+        "requestedFields[6]",
+        "status",
+        "flag"
+      ],
+      "empty": [],
+      "note": "조회 명세이며 API 응답이 아님. 실제 응답은 api_responses.json 또는 브라우저 API 기록에서 확인."
+    },
+    "flag": "A"
+  }
+]

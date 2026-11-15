@@ -21,6 +21,7 @@
   --tab:62px;--top:52px;--fb:46px;--fh:42px;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 html.snap{scroll-snap-type:y proximity}
 body{margin:0;background:#E9E5DB;color:var(--ln);font:14px/1.55 Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;letter-spacing:-.01em}
@@ -295,3 +296,104 @@ textarea.in{resize:vertical}
 .post-act .vote{font-size:19px}
 .post-act .vote.on{background:var(--ing-bg)}
 .vote-btn.on-vote{background:var(--ing-bg);border-color:var(--ing-ln);color:var(--ing-tx)}
+
+/* ===== v0.9.12 냉장고(유통기한) · 털이 인증 · 털이 점수 · 실측 · 리포트 ===== */
+.tabs-5 button{font-size:12px;padding:8px 0;letter-spacing:-.3px}
+.type-calc{border-color:#6B5BD2;color:#5443C2;background:#F1EFFC}
+.type-meas{border-color:#1F6B4A;color:#1F6B4A;background:#E6F2EC;border-style:solid;font-weight:800}
+.dd{display:inline-block;margin-left:4px;padding:0 6px;font-size:10px;font-weight:800;border-radius:999px;background:var(--ph);color:var(--mu);vertical-align:1px}
+.dd.urgent{background:var(--ac);color:#fff}
+.dd.over{background:#8A8A8A;color:#fff}
+.chip.ing.urgent{border-color:var(--ac);box-shadow:0 0 0 1px var(--ac) inset}
+.chip.ing.over{opacity:.65;text-decoration:line-through}
+.bg.rescue{background:#FDEDE5;border-color:var(--ac);color:#B8461F}
+.t-urgent{color:var(--ac)}.t-over{color:#8A8A8A}
+.w-h{display:flex;align-items:center;gap:6px;font-weight:700}
+.used-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:9px 0;border-bottom:1px dashed var(--ln2)}
+.used-row:last-of-type{border-bottom:0}
+.used-row .u-main{flex:1;min-width:0;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.used-row .u-gone{font-size:12px;white-space:nowrap}
+.used-row .u-left{flex-basis:100%;margin-top:2px}
+.used-row.off .u-main b{color:var(--mu);text-decoration:line-through}
+.used-line{margin-top:6px;font-size:13px;line-height:1.5}
+.real-box{margin-top:12px;border:1px solid var(--ln2);border-radius:var(--r-s);padding:12px;background:var(--pn)}
+.real-box p,.next-box p{margin-top:4px;font-size:13px}
+.real-h{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
+.next-box{border-color:var(--ac);background:#FFF8F3}
+.left-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pts-break{font-size:12px}
+.rank-desc{margin:10px 2px 4px;font-size:12px;color:var(--mu)}
+.fr-row{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid var(--ln2);border-radius:var(--r-s);background:var(--pn);margin-top:8px}
+.fr-row.urgent{border-color:var(--ac);background:#FFF8F3}
+.fr-row.over{background:#F2F2F2}
+.fr-main{flex:1;min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.fr-main b{margin-right:2px}
+.fr-main .in{width:auto;flex:1 1 90px;min-width:0;padding:6px 8px;font-size:12px}
+.fr-act{display:flex;flex-direction:column;gap:4px}
+.fr-act .chip{padding:4px 10px;font-size:12px}
+.fr-bin{color:#8A8A8A}
+.report-hero{border-radius:var(--r);padding:16px;background:var(--dk);color:#fff}
+.report-hero .mu{color:rgba(255,255,255,.75);font-size:11px;margin-top:8px}
+.report-hero .hero-kicker{color:rgba(255,255,255,.8);font-size:12px;font-weight:700}
+.rate{display:flex;align-items:baseline;gap:8px;margin-top:4px}
+.rate b{font-size:40px;line-height:1}
+.rate span{font-size:13px}
+.rate-bar{height:8px;border-radius:999px;background:rgba(255,255,255,.2);margin-top:10px;overflow:hidden}
+.rate-bar i{display:block;height:100%;background:var(--am,#F2B33D);border-radius:999px}
+.rep-count{margin-top:10px}
+.plan-controls{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:12px}
+.plan-controls label{flex:1 1 110px;min-width:0;display:grid;gap:6px}
+#plan .box p{margin:10px 0;overflow-wrap:anywhere}
+#plan .btn{margin-top:8px}
+#plan-status{margin:14px 0;line-height:1.6}
+.data-json{white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;font-size:11px;background:#f5f2ea;padding:12px;border-radius:8px}
+.type-empty{background:#eee;color:#666}
+.flag-C,.type-calc{background:#edf1ff;color:#35428a}
+
+/* Unified outline icons and action labels. */
+.ui-icon-defs{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+.ui-icon{display:inline-block;width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.2em}
+.ui-icon.is-filled{fill:currentColor}
+.btn .ui-icon,.chip .ui-icon,.more-link .ui-icon{margin-right:5px}
+.more-link .ui-icon{width:16px;height:16px;margin-right:0;margin-left:3px}
+.post-act .ui-icon,.fav-star .ui-icon{width:23px;height:23px}
+.post-act button,.fav-star,.d-arrow{display:inline-flex;align-items:center;justify-content:center}
+.tabbar .ui-icon{width:22px;height:22px}
+.tabbar button{font-size:10px}
+.totop{display:none;flex-direction:column;align-items:center;justify-content:center;font:inherit;font-size:10px}
+.totop.show{display:flex}
+.totop .ui-icon{width:18px;height:18px}
+.tabs-5 button{font-size:11px;padding-left:5px;padding-right:5px}
+.used-line .ui-icon{margin-right:4px}
+button:focus-visible{outline:2px solid var(--dk);outline-offset:3px}
+.fridge-shortcut{position:relative;display:inline-flex;align-items:center;justify-content:center;padding:6px 9px}
+#fridge-badge{position:absolute;top:-5px;right:-4px;min-width:17px;padding:1px 4px;background:var(--ac);color:white;font-size:10px;border-radius:12px}
+.expiry-banner{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:12px;border:1px solid #efc49f;border-radius:12px;background:#fff6e9;color:#77441e;font:inherit;font-size:12px;text-align:left;cursor:pointer;margin:14px 0}
+.expiry-banner[hidden],#fridge-badge[hidden]{display:none}
+.rank-guide{margin-top:10px;font-size:12px;line-height:1.65}
+.rank-guide summary{cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.rank-guide[open]{padding-bottom:4px}
+.rank-guide p{color:inherit;margin:10px 0}
+#quantity-panel details,#plan details,#shopping details{margin-top:10px;font-size:12px}
+#quantity-panel summary,#plan summary,#shopping summary{cursor:pointer;font-weight:600}
+#quantity-panel label{display:block;font-size:12px;margin-top:10px}
+#quantity-panel li{margin:7px 0;overflow-wrap:anywhere}
+.cook-row{margin:12px 0;padding:10px 0;border-bottom:1px solid var(--ln2)}
+.cook-row label{display:block;font-weight:600}
+.cook-row .in{display:inline-block;max-width:140px;margin:6px 8px 0 0}
+.shopping-recipe{padding:10px 0;border-bottom:1px solid var(--ln2)}
+#cook-status,#shopping-status,#quantity-message{font-size:12px;line-height:1.6;margin:10px 0}
+.section-heading{margin:26px 0 12px;padding-top:18px;border-top:1px solid var(--ln2)}
+.section-heading h2{font-size:16px;font-weight:750;margin:0 0 4px}
+.section-heading p,.page-heading p{margin:0;font-size:12px;color:var(--mu)}
+.page-heading{margin-bottom:16px}
+.source-details summary,.record-details summary{cursor:pointer;font-weight:650;font-size:13px}
+.source-details p{line-height:1.7;margin-top:10px!important}
+.source-api{padding-top:12px;margin-top:12px;border-top:1px solid var(--ln2)}
+.record-details .real-box{margin:10px 0 0;padding:0;border:0;background:transparent}
+.release-label{font-size:11px;color:var(--mu);margin:4px 0 8px}
+.tabs-5{overflow-x:auto;scrollbar-width:thin}
+.tabs-5 button{white-space:nowrap}
+.in{min-width:0}
+@media(max-width:360px){.top-bar{padding-left:12px;padding-right:12px;gap:6px}.top-bar b{font-size:16px}.screen{padding-left:12px;padding-right:12px}.feed-bar .chip{font-size:11px}.d-title{gap:6px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

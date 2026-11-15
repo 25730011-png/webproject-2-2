@@ -6,3 +6,14 @@ const API_KEY = '952021f2646447be9c0b';
 
 // 선택: Google Sheets 기록용 Apps Script 웹앱 URL (tools/sheets_webapp.gs 배포 후 붙여넣기). 비우면 기록 안 함
 const SHEET_WEBAPP_URL = '';
+
+// Firebase (심화: 아이디·비밀번호 로그인 + 닉네임, 이메일 없음). 콘솔 → 프로젝트 설정(톱니바퀴) → 내 앱 → SDK 설정 및 구성 → 'Config' 값을 그대로 붙여넣기
+// 비워 두면 LocalStorage 로그인으로 동작. 이 값은 공개돼도 되는 값 — 보안은 Firestore 규칙(tools/firestore.rules)이 막음
+const FIREBASE_CONFIG = {
+  // apiKey: '...',
+  // authDomain: 'fridge-raid-8fcd2.firebaseapp.com',
+  // projectId: 'fridge-raid-8fcd2',
+  // storageBucket: '...',
+  // messagingSenderId: '...',
+  // appId: '...',
+};

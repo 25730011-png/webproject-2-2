@@ -1,0 +1,1347 @@
+[
+  {
+    "id": 1,
+    "flag": "U",
+    "name": "계란",
+    "aliases": [
+      "달걀"
+    ],
+    "category": "달걀·유제품",
+    "suggest": true,
+    "recipeCount": 12,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 2,
+    "flag": "U",
+    "name": "양파",
+    "aliases": [],
+    "category": "채소",
+    "suggest": true,
+    "recipeCount": 39,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 3,
+    "flag": "U",
+    "name": "김치",
+    "aliases": [
+      "묵은지",
+      "배추김치"
+    ],
+    "category": "김치·장류",
+    "suggest": true,
+    "recipeCount": 5,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 4,
+    "flag": "U",
+    "name": "참치캔",
+    "aliases": [
+      "참치"
+    ],
+    "category": "가공식품",
+    "suggest": true,
+    "recipeCount": 3,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 5,
+    "flag": "U",
+    "name": "돼지고기",
+    "aliases": [
+      "삼겹살",
+      "앞다리살",
+      "목살",
+      "다진 돼지고기"
+    ],
+    "category": "육류",
+    "suggest": true,
+    "recipeCount": 8,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "aliases[2]",
+        "aliases[3]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 6,
+    "flag": "U",
+    "name": "대파",
+    "aliases": [
+      "쪽파"
+    ],
+    "category": "채소",
+    "suggest": true,
+    "recipeCount": 15,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 7,
+    "flag": "U",
+    "name": "두부",
+    "aliases": [
+      "순두부",
+      "연두부"
+    ],
+    "category": "두부·콩",
+    "suggest": true,
+    "recipeCount": 12,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 8,
+    "flag": "U",
+    "name": "당근",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 17,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 9,
+    "flag": "U",
+    "name": "감자",
+    "aliases": [],
+    "category": "채소",
+    "suggest": true,
+    "recipeCount": 9,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 10,
+    "flag": "U",
+    "name": "애호박",
+    "aliases": [
+      "호박"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 7,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 11,
+    "flag": "U",
+    "name": "토마토",
+    "aliases": [
+      "방울토마토"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 23,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 12,
+    "flag": "U",
+    "name": "표고버섯",
+    "aliases": [
+      "건표고"
+    ],
+    "category": "버섯",
+    "suggest": false,
+    "recipeCount": 10,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 13,
+    "flag": "U",
+    "name": "팽이버섯",
+    "aliases": [],
+    "category": "버섯",
+    "suggest": false,
+    "recipeCount": 6,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 14,
+    "flag": "U",
+    "name": "새송이버섯",
+    "aliases": [],
+    "category": "버섯",
+    "suggest": false,
+    "recipeCount": 3,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 15,
+    "flag": "U",
+    "name": "느타리버섯",
+    "aliases": [],
+    "category": "버섯",
+    "suggest": false,
+    "recipeCount": 4,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 16,
+    "flag": "U",
+    "name": "깻잎",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 8,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 17,
+    "flag": "U",
+    "name": "시금치",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 5,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 18,
+    "flag": "U",
+    "name": "부추",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 5,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 19,
+    "flag": "U",
+    "name": "오이",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 5,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 20,
+    "flag": "U",
+    "name": "가지",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 6,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 21,
+    "flag": "U",
+    "name": "파프리카",
+    "aliases": [
+      "피망"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 11,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 22,
+    "flag": "U",
+    "name": "청양고추",
+    "aliases": [
+      "풋고추",
+      "청고추"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 13,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 23,
+    "flag": "U",
+    "name": "홍고추",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 11,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 24,
+    "flag": "U",
+    "name": "양배추",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 3,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 25,
+    "flag": "U",
+    "name": "콩나물",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 4,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 26,
+    "flag": "U",
+    "name": "숙주",
+    "aliases": [
+      "숙주나물"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 4,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 27,
+    "flag": "U",
+    "name": "브로콜리",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 4,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 28,
+    "flag": "U",
+    "name": "마늘",
+    "aliases": [
+      "다진 마늘",
+      "다진마늘",
+      "마늘다진것"
+    ],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 37,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "aliases[2]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 29,
+    "flag": "U",
+    "name": "생강",
+    "aliases": [],
+    "category": "채소",
+    "suggest": false,
+    "recipeCount": 12,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 30,
+    "flag": "U",
+    "name": "소고기",
+    "aliases": [
+      "쇠고기",
+      "쇠고기안심",
+      "다진 소고기"
+    ],
+    "category": "육류",
+    "suggest": false,
+    "recipeCount": 8,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "aliases[2]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 31,
+    "flag": "U",
+    "name": "닭고기",
+    "aliases": [
+      "닭가슴살",
+      "닭다리살",
+      "닭고기살"
+    ],
+    "category": "육류",
+    "suggest": false,
+    "recipeCount": 9,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "aliases[2]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 32,
+    "flag": "U",
+    "name": "햄",
+    "aliases": [
+      "스팸",
+      "통조림햄"
+    ],
+    "category": "가공식품",
+    "suggest": false,
+    "recipeCount": 1,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 33,
+    "flag": "U",
+    "name": "베이컨",
+    "aliases": [],
+    "category": "가공식품",
+    "suggest": false,
+    "recipeCount": 3,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 34,
+    "flag": "U",
+    "name": "어묵",
+    "aliases": [],
+    "category": "가공식품",
+    "suggest": false,
+    "recipeCount": 2,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 35,
+    "flag": "U",
+    "name": "새우",
+    "aliases": [
+      "칵테일새우",
+      "건새우"
+    ],
+    "category": "해산물",
+    "suggest": false,
+    "recipeCount": 9,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 36,
+    "flag": "U",
+    "name": "우유",
+    "aliases": [],
+    "category": "달걀·유제품",
+    "suggest": false,
+    "recipeCount": 5,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 37,
+    "flag": "U",
+    "name": "치즈",
+    "aliases": [
+      "슬라이스치즈",
+      "모짜렐라치즈"
+    ],
+    "category": "달걀·유제품",
+    "suggest": false,
+    "recipeCount": 8,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 38,
+    "flag": "U",
+    "name": "버터",
+    "aliases": [],
+    "category": "달걀·유제품",
+    "suggest": false,
+    "recipeCount": 6,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 39,
+    "flag": "U",
+    "name": "밥",
+    "aliases": [
+      "쌀밥",
+      "찬밥"
+    ],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 13,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 40,
+    "flag": "U",
+    "name": "떡",
+    "aliases": [
+      "떡국떡",
+      "떡볶이떡"
+    ],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 1,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "aliases[1]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 41,
+    "flag": "U",
+    "name": "라면",
+    "aliases": [
+      "라면사리"
+    ],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 1,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 42,
+    "flag": "U",
+    "name": "식빵",
+    "aliases": [],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 2,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 43,
+    "flag": "U",
+    "name": "소면",
+    "aliases": [
+      "국수"
+    ],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 0,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 44,
+    "flag": "U",
+    "name": "우동",
+    "aliases": [
+      "우동면"
+    ],
+    "category": "곡류·면",
+    "suggest": false,
+    "recipeCount": 0,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "aliases[0]",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 45,
+    "flag": "U",
+    "name": "고추장",
+    "aliases": [],
+    "category": "김치·장류",
+    "suggest": false,
+    "recipeCount": 4,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  },
+  {
+    "id": 46,
+    "flag": "U",
+    "name": "된장",
+    "aliases": [],
+    "category": "김치·장류",
+    "suggest": false,
+    "recipeCount": 6,
+    "meta": {
+      "source": "user",
+      "real": [],
+      "user": [
+        "name",
+        "aliases",
+        "category",
+        "suggest"
+      ],
+      "api": [],
+      "calc": [
+        "id",
+        "flag",
+        "recipeCount"
+      ],
+      "empty": [],
+      "note": "팀이 작성한 재료 이름·별칭 사전. 공공 API 원본 사전이 아님. recipeCount만 실제 저장 레시피로 계산."
+    }
+  }
+]
