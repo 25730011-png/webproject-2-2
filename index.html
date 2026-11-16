@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>냉장고 털이</title>
   <meta name="theme-color" content="#1F6B4A">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
@@ -56,13 +56,13 @@
 <div class="app">
   <header class="top-bar">
     <b data-go="home" style="cursor:pointer">냉장고 털이</b>
-    <button class="ic fridge-shortcut" id="top-fridge" data-open-fridge type="button" aria-label="냉장고"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-fridge"></use></svg><span id="fridge-badge" hidden></span></button>
-    <button class="ic" data-go="login" id="top-login">로그인</button>
+    <button class="ic icon-btn fridge-shortcut" id="top-fridge" data-open-fridge type="button" aria-label="냉장고"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-fridge"></use></svg><span id="fridge-badge" hidden></span></button>
+    <button class="ic icon-btn" data-go="login" id="top-login" type="button" aria-label="로그인"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-user"></use></svg></button>
   </header>
 
   <!-- 1 홈 -->
   <section class="screen" id="home">
-    <!-- 히어로: 한 장. 왼쪽 글 + 오른쪽 그림(sprite #hero), 우측 하단 작은 버튼으로 레시피 목록 -->
+    <!-- 히어로: 기존 구성 유지 (킥커 · 제목 · 설명 · 그림 + 레시피 찾기 카드). 레시피 찾기 옆 부제목과 추천 재료 칩만 삭제 -->
     <section class="hero" id="hero">
       <div class="hero-top">
         <div class="hero-text">
@@ -72,51 +72,48 @@
         </div>
         <svg class="hero-img" aria-hidden="true"><use href="#hero-art"></use></svg>
       </div>
-      <!-- 레시피 찾기: 재료만. 히어로 안의 흰 카드 -->
+      <!-- 레시피 찾기: 재료 입력(Enter로 추가) → 아래 내 재료 칩 → 버튼으로 레시피 화면 -->
       <div class="hero-find" id="home-search">
-        <div class="hero-find-h"><b>레시피 찾기</b><span class="mu">사용할 재료를 입력해 주세요</span></div>
+        <div class="hero-find-h"><b>레시피 찾기</b></div>
         <input class="in" id="ing-q" aria-label="보유 재료 입력" placeholder="보유 재료 입력 (예: 계란)" autocomplete="off" enterkeyhint="done">
         <div class="row" id="mine"></div>
-        <div class="row" id="suggest"></div>
         <button class="btn dk" id="home-go" type="button">레시피 보기</button>
       </div>
     </section>
+    <button class="expiry-banner" id="home-expiry" type="button" data-open-fridge hidden><span id="home-expiry-text"></span><span>냉장고 보기</span></button>
 
-    <div class="section-heading"><h2>냉장고 활용</h2><p>있는 재료부터, 다음 끼니까지.</p></div>
-    <div class="box"><h3>남은 재료, 다음 끼니까지</h3><p>보관 기한을 고려해 여러 끼의 레시피를 연결해 보세요.</p><button class="btn dk" data-go="plan">식사 계획 만들기</button></div>
-    
-<button class="expiry-banner" id="home-expiry" type="button" data-open-fridge hidden><span id="home-expiry-text"></span><span>냉장고 보기</span></button>
-    <div class="box"><h3>이것 하나만 사면</h3><p>재료 한 가지를 더해 보유 재료를 활용해요.</p><button class="btn" data-go="shopping">추가할 재료 찾기</button></div>
-    <div class="section-heading"><h2>레시피 추천</h2><p>보유 재료와 연결되는 레시피를 찾아요.</p></div>
-    <div class="sec-head"><h3>보유 재료를 활용하는 레시피</h3><button class="more-link" data-go="list">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
+    <!-- 섹션 1: 보유 재료로 만들 수 있는 레시피 -->
+    <div class="sec-head"><h3>내 재료로 만들 수 있는 레시피</h3><button class="more-link" data-go="list">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
     <div class="big-list" id="home-reco"></div>
-    <div class="section-heading"><h2>요리 기록</h2><p>등록된 요리 게시물로 모아 보는 기록이에요.</p></div>
-    <div class="sec-head"><h3>좋아요 많은 요리 게시물</h3><button class="more-link" data-go="feed">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
+
+    <!-- 섹션 2: 남은 재료 활용 (설명 없이 바로가기 2개) -->
+    <div class="sec-head"><h3>남은 재료 활용</h3></div>
+    <div class="quick-grid">
+      <button class="quick" type="button" data-go="plan"><b>식사 계획</b><span>남은 재료로 여러 끼</span></button>
+      <button class="quick" type="button" data-go="shopping"><b>하나만 사면</b><span>재료 1개로 더 만들기</span></button>
+    </div>
+
+    <!-- 섹션 3: 요리 기록 -->
+    <div class="sec-head"><h3>인기 요리 자랑</h3><button class="more-link" data-go="feed">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
     <div class="carousel" id="home-pop" aria-roledescription="carousel" aria-label="인기 요리"><div class="carousel-track" id="pop-track"></div><div class="carousel-dots" id="pop-dots"></div></div>
-
-    
-
-
-    
-    <div class="sec-head"><h3>이번 주 많이 활용한 레시피</h3><button class="more-link" data-go="rank">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
+    <div class="sec-head"><h3>이번 주 많이 만든 레시피</h3><button class="more-link" data-go="rank">더보기 <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button></div>
     <div id="home-week"></div>
 
   </section>
 
   
   <section class="screen" id="list">
-    <header class="page-heading"><h2>레시피 찾기</h2><p>이름·재료·조건으로 원하는 레시피를 찾아요.</p></header>
+    <header class="page-heading"><h2>레시피</h2></header>
     <!-- 검색 패널: ① 검색 ② 조건 ③ 정렬을 한 상자 안에 섹션으로 묶어 보여줌 (흩어지지 않게) -->
     <!-- 검색 패널: ① 검색 ② 조건 ③ 정렬을 한 상자 안에 섹션으로 -->
     <div class="box search-panel" style="margin-top:0">
       <div class="fsec">
-        <div class="fsec-h"><b>검색</b><span class="mu">레시피 이름이나 재료</span></div>
-        <input class="in" id="rec-q" aria-label="레시피 검색" type="search" style="margin-top:6px" placeholder="예: 두부 찌개 (띄어쓰기로 조합)" autocomplete="off">
+        <input class="in" id="rec-q" aria-label="레시피 검색" type="search" style="margin-top:0" placeholder="재료나 요리 이름 (예: 두부 찌개)" autocomplete="off">
         <div class="row" id="list-mine" style="margin-top:8px"></div>
       </div>
       <div id="list-filters" class="filters"></div>
     </div>
-    <p class="mu" style="margin-top:12px"><b id="count">불러오는 중…</b> <span id="count-src"></span></p>
+    <p class="mu list-count" id="count" role="status"></p><span id="count-src" hidden></span>
     <div id="cards"></div>
     <div id="list-state"></div>
     <div id="list-more"></div>
@@ -124,40 +121,52 @@
 
   
   <section class="screen" id="detail">
+    <div class="back-bar"><button class="back-btn" type="button" data-back><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-chevron-left"></use></svg>돌아가기</button><button class="back-btn" type="button" data-go="home"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-home"></use></svg>홈</button></div>
     <div class="d-photo"><div class="img sq-img" id="d-img">요리 사진 (1:1)</div>
       <button type="button" class="d-arrow prev" id="d-prev" aria-label="이전 레시피"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-left"></use></svg></button><button type="button" class="d-arrow next" id="d-next" aria-label="다음 레시피"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-right"></use></svg></button>
       <span class="d-pos" id="d-pos"></span></div>
     <h2 class="d-title" id="d-title">레시피</h2>
     <p class="mu" id="d-sub"></p>
-    <details class="box record-details"><summary>사용자 조리 기록 보기</summary><div class="real-box" id="d-real"></div></details>
-    <p class="mu" id="d-author" style="margin-top:2px"></p>
+    <p class="mu d-author" id="d-author"></p>
+    <!-- 만든 사람들의 실제 기록(요리 자랑 게시물에서 모은 데이터) — 기록이 있을 때만 -->
+    <p class="d-real" id="d-real" hidden></p>
+    <p class="mu" id="d-made" hidden></p>
+    <!-- 내 요리 기록: 로그인한 사용자 본인의 조리 완료 기록(cooking_logs, actorId=나) — 공유 게시물과 별개 -->
+    <details class="d-mine" id="d-mine" hidden><summary></summary><ul></ul></details>
 
-    <p class="mu" id="d-made" style="margin-top:6px;font-size:11px"></p>
-    <div class="section-heading"><h2>내 냉장고와 비교</h2></div>
+    <!-- 1. 준비: 필요한 재료 + 내 냉장고에 없는 재료 알림 -->
+    <div class="sec-head"><h3>필요한 재료</h3></div>
     <div class="box" id="quantity-panel">
-      <h3>한 끼 분량 확인하기</h3><p class="mu">1인분 기준으로 냉장고 재료와 비교해요.</p><p id="quantity-status" role="status"></p>
-      
+      <p class="ing-alert" id="ing-alert" hidden></p>
+      <ul class="ing-list" id="d-ing-list"></ul>
+      <p class="mu" id="d-ing" hidden></p>
+      <p class="q-status" id="quantity-status" role="status"></p>
       <details><summary>필요량·보유량 비교</summary><ul id="quantity-rows"></ul></details>
       <details><summary>레시피 수량 기준 확인·수정</summary>
-        <p class="mu">원문에 기준 인분이 없으면 직접 확인해 입력해 주세요. 한 모와 g처럼 근거 없는 환산은 하지 않아요.</p>
+        <p class="mu">원문에 기준 인분이 없으면 직접 확인해 입력해 주세요.</p>
         <label>원본 레시피의 기준 인분<input class="in" id="quantity-servings" type="number" min="0.1" max="100" step="any" placeholder="확인한 기준 인분"></label>
         <label>재료별 수량<textarea class="in" id="quantity-editor" rows="6" placeholder="두부 150g&#10;계란 2개"></textarea></label>
         <button class="btn" id="quantity-save" type="button">확인한 기준 저장</button><p id="quantity-message" role="status"></p>
       </details>
-      <button class="btn dk" id="detail-cook" type="button" data-cook-recipe>조리 완료 · 사용량 반영</button>
     </div>
-    <div class="section-heading"><h2>레시피 원문</h2></div>
-    <div class="box"><b>필요한 재료</b><p id="d-ing" style="margin:6px 0 0;white-space:pre-line"></p></div>
-    <div class="box"><b>조리 순서</b><ol class="steps" id="d-steps"></ol></div>
-    <div class="box" id="d-nut-box"><b>영양 정보 <span class="mu">(원본 제공값, 기준 인분 정보 없음)</span></b><div class="nut" id="d-nut"></div></div>
-    <div class="box" id="d-tip-box"><b>조리 팁</b><p class="mu" id="d-tip" style="margin-top:4px"></p></div>
-    <details class="box source-details"><summary>출처·API 정보 자세히 보기</summary>
-    <p class="mu" id="d-src" style="margin-top:4px"></p>
+
+    <!-- 2. 조리 -->
+    <div class="sec-head"><h3>조리 순서</h3></div>
+    <div class="box"><ol class="steps" id="d-steps"></ol></div>
+    <div class="box" id="d-tip-box"><b>조리 팁</b><p class="mu" id="d-tip"></p></div>
+    <div class="box" id="d-nut-box"><b>영양 정보</b><div class="nut" id="d-nut"></div></div>
+    <details class="box source-details"><summary>출처·API 정보</summary>
+    <p class="mu" id="d-src"></p>
     <p class="mu" id="d-image-source"></p>
-    <div class="source-api"><b>API 정보 <span class="mu">(식약처 레시피 DB)</span></b><p class="mu" id="d-api" style="margin-top:4px">API 미연동 (저장 JSON 항목)</p></div>
+    <div class="source-api"><b>API 정보</b><p class="mu" id="d-api">API 미연동 (저장 JSON 항목)</p></div>
     </details>
-    <div class="row"><button class="btn" style="flex:1" id="d-del" hidden>내 레시피 삭제</button><button class="btn dk" style="flex:2" id="d-share" type="button">요리 게시물 등록</button></div>
-    <button class="btn" data-go="list"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-left"></use></svg>레시피 목록</button>
+
+    <!-- 3. 기록: 조리 완료(재고 반영) → 자랑하기 -->
+    <div class="d-actions">
+      <button class="btn" id="detail-cook" type="button" data-cook-recipe>조리 완료 · 냉장고에 반영</button>
+      <button class="btn dk" id="d-share" type="button">요리 자랑하기</button>
+      <button class="btn danger" id="d-del" type="button" hidden>내 레시피 삭제</button>
+    </div>
   </section>
 
   
@@ -194,47 +203,33 @@
 
   
   <section class="screen" id="feed">
-    <div class="feed-head tabs"><button class="on" data-tab="fd">요리 피드</button><button data-tab="fs">요리 게시물 검색</button></div>
-
-    <!-- 5-1 피드 탭 -->
-    <div class="pane on" data-pane="fd">
-    <div class="feed-bar"><button class="chip" id="feed-mine" type="button">보유 재료를 포함한 게시물만</button><button class="chip" id="feed-sort" type="button" style="margin-left:auto">최신순</button></div>
+    <div class="feed-top">
+      <input class="in" id="post-q" type="search" aria-label="요리 자랑 검색" placeholder="요리 이름, 닉네임, 재료 검색" autocomplete="off">
+      <div class="feed-bar"><span class="mu" id="feed-count"></span><button class="chip" id="feed-sort" type="button" style="margin-left:auto" aria-label="정렬 바꾸기">최신순</button></div>
+    </div>
     <div id="feed-list"></div>
-    </div>
-
-    <!-- 5-2 게시물 검색 탭 -->
-    <div class="pane" data-pane="fs">
-      <div class="fs-wrap">
-        <label class="lb" for="post-q" style="margin-top:0">요리 게시물 검색 <span class="mu" style="font-weight:400">— 다른 사람이 만든 요리</span></label>
-        <input class="in" id="post-q" type="search" placeholder="요리 이름, 닉네임, 재료로 검색" autocomplete="off">
-        <div class="row" id="post-recent"><span class="mu">추천 검색어</span><button class="chip" type="button">김치</button><button class="chip" type="button">계란</button><button class="chip" type="button">두부</button></div>
-        <div class="row"><button class="chip" id="post-sort" type="button" style="margin-left:auto">최신순</button></div>
-        <p class="mu" id="post-count" style="margin-top:12px"></p>
-      </div>
-      <div class="tile-grid" id="post-tiles"></div>
-      <div class="fs-wrap" id="post-empty" hidden></div>
-    </div>
   </section>
 
   <!-- 12 랭킹 (경진대회): 이번 주(월~일) 게시물로 레시피·요리사 점수를 매김. 점수는 화면에서 계산, 저장하지 않음 -->
   <section class="screen" id="rank">
-    <div class="rank-head">
-      <p class="hero-kicker">이번 주 요리 경진대회</p>
+    <header class="page-heading rank-top">
       <h2 id="rank-period">주간 랭킹</h2>
       <p class="mu" id="rank-left"></p>
-      <p class="mu rank-rule">요리 게시물을 등록하고 랭킹 투표를 받아 보세요.<br>재료 활용 기록도 주간 점수에 반영돼요.</p>
-      <details class="rank-guide"><summary>점수·참여 방법 자세히 보기</summary>
-        <p>요리 게시물 1건 10점, 받은 랭킹 투표 1표 3점, 활용 재료 1종 2점, 보관 기한 임박(2일 이내) 재료 활용 1종 5점이에요. 좋아요는 점수에 반영되지 않아요.</p>
-        <p>레시피 상세에서 조리 완료와 실제 사용량을 기록한 뒤, 요리 게시물에 해당 기록을 연결하면 재료 활용 점수가 반영돼요. 같은 조리 기록은 게시물 한 건에만 연결할 수 있어요.</p>
-        <p>월요일 0시부터 다음 월요일 0시 직전까지 등록된 게시물로 집계해요. 현재는 이 브라우저에 저장된 자료를 기준으로 계산해요.</p>
+      <p class="rank-desc-line">요리를 자랑하고 투표를 받으면 점수가 쌓여요.<br>냉장고 재료를 활용하면 추가 점수, 임박 재료는 더 커요.</p>
+      <details class="rank-guide"><summary>점수 기준 보기</summary>
+        <ul class="score-table">
+          <li><span>요리 자랑 1건</span><b>10점</b></li>
+          <li><span>받은 랭킹 투표 1표</span><b>3점</b></li>
+          <li><span>활용한 냉장고 재료 1종</span><b>2점</b></li>
+          <li><span>기한 임박(2일 이내) 재료 활용 1종</span><b>5점</b></li>
+        </ul>
+        <p class="mu">좋아요는 점수에 들어가지 않아요. 월요일 0시에 새로 시작해요.</p>
       </details>
-    </div>
-    <div class="tabs"><button class="on" data-tab="rr">레시피</button><button data-tab="rc">요리사</button><button data-tab="rt">털이왕</button><button data-tab="rl">지난주</button></div>
-    <div class="pane on" data-pane="rr"><div id="rank-recipes"></div></div>
-    <div class="pane" data-pane="rc"><div id="rank-chefs"></div></div>
-    <div class="pane" data-pane="rt"><p class="mu rank-desc">이번 주 요리에 보유 재료를 가장 많이 활용한 사람</p><div id="rank-thief"></div></div>
-    <div class="pane" data-pane="rl"><div id="rank-last"></div></div>
-    <div class="box" id="rank-me"></div>
+    </header>
+    <div class="filter-chips" role="tablist"><button class="chip on" type="button" data-rtab="rr">레시피</button><button class="chip" type="button" data-rtab="rc">요리사</button><button class="chip" type="button" data-rtab="rt">털이왕</button></div>
+    <div class="rpane on" data-rpane="rr"><div id="rank-recipes"></div></div>
+    <div class="rpane" data-rpane="rc"><div id="rank-chefs"></div></div>
+    <div class="rpane" data-rpane="rt"><div id="rank-thief"></div></div>
   </section>
 
   <!-- 6 게시물 상세 (게시물 1건을 id로 찾아 렌더링) -->
@@ -245,21 +240,21 @@
     <div class="box" id="p-used"></div>
     <div class="box"><b>연결된 레시피의 재료</b><p class="mu" id="p-ing" style="margin-top:4px"></p></div>
     <div class="box next-box" id="p-next" hidden></div>
-    <div class="row"><button class="chip like-btn" id="p-like" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-heart"></use></svg>좋아요 0개</button><button class="chip vote-btn" id="p-vote" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-vote"></use></svg>랭킹 투표 0표</button><button class="chip" id="p-del" type="button" hidden>내 요리 게시물 삭제</button><span class="mu" style="font-size:11px">좋아요는 공감 · 랭킹 투표는 순위 반영 <span class="flag flag-U">U</span></span></div>
+    <div class="row"><button class="chip like-btn" id="p-like" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-heart"></use></svg>좋아요 0개</button><button class="chip vote-btn" id="p-vote" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-vote"></use></svg>랭킹 투표 0표</button><button class="chip" id="p-del" type="button" hidden>내 요리 게시물 삭제</button><span class="mu" style="font-size:12px">좋아요는 공감 · 랭킹 투표는 순위 반영 <span class="flag flag-U">U</span></span></div>
     <button class="btn dk" id="p-recipe" type="button">연결된 레시피 보기</button>
     <button class="btn" data-go="feed"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-chevron-left"></use></svg>요리 피드</button>
   </section>
 
   <!-- 7 요리 게시물 작성 (사용자 데이터 U: 레시피·사진 필수, 후기 100자) -->
   <section class="screen" id="write">
-    <h2>요리 게시물 등록</h2>
+    <h2>요리 자랑하기</h2>
     <form id="write-form" novalidate>
       <div class="box"><span class="mu">사용한 레시피 <span class="mu">(상세 화면에서 넘어오면 자동)</span></span>
         <select class="in" id="w-recipe" aria-label="사용한 레시피" required><option value="">사용한 레시피를 선택해 주세요</option></select></div>
       
-      <div class="box" id="w-used-box"><div class="w-h"><b>활용한 재료</b><span class="mu">조리 완료 기록 연결</span></div><div id="w-used"></div></div>
+      <div class="box" id="w-used-box"><div class="w-h"><b>활용한 재료</b></div><div id="w-used"></div></div>
       
-      <div class="box"><div class="w-h"><b>사용자 조리 기록</b> <span class="type-tag type-user">사용자 입력</span><span class="mu">선택 · 직접 조리한 난이도와 시간을 기록해 주세요</span></div>
+      <div class="box"><div class="w-h"><b>실제로 해 보니</b> <span class="type-tag type-user">사용자 입력</span><span class="mu">선택</span></div>
         <div class="row" id="w-level"><span class="mu" style="width:56px">난이도</span><button class="chip" type="button" data-wl="쉬움">쉬움</button><button class="chip" type="button" data-wl="보통">보통</button><button class="chip" type="button" data-wl="어려움">어려움</button></div>
         <div class="row"><span class="mu" style="width:56px">조리 시간</span><input class="in" id="w-time" aria-label="실제 조리 시간 (분)" type="number" min="1" max="600" placeholder="분" style="width:100px;margin-top:0"><span class="mu" id="w-time-hint"></span></div></div>
       <div class="box"><span class="mu">요리 사진 (필수 1장) <span class="mu">· 이 브라우저에 저장돼요</span></span>
@@ -268,36 +263,38 @@
       <div class="box"><span class="mu">요리 후기 (<span id="w-len">0</span>/100)</span><input class="in" id="w-text" aria-label="요리 후기" maxlength="100" placeholder="후기를 입력하세요"></div>
       <p class="mu" id="w-author" style="margin-top:10px">작성자: 익명</p>
       <p class="err-msg" id="w-msg" hidden></p>
-      <div class="row"><button class="btn" type="button" style="flex:1" data-go="detail">취소</button><button class="btn dk" type="submit" style="flex:2" id="w-go" disabled>요리 게시물 등록</button></div>
+      <div class="row"><button class="btn" type="button" style="flex:1" data-go="detail">취소</button><button class="btn dk" type="submit" style="flex:2" id="w-go" disabled>자랑하기</button></div>
     </form>
   </section>
 
   <!-- 8 마이 (즐겨찾기·내 레시피는 이 브라우저 저장소의 사용자 데이터 U) -->
   <section class="screen" id="my">
-    <h2 id="my-name">닉네임 님</h2><p class="mu" id="my-sub">로그인하면 닉네임으로 레시피를 등록할 수 있어요</p>
-    <div class="row"><button class="chip" data-go="spec" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-document"></use></svg>데이터 명세</button><button class="chip" type="button" id="my-logout" hidden>로그아웃</button></div>
-    <div class="tabs tabs-5"><button class="on" data-tab="fav">즐겨찾기</button><button data-tab="mine">내 레시피</button><button data-tab="posts">내 요리</button><button data-tab="fr">냉장고</button><button data-tab="rep">리포트</button></div>
+    <div class="profile">
+      <span class="avatar lg" aria-hidden="true"></span>
+      <div><h2 id="my-name">닉네임 님</h2><p class="mu" id="my-sub"></p></div>
+      <button class="btn dk sm" type="button" data-go="login" id="my-login">로그인</button>
+    </div>
+    <div class="tabs"><button class="on" data-tab="fav">즐겨찾기</button><button data-tab="mine">내 레시피</button><button data-tab="posts">내 자랑</button><button data-tab="fr">냉장고</button></div>
     <div class="pane on" data-pane="fav"><div id="fav-list"></div></div>
     <div class="pane" data-pane="mine">
-      <button class="btn dk" style="margin-top:0" data-go="new"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-plus"></use></svg>레시피 등록</button>
-      <p class="mu" id="mine-count" style="margin-top:8px"></p>
+      <button class="btn dk" data-go="new"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-plus"></use></svg>레시피 등록</button>
       <div id="mine-list"></div>
     </div>
-    <div class="pane" data-pane="posts">
-      <p class="mu" id="posts-count" style="margin-top:8px"></p>
-      <div id="posts-list"></div>
-    </div>
-    <!-- 내 냉장고: 재료 · 남은 양 · 보관 기한 (홈 칩과 같은 데이터, 이 브라우저에 저장) -->
+    <div class="pane" data-pane="posts"><div id="posts-list"></div></div>
+    <!-- 내 냉장고: 이번 달 요약(리포트) + 재료 등록 + 목록 -->
     <div class="pane" data-pane="fr">
-      <div class="box"><div class="w-h"><b>재료 등록</b></div><p class="mu">보관 기한 · 제품에 표시된 날짜를 확인해 입력해 주세요.</p>
-        <div class="row" style="flex-wrap:nowrap"><input class="in" id="fr-name" placeholder="재료 이름" aria-label="재료 이름" style="margin-top:0;flex:1"><input class="in" id="fr-exp" type="date" style="margin-top:0;width:140px" aria-label="보관 기한"></div>
-        <div class="row"><input class="in" id="fr-qty" aria-label="남은 양" placeholder="남은 양 (예: 150g, 2개)" style="margin-top:0;flex:1"><button class="chip on" id="fr-add" type="button" style="padding:9px 16px">등록</button></div></div>
+      <div id="report"></div>
+      <div class="box"><b>재료 등록</b>
+        <div class="row" style="flex-wrap:nowrap"><input class="in" id="fr-name" placeholder="재료 이름" aria-label="재료 이름" style="margin-top:0;flex:1"><input class="in" id="fr-exp" type="date" style="margin-top:0;width:150px" aria-label="보관 기한"></div>
+        <div class="row" style="flex-wrap:nowrap"><input class="in" id="fr-qty" aria-label="남은 양" placeholder="남은 양 (예: 150g)" style="margin-top:0;flex:1"><button class="btn dk sm" id="fr-add" type="button">등록</button></div></div>
       <p class="mu" id="fr-count" style="margin-top:12px"></p>
       <div id="fr-list"></div>
-      <button class="btn dk" data-go="list" id="fr-search">이 재료로 레시피 찾기</button>
+      <button class="btn" data-go="list" id="fr-search">이 재료로 레시피 찾기</button>
     </div>
-    <!-- 털이 리포트: 이번 달 냉장고 기록(털어냄·구함·버림)에서 계산 -->
-    <div class="pane" data-pane="rep"><div id="report"></div></div>
+    <nav class="menu-list" aria-label="설정">
+      <button type="button" data-go="spec">데이터 명세<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-chevron-right"></use></svg></button>
+      <button type="button" id="my-logout" hidden>로그아웃<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-chevron-right"></use></svg></button>
+    </nav>
   </section>
 
   <!-- 9 로그인 / 회원가입 (아이디 + 닉네임 + 비밀번호, 이메일 없음). FIREBASE_CONFIG가 있으면 Firebase, 없으면 LocalStorage(ft_accounts) -->
@@ -361,10 +358,10 @@
   <section class="screen" id="cook">
     <h2>조리 완료</h2><h3 id="cook-title"></h3><p>혼자 만든 한 끼의 실제 사용량을 확인해요.</p>
     <form id="cook-form" class="box"><div id="cook-rows"></div><button class="btn dk" id="cook-submit" type="submit">사용량 확인 · 조리 완료</button></form>
-    <p id="cook-status" role="status" aria-live="polite"></p><button class="btn dk" id="cook-post" type="button" hidden>이 기록으로 요리 게시물 등록</button><button class="btn" type="button" data-open-fridge>냉장고 확인</button><button class="btn" data-go="plan">식사 계획 보기</button><button class="btn" data-go="list">레시피 목록</button>
+    <p id="cook-status" role="status" aria-live="polite"></p><button class="btn dk" id="cook-post" type="button" hidden>이 기록으로 자랑하기</button><button class="btn" type="button" data-open-fridge>냉장고 확인</button><button class="btn" data-go="plan">식사 계획 보기</button>
   </section>
   <section class="screen" id="spec">
-    <h2>데이터 명세</h2><p class="release-label">v0.9.20 · 교수님 검토용</p>
+    <h2>데이터 명세</h2><p class="release-label">v0.9.25 · 교수님 검토용</p>
     <p class="mu">출처·파일별 건수·실제 JSON을 확인해요. 인증정보는 내려받기에 포함되지 않아요.</p>
     <div id="spec-body"></div>
     <p id="data-export-status" role="status"></p>

@@ -43,13 +43,13 @@ function normalizeStored(key, value) {
 async function loadSourceFiles() {
   if (sourceLoadPromise) return sourceLoadPromise;
   sourceLoadPromise = (async () => {
-    const response = await fetch('./data/data_manifest.json');
+    const response = await fetch((typeof APP_ROOT === 'string' ? APP_ROOT : './') + 'data/data_manifest.json');
     if (!response.ok) throw new Error('data_manifest.json HTTP ' + response.status);
     const manifest = await response.json();
     sourceFiles.set('data_manifest.json', manifest);
     await Promise.all(manifest.files.map(async entry => {
       try {
-        const r = await fetch('./data/' + entry.file);
+        const r = await fetch((typeof APP_ROOT === 'string' ? APP_ROOT : './') + 'data/' + entry.file);
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const rows = await r.json();
         if (!Array.isArray(rows)) throw new Error('배열 형식이 아님');

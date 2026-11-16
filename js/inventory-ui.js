@@ -26,8 +26,9 @@
     if(resetEditor){$('#quantity-servings').value=base.servings||'';$('#quantity-editor').value=base.rows.map(r=>r.amount==null?r.raw:`${r.name} ${r.amount}${r.unit}`).join('\n');}
     const people=1;
     const assessment=E.evaluate(recipe,fridge(),options(people));
-    const labels={ready:'보유량으로 조리 가능',shortage:'부족한 재료가 있어요',unknown:'수량 기준 확인 필요'};
+    const labels={ready:'지금 냉장고로 만들 수 있어요',shortage:'부족한 재료가 있어요',unknown:'수량 기준 확인 필요'};
     $('#quantity-status').textContent=labels[assessment.status];
+    $('#quantity-status').dataset.status=assessment.status; // 부족=주황 · 가능=초록 · 확인 필요=회색 (CSS)
     $('#quantity-rows').innerHTML=assessment.rows.map(r=>`<li><b>${esc(r.name)}</b> · 필요 ${r.need==null?'수량 확인 필요':esc(amount({amount:r.need,unit:r.unit}))} · 보유 ${r.available==null?'수량·단위 확인 필요':esc(amount({amount:r.available,unit:r.unit}))}${r.missing?' · 미보유':r.shortage>0?` · ${esc(amount({amount:r.shortage,unit:r.unit}))} 부족`:''}</li>`).join('');
     message('#quantity-message','');
   }

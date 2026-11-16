@@ -3,7 +3,10 @@ const TAB_OF = {home:'home',plan:'home',shopping:'home',cook:'list',list:'list',
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
+let curScreen = null, lastScreen = 'home';
 function go(id) {
+  if (curScreen && curScreen !== id) lastScreen = curScreen;
+  curScreen = id;
   $$('.screen').forEach(s => s.classList.toggle('on', s.id === id));
   $$('.tabbar button').forEach(b => { const selected=b.dataset.go===TAB_OF[id]; b.classList.toggle('on',selected); b.setAttribute('aria-current',selected?'page':'false'); });
   $('.tabbar').style.display = id === 'login' ? 'none' : 'flex';
@@ -23,6 +26,7 @@ function go(id) {
 }
 
 document.addEventListener('click', e => {
+  if (e.target.closest('[data-back]')) { go(lastScreen && lastScreen !== curScreen ? lastScreen : 'home'); return; }
   const g = e.target.closest('[data-go]');
   if (g) {
     if (g.disabled) return;
@@ -83,27 +87,17 @@ function renderMine() {
   $('#mine').innerHTML = f.map(it => `<button type="button" class="chip ing${isUrgent(it) ? ' urgent' : isExpired(it) ? ' over' : ''}" data-ing="${esc(it.name)}" aria-label="${esc(it.name)} 삭제">${esc(it.name)}${dTag(it)} ${uiIcon('close')}</button>`).join('');
 }
 function fridgeChanged() { window.inventoryUI?.refresh(); renderMine(); syncFind(); renderHomeReco(); renderSuggest(); if ($('#my').classList.contains('on')) renderMy(); }
+// 재료 등록 (중복·빈값 무시). 보관 기한·양은 마이페이지 · 냉장고에서 넣거나 고침
 $('#mine').addEventListener('click', e => {
   const c = e.target.closest('[data-ing]'); if (!c) return;
   setFridge(fridge().filter(it => it.name !== c.dataset.ing)); fridgeChanged(); // 홈의 ✕ = 잘못 넣은 것 지우기 (기록 안 남김)
 });
-$('#suggest').addEventListener('click', e => {
-  const c = e.target.closest('.chip'); if (!c) return;
-  addIngredient(c.textContent.replace('+', '').trim());
-});
-// 재료 등록 (중복·빈값 무시). 보관 기한·양은 마이페이지 · 냉장고에서 넣거나 고침
 function addIngredient(name, exp = null, qty = '') {
   name = String(name).trim();
   if (!name || myIngredients().includes(name)) return;
   setFridge([...fridge(), { name, qty, exp, at: new Date().toISOString() }]); flog(name, 'add');
   fridgeChanged();
 }
-$('#ing-q').addEventListener('keydown', e => {
-  if (e.key !== 'Enter') return;
-  e.preventDefault();
-  addIngredient(e.target.value);
-  e.target.value = '';
-});
 
 // 로그인 / 회원가입: 아이디 + 닉네임 + 비밀번호 (이메일 없음)
 // - 심화: js/config.js의 FIREBASE_CONFIG가 있으면 Firebase Authentication + Firestore (js/firebase.js)
@@ -212,6 +206,13 @@ function sheetLog(kind, payload) {
       .then(() => console.log('[시트 기록]', kind)).catch(e => console.warn('[시트 기록 실패]', kind, e.message));
   } catch (e) { console.warn('[시트 기록 실패]', kind, e.message); }
 }
+$('#ing-q').addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  e.preventDefault();
+  addIngredient(e.target.value);
+  e.target.value = '';
+});
+function syncTopLogin(u) { const b = $('#top-login'); b.setAttribute('aria-label', u ? `${u.nick} 님 (마이페이지)` : '로그인'); b.dataset.go = u ? 'my' : 'login'; b.classList.toggle('on', !!u); }
 const nickname = () => store.get('user', null)?.nick || '익명';
 
 // =====================================================================
@@ -236,10 +237,11 @@ topBtn.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }))
 // =====================================================================
 
 // ① JSON 경로 — 6주차에 만든 data/ 폴더. GitHub Pages 배포 주소에서 확인 (file:// 에서는 fetch가 막힘)
-const DATA_URL = './data/recipes_existing.json';
-const USER_URL = './data/recipes_user.json'; // 사용자 등록 레시피를 팀 저장소에 반영한 파일 (없어도 동작)
-const POSTS_URL = './data/posts_user.json';       // 사용자 게시물을 팀 저장소에 반영한 파일 (없어도 동작)
-const ING_URL = './data/ingredients_dictionary.json';   // 재료 사전 (추천 칩 · 표기 통일)
+const APP_BASE = typeof APP_ROOT === 'string' ? APP_ROOT : './'; // pages/ 안에서 열면 '../'
+const DATA_URL = APP_BASE + 'data/recipes_existing.json';
+const USER_URL = APP_BASE + 'data/recipes_user.json'; // 사용자 등록 레시피를 팀 저장소에 반영한 파일 (없어도 동작)
+const POSTS_URL = APP_BASE + 'data/posts_user.json';       // 사용자 게시물을 팀 저장소에 반영한 파일 (없어도 동작)
+const ING_URL = APP_BASE + 'data/ingredients_dictionary.json';   // 재료 사전 (추천 칩 · 표기 통일)
 let ingredientsDict = [];                    // ingredients_dictionary.json 원본
 let posts = [];                              // 게시물 원본 배열 (posts_user.json + localStorage)
 
@@ -353,11 +355,10 @@ function showLoadError(error) {
   $('#home-reco').innerHTML = box('레시피를 보여줄 수 없어요');
   $('#home-week').innerHTML = box('이번 주 요리를 셀 수 없어요');
   $('#pop-track').innerHTML = box('인기 요리를 보여줄 수 없어요');
-  $('#hero-count').textContent = '?';
   $('#count').textContent = '불러오기 실패';
   $('#cards').innerHTML = '';
   $('#list-state').innerHTML = loadErrorHtml(error.message);
-  $('#home-go').textContent = '데이터를 불러오지 못했어요'; $('#home-go').disabled = true;
+  $('#home-go').disabled = true;
 }
 
 // 필드 유형 판단: meta 목록에서 찾아 api → real → dummy 순으로 확인
@@ -482,7 +483,7 @@ const flt = { category: null, time: null, level: null, method: null, flag: null,
 const PAGE = 30; let listShown = PAGE;
 
 const FILTER_LABEL = v => { for (const f of FILTER_DEF) { const o = f.opts.find(([k]) => k === v); if (o) return o[1]; } return v; };
-let filtersOpen = true;
+let filtersOpen = false; // 기본은 접어 둠 (검색창과 결과 먼저)
 const MINE_OPTS = [['none', '상관없음'], ['any', '하나라도 포함'], ['all', '모두 포함']];
 const mineMode = () => flt.allMine ? 'all' : flt.mineOnly ? 'any' : 'none';
 const activeLabels = () => FILTER_DEF.filter(f => flt[f.key]).map(f => FILTER_LABEL(flt[f.key])).concat(flt.allMine ? ['재료 모두 포함'] : flt.mineOnly ? ['재료 포함'] : []);
@@ -493,14 +494,11 @@ function filterBar() {
   const rows = FILTER_DEF.map(f => `<div class="frow"><span class="flabel">${f.label}</span><div class="fchips">${f.opts.map(([v, l]) =>
       `<button class="chip${flt[f.key] === v ? ' on' : ''}" type="button" data-f="${f.key}" data-v="${v}">${l}</button>`).join('')}</div></div>`).join('');
   return `<div class="fsec">
-      <div class="fsec-h"><b>조건</b><span class="mu">${act.length ? `${act.length}개 적용 중` : '선택 안 함'}</span><button class="fsec-toggle" type="button" data-f="toggle">${filtersOpen ? '접기' : '펼치기'}${uiIcon(filtersOpen ? 'chevron-up' : 'chevron-down')}</button></div>
+      <div class="fsec-h"><b>조건·정렬</b><span class="mu">${act.length ? `${act.length}개 적용 · ` : ''}${sortLabel}</span><button class="fsec-toggle" type="button" data-f="toggle">${filtersOpen ? '접기' : '펼치기'}${uiIcon(filtersOpen ? 'chevron-up' : 'chevron-down')}</button></div>
       ${filtersOpen ? rows : ''}
+      ${filtersOpen ? `<div class="frow"><span class="flabel">정렬</span><div class="fchips">${SORTS.map(([v, l]) => `<button class="chip${flt.sort === v ? ' on' : ''}" type="button" data-f="sort" data-v="${v}">${l}</button>`).join('')}</div></div>` : ''}
     </div>
-    <div class="fsec">
-      <div class="fsec-h"><b>정렬</b><span class="mu">${sortLabel}</span></div>
-      ${filtersOpen ? `<div class="frow"><div class="fchips">${SORTS.map(([v, l]) => `<button class="chip${flt.sort === v ? ' on' : ''}" type="button" data-f="sort" data-v="${v}">${l}</button>`).join('')}</div></div>` : ''}
-    </div>
-    <div class="fsum">${activeLabels().length ? `적용 중: ${activeLabels().map(esc).join(' · ')} <button class="chip reset" type="button" data-f="reset">초기화</button>` : '조건 없이 전체에서 찾는 중'}</div>`;
+    ${activeLabels().length ? `<div class="fsum">${activeLabels().map(esc).join(' · ')} <button class="chip reset" type="button" data-f="reset">초기화</button></div>` : ''}`;
 }
 function applyFilters(scored) {
   return scored.filter(({ p, hit }) =>
@@ -553,16 +551,17 @@ function queryResults(raw) {
 function renderList() {
   const mine = myIngredients(), raw = $('#rec-q').value.trim();
   const mode = mineMode();
-  $('#list-mine').innerHTML = `<span class="flabel" style="font-size:11px;color:var(--mu)">보유 재료</span>`
-    + MINE_OPTS.map(([v, l]) => `<button class="chip${mode === v ? ' on' : ''}" type="button" data-mine="${v}" ${!mine.length && v !== 'none' ? 'disabled' : ''}>${l}</button>`).join('')
-    + (mine.length ? mine.map(m => `<span class="chip${mode !== 'none' ? ' ing' : ' gr'}">${esc(m)}</span>`).join('') : '<span class="mu" style="font-size:11px">홈에서 재료를 고르면 여기서 걸러요</span>');
+  // 냉장고 재료가 있을 때만 '내 재료' 조건을 보여 줌 (설명 문구 없음)
+  $('#list-mine').hidden = !mine.length;
+  $('#list-mine').innerHTML = mine.length ? `<span class="flabel">내 재료</span>`
+    + MINE_OPTS.map(([v, l]) => `<button class="chip${mode === v ? ' on' : ''}" type="button" data-mine="${v}">${l}</button>`).join('') : '';
   $('#list-filters').innerHTML = filterBar();
   if (!recipes.length) { if (!loadFailed) $('#count').textContent = '불러오는 중…'; return; }
+  $('#count').textContent = '';
   const results = queryResults(raw);
   navIds = results.map(r => r.p.id);
   const d = results.filter(r => r.p.flag === 'D').length;
-  $('#count').innerHTML = raw ? `"${esc(raw)}" ${results.length}건` : `${results.length}건`;
-  $('#count-src').textContent = `(전체 ${recipes.length}건${flt.mineOnly ? ' 중 보유 재료가 들어간 레시피' : ''}${d ? ` · 가상 D ${d}건 포함` : ''})`;
+  $('#count').textContent = raw && results.length ? `"${raw}" 검색 결과` : ''; // 전체 건수는 표시하지 않음
   const page = withThumbs(results.slice(0, listShown));
   $('#cards').innerHTML = page.map(({ p, hit, t }) => card(p, hit, mine.length, t)).join('');
   $('#list-state').innerHTML = results.length ? '' : emptyList(mine, raw);
@@ -578,13 +577,22 @@ function card(p, hit, total, t) {
     <div>
       <b>${esc(p.name)}</b>${lvlTag(p)} ${originChip(p)}
       <p class="mu">${num(p.time, '분')}${tagOf(p, 'time')} · ${info(uiCategory(p.category))}${tagOf(p, 'category')}</p>
-      <p class="mu">${authorLine(p)} · 요리 게시물 ${madeCount(p.id)}건</p>
+      <p class="mu">${authorLine(p)}${madeCount(p.id) ? ` · 자랑 ${madeCount(p.id)}건` : ''}</p>
       ${badge}
     </div>
-    <span>${uiIcon('star', isFav(p.id))}</span>
+    <button class="fav-btn${isFav(p.id) ? ' on' : ''}" type="button" data-fav="${p.id}" aria-pressed="${isFav(p.id)}" aria-label="${isFav(p.id) ? '즐겨찾기 해제' : '즐겨찾기'}">${uiIcon('star', isFav(p.id))}</button>
   </div>`;
 }
 
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-fav]'); if (!b) return;
+  e.stopPropagation(); e.preventDefault();
+  const id = Number(b.dataset.fav); toggleFav(id); const on = isFav(id);
+  $$(`[data-fav="${id}"]`).forEach(x => { x.classList.toggle('on', on); x.setAttribute('aria-pressed', String(on)); x.setAttribute('aria-label', on ? '즐겨찾기 해제' : '즐겨찾기'); x.innerHTML = uiIcon('star', on); });
+  if ($('#my').classList.contains('on')) renderMy();
+}, true);
+// 홈용 작은 빈 화면 (그림 없이 한 줄)
+const miniEmpty = (text, action = '') => `<div class="mini-empty"><p>${text}</p>${action}</div>`;
 // 표준 예외 화면 (결과 없음): 빈 냉장고 그림 + 무엇이 없는지 한 줄 + 왜/어떻게 한 줄 + 다음 행동 버튼. 모든 '0건' 화면이 이 함수를 씀
 function emptyState({ title, hint, actions = [] }) {
   return `<div class="box empty">${pic('fridge', 'empty-img', false)}
@@ -594,13 +602,12 @@ function emptyState({ title, hint, actions = [] }) {
 function emptyList(mine, raw) {
   const anyF = FILTER_DEF.some(f => flt[f.key]) || flt.allMine;
   const title = raw ? `"${esc(raw)}"에 맞는 레시피가 없어요` : flt.mineOnly && mine.length ? `보유 재료(${mine.map(esc).join(' · ')})를 포함한 레시피가 없어요` : '조건에 맞는 레시피가 없어요';
-  const hint = raw ? '레시피 이름의 일부(예: 볶음밥)나 재료 이름(예: 두부)으로 다시 찾아보세요. 띄어쓰기는 무시돼요.'
-    : flt.mineOnly ? '재료 이름을 레시피에 적힌 대로(예: 달걀 → 계란) 바꾸거나 다른 재료를 추가해 보세요.' : '조건을 하나 풀어 보세요.';
+  const hint = raw ? '다른 재료나 요리 이름으로 찾아보세요.' : flt.mineOnly ? '다른 재료를 등록해 보세요.' : '조건을 하나 풀어 보세요.';
   const actions = [];
   if (anyF) actions.push({ label: '검색 조건 초기화', id: 'flt-reset', dark: true });
   if (flt.mineOnly) actions.push({ label: `보유 재료 상관없이 전체 보기`, id: 'show-all', dark: !anyF });
   if (raw) actions.push({ label: '검색어 지우기', id: 'q-clear', dark: !anyF && !flt.mineOnly });
-  actions.push({ label: '홈에서 재료 바꾸기', go: 'home' }, { label: '+ 내 레시피로 등록', go: 'new' });
+
   return emptyState({ title, hint, actions });
 }
 document.addEventListener('click', e => {
@@ -617,11 +624,10 @@ function renderHomeReco() {
   if (!box || !recipes.length) return;
   const mine = myIngredients();
   const top = recipes.map(p => ({ p, hit: matchCount(p, mine), urgent: fridgeHits(p).filter(isUrgent).length })).filter(r => r.hit > 0).sort((a, b) => b.urgent - a.urgent || b.hit - a.hit).slice(0, 2);
-  if (!top.length) { box.innerHTML = emptyState({title:'보유 재료와 연결되는 레시피가 없어요',hint:'재료 이름을 확인하거나 다른 재료를 등록해 보세요.',actions:[{label:'전체 레시피 보기',go:'list',dark:true}]}); return; }
+  if (!top.length) { box.innerHTML = miniEmpty(mine.length ? '내 재료로 만들 수 있는 레시피가 없어요' : '냉장고에 재료를 등록하면 추천해 드려요', mine.length ? '' : '<button class="link-btn" type="button" data-open-fridge>재료 등록하기</button>'); return; }
   box.innerHTML = withThumbs(top).map(({ p, hit, t }) => `<article class="big-card" data-go="detail" data-id="${p.id}">
     ${imgBox(p, 'big-img', '레시피 사진', t)}
-    <div class="big-body"><span class="bg${hit === mine.length && hit ? ' a' : ''}">${hit ? `보유 재료 ${hit}종 포함` : '재료 확인 필요'}</span>
-      <b>${esc(p.name)}</b> ${originChip(p)}<p class="mu">${recipeFacts(p)} · ${authorLine(p)}</p></div>
+    <div class="big-body"><b>${esc(p.name)}</b> ${originChip(p)}<p class="mu">${recipeFacts(p)} · 내 재료 ${hit}종 사용</p></div>
   </article>`).join('');
 }
 
@@ -633,25 +639,21 @@ function miniCard(p, right, t) {
 }
 function renderMy() {
   const u = store.get('user', null);
-  $('#my-name').textContent = u ? `${u.nick} 님` : '로그인 전';
-  $('#my-sub').textContent = u ? `${u.loginId ? '@' + u.loginId + ' · ' : u.email ? u.email + ' · ' : ''}${u.via === 'firebase' ? 'Firebase 로그인' : '이 브라우저 로그인'} · 즐겨찾기·내 레시피·내 요리 게시물은 이 브라우저에 저장돼요` : '로그인하면 닉네임으로 레시피와 요리를 등록할 수 있어요';
-  $('#my-logout').hidden = !u;
-  $('#top-login').textContent = u ? u.nick : '로그인';
+  $('#my-name').textContent = u ? `${u.nick} 님` : '로그인이 필요해요';
+  $('#my-sub').textContent = u ? (u.loginId ? '@' + u.loginId : u.email || '') : '레시피 등록·요리 자랑에 필요해요';
+  $('#my-logout').hidden = !u; $('#my-login').hidden = !!u;
+  syncTopLogin(u);
   const favs = recipes.filter(p => isFav(p.id));
   navIds = favs.map(p => p.id);
   $('#fav-list').innerHTML = favs.length ? withThumbs(favs.map(p => ({ p }))).map(({ p, t }) => miniCard(p, uiIcon('star', true), t)).join('')
-    : emptyState({ title: '즐겨찾기한 레시피가 없어요', hint: '레시피 상세에서 즐겨찾기를 누르면 여기에 모여요.',
-        actions: [{ label: '레시피 보기', go: 'list', dark: true }] });
+    : emptyState({ title: '즐겨찾기한 레시피가 없어요', hint: '레시피의 별을 누르면 여기에 모여요.', actions: [{ label: '레시피 보기', go: 'list', dark: true }] });
   const myPosts = posts.filter(isMyPost).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-  $('#posts-count').innerHTML = myPosts.length ? `내 요리 게시물 ${myPosts.length}건 <span class="flag flag-U">U</span>` : '';
   $('#posts-list').innerHTML = myPosts.length ? myPosts.map(p => `<div class="card" data-go="post" data-post="${p.id}">${postImg(p, '', '요리 사진')}<div><b>${esc(p.recipeName)}</b><p class="mu">${p.text ? esc(p.text) : '<span class="na">후기 없음</span>'} · 좋아요 ${postLikes(p.id)}개</p></div><button class="chip" type="button" data-pdel="${p.id}">삭제</button></div>`).join('')
-    : emptyState({ title: u ? '등록한 요리 게시물이 없어요' : '로그인하면 내 요리 게시물이 여기 모여요', hint: '레시피 상세에서 "요리 게시물 등록"을 눌러 등록할 수 있어요.', actions: [{ label: u ? '레시피 보기' : '로그인', go: u ? 'list' : 'login', dark: true }] });
+    : emptyState({ title: u ? '아직 자랑한 요리가 없어요' : '로그인하면 내 자랑이 여기 모여요', hint: u ? '레시피 상세의 "요리 자랑하기"로 올릴 수 있어요.' : '', actions: u ? [{ label: '레시피 보기', go: 'list', dark: true }] : [] });
   renderFridge(); renderReport();
   const mine = recipes.filter(isMyRecipe);
-  $('#mine-count').innerHTML = mine.length ? `내가 등록한 레시피 ${mine.length}건 <span class="flag flag-U">U</span>` : '';
   $('#mine-list').innerHTML = mine.length ? withThumbs(mine.map(p => ({ p }))).map(({ p, t }) => miniCard(p, `<button class="chip" type="button" data-del="${p.id}">삭제</button>`, t)).join('')
-    : emptyState({ title: '등록한 레시피가 없어요', hint: '내가 등록한 레시피를 모아 볼 수 있어요.',
-        actions: [{ label: '레시피 등록', go: 'new', dark: true }] });
+    : emptyState({ title: '등록한 레시피가 없어요', hint: '', actions: [] }); // 등록 버튼은 위에 하나만
 }
 document.addEventListener('click', e => {
   const d = e.target.closest('[data-del]');
@@ -671,7 +673,7 @@ function renderFridge() {
       <div class="fr-main"><b>${esc(it.name)}</b>${dTag(it)}${it.demo ? ' <span class="flag flag-D">D</span>' : ''}
         <input class="in fr-qty" value="${esc(it.qty || '')}" placeholder="남은 양" aria-label="${esc(it.name)} 남은 양"><span class="mu">${InventoryEngine.stockAmount(it) ? '수량 비교 가능' : '숫자·단위 확인 필요'}</span><input class="in fr-exp" type="date" value="${it.exp || ''}" aria-label="${esc(it.name)} 보관 기한"></div>
       <div class="fr-act"><button class="chip" type="button" data-fx="eaten">사용 완료</button><button class="chip fr-bin" type="button" data-fx="discard">폐기</button></div></div>`).join('')
-    : emptyState({ title: '냉장고가 비어 있어요', hint: '재료와 보관 기한을 등록하면 임박 재료부터 쓰는 레시피를 추천하고, 요리 게시물을 등록할 때 활용한 재료를 확인해 기록할 수 있어요.', actions: [] });
+    : emptyState({ title: '냉장고가 비어 있어요', hint: '재료와 보관 기한을 등록해 보세요.', actions: [] });
   $('#fr-search').hidden = !f.length;
 }
 $('#fr-add').addEventListener('click', () => { const n = $('#fr-name').value.trim(); if (!n) return; if (myIngredients().includes(n)) { setFridge(fridge().map(it => it.name === n ? { ...it, exp: $('#fr-exp').value || it.exp, qty: $('#fr-qty').value.trim() || it.qty, quantityOrigin: 'user' } : it)); fridgeChanged(); } else addIngredient(n, $('#fr-exp').value || null, $('#fr-qty').value.trim()); $('#fr-name').value = ''; $('#fr-qty').value = ''; $('#fr-exp').value = ''; });
@@ -697,16 +699,11 @@ function renderReport() {
   const top = Object.entries(log.filter(x => x.kind === 'used').reduce((a, x) => (a[x.name] = (a[x.name] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]).slice(0, 5);
   const myPostsM = posts.filter(p => isMyPost(p) && new Date(p.createdAt) >= m0);
   const urgNow = fridge().filter(isUrgent);
-  $('#report').innerHTML = `<div class="report-hero"><p class="hero-kicker">${now.getMonth() + 1}월 털이 리포트</p>
-      <div class="rate"><b>${rate === null ? '—' : rate + '%'}</b><span>냉장고 비움률 ${typeTag('calc')}</span></div>
+  $('#report').innerHTML = `<div class="report-hero"><p class="hero-kicker">${now.getMonth() + 1}월 냉장고 리포트</p>
+      <div class="rate"><b>${rate === null ? '—' : rate + '%'}</b><span>비움률 ${typeTag('calc')}</span></div>
       <div class="rate-bar"><i style="width:${rate || 0}%"></i></div>
-      <p class="mu">비움률 = (털어낸 + 그냥 먹은 재료) ÷ (털어낸 + 그냥 먹은 + 버린 + 지금 남은 재료)</p></div>
-    <div class="spec-count rep-count">
-      <div><b>${used}</b><span>활용한 재료</span></div><div><b>${rescued}</b><span>활용한 임박 재료</span></div>
-      <div><b>${discard}</b><span>버린 재료</span></div><div><b>${myPostsM.length}</b><span>등록한 요리 게시물</span></div></div>
-    <div class="box"><b>이번 달 가장 많이 활용한 재료</b>${top.length ? `<div class="row">${top.map(([n, c]) => `<span class="chip ing">${esc(n)} ${c}회</span>`).join('')}</div>` : '<p class="mu" style="margin-top:6px">아직 없어요. 냉장고 재료로 요리 게시물로 등록하면 쌓여요.</p>'}</div>
-    <div class="box"><b>보관 기한이 임박한 재료</b>${urgNow.length ? `<div class="row">${urgNow.map(it => `<span class="chip ing urgent">${esc(it.name)}${dTag(it)}</span>`).join('')}</div><button class="btn dk" id="rep-go">임박 재료를 활용하는 레시피 보기</button>` : '<p class="mu" style="margin-top:6px">보관 기한 임박 재료가 없어요.</p>'}</div>
-    <p class="mu" style="margin-top:10px">넣은 재료 ${added}개 · 그냥 먹은 재료 ${eaten}개. 이 리포트는 이 브라우저의 냉장고 기록(사용자 데이터 U)에서 계산한 값이에요.</p>`;
+      <div class="rep-nums"><span><b>${used}</b>활용</span><span><b>${rescued}</b>임박 활용</span><span><b>${discard}</b>버림</span></div>
+      <details class="rep-how"><summary>계산 방법</summary><p>(활용 + 그냥 먹음) ÷ (활용 + 그냥 먹음 + 버림 + 지금 남은 재료) · 이번 달 냉장고 기록 기준</p></details></div>`;
 }
 document.addEventListener('click', e => { if (e.target.closest('#rep-go')) { $('#rec-q').value = ''; flt.mineOnly = true; flt.sort = 'rel'; listShown = PAGE; go('list'); } });
 
@@ -866,8 +863,9 @@ function openDetail(id) {
   renderReal(p);
   $('#d-del').hidden = !isMyRecipe(p);
   $('#d-ing').innerHTML = `${info(p.ingredientsText)}${tagOf(p, 'ingredientsText')}`;
+  renderIngredients(p);
   $('#d-steps').innerHTML = p.steps.length
-    ? p.steps.map(s => `<li>${esc(s.text)}${s.image ? `<div class="img has-img"><img src="${esc(imgUrl(s.image))}" alt="" loading="lazy"></div>` : ''}</li>`).join('') + `<li class="mu">조리 순서${tagOf(p, 'steps')}</li>`
+    ? p.steps.map(s => `<li>${esc(s.text)}${s.image ? `<div class="img has-img step-img"><img src="${esc(imgUrl(s.image))}" alt="" loading="lazy" onerror="this.parentNode.remove()"></div>` : ''}</li>`).join('') + `<li class="src-line">${tagOf(p, 'steps')}</li>`
     : '<li class="mu">조리 순서 정보 없음</li>';
   // 저장 JSON 값으로 먼저 다 그린 뒤, API 항목이면 응답이 오면 해당 필드만 갈아끼움 (화면이 비는 구간 없음)
   renderDetailApiFields(p, null);
@@ -888,10 +886,38 @@ function realStats(id) {
            tmN: tm.length, tm: tm.length ? Math.round(tm.reduce((a, b) => a + b, 0) / tm.length) : null };
 }
 function renderReal(p) {
-  const st = realStats(p.id);
-  const lvLine = st.lv ? `레시피 <b>${info(p.level)}</b>${tagOf(p, 'level')} · 사용자 기록 ${st.lvN}건 평균 <b>${st.lv}</b>${typeTag('meas')}` : `레시피 <b>${info(p.level)}</b>${tagOf(p, 'level')} · <span class="na">기록 없음</span>`;
-  const tmLine = st.tm ? `레시피 <b>${num(p.time, '분')}</b>${tagOf(p, 'time')} · 사용자 기록 평균 <b>${st.tm}분</b>${typeTag('meas')}${p.time ? ` <span class="mu">(${st.tm - p.time >= 0 ? '+' : ''}${st.tm - p.time}분)</span>` : ''}` : `레시피 <b>${num(p.time, '분')}</b>${tagOf(p, 'time')} · <span class="na">기록 없음</span>`;
-  $('#d-real').innerHTML = `<div class="real-h"><b>사용자 조리 기록</b><span class="mu">요리 게시물 ${st.n}건의 기록</span></div><p>${lvLine}</p><p>${tmLine}</p>${!st.lvN && !st.tmN ? '<p class="mu">만들어 보고 "요리 게시물 등록"에서 실제 난이도·시간을 남기면 사용자 기록 평균을 확인할 수 있어요.</p>' : ''}`;
+  const st = realStats(p.id), box = $('#d-real');
+  const parts = [st.tm ? `평균 ${st.tm}분` : '', st.lv ? `난이도 ${st.lv}` : ''].filter(Boolean);
+  box.hidden = !parts.length;
+  box.innerHTML = parts.length ? `<span class="lbl">전체 사용자</span>만든 사람 ${st.n}명의 실제 기록 · ${parts.join(' · ')}${typeTag('meas')}` : '';
+  // 내 요리 기록 = 이 브라우저의 cooking_logs 중 로그인한 내가 '조리 완료'한 기록 (개인 데이터, 자랑 게시물과 별개)
+  const me = store.get('user', null)?.id;
+  const logs = me ? store.get('cooking_logs', []).filter(r => r.recipeId === p.id && r.actorId === me).sort((a, b) => b.createdAt.localeCompare(a.createdAt)) : [];
+  const mine = $('#d-mine'); mine.hidden = !logs.length;
+  if (logs.length) {
+    mine.querySelector('summary').innerHTML = `<span class="lbl">나</span>내 요리 기록 보기 · ${logs.length}회`;
+    mine.querySelector('ul').innerHTML = logs.map(r => `<li>${new Date(r.createdAt).toLocaleDateString('ko-KR')} · ${(r.uses || []).map(u => `${esc(u.name)} ${u.amount}${esc(u.unit || '')}`).join(', ') || '사용량 기록 없음'}${posts.some(x => x.cookingLogId === r.id) ? ' · 자랑함' : ''}</li>`).join('');
+  }
+}
+// 필요한 재료: 냉장고와 비교해 '있음/없음' 표시, 없는 재료는 위에 알림 (양념은 비교에서 제외)
+const SEASONING = ['소금', '설탕', '간장', '국간장', '저염간장', '진간장', '참기름', '들기름', '식용유', '올리브오일', '식물성기름', '후춧가루', '후추', '물', '고춧가루', '식초', '깨', '통깨', '참깨', '올리고당', '물엿', '맛술', '청주', '미림', '굴소스', '케첩', '마요네즈', '전분', '물전분', '밀가루', '다시마', '육수', '멸치육수', '매실청', '꿀', '버터'];
+function parseIngredients(text) {
+  return String(text || '').split(/[,\n]/).map(t => t.replace(/^[^:：]*[:：]/, '').trim()).filter(Boolean)
+    .map(t => { const name = (t.match(/^[가-힣A-Za-z ]+?(?=\s*[\d(]|$)/) || [t])[0].trim() || t; return { text: t, name }; });
+}
+function renderIngredients(p) {
+  const items = parseIngredients(p.ingredientsText), stock = fridge();
+  const have = it => stock.some(s => alias(it.text).includes(alias(s.name)) || alias(s.name).includes(alias(it.name)));
+  const isSeason = it => SEASONING.some(k => it.name.replace(/\s/g, '') === k || it.name.endsWith(k) && it.name.length <= k.length + 2);
+  const rows = items.map(it => ({ ...it, season: isSeason(it), ok: have(it) }));
+  const missing = rows.filter(r => !r.season && !r.ok);
+  const tagOfRow = r => !stock.length ? '' : r.season ? '<em>양념</em>' : r.ok ? '<em>있음</em>' : '<em>없음</em>'; // 냉장고가 비어 있으면 표시 안 함
+  $('#d-ing-list').innerHTML = rows.length ? rows.map(r => `<li class="${!stock.length ? '' : r.season ? 'season' : r.ok ? 'have' : 'miss'}"><span>${esc(r.text)}</span>${tagOfRow(r)}</li>`).join('')
+    + `<li class="src-line">${tagOf(p, 'ingredientsText')}</li>` : `<li>${NA}</li>`;
+  const alert = $('#ing-alert');
+  alert.hidden = !rows.length || (!missing.length && stock.length > 0);
+  alert.innerHTML = !stock.length ? `냉장고에 등록된 재료가 없어요. <button class="link-btn" type="button" data-open-fridge>재료 등록</button>`
+    : missing.length ? `<b>없는 재료 ${missing.length}개</b> · ${missing.map(r => esc(r.name)).join(', ')}` : '';
 }
 function syncDetailActions(p) {
   const fav = $('#d-fav');
@@ -899,8 +925,7 @@ function syncDetailActions(p) {
   fav.setAttribute('aria-pressed', String(isFav(p.id)));
   fav.setAttribute('aria-label', isFav(p.id) ? '즐겨찾기 해제' : '즐겨찾기 추가');
   fav.classList.toggle('on', isFav(p.id));
-  const n = madeCount(p.id);
-  $('#d-made').innerHTML = n ? `연결된 요리 게시물 <b>${n}</b>건 <span class="flag flag-U">U</span> · 좋아요는 요리 피드에서` : '아직 연결된 요리 게시물이 없어요. 첫 게시물을 등록해 보세요.';
+
 }
 document.addEventListener('click', e => { if (e.target.closest('#d-fav')) { const p = recipes.find(r => r.id === detailId); if (p) { toggleFav(p.id); syncDetailActions(p); } } });
 $('#d-del').addEventListener('click', () => { if (detailId) { deleteUserRecipe(detailId); go('my'); } });
@@ -978,59 +1003,52 @@ const postBadge = post => { const r = recipeOf(post), hit = postMakeable(post), 
   return !r ? '<span class="chip gr">레시피 삭제됨</span>' : hit && hit === total ? '<span class="bg a">내 냉장고로 바로 가능</span>' : hit ? `<span class="bg">보유 재료 ${hit}종 포함</span>` : '<span class="chip gr">보유 재료 없음</span>'; };
 
 // ---------- 홈: 추천 재료 칩 · 인기 게시물 · 이번 주 많이 활용한 레시피 ----------
-function renderSuggest() {
-  const mine = myIngredients();
-  const names = ingredientsDict.filter(i => i.suggest).map(i => i.name).filter(n => !mine.includes(n)); // 사전 46개 중 suggest:true만 추천 칩
-  $('#suggest').innerHTML = names.length ? names.map(n => `<span class="chip add">+ ${esc(n)}</span>`).join('')
-    : `<span class="mu" style="font-size:11px">${ingredientsDict.length ? '재료 사전의 재료를 모두 골랐어요 — 직접 입력해 보세요' : '재료 사전(ingredients_dictionary.json)을 읽지 못했어요'}</span>`;
-}
+function renderSuggest() {} // 홈에 추천 재료 칩을 띄우지 않음
 function renderHome() {
   renderSuggest(); renderHomeReco(); homeCount();
-  const u0 = store.get('user', null); $('#top-login').textContent = u0 ? u0.nick : '로그인';
+  syncTopLogin(store.get('user', null));
   const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 3);
   $('#pop-track').innerHTML = top.length ? top.map((p, i) => { const r = recipeOf(p); return `<article class="pop" data-go="post" data-post="${p.id}">
       <div class="img pop-img ${p.image ? 'has-img' : 'no-img'}"><span class="rank">${i + 1}</span>${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.recipeName)} 사진">` : pic('noimage')}</div>
-      <div class="pop-body"><b>${esc(p.recipeName)}</b> <span class="flag flag-U">U</span><p class="mu">@${esc(p.author)} 님이 만든 요리${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
-    : `<div class="box empty" style="margin-top:0">${pic('fridge', 'empty-img', false)}<b>아직 등록된 요리 게시물이 없어요</b><p class="mu">레시피로 만든 요리 게시물을 등록해 보세요.</p><button class="btn dk" data-go="list">레시피 보기</button></div>`;
+      <div class="pop-body"><b>${esc(p.recipeName)}</b> <span class="flag flag-U">U</span><p class="mu">@${esc(p.author)}${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
+    : miniEmpty('아직 올라온 자랑이 없어요');
   popCarousel.set(top.length);
   // 이번 주: 최근 7일 게시물을 레시피별로 셈
   const range = weekRange(0), cnt = {};
   posts.filter(p => inWeek(p, range)).forEach(p => { cnt[p.recipeId] = (cnt[p.recipeId] || 0) + 1; });
   const rows = Object.entries(cnt).map(([id, n]) => ({ r: recipes.find(x => x.id === Number(id)), n })).filter(x => x.r)
     .sort((a, b) => b.n - a.n).slice(0, 4);
-  $('#home-week').innerHTML = rows.length ? `<div class="grid2 week">${rows.map(({ r, n }) => `<div data-go="detail" data-id="${r.id}">${imgBox(r, '', '사진')}<b>${esc(r.name)}</b>${lvlTag(r)} ${flagChip(r)}<p class="mu">이번 주 요리 게시물 ${n}건 <span class="flag flag-U">U</span></p></div>`).join('')}</div>`
-    : `<div class="box empty" style="margin-top:0">${pic('fridge', 'empty-img', false)}<b>이번 주에 등록된 요리 게시물이 아직 없어요</b><p class="mu">레시피로 만든 요리 게시물을 등록하면 레시피별로 "요리 게시물이 몇 건인지" 여기 모여요. 요리 게시물을 등록하고 주간 랭킹에 참여해 보세요.</p><button class="btn dk" data-go="list">레시피 보기</button></div>`;
+  $('#home-week').innerHTML = rows.length ? `<div class="grid2 week">${rows.map(({ r, n }) => `<div data-go="detail" data-id="${r.id}">${imgBox(r, '', '사진')}<b>${esc(r.name)}</b>${lvlTag(r)} ${flagChip(r)}<p class="mu">이번 주 ${n}명이 만들었어요</p></div>`).join('')}</div>`
+    : miniEmpty('이번 주 기록이 아직 없어요');
 }
 
 // ---------- 피드 ----------
 let feedMineOnly = false, feedSortPop = false;
 function renderFeed() {
   const u = store.get('user', null);
-  let list = [...posts];
-  if (feedMineOnly) list = list.filter(p => postMakeable(p) > 0);
+  const raw = $('#post-q').value.trim();
+  let list = postHits(raw);
+
   list.sort((a, b) => feedSortPop ? (postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)) : b.createdAt.localeCompare(a.createdAt));
-  $('#feed-mine').innerHTML = `${uiIcon(feedMineOnly ? 'check' : 'circle')}보유 재료를 포함한 게시물만`;
-  $('#feed-mine').setAttribute('aria-pressed', String(feedMineOnly));
-  $('#feed-mine').classList.toggle('on', feedMineOnly);
   $('#feed-sort').textContent = feedSortPop ? '인기순' : '최신순';
+  $('#feed-count').textContent = list.length ? (raw ? `검색 결과 ${list.length}개` : `자랑 ${list.length}개`) : '';
   $('#feed-list').innerHTML = list.length ? list.map(p => `<article class="post">
       <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@${esc(p.author)}</b> <span class="flag flag-U">U</span><p class="mu">${ago(p.createdAt)}</p></div>${isMyPost(p) ? `<button class="more" type="button" data-pdel="${p.id}" aria-label="삭제">${uiIcon('trash')}</button>` : ''}</header>
       <div data-go="post" data-post="${p.id}">${postImg(p, 'post-img', '요리 사진 (1:1)')}</div>
       <div class="post-act"><button class="like${postLikedByMe(p.id) ? ' on' : ''}" type="button" data-plike="${p.id}" aria-label="좋아요" aria-pressed="${postLikedByMe(p.id)}">${uiIcon('heart', postLikedByMe(p.id))}</button><button class="vote${postVotedByMe(p.id) ? ' on' : ''}" type="button" data-pvote="${p.id}" aria-label="랭킹 투표" aria-pressed="${postVotedByMe(p.id)}">${uiIcon('vote', postVotedByMe(p.id))}</button>${recipeOf(p) ? `<button type="button" data-go="detail" data-id="${p.recipeId}" aria-label="레시피 보기" style="margin-left:auto">${uiIcon('book')}</button>` : ''}</div>
-      <div class="post-body"><b>좋아요 ${postLikes(p.id)}개</b> <span class="mu">· 랭킹 투표 ${postVotes(p.id)}표</span> <span class="mu" style="font-size:11px">(추천이 이번 주 랭킹 투표)</span>
+      <div class="post-body"><b>좋아요 ${postLikes(p.id)}개</b> <span class="mu">· 랭킹 투표 ${postVotes(p.id)}표</span>
         <p><b>${esc(p.recipeName)}</b> ${recipeOf(p) ? flagChip(recipeOf(p)) : ''}</p>
         ${usedLine(p)}
         <p><b>@${esc(p.author)}</b> ${p.text ? esc(p.text) : '<span class="na">후기 없음</span>'}</p>
         <div class="row">${postBadge(p)}${recipeOf(p) ? `<span class="chip gr">${esc((recipeOf(p).ingredientsText || '').split(',').slice(0, 3).map(t => t.trim().split(' ')[0]).join(' · '))}</span>` : ''}</div>
         ${recipeOf(p) ? `<button class="btn dk" data-go="detail" data-id="${p.recipeId}">연결된 레시피 보기</button>` : ''}
       </div></article>`).join('')
-    : `<div style="padding:14px">${emptyState({
-        title: feedMineOnly ? '내 보유 재료를 포함한 요리 게시물이 없어요' : '아직 등록된 요리 게시물이 없어요',
-        hint: feedMineOnly ? '필터를 끄거나 홈에서 보유 재료를 바꿔 보세요.' : `레시피로 만든 요리 게시물을 등록해 보세요${u ? '' : ' — 로그인하면 바로 등록할 수 있어요'}.`,
-        actions: feedMineOnly ? [{ label: '필터 끄기', id: 'feed-off' }] : [{ label: '레시피 보기', go: 'list', dark: true }, ...(u ? [] : [{ label: '로그인', go: 'login' }])],
+    : `<div style="padding:0 16px">${emptyState({
+        title: raw ? `"${esc(raw)}"에 맞는 자랑이 없어요` : '아직 올라온 자랑이 없어요',
+        hint: raw ? '' : '레시피 상세의 "요리 자랑하기"로 첫 자랑을 올려 보세요.',
+        actions: raw ? [] : [{ label: '레시피 보기', go: 'list', dark: true }],
       })}</div>`;
 }
-$('#feed-mine').addEventListener('click', () => { feedMineOnly = !feedMineOnly; renderFeed(); });
 $('#feed-sort').addEventListener('click', () => { feedSortPop = !feedSortPop; renderFeed(); });
 document.addEventListener('click', e => {
   if (e.target.closest('#feed-off')) { feedMineOnly = false; renderFeed(); }
@@ -1055,23 +1073,8 @@ function postHits(raw) {
   const q = norm(alias(raw));
   return posts.filter(p => !q || norm(p.recipeName).includes(q) || norm(p.author).includes(q) || norm(alias(recipeOf(p)?.ingredientsText)).includes(q) || norm(p.text).includes(q));
 }
-function searchPosts() {
-  const raw = $('#post-q').value.trim();
-  let hits = postHits(raw);
-  hits.sort((a, b) => postSortPop ? postLikes(b.id) - postLikes(a.id) : b.createdAt.localeCompare(a.createdAt));
-  $('#post-sort').textContent = postSortPop ? '인기순' : '최신순';
-  $('#post-count').textContent = raw ? `"${raw}" 요리 게시물 ${hits.length}건` : `요리 게시물 ${hits.length}건`;
-  $('#post-tiles').innerHTML = hits.map(p => `<a class="tile" data-go="post" data-post="${p.id}">${postImg(p, '', '요리 사진')}<span>${esc(p.recipeName)} · @${esc(p.author)}</span></a>`).join('');
-  const empty = $('#post-empty'); empty.hidden = hits.length > 0;
-  if (!hits.length) empty.innerHTML = emptyState({
-    title: raw ? `"${esc(raw)}"에 맞는 요리 게시물이 없어요` : (posts.length ? '조건에 맞는 요리 게시물이 없어요' : '아직 등록된 요리 게시물이 없어요'),
-    hint: raw ? '다른 단어 또는 레시피 이름으로 검색해 보세요.' : '레시피 상세의 "요리 게시물 등록"에서 등록할 수 있어요.',
-    actions: [{ label: '레시피 보기', go: 'list', dark: true }],
-  });
-}
-$('#post-q').addEventListener('input', searchPosts);
-$('#post-recent').addEventListener('click', e => { const c = e.target.closest('.chip'); if (!c) return; $('#post-q').value = c.textContent; searchPosts(); });
-$('#post-sort').addEventListener('click', () => { postSortPop = !postSortPop; searchPosts(); });
+function searchPosts() { renderFeed(); } // 피드 상단 검색창이 목록을 바로 거름
+$('#post-q').addEventListener('input', renderFeed);
 // ---------- 게시물 상세 ----------
 let postId = null;
 function openPost(id) {
@@ -1128,7 +1131,7 @@ function renderWriteUsed() {
 $('#w-level').addEventListener('click', e => { const c = e.target.closest('[data-wl]'); if (!c) return; writeLevel = writeLevel === c.dataset.wl ? null : c.dataset.wl; syncLevel(); });
 function openWrite() {
   const u = store.get('user', null);
-  if (!u) { go('login'); authMsg('요리 게시물을 등록하려면 먼저 로그인해 주세요.', false); return; }
+  if (!u) { go('login'); authMsg('요리를 자랑하려면 먼저 로그인해 주세요.', false); return; }
   writePhoto=null; $('#w-photo').value=''; $('#w-text').value=''; $('#w-msg').hidden=true;
   $('#w-preview').innerHTML='사진 미리보기'; $('#w-preview').classList.remove('has-img');
   const sel = $('#w-recipe');
@@ -1141,7 +1144,7 @@ function openWrite() {
 function syncWrite() {
   $('#w-len').textContent = $('#w-text').value.length;
   $('#w-go').disabled = !($('#w-recipe').value && writePhoto);
-  $('#w-go').textContent = $('#w-go').disabled ? `요리 게시물 등록 (${!$('#w-recipe').value ? '레시피' : '사진'} 필요)` : '요리 게시물 등록';
+  $('#w-go').textContent = $('#w-go').disabled ? `자랑하기 (${!$('#w-recipe').value ? '레시피' : '사진'} 필요)` : '자랑하기';
 }
 $('#w-text').addEventListener('input', syncWrite);
 $('#w-recipe').addEventListener('change', () => { renderWriteUsed(); syncWrite(); });
@@ -1200,6 +1203,7 @@ function weekRange(offset = 0) { // offset 0 = 이번 주, -1 = 지난주
   const end = new Date(start); end.setDate(start.getDate() + 7);
   return { start, end };
 }
+const inWeek = (p, w) => { const d = new Date(p.createdAt); return d >= w.start && d < w.end; }; // 홈·랭킹 공용
 const fmtMD = d => `${d.getMonth() + 1}/${d.getDate()}`;
 function scorePosts(list) {
   const byRecipe = Object.create(null), byChef = Object.create(null);
@@ -1220,36 +1224,31 @@ function rankRow(i, html, pts, sub, attrs = '', cls = '') {
 }
 function renderRank() {
   const { start, end } = weekRange(0), last = weekRange(-1);
-  const inWeek = (p, w) => { const d = new Date(p.createdAt); return d >= w.start && d < w.end; };
   const cur = scorePosts(posts.filter(p => inWeek(p, { start, end })));
   const prev = scorePosts(posts.filter(p => inWeek(p, last)));
   const u = store.get('user', null);
   const leftMs = end - Date.now(), leftD = Math.floor(leftMs / 86400000), leftH = Math.floor((leftMs % 86400000) / 3600000);
-  $('#rank-period').textContent = `${fmtMD(start)} ~ ${fmtMD(new Date(end - 1))} 주간 랭킹`;
-  $('#rank-left').textContent = `마감까지 ${leftD}일 ${leftH}시간 · 등록된 요리 게시물 ${posts.filter(p => inWeek(p, { start, end })).length}건 · 요리사 ${cur.chefs.length}명`;
-  const emptyR = emptyState({ title: '이번 주 등록된 요리 게시물이 아직 없어요', hint: `레시피 상세에서 "요리 게시물 등록"을 눌러 사진을 등록하면 랭킹에 참여할 수 있어요. 다른 사용자의 랭킹 투표가 점수에 반영돼요. 첫 요리 게시물로 참여해 보세요.${u ? '' : ' 요리 게시물을 등록하려면 상단의 로그인이 필요해요.'}`, actions: [{ label: '레시피 보기', go: 'list', dark: true }] });
+  $('#rank-period').textContent = '주간 랭킹';
+  $('#rank-left').textContent = `${fmtMD(start)} ~ ${fmtMD(new Date(end - 1))} · 마감까지 ${leftD}일 ${leftH}시간`;
+  const emptyR = emptyState({ title: '이번 주 자랑이 아직 없어요', hint: '첫 자랑을 올리면 바로 1위예요.', actions: [] });
   $('#rank-recipes').innerHTML = cur.recipes.length ? withThumbs(cur.recipes.map(r => ({ p: recipes.find(x => x.id === r.id) || { id: r.id, name: r.name } }))).map(({ p, t }, i) => {
       const r = cur.recipes[i];
-      return rankRow(i, `${imgBox(p, '', '요리 사진', t)}<div class="body"><b>${esc(r.name)}</b>${lvlTag(p)} ${p.flag ? flagChip(p) : ''}<span class="mu">요리 게시물 ${r.posts}건 · 투표 ${r.likes}표 · 재료 활용 ${r.used}회 · 임박 활용 ${r.rescued}회</span></div>`, r.pts, '점', `data-go="detail" data-id="${r.id}"`);
+      return rankRow(i, `${imgBox(p, '', '요리 사진', t)}<div class="body"><b>${esc(r.name)}</b>${lvlTag(p)} ${p.flag ? flagChip(p) : ''}<span class="mu">자랑 ${r.posts}건 · 투표 ${r.likes}표</span></div>`, r.pts, '점', `data-go="detail" data-id="${r.id}"`);
     }).join('') : emptyR;
   $('#rank-chefs').innerHTML = cur.chefs.length ? cur.chefs.map((c, i) =>
-      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">요리 게시물 ${c.posts}건 · 투표 ${c.likes}표 · 재료 활용 ${c.used}회 · 임박 활용 ${c.rescued}회 · 대표 ${esc(c.best?.recipeName || '')}</span></div>`, c.pts, '점', c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
+      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">자랑 ${c.posts}건 · 투표 ${c.likes}표</span></div>`, c.pts, '점', c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
     : emptyR;
   const chefRow = (key, unit, emptyTitle, emptyHint) => (list => list.length ? list.map((c, i) =>
-      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">요리 게시물 ${c.posts}건 · 재료 활용 ${c.used}회 · 임박 활용 ${c.rescued}회 · 털이 점수 ${c.pts}</span></div>`, c[key], unit, c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
-    : emptyState({ title: emptyTitle, hint: emptyHint, actions: [{ label: '레시피 보기', go: 'list', dark: true }] }));
-  $('#rank-thief').innerHTML = chefRow('used', '회', '아직 활용한 재료가 없어요', '냉장고에 재료를 넣고, 그 재료가 들어간 레시피로 요리 게시물로 등록하면 자동으로 기록돼요.')(cur.thieves);
-  $('#rank-last').innerHTML = prev.chefs.length
-    ? `<p class="mu" style="margin-top:10px">${fmtMD(last.start)} ~ ${fmtMD(new Date(last.end - 1))} 결과</p>` + prev.chefs.slice(0, 3).map((c, i) => rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)}</b><span class="mu">만든 요리 게시물 ${c.posts}건 · 투표 ${c.likes}표</span></div>`, c.pts, '점')).join('')
-      + (prev.recipes[0] ? `<p class="mu" style="margin-top:10px">지난주 가장 많이 활용한 레시피: <b>${esc(prev.recipes[0].name)}</b> (${prev.recipes[0].posts}건)</p>` : '')
-      + (prev.thieves[0] ? `<p class="mu">지난주 털이왕: <b>@${esc(prev.thieves[0].nick)}</b> (${prev.thieves[0].used}개)</p>` : '')
-    : emptyState({ title: '지난주 결과가 없어요', hint: '지난주(월~일)에 등록된 요리 게시물이 없었어요. 이번 주가 첫 대회예요.', actions: [{ label: '이번 주 참여하기', go: 'list', dark: true }] });
-  const me = u ? cur.chefs.findIndex(c => c.id === u.id) : -1;
-  $('#rank-me').innerHTML = !u ? `<b>내 순위</b><p class="mu" style="margin-top:4px">상단의 로그인 버튼으로 로그인하면 내 순위와 점수가 여기 나와요.</p>`
-    : me < 0 ? `<b>내 순위</b><p class="mu" style="margin-top:4px">${esc(u.nick)} 님은 이번 주 아직 참여 전이에요. 요리 게시물 1건을 등록하면 ${PT_POST}점부터 시작!</p><button class="btn dk" data-go="list">레시피 선택</button>`
-    : `<b>내 순위 ${me + 1}위 · 털이 점수 ${cur.chefs[me].pts}점</b><p class="mu" style="margin-top:4px">요리 게시물 ${cur.chefs[me].posts}건 · 활용한 재료 ${cur.chefs[me].used}회 · 활용한 임박 재료 ${cur.chefs[me].rescued}회 · 받은 투표 ${cur.chefs[me].likes}표${me > 0 ? ` · ${me}위까지 ${cur.chefs[me - 1].pts - cur.chefs[me].pts + 1}점` : ' · 현재 1위!'}</p><button class="btn dk" data-go="list">조리할 레시피 선택</button>`;
+      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">재료 활용 ${c.used}회 · 임박 ${c.rescued}회</span></div>`, c[key], unit, c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
+    : emptyState({ title: emptyTitle, hint: emptyHint, actions: [] }));
+  $('#rank-thief').innerHTML = chefRow('used', '회', '아직 활용한 재료 기록이 없어요', '조리 완료 기록을 연결해 자랑하면 집계돼요.')(cur.thieves);
 }
-
+// 랭킹 상단 작은 필터 칩
+document.addEventListener('click', e => {
+  const c = e.target.closest('[data-rtab]'); if (!c) return;
+  $$('#rank [data-rtab]').forEach(b => { b.classList.toggle('on', b === c); b.setAttribute('aria-selected', String(b === c)); });
+  $$('#rank .rpane').forEach(p => p.classList.toggle('on', p.dataset.rpane === c.dataset.rtab));
+});
 const fromHash = () => { const h = location.hash.slice(1); return h in TAB_OF ? h : 'home'; };
 addEventListener('hashchange', () => go(fromHash())); // 주소 직접 입력 · 뒤로 가기 대응
 renderMine();

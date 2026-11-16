@@ -14,3 +14,6 @@ else:
     html = html.replace('<body>\n', '<body>\n' + block + '\n', 1)
 open(html_p, 'w', encoding='utf-8').write(html)
 print('index.html에 sprite 삽입:', svg.count('<symbol'), 'symbol')
+# 스프라이트를 넣은 뒤 pages/index.html 도 같은 내용으로 갱신
+import subprocess, sys
+subprocess.run([sys.executable, os.path.join(HERE, 'sync_pages.py')], check=False)
