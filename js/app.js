@@ -3,9 +3,11 @@ const TAB_OF = {home:'home',plan:'home',shopping:'home',cook:'list',list:'list',
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-let curScreen = null, lastScreen = 'home';
+let curScreen = null, lastScreen = 'home', navBack = false; const navStack = [];
 function go(id) {
-  if (curScreen && curScreen !== id) lastScreen = curScreen;
+  if (curScreen && curScreen !== id && !navBack) navStack.push(curScreen);
+  navBack = false;
+  lastScreen = navStack[navStack.length - 1] || 'home';
   curScreen = id;
   $$('.screen').forEach(s => s.classList.toggle('on', s.id === id));
   $$('.tabbar button').forEach(b => { const selected=b.dataset.go===TAB_OF[id]; b.classList.toggle('on',selected); b.setAttribute('aria-current',selected?'page':'false'); });
@@ -26,7 +28,8 @@ function go(id) {
 }
 
 document.addEventListener('click', e => {
-  if (e.target.closest('[data-back]')) { go(lastScreen && lastScreen !== curScreen ? lastScreen : 'home'); return; }
+  if (e.target.closest('[data-back]')) { let to = navStack.pop(); while (to === curScreen) to = navStack.pop(); navBack = true; go(to || 'home'); return; }
+  if (e.target.closest('.tabbar [data-go]')) navStack.length = 0; // 하단 탭 = 새 출발
   const g = e.target.closest('[data-go]');
   if (g) {
     if (g.disabled) return;
@@ -52,9 +55,10 @@ function homeCount() {
   if (!recipes.length) return;
   const mine = myIngredients();
   const n = mine.length ? recipes.filter(p => matchCount(p, mine) > 0).length : recipes.length;
-  $('#home-go').textContent = mine.length ? (n ? '내 재료로 레시피 보기' : '이 재료가 들어간 레시피가 없어요') : '전체 레시피 보기'; // 건수는 표시하지 않음
+  $('#home-go').innerHTML = (mine.length ? (n ? '내 재료로 레시피 보기' : '이 재료가 들어간 레시피가 없어요') : '전체 레시피 보기') + ' ' + uiIcon('chevron-right'); // 건수는 표시하지 않음
   $('#home-go').disabled = !n;
 }
+$('#ing-search').addEventListener('click', () => { const v = $('#ing-q').value.trim(); if (v) { addIngredient(v); $('#ing-q').value = ''; } $('#home-go').click(); });
 $('#home-go').addEventListener('click', () => {
   $('#rec-q').value = ''; Object.assign(flt, { category: null, time: null, level: null, method: null, flag: null, allMine: false });
   flt.mineOnly = myIngredients().length > 0; listShown = PAGE; go('list');
@@ -673,7 +677,8 @@ function renderMy() {
   renderFridge(); renderReport();
   const mine = recipes.filter(isMyRecipe);
   $('#mine-list').innerHTML = mine.length ? withThumbs(mine.map(p => ({ p }))).map(({ p, t }) => miniCard(p, `<button class="chip" type="button" data-del="${p.id}">삭제</button>`, t)).join('')
-    : emptyState({ title: '등록한 레시피가 없어요', hint: '', actions: [] }); // 등록 버튼은 위에 하나만
+    : emptyState({ title: '등록한 레시피가 없어요', hint: '내가 아는 레시피를 추가해 보세요.', actions: [{ label: '레시피 등록', go: 'new', dark: true }] });
+  if (mine.length) $('#mine-list').insertAdjacentHTML('afterbegin', '<button class="btn dk" data-go="new">' + uiIcon('plus') + '레시피 등록</button>');
 }
 document.addEventListener('click', e => {
   const d = e.target.closest('[data-del]');
@@ -735,6 +740,25 @@ function deleteUserRecipe(id) {
   recipes = recipes.filter(r => r.id !== id);
   const f = favIds(); f.delete(id); store.set('fav', [...f]);
 }
+// 레시피 등록 사진: 카메라·앨범 → 480px JPEG로 줄여 이 브라우저에 저장
+let newPhoto = null;
+function setNewPhoto(data) {
+  newPhoto = data; const box = $('#n-preview');
+  box.classList.toggle('has-photo', !!data);
+  box.innerHTML = data ? `<img src="${data}" alt="등록할 요리 사진">` : `<span class="photo-plus">${uiIcon('plus')}</span><span>사진 추가</span>`;
+  $('#n-photo-del').hidden = !data;
+}
+$('#n-photo').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const img = new Image(); img.onload = () => {
+    const k = Math.min(1, 480 / Math.max(img.width, img.height)), c = document.createElement('canvas');
+    c.width = Math.round(img.width * k); c.height = Math.round(img.height * k); c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+    setNewPhoto(c.toDataURL('image/jpeg', 0.7)); URL.revokeObjectURL(img.src); e.target.value = '';
+  };
+  img.onerror = () => { $('#n-msg').hidden = false; $('#n-msg').textContent = '이미지 파일을 읽지 못했어요. JPG·PNG를 골라 주세요.'; };
+  img.src = URL.createObjectURL(f);
+});
+$('#n-photo-del').addEventListener('click', () => setNewPhoto(null));
 // ---------- 레시피 등록 (U): recipes_existing.json과 같은 구조로 만들어 localStorage에 저장 ----------
 const USER_ID_BASE = 100001; // 식약처(31~3577)·팀(90001~)과 겹치지 않는 범위
 $('#new-form').addEventListener('submit', e => {
@@ -749,8 +773,7 @@ $('#new-form').addEventListener('submit', e => {
   if (!v('#n-method')) miss.push('조리 방법');
   if (!v('#n-ing')) miss.push('재료');
   if (!steps.length) miss.push('조리 순서');
-  const img = v('#n-image');
-  if (img && !/^https:\/\//.test(img)) miss.push('사진 주소(https로 시작)');
+  const img = newPhoto; // 사진은 직접 찍거나 앨범에서 고른 것 (URL 입력 없음)
   const msg = $('#n-msg');
   if (miss.length) { msg.hidden = false; msg.textContent = `입력을 확인해 주세요: ${miss.join(', ')}`; return; }
   if (recipes.some(p => p.name === v('#n-name'))) { msg.hidden = false; msg.textContent = `"${v('#n-name')}"은 이미 있는 레시피예요. 이름을 바꾸거나 기존 레시피를 확인해 주세요.`; return; }
@@ -778,7 +801,7 @@ $('#new-form').addEventListener('submit', e => {
   if (!store.get('recipes', []).some(r => r.id === p.id)) { msg.hidden=false; msg.textContent='레시피를 저장하지 못했어요. 저장 공간을 확인해 주세요.'; return; }
   recipes = [...recipes, p];
   sheetLog('recipe', { id: p.id, name: p.name, author: p.author, category: p.category });
-  e.target.reset();
+  e.target.reset(); setNewPhoto(null);
   openDetail(p.id); go('detail');
 });
 
@@ -848,7 +871,6 @@ function attachSwipe(el, { left, right, threshold = 50 }) {
   el.addEventListener('pointerup', end); el.addEventListener('pointercancel', () => { x0 = y0 = null; });
   el.addEventListener('click', e => { if (moved) e.stopPropagation(); }, true); // 스와이프 뒤 클릭 오작동 방지
 }
-const popCarousel = makeCarousel('#home-pop', '#pop-track', '#pop-dots');
 
 // ---------- 상세 화면 ----------
 let detailId = null;
@@ -1029,12 +1051,12 @@ function renderSuggest() {} // 홈에 추천 재료 칩을 띄우지 않음
 function renderHome() {
   renderSuggest(); renderHomeReco(); homeCount();
   syncTopLogin(store.get('user', null));
-  const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 3);
+  const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 6);
   $('#pop-track').innerHTML = top.length ? top.map((p, i) => { const r = recipeOf(p); return `<article class="pop" data-go="post" data-post="${p.id}">
       <div class="img pop-img ${p.image ? 'has-img' : 'no-img'}"><span class="rank">${i + 1}</span>${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.recipeName)} 사진">` : pic('t' + String(thumbOf({ id: p.recipeId, name: p.recipeName, category: recipeOf(p)?.category }) + 1).padStart(2, '0'))}</div>
       <div class="pop-body"><b>${esc(p.recipeName)}</b> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}<p class="mu">@${esc(p.author)}${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
     : miniEmpty('아직 올라온 자랑이 없어요');
-  popCarousel.set(top.length);
+  $('#pop-track').scrollLeft = 0;
   // 이번 주: 최근 7일 게시물을 레시피별로 셈
   const range = weekRange(0), cnt = {};
   posts.filter(p => inWeek(p, range)).forEach(p => { cnt[p.recipeId] = (cnt[p.recipeId] || 0) + 1; });
@@ -1107,8 +1129,7 @@ function openPost(id) {
   $('#p-sub').innerHTML = `${r ? `${esc(uiCategory(r.category || ''))} · ` : ''}${p.text ? `"${esc(p.text)}"` : '<span class="na">후기 없음</span>'} · ${new Date(p.createdAt).toLocaleString('ko-KR')}`;
   $('#p-ing').innerHTML = r ? `${info(r.ingredientsText)}` : '<span class="na">연결된 레시피가 삭제됨</span>';
   const pts = postPoints(p);
-  $('#p-used').innerHTML = `<div class="real-h"><b>털이 인증</b><span class="mu">이 요리 게시물의 털이 점수 ${pts.total}점</span></div>${usedLine(p)}
-    <p class="mu pts-break">게시 ${PT_POST} + 투표 ${PT_LIKE}×${postVotes(p.id)} + 재료 활용 ${PT_USED}×${usedOf(p).length} + 임박 재료 활용 ${PT_RESCUE}×${rescuedOf(p)}</p>`;
+  $('#p-used').innerHTML = `<div class="real-h"><b>털이 인증</b></div>${usedLine(p)}`; // 점수 계산식은 표시하지 않음 (랭킹 '점수 기준'에서 안내)
   renderNext(p);
   $('#p-like').innerHTML = `${uiIcon('heart', postLikedByMe(id))}좋아요 ${postLikes(id)}개`;
   $('#p-like').setAttribute('aria-pressed', String(postLikedByMe(id))); $('#p-like').classList.toggle('on-like', postLikedByMe(id));

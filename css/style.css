@@ -562,3 +562,34 @@ html,body{overflow-x:hidden}
 /* 시연용 가상 데이터(D) 표시 */
 .demo-tag{display:inline-block;margin-left:4px;padding:0 7px;font-size:var(--fs-xs);line-height:18px;font-weight:700;border-radius:999px;border:1px dotted var(--am);background:#FFF4DB;color:var(--am);vertical-align:middle}
 .menu-right em{font-style:normal;font-size:var(--fs-sm);color:var(--mu)}
+
+/* v0.9.28 */
+/* 홈 인기 요리 자랑: 카드를 줄이고 옆 카드가 보이게 가로 스크롤 */
+.hscroll{margin:0 -16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.hscroll::-webkit-scrollbar{display:none}
+.hscroll-track{display:flex;gap:12px;padding:2px 16px 8px}
+.hscroll-track>.pop{flex:0 0 62%;scroll-snap-align:start}
+.hscroll-track>.mini-empty{flex:1}
+.pop-img{aspect-ratio:4/3}
+.pop-body{padding:10px 12px 12px}
+.pop-body b{font-size:var(--fs-md)}
+.pop .likes{font-size:var(--fs-sm)}
+/* 히어로: 입력창 안 돋보기 + 아래 작은 링크 버튼 */
+.in-search{position:relative;margin-top:10px}
+.in-search .in{margin-top:0;padding-right:48px}
+.in-search-btn{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:40px;height:40px;border:0;border-radius:50%;background:none;color:var(--dk);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.in-search-btn .ui-icon{width:22px;height:22px}
+.hero-more{display:flex;justify-content:flex-end;margin-top:10px}
+.link-more{display:inline-flex;align-items:center;gap:2px;border:0;background:none;padding:6px 2px;font:inherit;font-size:var(--fs-sm);font-weight:700;color:var(--dk);cursor:pointer}
+.link-more .ui-icon{width:16px;height:16px;margin:0}
+.link-more[disabled]{color:var(--mu);cursor:default}
+/* 게시물 상세: 위 돌아가기 */
+#post .sq-img{margin-top:0;border-radius:var(--r);width:100%}
+/* 레시피 등록: 사진 추가(+) */
+.photo-add{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:120px;height:120px;margin-top:8px;border:1.5px dashed var(--ing-ln);border-radius:var(--r-s);background:var(--ing-bg);color:var(--dk);font-size:var(--fs-sm);font-weight:600;cursor:pointer;overflow:hidden}
+.photo-plus{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--dk);color:#fff}
+.photo-plus .ui-icon{width:20px;height:20px;margin:0}
+.photo-add.has-photo{border-style:solid;padding:0}
+.photo-add img{width:100%;height:100%;object-fit:cover}
+#mine-list>.btn.dk:first-child{margin-top:12px}
+#post .sq-img{margin:0;width:100%}
