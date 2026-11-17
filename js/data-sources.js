@@ -119,7 +119,7 @@ function currentDataFiles() {
     if (plan) plans.push(provenance({ ...plan, ownerKey: storageKey.slice(3) }, 'calc', 'C', 'calc', { people: plan.people === 1 ? 'calc' : 'user', count: 'user', start: 'user', stockSnapshot: 'user', excludedRecipeIds: 'user', ownerKey: 'calc' }));
   }
   files['meal_plans_calculated.json'] = plans;
-  files['statistics_calculated.json'] = posts.map(post => provenance({ postId: post.id, ...postPoints(post), createdAt: post.createdAt }, 'calc', 'C', 'calc'));
+  files['statistics_calculated.json'] = posts.filter(post => !post.demo).map(post => provenance({ postId: post.id, ...postPoints(post), createdAt: post.createdAt }, 'calc', 'C', 'calc'));
   if (files['data_manifest.json']) files['data_manifest.json'] = provenance({ ...files['data_manifest.json'], files: files['data_manifest.json'].files.map(e => ({ ...e, count: (files[e.file] || []).length, storage: ['recipes_existing.json', 'recipes_api_requests.json', 'ingredients_dictionary.json', 'recipe_ingredients_links.json', 'ingredient_substitutions.json', 'recipe_quantities_calculated.json'].includes(e.file) ? 'static_json' : 'browser_json' })) }, 'calc', 'C', 'calc');
   return files;
 }

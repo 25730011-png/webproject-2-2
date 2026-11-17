@@ -11,9 +11,7 @@
   function openFridge(){go('my'); document.querySelector('#my [data-tab="fr"]')?.click();}
   function refresh(){
     const urgent=fridge().filter(isUrgent).length;
-    $('#fridge-badge').textContent=urgent?String(urgent):'';
-    $('#fridge-badge').hidden=!urgent;
-    $('#top-fridge').setAttribute('aria-label',`냉장고${urgent?`, 보관 기한 임박 재료 ${urgent}종`:''}`);
+    // 상단 냉장고 아이콘은 삭제 — 임박 알림은 홈 배너로만 표시
     $('#home-expiry').hidden=!urgent;
     $('#home-expiry-text').textContent=`보관 기한이 임박한 재료 ${urgent}종이 있어요.`;
     if ($('#cook').classList.contains('on') && !cooking) { $('#cook-submit').disabled=true; message('#cook-status','레시피 상세에서 조리 완료를 시작해 주세요.'); }

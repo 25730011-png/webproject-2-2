@@ -1,0 +1,432 @@
+{
+ "flag": "D",
+ "title": "시연용 가상 사용자·요리 자랑",
+ "note": "로그인 전에도 피드·홈·랭킹 화면이 비어 보이지 않도록 만든 가상 데이터(D). data/ 의 실제 JSON 18개와 분리해 demo/ 에 둠. 작성 시각은 열 때마다 '이번 주(월요일~지금)' 안으로 계산됨(weekFraction), 사진은 없어서 그림으로 표시",
+ "personas": [
+  {
+   "id": "demo-minji",
+   "nick": "민지네냉장고",
+   "name": "김민지",
+   "age": 22,
+   "profile": "자취 2년 차 대학생. 저녁 7시 귀가, 냉장고에 계란·양파·김치가 늘 있음",
+   "style": "남은 재료로 빨리 한 끼"
+  },
+  {
+   "id": "demo-junho",
+   "nick": "야식왕준호",
+   "name": "박준호",
+   "age": 24,
+   "profile": "공대 4학년, 밤늦게 과제하다 야식을 해 먹음",
+   "style": "라면·볶음 위주, 양 많이"
+  },
+  {
+   "id": "demo-sua",
+   "nick": "수아의첫요리",
+   "name": "이수아",
+   "age": 20,
+   "profile": "올해 처음 자취를 시작한 신입생, 요리 초보",
+   "style": "쉬운 레시피부터 하나씩"
+  },
+  {
+   "id": "demo-doyun",
+   "nick": "도윤도시락",
+   "name": "최도윤",
+   "age": 26,
+   "profile": "직장인 1년 차, 주말에 장 봐서 평일 도시락",
+   "style": "재료 남기지 않기, 기한 관리"
+  },
+  {
+   "id": "demo-haeun",
+   "nick": "하은집밥",
+   "name": "정하은",
+   "age": 23,
+   "profile": "취업 준비생, 식비 아끼며 건강하게",
+   "style": "두부·채소 위주 가벼운 식단"
+  }
+ ],
+ "posts": [
+  {
+   "id": 900001,
+   "flag": "D",
+   "recipeId": 137,
+   "recipeName": "된장 두부찌개",
+   "author": "민지네냉장고",
+   "authorId": "demo-minji",
+   "text": "김치랑 두부 기한 임박이라 바로 찌개로! 국물이 진해서 밥 두 그릇 먹었어요",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.9,
+   "used": [
+    {
+     "name": "두부",
+     "urgent": true
+    },
+    {
+     "name": "김치",
+     "urgent": false
+    },
+    {
+     "name": "돼지고기",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "보통",
+   "actualTime": 25,
+   "likes": 18,
+   "votes": 9,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900002,
+   "flag": "D",
+   "recipeId": 914,
+   "recipeName": "돼지고기 토마토 두부볶음",
+   "author": "도윤도시락",
+   "authorId": "demo-doyun",
+   "text": "월요일 도시락. 토마토가 물러지기 전에 털었습니다",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.82,
+   "used": [
+    {
+     "name": "토마토",
+     "urgent": true
+    },
+    {
+     "name": "두부",
+     "urgent": false
+    },
+    {
+     "name": "돼지고기",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 20,
+   "likes": 15,
+   "votes": 7,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900003,
+   "flag": "D",
+   "recipeId": 311,
+   "recipeName": "토마토라면",
+   "author": "야식왕준호",
+   "authorId": "demo-junho",
+   "text": "새벽 2시 토마토라면… 생각보다 너무 맛있음 ㅋㅋ",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.75,
+   "used": [
+    {
+     "name": "토마토",
+     "urgent": false
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    },
+    {
+     "name": "대파",
+     "urgent": true
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 12,
+   "likes": 24,
+   "votes": 11,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900004,
+   "flag": "D",
+   "recipeId": 834,
+   "recipeName": "두부 달걀전",
+   "author": "수아의첫요리",
+   "authorId": "demo-sua",
+   "text": "첫 전 부치기 성공! 뒤집을 때 하나 부서졌지만 맛은 최고",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.66,
+   "used": [
+    {
+     "name": "두부",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "보통",
+   "actualTime": 30,
+   "likes": 21,
+   "votes": 8,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900005,
+   "flag": "D",
+   "recipeId": 628,
+   "recipeName": "삼색샐러드와두부구이",
+   "author": "하은집밥",
+   "authorId": "demo-haeun",
+   "text": "냉장고 채소 다 넣었더니 색깔이 예뻐요. 두부는 바삭하게",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.58,
+   "used": [
+    {
+     "name": "두부",
+     "urgent": true
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    },
+    {
+     "name": "깻잎",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "보통",
+   "actualTime": 25,
+   "likes": 12,
+   "votes": 5,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900006,
+   "flag": "D",
+   "recipeId": 127,
+   "recipeName": "컵밥",
+   "author": "민지네냉장고",
+   "authorId": "demo-minji",
+   "text": "시험기간 컵밥. 계란 4개 한 번에 털기",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.47,
+   "used": [
+    {
+     "name": "계란",
+     "urgent": false
+    },
+    {
+     "name": "김치",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 10,
+   "likes": 9,
+   "votes": 4,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900007,
+   "flag": "D",
+   "recipeId": 993,
+   "recipeName": "시금치 돼지고기 볶음",
+   "author": "도윤도시락",
+   "authorId": "demo-doyun",
+   "text": "시금치 한 단 사서 남은 거 볶음으로. 도시락 반찬 완성",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.38,
+   "used": [
+    {
+     "name": "시금치",
+     "urgent": true
+    },
+    {
+     "name": "돼지고기",
+     "urgent": false
+    },
+    {
+     "name": "부추",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 15,
+   "likes": 7,
+   "votes": 3,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900008,
+   "flag": "D",
+   "recipeId": 651,
+   "recipeName": "돼지고기 숙주덮밥",
+   "author": "야식왕준호",
+   "authorId": "demo-junho",
+   "text": "숙주 반 봉지 남은 거 털어서 덮밥. 양 많게 했어요",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.3,
+   "used": [
+    {
+     "name": "돼지고기",
+     "urgent": false
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    },
+    {
+     "name": "숙주",
+     "urgent": true
+    }
+   ],
+   "actualLevel": "보통",
+   "actualTime": 20,
+   "likes": 10,
+   "votes": 6,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900009,
+   "flag": "D",
+   "recipeId": 1073,
+   "recipeName": "바나나를 감싼 일본식 달걀말이",
+   "author": "수아의첫요리",
+   "authorId": "demo-sua",
+   "text": "바나나 달걀말이…? 신기해서 해 봤는데 달달해요",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.21,
+   "used": [
+    {
+     "name": "계란",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "어려움",
+   "actualTime": 25,
+   "likes": 6,
+   "votes": 2,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900010,
+   "flag": "D",
+   "recipeId": 3067,
+   "recipeName": "배추된장국",
+   "author": "하은집밥",
+   "authorId": "demo-haeun",
+   "text": "배추 끝부분이랑 두부로 맑은 된장국",
+   "image": null,
+   "week": "this",
+   "weekFraction": 0.12,
+   "used": [
+    {
+     "name": "두부",
+     "urgent": false
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    },
+    {
+     "name": "대파",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 15,
+   "likes": 5,
+   "votes": 2,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900011,
+   "flag": "D",
+   "recipeId": 673,
+   "recipeName": "찬밥이용닭죽",
+   "author": "민지네냉장고",
+   "authorId": "demo-minji",
+   "text": "찬밥 처리용 닭죽. 감기 기운 있을 때 딱",
+   "image": null,
+   "week": "last",
+   "weekFraction": null,
+   "used": [
+    {
+     "name": "감자",
+     "urgent": false
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "쉬움",
+   "actualTime": 30,
+   "likes": 14,
+   "votes": 0,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  },
+  {
+   "id": 900012,
+   "flag": "D",
+   "recipeId": 340,
+   "recipeName": "불고기덮밥",
+   "author": "야식왕준호",
+   "authorId": "demo-junho",
+   "text": "지난주 불고기 덮밥. 계란 노른자 톡",
+   "image": null,
+   "week": "last",
+   "weekFraction": null,
+   "used": [
+    {
+     "name": "계란",
+     "urgent": false
+    },
+    {
+     "name": "양파",
+     "urgent": false
+    }
+   ],
+   "actualLevel": "보통",
+   "actualTime": 20,
+   "likes": 11,
+   "votes": 0,
+   "meta": {
+    "source": "dummy",
+    "note": "시연용 가상 게시물. 실제 사용자가 작성한 글이 아님. 화면에 '예시' 표시, 내려받기·랭킹 집계 파일에는 포함하지 않음"
+   }
+  }
+ ],
+ "meta": {
+  "source": "dummy"
+ }
+}

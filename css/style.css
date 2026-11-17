@@ -545,3 +545,20 @@ html,body{overflow-x:hidden}
 .search-panel .frow{grid-template-columns:72px 1fr;margin-top:8px}
 .search-panel .frow .flabel{line-height:32px}
 .rank-top p.rank-desc-line{display:block}
+
+/* v0.9.26: 더보기·펼치기·맨 위로 = 화살표만 */
+.more-link.arrow-only{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border-radius:50%;color:var(--dk)}
+.more-link.arrow-only .ui-icon{width:22px;height:22px;margin:0}
+.more-link.arrow-only:hover{background:var(--ing-bg)}
+.fsec-toggle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border-radius:50%}
+.fsec-toggle .ui-icon{width:22px;height:22px;margin:0}
+.more-btn{display:flex;align-items:center;justify-content:center;padding:10px;border-style:solid;color:var(--dk)}
+.more-btn .ui-icon{width:24px;height:24px;margin:0}
+.totop{width:44px;height:44px}
+.totop .ui-icon{width:22px;height:22px}
+#login .box{margin-top:24px}
+.card .author b,#list .card>div:nth-child(2) .author b,.big-body .author b{font-size:var(--fs-xs);font-weight:600;color:var(--mu)}
+
+/* 시연용 가상 데이터(D) 표시 */
+.demo-tag{display:inline-block;margin-left:4px;padding:0 7px;font-size:var(--fs-xs);line-height:18px;font-weight:700;border-radius:999px;border:1px dotted var(--am);background:#FFF4DB;color:var(--am);vertical-align:middle}
+.menu-right em{font-style:normal;font-size:var(--fs-sm);color:var(--mu)}

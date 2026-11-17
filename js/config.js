@@ -4,7 +4,7 @@
 // 유출·한도 초과 시 위 페이지에서 재발급 후 여기만 바꾸면 됨. 유료 API나 개인정보 API에는 이 구조를 쓰지 않음.
 const API_KEY = '952021f2646447be9c0b';
 
-// 선택: Google Sheets 기록용 Apps Script 웹앱 URL (tools/sheets_webapp.gs 배포 후 붙여넣기). 비우면 기록 안 함
+// 선택: Google Sheets 기록용 Apps Script 웹앱 URL (Apps Script 웹앱 배포 후 붙여넣기). 비우면 기록 안 함
 const SHEET_WEBAPP_URL = '';
 
 // Firebase (심화: 아이디·비밀번호 로그인 + 닉네임, 이메일 없음). 콘솔 → 프로젝트 설정(톱니바퀴) → 내 앱 → SDK 설정 및 구성 → 'Config' 값을 그대로 붙여넣기

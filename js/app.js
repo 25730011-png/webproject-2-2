@@ -52,7 +52,7 @@ function homeCount() {
   if (!recipes.length) return;
   const mine = myIngredients();
   const n = mine.length ? recipes.filter(p => matchCount(p, mine) > 0).length : recipes.length;
-  $('#home-go').textContent = mine.length ? (n ? `보유 재료를 활용하는 레시피 ${n}건 보기` : '이 재료가 들어간 레시피가 없어요 — 재료를 바꿔 보세요') : `전체 레시피 ${n}건 보기`;
+  $('#home-go').textContent = mine.length ? (n ? '내 재료로 레시피 보기' : '이 재료가 들어간 레시피가 없어요') : '전체 레시피 보기'; // 건수는 표시하지 않음
   $('#home-go').disabled = !n;
 }
 $('#home-go').addEventListener('click', () => {
@@ -193,6 +193,11 @@ window.addEventListener('fb-ready', async () => {
     else if (!r && u?.via === 'firebase') { try { localStorage.removeItem('ft_user'); } catch {} renderMy(); }
   } catch (err) { console.warn('[Firebase 상태 확인 실패]', err.message); }
 });
+document.addEventListener('click', e => {
+  if (!e.target.closest('#demo-toggle')) return;
+  store.set('show_demo', !demoOn()); applyDemo(); syncDemoToggle(); renderHome(); renderFeed(); renderMy();
+});
+function syncDemoToggle() { const el = $('#demo-state'); if (el) el.textContent = demoOn() ? '켜짐' : '꺼짐'; }
 $('#my-logout').addEventListener('click', async () => {
   try { if (window.fb) await window.fb.signOut(); } catch (err) { console.warn('[로그아웃]', err.message); }
   try { localStorage.removeItem('ft_user'); } catch {} renderMy();
@@ -241,6 +246,19 @@ const APP_BASE = typeof APP_ROOT === 'string' ? APP_ROOT : './'; // pages/ 안�
 const DATA_URL = APP_BASE + 'data/recipes_existing.json';
 const USER_URL = APP_BASE + 'data/recipes_user.json'; // 사용자 등록 레시피를 팀 저장소에 반영한 파일 (없어도 동작)
 const POSTS_URL = APP_BASE + 'data/posts_user.json';       // 사용자 게시물을 팀 저장소에 반영한 파일 (없어도 동작)
+const DEMO_URL = APP_BASE + 'demo/demo_users.json'; // 시연용 가상 사용자·게시물 (D, data/ 밖에 둠)
+let demoData = null;
+const demoOn = () => store.get('show_demo', true) !== false;
+// 가상 게시물을 posts에 붙이거나 뺌. 작성 시각은 '이번 주 월요일 ~ 지금' 안에서 weekFraction 비율로 계산 → 언제 열어도 이번 주 랭킹에 보임
+function applyDemo() {
+  posts = posts.filter(p => !p.demo);
+  if (!demoData || !demoOn()) return;
+  const now = Date.now(), cur = weekRange(0).start.getTime(), last = weekRange(-1).start.getTime();
+  const rows = (demoData.posts || []).map((d, i) => ({ ...d, demo: true, cookingLogId: null,
+    createdAt: new Date(d.week === 'last' ? last + (2 + i % 4) * 86400000 + 12 * 3600000 : cur + (now - cur) * (d.weekFraction ?? 0.5)).toISOString() }));
+  posts = [...posts, ...rows.filter(r => recipes.some(x => x.id === r.recipeId))];
+}
+const demoTag = p => p && p.demo ? '<span class="demo-tag" title="시연용 가상 데이터">예시</span>' : '';
 const ING_URL = APP_BASE + 'data/ingredients_dictionary.json';   // 재료 사전 (추천 칩 · 표기 통일)
 let ingredientsDict = [];                    // ingredients_dictionary.json 원본
 let posts = [];                              // 게시물 원본 배열 (posts_user.json + localStorage)
@@ -322,7 +340,6 @@ function loadData() {
       const users = [...fileUsers.filter(u => !localUsers.some(l => l.id === u.id)), ...localUsers];
       const deletedRecipes = new Set(store.get('deleted_recipe_ids', []));
       recipes = checkData([...data, ...users].filter(r => !deletedRecipes.has(r.id)), '기존 JSON + 사용자 JSON');
-      $('#hero-count').textContent = recipes.length;
       homeCount();
       // 재료 사전 · 게시물 (없어도 화면은 동작)
       try { const r = await fetch(ING_URL); if (r.ok) { ingredientsDict = await r.json(); aliasKeys = null; } } catch (e) { console.warn('[ingredients_dictionary.json 없음]', e.message); }
@@ -332,11 +349,14 @@ function loadData() {
       const deletedPosts = new Set(store.get('deleted_post_ids', []));
       posts = [...filePosts.filter(f => !localPosts.some(l => l.id === f.id)), ...localPosts].filter(p => !deletedPosts.has(p.id));
       console.log('[게시물]', posts.length, '건 (파일', filePosts.length, '· 브라우저', localPosts.length, ')');
+      // 시연용 가상 사용자 게시물(D): demo/demo_users.json. 실제 데이터(data/)와 분리, 마이페이지 메뉴에서 끄고 켬
+      try { const r = await fetch(DEMO_URL); if (r.ok) { demoData = await r.json(); applyDemo(); } } catch (e) { console.warn('[demo_users.json 없음]', e.message); }
       renderHome();
       document.dispatchEvent(new Event('meal-data-ready'));
       if ($('#feed').classList.contains('on')) { renderFeed(); searchPosts(); }
       if ($('#list').classList.contains('on')) renderList();
       if ($('#my').classList.contains('on')) renderMy();
+      if ($('#rank').classList.contains('on')) renderRank();
     })
     .catch(error => {
       loadFailed = true;
@@ -494,7 +514,7 @@ function filterBar() {
   const rows = FILTER_DEF.map(f => `<div class="frow"><span class="flabel">${f.label}</span><div class="fchips">${f.opts.map(([v, l]) =>
       `<button class="chip${flt[f.key] === v ? ' on' : ''}" type="button" data-f="${f.key}" data-v="${v}">${l}</button>`).join('')}</div></div>`).join('');
   return `<div class="fsec">
-      <div class="fsec-h"><b>조건·정렬</b><span class="mu">${act.length ? `${act.length}개 적용 · ` : ''}${sortLabel}</span><button class="fsec-toggle" type="button" data-f="toggle">${filtersOpen ? '접기' : '펼치기'}${uiIcon(filtersOpen ? 'chevron-up' : 'chevron-down')}</button></div>
+      <div class="fsec-h"><b>조건·정렬</b><span class="mu">${act.length ? `${act.length}개 적용 · ` : ''}${sortLabel}</span><button class="fsec-toggle" type="button" data-f="toggle" aria-expanded="${filtersOpen}" aria-label="${filtersOpen ? '조건 닫기' : '조건 열기'}">${uiIcon(filtersOpen ? 'chevron-up' : 'chevron-down')}</button></div>
       ${filtersOpen ? rows : ''}
       ${filtersOpen ? `<div class="frow"><span class="flabel">정렬</span><div class="fchips">${SORTS.map(([v, l]) => `<button class="chip${flt.sort === v ? ' on' : ''}" type="button" data-f="sort" data-v="${v}">${l}</button>`).join('')}</div></div>` : ''}
     </div>
@@ -533,7 +553,7 @@ document.addEventListener('click', e => {
   const mm = e.target.closest('[data-mine]');
   if (mm) { const v = mm.dataset.mine; flt.mineOnly = v !== 'none'; flt.allMine = v === 'all'; listShown = PAGE; renderList(); }
 });
-const moreBtn = (shown, total) => shown < total ? `<button class="more-btn" type="button">더 보기 (${Math.min(PAGE, total - shown)}건 더 · 남은 ${total - shown}건)</button>` : (total > PAGE ? `<p class="mu" style="text-align:center;margin-top:10px">${total}건 모두 표시했어요</p>` : '');
+const moreBtn = (shown, total) => shown < total ? `<button class="more-btn" type="button" aria-label="더 보기">${uiIcon('chevron-down')}</button>` : ''; // 건수 없이 화살표만
 let navIds = []; // 상세 좌우 스와이프에서 넘길 순서 (마지막으로 그린 목록/검색 결과)
 
 // 검색어는 띄어쓰기로 나눈 단어가 모두(이름 또는 재료에) 들어가야 함 → "두부 찌개", "김치 볶음" 조합 검색
@@ -642,7 +662,7 @@ function renderMy() {
   $('#my-name').textContent = u ? `${u.nick} 님` : '로그인이 필요해요';
   $('#my-sub').textContent = u ? (u.loginId ? '@' + u.loginId : u.email || '') : '레시피 등록·요리 자랑에 필요해요';
   $('#my-logout').hidden = !u; $('#my-login').hidden = !!u;
-  syncTopLogin(u);
+  syncTopLogin(u); syncDemoToggle();
   const favs = recipes.filter(p => isFav(p.id));
   navIds = favs.map(p => p.id);
   $('#fav-list').innerHTML = favs.length ? withThumbs(favs.map(p => ({ p }))).map(({ p, t }) => miniCard(p, uiIcon('star', true), t)).join('')
@@ -842,7 +862,7 @@ function detailStep(d) {
 }
 function syncDetailNav() {
   const i = navIds.indexOf(detailId), n = navIds.length;
-  $('#d-pos').textContent = i >= 0 && n > 1 ? `${i + 1} / ${n} · 좌우로 넘겨 보세요` : (n <= 1 ? '' : '목록 밖 항목');
+  $('#d-pos').textContent = ''; $('#d-pos').hidden = true; // 데이터 건수(1 / 76) 표시 안 함 — 좌우 화살표로 넘김
   $('#d-prev').disabled = !(i > 0); $('#d-next').disabled = !(i >= 0 && i < n - 1);
 }
 $('#d-prev').addEventListener('click', () => detailStep(-1));
@@ -889,7 +909,8 @@ function renderReal(p) {
   const st = realStats(p.id), box = $('#d-real');
   const parts = [st.tm ? `평균 ${st.tm}분` : '', st.lv ? `난이도 ${st.lv}` : ''].filter(Boolean);
   box.hidden = !parts.length;
-  box.innerHTML = parts.length ? `<span class="lbl">전체 사용자</span>만든 사람 ${st.n}명의 실제 기록 · ${parts.join(' · ')}${typeTag('meas')}` : '';
+  const hasDemo = posts.some(x => x.recipeId === p.id && x.demo);
+  box.innerHTML = parts.length ? `<span class="lbl">전체 사용자</span>만든 사람 ${st.n}명의 실제 기록 · ${parts.join(' · ')}${typeTag('meas')}${hasDemo ? demoTag({ demo: true }) : ''}` : '';
   // 내 요리 기록 = 이 브라우저의 cooking_logs 중 로그인한 내가 '조리 완료'한 기록 (개인 데이터, 자랑 게시물과 별개)
   const me = store.get('user', null)?.id;
   const logs = me ? store.get('cooking_logs', []).filter(r => r.recipeId === p.id && r.actorId === me).sort((a, b) => b.createdAt.localeCompare(a.createdAt)) : [];
@@ -976,14 +997,15 @@ function usedLine(p) {
     + (p.actualLevel || p.actualTime ? `<p class="mu">실제 ${p.actualLevel ? esc(p.actualLevel) : ''}${p.actualLevel && p.actualTime ? ' · ' : ''}${p.actualTime ? `${p.actualTime}분` : ''}${typeTag('meas')}</p>` : '')
     : `<p class="used-line mu">${uiIcon('fridge')} 활용한 재료 기록 없음</p>`;
 }
-const postLikes = id => (store.get('plikes', {})[id] || 0);
+const demoBase = (id, k) => posts.find(p => p.id === id && p.demo)?.[k] || 0; // 가상 게시물의 기본 좋아요·투표 수
+const postLikes = id => (store.get('plikes', {})[id] || 0) + demoBase(id, 'likes');
 const postLikedByMe = id => store.get('pliked', []).includes(id);
 function togglePostLike(id) {
   const likes = store.get('plikes', {}), liked = new Set(store.get('pliked', []));
   if (liked.has(id)) { liked.delete(id); likes[id] = Math.max(0, (likes[id] || 0) - 1); } else { liked.add(id); likes[id] = (likes[id] || 0) + 1; }
   store.set('plikes', likes); store.set('pliked', [...liked]);
 }
-const postVotes = id => (store.get('pvotes', {})[id] || 0);
+const postVotes = id => (store.get('pvotes', {})[id] || 0) + demoBase(id, 'votes');
 const postVotedByMe = id => store.get('pvoted', []).includes(id);
 function togglePostVote(id) {
   const votes = store.get('pvotes', {}), voted = new Set(store.get('pvoted', []));
@@ -996,7 +1018,7 @@ const ago = iso => {
   const d = (Date.now() - new Date(iso)) / 60000;
   return d < 60 ? `${Math.max(1, Math.round(d))}분 전` : d < 1440 ? `${Math.round(d / 60)}시간 전` : `${Math.round(d / 1440)}일 전`;
 };
-function postImg(post, cls, label) { return imgBox({ image: post.image, name: post.recipeName }, cls, label); }
+function postImg(post, cls, label) { return imgBox({ image: post.image, name: post.recipeName, id: post.recipeId, category: recipeOf(post)?.category }, cls, label); }
 // 게시물 카드가 '내 냉장고로 만들 수 있는' 글인지: 연결 레시피의 재료에 보유 재료가 들어 있는지
 const postMakeable = post => { const r = recipeOf(post); return r ? matchCount(r, myIngredients()) : 0; };
 const postBadge = post => { const r = recipeOf(post), hit = postMakeable(post), total = myIngredients().length;
@@ -1009,8 +1031,8 @@ function renderHome() {
   syncTopLogin(store.get('user', null));
   const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 3);
   $('#pop-track').innerHTML = top.length ? top.map((p, i) => { const r = recipeOf(p); return `<article class="pop" data-go="post" data-post="${p.id}">
-      <div class="img pop-img ${p.image ? 'has-img' : 'no-img'}"><span class="rank">${i + 1}</span>${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.recipeName)} 사진">` : pic('noimage')}</div>
-      <div class="pop-body"><b>${esc(p.recipeName)}</b> <span class="flag flag-U">U</span><p class="mu">@${esc(p.author)}${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
+      <div class="img pop-img ${p.image ? 'has-img' : 'no-img'}"><span class="rank">${i + 1}</span>${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.recipeName)} 사진">` : pic('t' + String(thumbOf({ id: p.recipeId, name: p.recipeName, category: recipeOf(p)?.category }) + 1).padStart(2, '0'))}</div>
+      <div class="pop-body"><b>${esc(p.recipeName)}</b> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}<p class="mu">@${esc(p.author)}${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
     : miniEmpty('아직 올라온 자랑이 없어요');
   popCarousel.set(top.length);
   // 이번 주: 최근 7일 게시물을 레시피별로 셈
@@ -1031,9 +1053,8 @@ function renderFeed() {
 
   list.sort((a, b) => feedSortPop ? (postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)) : b.createdAt.localeCompare(a.createdAt));
   $('#feed-sort').textContent = feedSortPop ? '인기순' : '최신순';
-  $('#feed-count').textContent = list.length ? (raw ? `검색 결과 ${list.length}개` : `자랑 ${list.length}개`) : '';
   $('#feed-list').innerHTML = list.length ? list.map(p => `<article class="post">
-      <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@${esc(p.author)}</b> <span class="flag flag-U">U</span><p class="mu">${ago(p.createdAt)}</p></div>${isMyPost(p) ? `<button class="more" type="button" data-pdel="${p.id}" aria-label="삭제">${uiIcon('trash')}</button>` : ''}</header>
+      <header class="post-head"><span class="avatar" aria-hidden="true"></span><div><b>@${esc(p.author)}</b> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}<p class="mu">${ago(p.createdAt)}</p></div>${isMyPost(p) ? `<button class="more" type="button" data-pdel="${p.id}" aria-label="삭제">${uiIcon('trash')}</button>` : ''}</header>
       <div data-go="post" data-post="${p.id}">${postImg(p, 'post-img', '요리 사진 (1:1)')}</div>
       <div class="post-act"><button class="like${postLikedByMe(p.id) ? ' on' : ''}" type="button" data-plike="${p.id}" aria-label="좋아요" aria-pressed="${postLikedByMe(p.id)}">${uiIcon('heart', postLikedByMe(p.id))}</button><button class="vote${postVotedByMe(p.id) ? ' on' : ''}" type="button" data-pvote="${p.id}" aria-label="랭킹 투표" aria-pressed="${postVotedByMe(p.id)}">${uiIcon('vote', postVotedByMe(p.id))}</button>${recipeOf(p) ? `<button type="button" data-go="detail" data-id="${p.recipeId}" aria-label="레시피 보기" style="margin-left:auto">${uiIcon('book')}</button>` : ''}</div>
       <div class="post-body"><b>좋아요 ${postLikes(p.id)}개</b> <span class="mu">· 랭킹 투표 ${postVotes(p.id)}표</span>
@@ -1082,7 +1103,7 @@ function openPost(id) {
   postId = id;
   const r = recipeOf(p);
   $('#p-img').outerHTML = postImg(p, 'sq-img', '요리 사진 (1:1)').replace('class="img', 'id="p-img" class="img');
-  $('#p-title').innerHTML = `${esc(p.recipeName)} <span class="mu">@${esc(p.author)}</span> <span class="flag flag-U">U</span>`;
+  $('#p-title').innerHTML = `${esc(p.recipeName)} <span class="mu">@${esc(p.author)}</span> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}`;
   $('#p-sub').innerHTML = `${r ? `${esc(uiCategory(r.category || ''))} · ` : ''}${p.text ? `"${esc(p.text)}"` : '<span class="na">후기 없음</span>'} · ${new Date(p.createdAt).toLocaleString('ko-KR')}`;
   $('#p-ing').innerHTML = r ? `${info(r.ingredientsText)}` : '<span class="na">연결된 레시피가 삭제됨</span>';
   const pts = postPoints(p);
@@ -1168,7 +1189,7 @@ $('#write-form').addEventListener('submit', e => {
   const u = store.get('user', null); if (!u) return go('login');
   const r = recipes.find(x => x.id === Number($('#w-recipe').value));
   if (!r || !writePhoto) { $('#w-msg').hidden = false; $('#w-msg').textContent = '레시피와 사진은 필수예요.'; return; }
-  const ids = [...posts.map(p => p.id), ...store.get('deleted_post_ids', [])];
+  const ids = [...posts.filter(p => !p.demo).map(p => p.id), ...store.get('deleted_post_ids', [])]; // 가상 게시물 id(900001~)는 제외
   // 활용한 재료: 체크된 행만. 냉장고 항목의 임박 여부를 올린 시점 기준으로 기록 (나중에 날짜가 지나도 점수 불변)
   let cookingRecord;
   try { cookingRecord = window.inventoryUI.postUsage(r.id); }
@@ -1211,7 +1232,7 @@ function scorePosts(list) {
     const pp = postPoints(p), pts = pp.total;
     const r = byRecipe[p.recipeId] ||= { id: p.recipeId, name: p.recipeName, posts: 0, likes: 0, used: 0, rescued: 0, pts: 0 };
     r.posts++; r.likes += pp.v; r.used += pp.u; r.rescued += pp.r; r.pts += pts;
-    const c = byChef[p.authorId] ||= { id: p.authorId, nick: p.author, posts: 0, likes: 0, used: 0, rescued: 0, pts: 0, best: null };
+    const c = byChef[p.authorId] ||= { id: p.authorId, demo: !!p.demo, nick: p.author, posts: 0, likes: 0, used: 0, rescued: 0, pts: 0, best: null };
     c.posts++; c.likes += pp.v; c.used += pp.u; c.rescued += pp.r; c.pts += pts; if (!c.best || postPoints(p).total > postPoints(c.best).total) c.best = p;
   });
   const sortF = (a, b) => b.pts - a.pts || b.likes - a.likes || b.posts - a.posts;
@@ -1236,10 +1257,10 @@ function renderRank() {
       return rankRow(i, `${imgBox(p, '', '요리 사진', t)}<div class="body"><b>${esc(r.name)}</b>${lvlTag(p)} ${p.flag ? flagChip(p) : ''}<span class="mu">자랑 ${r.posts}건 · 투표 ${r.likes}표</span></div>`, r.pts, '점', `data-go="detail" data-id="${r.id}"`);
     }).join('') : emptyR;
   $('#rank-chefs').innerHTML = cur.chefs.length ? cur.chefs.map((c, i) =>
-      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">자랑 ${c.posts}건 · 투표 ${c.likes}표</span></div>`, c.pts, '점', c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
+      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} ${c.demo ? demoTag(c) : '<span class="flag flag-U">U</span>'}</b><span class="mu">자랑 ${c.posts}건 · 투표 ${c.likes}표</span></div>`, c.pts, '점', c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
     : emptyR;
   const chefRow = (key, unit, emptyTitle, emptyHint) => (list => list.length ? list.map((c, i) =>
-      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} <span class="flag flag-U">U</span></b><span class="mu">재료 활용 ${c.used}회 · 임박 ${c.rescued}회</span></div>`, c[key], unit, c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
+      rankRow(i, `<span class="avatar" aria-hidden="true"></span><div class="body"><b>@${esc(c.nick)} ${c.demo ? demoTag(c) : '<span class="flag flag-U">U</span>'}</b><span class="mu">재료 활용 ${c.used}회 · 임박 ${c.rescued}회</span></div>`, c[key], unit, c.best ? `data-go="post" data-post="${c.best.id}"` : '', u && c.id === u.id ? 'me' : '')).join('')
     : emptyState({ title: emptyTitle, hint: emptyHint, actions: [] }));
   $('#rank-thief').innerHTML = chefRow('used', '회', '아직 활용한 재료 기록이 없어요', '조리 완료 기록을 연결해 자랑하면 집계돼요.')(cur.thieves);
 }
