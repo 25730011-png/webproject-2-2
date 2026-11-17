@@ -55,7 +55,8 @@ assert.match(nodes.get('#spec-body').innerHTML, /누락·중복·플래그 불�
 assert.match(nodes.get('#spec-body').innerHTML, /recipes_existing.json/);
 assert.match(nodes.get('#spec-body').innerHTML, /실제 성공 0건/);
 vm.runInContext('renderList()', ctx);
-assert.match(nodes.get('#cards').innerHTML, /API 조회 가능/);
+// v0.9.30: 조회 전에는 A를 붙이지 않음 (API 응답이 실제로 반영된 레시피에만 A)
+assert.doesNotMatch(nodes.get('#cards').innerHTML, /API 조회 가능|flag-A/);
 await vm.runInContext('fetchApi(recipes[0]).then(r => renderDetailApiFields(recipes[0], r))', ctx);
 assert.match(nodes.get('#d-api').innerHTML, /원본 ID·이름이 같은 1건/);
 assert.match(nodes.get('#d-nut').innerHTML, /type-api/);

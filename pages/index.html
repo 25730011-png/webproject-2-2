@@ -238,12 +238,14 @@
   <section class="screen" id="post">
     <div class="back-bar"><button class="back-btn" type="button" data-back><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ui-chevron-left"></use></svg>돌아가기</button></div>
     <div class="img sq-img" id="p-img">요리 사진 (1:1)</div>
-    <h2 style="margin-top:10px" id="p-title">요리 게시물</h2>
-    <p class="mu" id="p-sub"></p>
+    <!-- 위계: 작성자(14) → 요리 이름(20) → 후기(16) → 반응 → 털이 인증(카드 제목 16 / 항목 14) → 다음 행동 -->
+    <div class="post-author"><span class="avatar" aria-hidden="true"></span><div><b id="p-author"></b><p class="mu" id="p-sub"></p></div></div>
+    <h2 class="post-title" id="p-title">요리 게시물</h2>
+    <p class="post-text" id="p-text"></p>
+    <div class="post-react"><button class="chip like-btn" id="p-like" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-heart"></use></svg>좋아요 0개</button><button class="chip vote-btn" id="p-vote" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-vote"></use></svg>랭킹 투표 0표</button><button class="chip" id="p-del" type="button" hidden>내 요리 게시물 삭제</button></div>
     <div class="box" id="p-used"></div>
     <p id="p-ing" hidden></p>
     <div class="box next-box" id="p-next" hidden></div>
-    <div class="row"><button class="chip like-btn" id="p-like" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-heart"></use></svg>좋아요 0개</button><button class="chip vote-btn" id="p-vote" type="button"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ui-vote"></use></svg>랭킹 투표 0표</button><button class="chip" id="p-del" type="button" hidden>내 요리 게시물 삭제</button><span class="mu" style="font-size:12px">좋아요는 공감 · 랭킹 투표는 순위 반영 <span class="flag flag-U">U</span></span></div>
     <button class="btn dk" id="p-recipe" type="button">연결된 레시피 보기</button>
   </section>
 
@@ -358,7 +360,7 @@
     <p id="cook-status" role="status" aria-live="polite"></p><button class="btn dk" id="cook-post" type="button" hidden>이 기록으로 자랑하기</button><button class="btn" type="button" data-open-fridge>냉장고 확인</button><button class="btn" data-go="plan">식사 계획 보기</button>
   </section>
   <section class="screen" id="spec">
-    <h2>데이터 명세</h2><p class="release-label">v0.9.28 · 교수님 검토용</p>
+    <h2>데이터 명세</h2><p class="release-label">v0.9.30 · 교수님 검토용</p>
     <p class="mu">출처·파일별 건수·실제 JSON을 확인해요. 인증정보는 내려받기에 포함되지 않아요.</p>
     <div id="spec-body"></div>
     <p id="data-export-status" role="status"></p>

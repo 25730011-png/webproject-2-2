@@ -404,7 +404,9 @@ const isUser = p => p.flag === 'U';
 const isMyRecipe = p => isUser(p) && !!store.get('user', null) && p.authorId === store.get('user', null).id;
 // 데이터 플래그 칩: 글자(J/A/U) + title로 뜻을 함께 표시
 const FLAG_LABEL = { J: '기존 JSON 원본', A: '외부 API (조회·응답 상태 별도)', U: '사용자·팀 입력', C: '계산 결과' };
-const flagChip = p => `<span class="flag flag-${p.flag || 'C'}" title="${FLAG_LABEL[p.flag] || '출처 미확인'}">${p.flag || '?'}</span>${apiTarget(p) ? '<span class="type-tag type-api">API 조회 가능</span>' : ''}`;
+// A는 '실제로 API 응답이 반영된' 레시피에만 붙임 (조회 가능 여부만으로는 표시하지 않음 — 76건 모두 조회 대상이라 의미 없음)
+const apiApplied = p => !!(apiCache.get(p.id)?.ok || store.get('api_responses', []).some(r => r.recipeId === p.id && r.status === 'success'));
+const flagChip = p => `<span class="flag flag-${p.flag || 'C'}" title="${FLAG_LABEL[p.flag] || '출처 미확인'}">${p.flag || '?'}</span>${apiApplied(p) ? `<span class="flag flag-A" title="${FLAG_LABEL.A}">A</span>` : ''}`;
 const originChip = p => isUser(p) ? `<span class="src-chip team">${esc(p.author || '사용자')}</span>${flagChip(p)}`
   : p.flag === 'D' ? `<span class="src-chip team">AI 가상</span>${flagChip(p)}`
   : isTeam(p) ? `<span class="src-chip team">팀 작성</span>${flagChip(p)}`
@@ -497,7 +499,7 @@ const FILTER_DEF = [
   { key: 'time', label: '조리 시간', opts: [['15', '15분 이내'], ['30', '30분 이내'], ['60', '1시간 이내']] },
   { key: 'level', label: '난이도', opts: [['쉬움', '쉬움'], ['보통', '보통'], ['어려움', '어려움']] },
   { key: 'method', label: '조리 방법', opts: [['볶기', '볶기'], ['끓이기', '끓이기'], ['굽기', '굽기'], ['찌기', '찌기'], ['기타', '기타']] },
-  { key: 'flag', label: '출처', opts: [['J', 'J 저장 JSON'], ['A', 'A API 조회 가능'], ['U', 'U 사용자']] },
+  { key: 'flag', label: '출처', opts: [['J', 'J 저장 JSON'], ['A', 'A API 반영'], ['U', 'U 사용자']] },
 ];
 const SORTS = [['rel', '추천순'], ['time', '빨리 만드는 순'], ['made', '많이 만든 순'], ['easy', '쉬운 순'], ['name', '가나다순'], ['new', '최신 등록순']];
 const LEVEL_ORDER = { '쉬움': 0, '보통': 1, '어려움': 2 };
@@ -530,7 +532,7 @@ function applyFilters(scored) {
     (!flt.time || (p.time !== null && p.time <= Number(flt.time))) &&
     (!flt.level || p.level === flt.level) &&
     (!flt.method || p.method === flt.method) &&
-    (!flt.flag || (flt.flag === 'real' ? p.flag !== 'D' : (flt.flag === 'A' ? apiTarget(p) : p.flag === flt.flag))) &&
+    (!flt.flag || (flt.flag === 'real' ? p.flag !== 'D' : (flt.flag === 'A' ? apiApplied(p) : p.flag === flt.flag))) &&
     (!flt.allMine || (hit > 0 && hit === myIngredients().length)));
 }
 function sortResults(arr, q) {
@@ -891,12 +893,16 @@ $('#d-prev').addEventListener('click', () => detailStep(-1));
 $('#d-next').addEventListener('click', () => detailStep(1));
 attachSwipe($('#detail'), { left: () => detailStep(1), right: () => detailStep(-1) }); // 응답이 늦게 와도 다른 레시피 화면에 덮어쓰지 않도록
 
+function renderDetailTitle(p) {
+  $('#d-title').innerHTML = `<span>${esc(p.name)}${lvlTag(p)} ${originChip(p)}</span><button class="fav-star${isFav(p.id) ? ' on' : ''}" id="d-fav" type="button" aria-label="즐겨찾기">${uiIcon('star', isFav(p.id))}</button>`;
+  if ($('#d-fav')) syncDetailActions(p);
+}
 function openDetail(id) {
   const p = recipes.find(r => r.id === id);
   if (!p) { go('list'); $('#list-state').innerHTML=emptyState({title:'연결된 레시피를 찾을 수 없어요',hint:'레시피가 삭제되었거나 아직 불러오지 못했어요. 목록에서 다른 레시피를 선택해 주세요.',actions:[]}); return false; }
   detailId = id;
   syncDetailNav();
-  $('#d-title').innerHTML = `<span>${esc(p.name)}${lvlTag(p)} ${originChip(p)}</span><button class="fav-star${isFav(p.id) ? ' on' : ''}" id="d-fav" type="button" aria-label="즐겨찾기">${uiIcon('star', isFav(p.id))}</button>`;
+  renderDetailTitle(p);
   $('#d-sub').innerHTML = `${num(p.time, '분')}${tagOf(p, 'time')} · ${info(p.method)}${tagOf(p, 'method')} · ${info(uiCategory(p.category))}${tagOf(p, 'category')}${p.level ? ` · 난이도 ${esc(p.level)}${tagOf(p, 'level')}` : ''}`;
   $('#d-author').innerHTML = `${authorLine(p)}${tagOf(p, 'author')}${p.createdAt ? ` · ${new Date(p.createdAt).toLocaleDateString('ko-KR')} 등록` : ''}`;
   $('#d-src').innerHTML = `출처 ${sourceChip(p)} ${isUser(p) ? '사용자가 등록한 레시피 (검증 없음, 이 브라우저에 저장)' : p.flag === 'D' ? 'AI(Claude)로 생성한 가상 레시피 — 실제 조리법·영양 정보가 아님' : isTeam(p) ? '팀이 직접 작성한 시연용 레시피' : '식품의약품안전처 조리식품 레시피 DB'} · ${metaSummary(p)}`;
@@ -913,7 +919,7 @@ function openDetail(id) {
   renderDetailApiFields(p, null);
   if (apiTarget(p)) {
     $('#d-api').innerHTML = `식약처 레시피 DB에 "${esc(p.name)}" API 요청 중… (응답 전에는 JSON 원본 표시)`;
-    fetchApi(p).then(r => { if (detailId === id) renderDetailApiFields(p, r); });
+    fetchApi(p).then(r => { if (detailId === id) { renderDetailApiFields(p, r); if (r.ok) renderDetailTitle(p); } });
   } else {
     $('#d-api').textContent = isUser(p) ? 'API 미연동 (사용자 등록 레시피 — 영양 정보는 입력받지 않음)' : 'API 미연동 (저장 JSON 항목)';
   }
@@ -1125,11 +1131,19 @@ function openPost(id) {
   postId = id;
   const r = recipeOf(p);
   $('#p-img').outerHTML = postImg(p, 'sq-img', '요리 사진 (1:1)').replace('class="img', 'id="p-img" class="img');
-  $('#p-title').innerHTML = `${esc(p.recipeName)} <span class="mu">@${esc(p.author)}</span> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}`;
-  $('#p-sub').innerHTML = `${r ? `${esc(uiCategory(r.category || ''))} · ` : ''}${p.text ? `"${esc(p.text)}"` : '<span class="na">후기 없음</span>'} · ${new Date(p.createdAt).toLocaleString('ko-KR')}`;
+  $('#p-author').innerHTML = `@${esc(p.author)} ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}`;
+  $('#p-sub').textContent = `${ago(p.createdAt)}${r ? ` · ${uiCategory(r.category || '')}` : ''}`;
+  $('#p-title').textContent = p.recipeName;
+  $('#p-text').innerHTML = p.text ? esc(p.text) : '<span class="na">후기 없음</span>';
   $('#p-ing').innerHTML = r ? `${info(r.ingredientsText)}` : '<span class="na">연결된 레시피가 삭제됨</span>';
   const pts = postPoints(p);
-  $('#p-used').innerHTML = `<div class="real-h"><b>털이 인증</b></div>${usedLine(p)}`; // 점수 계산식은 표시하지 않음 (랭킹 '점수 기준'에서 안내)
+  // 털이 인증: 항목 이름(왼쪽) · 값(오른쪽) 같은 크기로 정렬. 기록이 없으면 박스를 숨김. 점수 계산식은 랭킹 '점수 기준'에서만 안내
+  const u = usedOf(p), rows = [];
+  if (u.length) rows.push(['활용한 재료', `${u.map(x => `<span class="chip ing${x.urgent ? ' urgent' : ''}">${esc(x.name)}</span>`).join('')}${typeTag('calc')}`]);
+  if (rescuedOf(p)) rows.push(['임박 재료', `<span class="t-urgent">${rescuedOf(p)}종 활용</span>`]);
+  if (p.actualLevel || p.actualTime) rows.push(['실제로 해 보니', `${[p.actualLevel ? esc(p.actualLevel) : '', p.actualTime ? `${p.actualTime}분` : ''].filter(Boolean).join(' · ')}${typeTag('user')}`]);
+  $('#p-used').hidden = !rows.length;
+  $('#p-used').innerHTML = `<b class="box-title">털이 인증</b><dl class="kv">${rows.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
   renderNext(p);
   $('#p-like').innerHTML = `${uiIcon('heart', postLikedByMe(id))}좋아요 ${postLikes(id)}개`;
   $('#p-like').setAttribute('aria-pressed', String(postLikedByMe(id))); $('#p-like').classList.toggle('on-like', postLikedByMe(id));
