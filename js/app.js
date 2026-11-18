@@ -501,11 +501,12 @@ const FILTER_DEF = [
   { key: 'method', label: '조리 방법', opts: [['볶기', '볶기'], ['끓이기', '끓이기'], ['굽기', '굽기'], ['찌기', '찌기'], ['기타', '기타']] },
   { key: 'flag', label: '출처', opts: [['J', 'J 저장 JSON'], ['A', 'A API 반영'], ['U', 'U 사용자']] },
 ];
-const SORTS = [['rel', '추천순'], ['time', '빨리 만드는 순'], ['made', '많이 만든 순'], ['easy', '쉬운 순'], ['name', '가나다순'], ['new', '최신 등록순']];
+// '추천순'은 기준이 보이지 않아 선택지에서 뺌 → 기본은 '많이 만든 순'(이 레시피로 올라온 자랑 수). 같으면 검색어·내 재료 일치 순으로 정렬
+const SORTS = [['made', '많이 만든 순'], ['time', '빨리 만드는 순'], ['easy', '쉬운 순'], ['name', '가나다순'], ['new', '최신 등록순']];
 const LEVEL_ORDER = { '쉬움': 0, '보통': 1, '어려움': 2 };
 // 이 레시피로 만든 요리 게시물 수 (레시피 카드의 '좋아요' 대신 보여주는 값 — 좋아요는 요리 게시물에만 있음)
 const madeCount = id => posts.filter(p => p.recipeId === id).length;
-const flt = { category: null, time: null, level: null, method: null, flag: null, sort: 'rel', allMine: false, mineOnly: false };
+const flt = { category: null, time: null, level: null, method: null, flag: null, sort: 'made', allMine: false, mineOnly: false };
 const PAGE = 30; let listShown = PAGE;
 
 const FILTER_LABEL = v => { for (const f of FILTER_DEF) { const o = f.opts.find(([k]) => k === v); if (o) return o[1]; } return v; };
@@ -516,7 +517,7 @@ const activeLabels = () => FILTER_DEF.filter(f => flt[f.key]).map(f => FILTER_LA
 // 검색 패널의 ② 조건 ③ 정렬 섹션 + 적용 중 요약 한 줄. 조건은 접을 수 있고 접혀도 요약은 보임
 function filterBar() {
   const act = FILTER_DEF.filter(f => flt[f.key]).map(f => FILTER_LABEL(flt[f.key]));
-  const sortLabel = SORTS.find(([v]) => v === flt.sort)?.[1] || '추천순';
+  const sortLabel = SORTS.find(([v]) => v === flt.sort)?.[1] || '많이 만든 순';
   const rows = FILTER_DEF.map(f => `<div class="frow"><span class="flabel">${f.label}</span><div class="fchips">${f.opts.map(([v, l]) =>
       `<button class="chip${flt[f.key] === v ? ' on' : ''}" type="button" data-f="${f.key}" data-v="${v}">${l}</button>`).join('')}</div></div>`).join('');
   return `<div class="fsec">
@@ -547,7 +548,7 @@ document.addEventListener('click', e => {
   const b = e.target.closest('.filters [data-f]'); if (!b) return;
   const k = b.dataset.f, v = b.dataset.v;
   if (k === 'toggle') { filtersOpen = !filtersOpen; renderList(); return; }
-  if (k === 'reset') { Object.assign(flt, { category: null, time: null, level: null, method: null, flag: null, sort: 'rel', allMine: false, mineOnly: false }); }
+  if (k === 'reset') { Object.assign(flt, { category: null, time: null, level: null, method: null, flag: null, sort: 'made', allMine: false, mineOnly: false }); }
   else if (k === 'sort') flt.sort = v;
   else flt[k] = flt[k] === v ? null : v;
   listShown = PAGE;
@@ -732,7 +733,7 @@ function renderReport() {
       <div class="rep-nums"><span><b>${used}</b>활용</span><span><b>${rescued}</b>임박 활용</span><span><b>${discard}</b>버림</span></div>
       <details class="rep-how"><summary>계산 방법</summary><p>(활용 + 그냥 먹음) ÷ (활용 + 그냥 먹음 + 버림 + 지금 남은 재료) · 이번 달 냉장고 기록 기준</p></details></div>`;
 }
-document.addEventListener('click', e => { if (e.target.closest('#rep-go')) { $('#rec-q').value = ''; flt.mineOnly = true; flt.sort = 'rel'; listShown = PAGE; go('list'); } });
+document.addEventListener('click', e => { if (e.target.closest('#rep-go')) { $('#rec-q').value = ''; flt.mineOnly = true; flt.sort = 'made'; listShown = PAGE; go('list'); } });
 
 function deleteUserRecipe(id) {
   if (!isMyRecipe(recipes.find(r => r.id === id) || {})) return;
@@ -1057,7 +1058,7 @@ function renderSuggest() {} // 홈에 추천 재료 칩을 띄우지 않음
 function renderHome() {
   renderSuggest(); renderHomeReco(); homeCount();
   syncTopLogin(store.get('user', null));
-  const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 6);
+  const top = [...posts].sort((a, b) => postLikes(b.id) - postLikes(a.id) || b.createdAt.localeCompare(a.createdAt)).slice(0, 3); // 대표 3개
   $('#pop-track').innerHTML = top.length ? top.map((p, i) => { const r = recipeOf(p); return `<article class="pop" data-go="post" data-post="${p.id}">
       <div class="img pop-img ${p.image ? 'has-img' : 'no-img'}"><span class="rank">${i + 1}</span>${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.recipeName)} 사진">` : pic('t' + String(thumbOf({ id: p.recipeId, name: p.recipeName, category: recipeOf(p)?.category }) + 1).padStart(2, '0'))}</div>
       <div class="pop-body"><b>${esc(p.recipeName)}</b> ${p.demo ? demoTag(p) : '<span class="flag flag-U">U</span>'}<p class="mu">@${esc(p.author)}${r ? ` · ${esc(uiCategory(r.category || ''))}` : ''}</p><p class="likes">${uiIcon('heart')} 좋아요 ${postLikes(p.id)}개</p></div></article>`; }).join('')
@@ -1071,6 +1072,20 @@ function renderHome() {
   $('#home-week').innerHTML = rows.length ? `<div class="grid2 week">${rows.map(({ r, n }) => `<div data-go="detail" data-id="${r.id}">${imgBox(r, '', '사진')}<b>${esc(r.name)}</b>${lvlTag(r)} ${flagChip(r)}<p class="mu">이번 주 ${n}명이 만들었어요</p></div>`).join('')}</div>`
     : miniEmpty('이번 주 기록이 아직 없어요');
 }
+
+// 홈 인기 요리 자랑 가로 스크롤: 터치는 기본 스크롤, PC는 세로 휠 → 가로 이동 + 마우스로 끌기
+(function () {
+  const el = $('#home-pop'); if (!el) return;
+  el.addEventListener('wheel', e => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && el.scrollWidth > el.clientWidth) {
+    const max = el.scrollWidth - el.clientWidth, next = el.scrollLeft + e.deltaY;
+    if ((e.deltaY < 0 && el.scrollLeft > 0) || (e.deltaY > 0 && el.scrollLeft < max)) { e.preventDefault(); el.scrollBy({ left: e.deltaY, behavior: 'smooth' }); } } }, { passive: false });
+  let x0 = null, s0 = 0, moved = false;
+  el.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; x0 = e.clientX; s0 = el.scrollLeft; moved = false; el.classList.add('dragging'); });
+  addEventListener('pointermove', e => { if (x0 === null) return; const dx = e.clientX - x0; if (Math.abs(dx) > 5) moved = true; el.scrollLeft = s0 - dx; });
+  addEventListener('pointerup', () => { if (x0 === null) return; x0 = null; el.classList.remove('dragging');
+    const card = el.querySelector('.pop'); if (card) { const w = card.offsetWidth + 12; el.scrollTo({ left: Math.round(el.scrollLeft / w) * w, behavior: 'smooth' }); } });
+  el.addEventListener('click', e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true); // 끈 뒤 클릭으로 게시물이 열리지 않게
+})();
 
 // ---------- 피드 ----------
 let feedMineOnly = false, feedSortPop = false;

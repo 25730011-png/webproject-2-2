@@ -613,3 +613,12 @@ html,body{overflow-x:hidden}
 .kv dd{margin:0;font-size:var(--fs-sm);display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .kv .chip{padding:3px 10px}
 #post .btn.dk{margin-top:16px}
+
+/* v0.9.31 인기 요리 자랑: 다른 섹션과 같은 16px 여백에서 시작·끝, 카드 단위로 멈춤 */
+.hscroll{margin:0 -16px;scroll-padding:0 16px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;cursor:grab}
+.hscroll.dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.hscroll-track{padding:2px 16px 10px;width:max-content;min-width:100%}
+.hscroll-track>.pop{flex:0 0 auto;width:calc((min(100vw, 430px) - 32px) * .72);scroll-snap-align:start}
+.hscroll-track>.mini-empty{width:calc(min(100vw, 430px) - 32px)}
+.hscroll-track::after{content:none}
+.pop img,.pop svg{pointer-events:none}
